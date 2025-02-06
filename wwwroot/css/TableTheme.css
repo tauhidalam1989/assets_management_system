@@ -1,0 +1,126 @@
+.ItemTranTable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #4CAF50;
+}
+
+.ItemTranTable td,
+#ItemTranTable th {
+    border: 1px solid #4CAF50;
+    /*padding: 1px;*/
+    line-height: 20px;
+    padding-left: 5px;
+}
+
+.ItemTranTable th {
+    border: 1px solid #808080;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+    line-height: 30px;
+    padding-left: 5px;
+}
+
+.ItemTranTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.ItemTranTable tr:hover {
+    background-color: #6cba4d;
+    color: white;
+}
+
+.ItemTranTable a:hover {
+    color: #ff0000;
+}
+
+.ItemTranTable td,
+.ItemTranTable th {
+    font-size: 12px;
+}
+
+
+
+.CustomBlueTable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #0094ff;
+}
+
+.CustomBlueTable td,
+#CustomBlueTable th {
+    border: 1px solid #0094ff;
+    /*padding: 1px;*/
+    line-height: 20px;
+    padding-left: 5px;
+}
+
+.CustomBlueTable th {
+    border: 1px solid #4CAF50;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: left;
+    background-color: #0094ff;
+    color: white;
+    line-height: 30px;
+    padding-left: 5px;
+}
+
+.CustomBlueTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.CustomBlueTable tr:hover {
+    background-color: #999393;
+    color: white;
+}
+
+.CustomBlueTable a:hover {
+    color: #ff0000;
+}
+
+.CustomBlueTable td,
+.CustomBlueTable th {
+    font-size: 12px;
+}
+
+
+.PrintReportTable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.PrintReportTable td,
+#PrintReportTable thth {
+    border: 1px solid black;
+    padding-left: 5px;
+}
+
+.PrintReportTable th {
+    
+    border: 1px solid black;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: left;
+    line-height: 40px;
+    padding-left: 5px;
+}
+
+.PrintReportTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.PrintReportTable tr:hover {
+    background-color: #85977f;
+}
+
+.PrintReportTable td,
+.PrintReportTable th {
+    font-size: 12px;
+}

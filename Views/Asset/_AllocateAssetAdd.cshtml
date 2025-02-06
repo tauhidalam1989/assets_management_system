@@ -1,0 +1,71 @@
+@model AMS.Models.AssetAssignedViewModel.AssetAssignedCRUDViewModel
+
+<div class="row">
+    <table class="CustomBlueTable" id="tbllistAssetAssigned" style="width:100%;" border="1">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Asset Name</th>
+                <th>Employee Name</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.listAssetAssignedCRUDViewModel)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AssetName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EmployeeName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CreatedDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+                    <td>
+                        <a href="#" class="btn btn-danger btn-xs" onclick="RemoveAllocateAsset('@item.Id')">Remove</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<hr />
+<div class="row">
+    <input asp-for="AssetId" id="AssetId" hidden />
+    <div class="col-6 col-sm-6">
+        <div class="form-group row">
+            <label asp-for="EmployeeId" class="col-sm-4 col-form-label"></label>
+            <div class="col-sm-8">
+                <select asp-for="EmployeeId" asp-items="@ViewBag.LoadddlEmployee" id="AssetAssignEmployeeId"
+                    class="form-control" style="width:100%;">
+                    <option disabled selected>--- SELECT ---</option>
+                </select>
+                <span asp-validation-for="EmployeeId" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-sm-6">
+        <div class="col-6 col-sm-6">
+            <input type="button" id="btnAssigneeAsset" value="Assignee Asset" onclick="AllocateAssetSave()"
+                class="btn btn-success">
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        $("#AssetAssignEmployeeId").select2();
+    });
+</script>

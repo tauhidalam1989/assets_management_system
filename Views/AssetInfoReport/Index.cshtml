@@ -1,0 +1,70 @@
+<div class="wrapper">
+    <div class="row">
+        <div class="col-md-4">
+            <select id="CategoryId" style="width: 100%;" onchange="DisplayAssetInfoReportData()" class="form-control"
+                required>
+                <option value="0" selected>All Category</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-4">
+            <select id="SubCategoryId" style="width: 100%;" asp-items="@ViewBag.ddlBranch"
+                onchange="DisplayAssetInfoReportData()" class="form-control" required>
+                <option value="0" selected>All Sub Category</option>
+            </select>
+        </div>
+        <div class="col-md-2 text-right">
+            <button type="button" id="printButton" class="btn btn-info"><i class="fa fa-print"></i> Print</button>
+        </div>
+    </div>
+
+    <div class="panel panel-hash">
+        <div class="panel-heading">
+            <div class="row">
+                <div class="col-md-5">
+                </div>
+                <div class="col-md-7 pull-right">
+                    <h5 class="pull-right"><b>&nbsp;Asset Info</b></h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-body scroll panel-height">
+            <table id="tblAssetInfoReport" class="PrintReportTable" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Image</th>
+                        <th>Asset Id</th>
+                        <th>Asset Model No</th>
+                        <th>Name</th>
+                        <th>Unit Price</th>
+                        <th>Date Of Purchase</th>
+                        <th></th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="~/js/AssetInfoReport/AssetInfoReport_Datatable.js"></script>
+
+<script>
+    var DisplayAssetInfoReportData = function () {
+        var _tblAssetInfoReport = $("#tblAssetInfoReport").DataTable();
+        _tblAssetInfoReport.clear();
+        _tblAssetInfoReport.destroy();
+
+        var _CategoryId = $("#CategoryId").val();
+        var _SubCategoryId = $("#SubCategoryId").val();
+
+        GetAssetInfoReportData(_CategoryId, _SubCategoryId);
+        DataTableCustomSearchBox('450px', 'Search...');
+    }
+
+    $("#printButton").on("click", function () {
+        var _tblAssetInfoReport = $("#tblAssetInfoReport").DataTable();
+        _tblAssetInfoReport.button('.buttons-print').trigger();
+    });
+</script>

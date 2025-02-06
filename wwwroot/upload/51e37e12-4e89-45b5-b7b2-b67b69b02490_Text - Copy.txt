@@ -1,0 +1,28 @@
+
+
+🚀 Register New User
+🚀 Reset Password
+🚀 Admin Dashboard
+🚀 Recent Registered User
+🚀 Identity Setting
+🚀 Login History
+
+✅ Live Chat / Real Time Messaging
+✅ Super Admin panel to manage members
+✅ Real-Time Message Delete
+✅ Search Everywhere
+✅ Header Notifications
+✅ Reply to message
+✅ File Attachment
+✅ View Image Attachment
+✅ Play Video Attachment
+✅ Download Attachment File
+✅ Real-time new message notifications 
+✅ Real-time user online and off-line status
+
+💻 Built with ASP.NET
+💻 ASP.NET Identity Authentication
+💻 Responsive Design
+
+✅ ⭐ 🚩 👉 🔋 🔒
+🚀 ❤️ ☕ 💻 🔥 🐦 
