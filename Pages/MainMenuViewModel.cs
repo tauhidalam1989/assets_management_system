@@ -7,7 +7,7 @@
         public bool Dashboard { get; set; }
         public bool UserManagement { get; set; }
         public bool UserInfoFromBrowser { get; set; }
-        public bool AuditLogs { get; set; }
+        public bool AuditLogs { get; set; } 
         public bool SubscriptionRequest { get; set; }
         public bool UserProfile { get; set; }
         public bool EmailSetting { get; set; }

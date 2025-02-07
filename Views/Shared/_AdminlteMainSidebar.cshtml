@@ -205,15 +205,14 @@
                         </ul>
                     </li>
                 }
-
                 @if (Model.MainMenuViewModel.RequestModule)
                 {
                     <li class="nav-item has-treeview">
-                        <a href="#" class="nav-link active" style="background-color: #b28c7e">
+                        <a href="#" class="nav-link active">
                             <i class="nav-icon fas fa-user-shield"></i>
                             <p>
-                            
-                                @MainMenu.AssetRequest.RoleName
+
+                                @MainMenu.RequestModule.PageName(ViewContext.HttpContext)
                                 <i class="right fas fa-angle-left"></i>
                             </p>
                         </a>
@@ -236,6 +235,7 @@
                                     </a>
                                 </li>
                             }
+                            
                         </ul>
                     </li>
                 }
@@ -246,7 +246,7 @@
                         <a href="#" class="nav-link active">
                             <i class="nav-icon fas fa-tools"></i>
                             <p>
-                                Settings
+                                @MainMenu.Settings.PageName(ViewContext.HttpContext)
                                 <i class="right fas fa-angle-left"></i>
                             </p>
                         </a>
@@ -315,7 +315,7 @@
                         <a href="#" class="nav-link active" style="background-color: #b28c7e">
                             <i class="nav-icon fas fa-user-clock"></i>
                             <p>
-                                Manage User Role
+                                @MainMenu.ManageUserRoles.PageName(ViewContext.HttpContext)
                                 <i class="right fas fa-angle-left"></i>
                             </p>
                         </a>
@@ -348,7 +348,7 @@
                         <a href="#" class="nav-link active">
                             <i class="nav-icon fas fa-database"></i>
                             <p>
-                                Report
+                                @MainMenu.Settings.PageName(ViewContext.HttpContext)
                                 <i class="right fas fa-angle-left"></i>
                             </p>
                         </a>

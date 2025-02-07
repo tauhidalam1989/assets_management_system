@@ -174,14 +174,18 @@ namespace AMS.Pages
             public static string PageName(HttpContext context) => GetLocalizedPageName(context, "Asset Allocation", "تخصيص الأصول");
             public const string Path = "/Report/AssetAllocationReport";
         }
-
+        public static class RequestModule
+        {
+            public const string RoleName = "Request Module";
+            public static string PageName(HttpContext context) => GetLocalizedPageName(context, "Request Module", "طلب");
+            public const string Path = "#";
+        }
         public static class AssetRequest
         {
             public const string RoleName = "Asset Request";
             public static string PageName(HttpContext context) => GetLocalizedPageName(context, "Asset Request", "طلب الأصول");
             public const string Path = "/AssetRequest/Index";
         }
-
         public static class AssetIssue
         {
             public const string RoleName = "Asset Issue";
@@ -233,8 +237,18 @@ namespace AMS.Pages
 
             public const string Path = "/Supplier/Index";
         }
-
-
+        public static class Settings
+        {
+            public const string RoleName = "Settings";
+            public static string PageName(HttpContext context) => GetLocalizedPageName(context, "Settings", "إعدادات");
+            public const string Path = "#";
+        }
+        public static class Reports
+        {
+            public const string RoleName = "Report";
+            public static string PageName(HttpContext context) => GetLocalizedPageName(context, "Report", "تقرير");
+            public const string Path = "#";
+        }
         public static class ManageUserRoles
         {
             public const string RoleName = "Manage User Roles";
