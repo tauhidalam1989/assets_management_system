@@ -28,7 +28,7 @@ namespace AMS.Controllers
             _iAssetService = iAssetService;
         }
 
-        [Authorize(Roles = Pages.MainMenu.Asset.PageName)]
+        [Authorize(Roles = Pages.MainMenu.Asset.RoleName)]
         [HttpGet]
         public IActionResult Index()
         {

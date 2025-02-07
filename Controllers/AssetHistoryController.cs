@@ -21,7 +21,7 @@ namespace AMS.Controllers
             _context = context;
             _iCommon = iCommon;
         }
-        [Authorize(Roles = Pages.MainMenu.AssetHistory.PageName)]
+        [Authorize(Roles = Pages.MainMenu.AssetHistory.RoleName)]
         [HttpGet]
         public IActionResult Index()
         {
