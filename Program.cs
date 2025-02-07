@@ -9,14 +9,28 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json.Serialization;
 using Microsoft.AspNetCore.Server.IISIntegration;
+using Microsoft.AspNetCore.Localization; // Add this for localization
+using System.Globalization; // Add this for CultureInfo
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews()
+    .AddViewLocalization(Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat.Suffix) // Add view localization
+    .AddDataAnnotationsLocalization(); // Add data annotations localization
+
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
+builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
 
-
+var supportedCultures = new[] { "en-US", "ar-SA" };
+var localizationOptions = new RequestLocalizationOptions()
+    .SetDefaultCulture("en-US")
+    .AddSupportedCultures(supportedCultures)
+    .AddSupportedUICultures(supportedCultures);
+builder.Services.AddLocalization(options => {
+    options.ResourcesPath = "Resources";
+    Console.WriteLine($"ResourcesPath: {options.ResourcesPath}");
+});
 builder.Services.AddScoped<ApplicationDbContext>();
 var _ApplicationInfo = builder.Configuration.GetSection("ApplicationInfo").Get<ApplicationInfo>();
 string _GetConnStringName = ControllerExtensions.GetConnectionString(builder.Configuration);
@@ -24,7 +38,7 @@ if (_ApplicationInfo.DBConnectionStringName == ConnectionStrings.connMySQL)
 {
     builder.Services.AddDbContextPool<ApplicationDbContext>(options => options.UseMySql(_GetConnStringName, ServerVersion.AutoDetect(_GetConnStringName)));
 }
-else if(_ApplicationInfo.DBConnectionStringName == ConnectionStrings.connPostgreSQL)
+else if (_ApplicationInfo.DBConnectionStringName == ConnectionStrings.connPostgreSQL)
 {
     builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(_GetConnStringName));
 }
@@ -41,8 +55,7 @@ builder.Services.AddSession(options =>
 
 builder.Services.AddAuthentication(IISDefaults.AuthenticationScheme);
 
-
-//Set Identity Options
+// Set Identity Options
 var _context = ProgramTaskExtension.GetDBContextInstance(builder.Services);
 bool IsDBCanConnect = _context.Database.CanConnect();
 if (IsDBCanConnect && _context.DefaultIdentityOptions.Count() > 0)
@@ -58,7 +71,6 @@ else
     AddIdentityOptions.SetOptions(builder.Services, _DefaultIdentityOptions);
 }
 
-
 // Get Super Admin Default options
 builder.Services.Configure<SuperAdminDefaultOptions>(builder.Configuration.GetSection("SuperAdminDefaultOptions"));
 builder.Services.Configure<ApplicationInfo>(builder.Configuration.GetSection("ApplicationInfo"));
@@ -68,7 +80,6 @@ builder.Services.AddTransient<ICommon, Common>();
 builder.Services.AddTransient<IAccount, Account>();
 builder.Services.AddTransient<IEmailSender, EmailSender>();
 builder.Services.AddTransient<IRoles, Roles>();
-builder.Services.AddTransient<IFunctional, Functional>();
 builder.Services.AddTransient<IFunctional, Functional>();
 
 builder.Services.AddControllers().AddNewtonsoftJson(options =>
@@ -88,8 +99,6 @@ builder.Services.AddSwaggerGen(c =>
         BearerFormat = "JWT",
         Description = "JWT Authorization header using the Bearer scheme."
     });
-
-    //c.OperationFilter<AuthResponsesOperationFilter>();
 });
 
 builder.Services.AddCors(options =>
@@ -97,10 +106,8 @@ builder.Services.AddCors(options =>
     options.AddPolicy("Open", builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 });
 
-
-
-
 var app = builder.Build();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -113,13 +120,18 @@ else
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
 }
+
 app.UseHttpsRedirection();
-app.UseAuthentication();
-app.UseSession();
 app.UseStaticFiles();
 
+app.UseRequestLocalization(localizationOptions); // Enable request localization
+
 app.UseRouting();
+
+app.UseAuthentication();
 app.UseAuthorization();
+
+app.UseSession();
 
 app.UseCors("Open");
 
@@ -127,7 +139,5 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Dashboard}/{action=Index}/{id?}");
 
-
 ProgramTaskExtension.SeedingData(app);
 app.Run();
-

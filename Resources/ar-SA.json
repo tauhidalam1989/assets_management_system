@@ -1,0 +1,159 @@
+{
+    "Main": {
+        "Admin": {
+            "RoleName": "مسؤول"
+        },
+        "SuperAdmin": {
+            "RoleName": "المشرف العام"
+        },
+        "Dashboard": {
+            "RoleName": "لوحة القيادة",
+            "PageName": "لوحة القيادة",
+            "Path": "/Dashboard/Index"
+        },
+        "UserManagement": {
+            "RoleName": "إدارة المستخدمين",
+            "PageName": "إدارة المستخدمين",
+            "Path": "/UserManagement/Index"
+        },
+        "UserInfoFromBrowser": {
+            "RoleName": "معلومات المستخدم من المتصفح",
+            "PageName": "معلومات المستخدم من المتصفح",
+            "Path": "/UserInfoFromBrowser/Index"
+        },
+        "AuditLogs": {
+            "RoleName": "سجلات التدقيق",
+            "PageName": "سجلات التدقيق",
+            "Path": "/AuditLogs/Index"
+        },
+        "SubscriptionRequest": {
+            "RoleName": "طلب الاشتراك",
+            "PageName": "طلب الاشتراك",
+            "Path": "/SubscriptionRequest/Index"
+        },
+        "UserProfile": {
+            "RoleName": "ملف تعريف المستخدم",
+            "PageName": "ملف تعريف المستخدم",
+            "Path": "/UserProfile/Index"
+        },
+        "EmailSetting": {
+            "RoleName": "إعداد البريد الإلكتروني",
+            "PageName": "إعداد البريد الإلكتروني",
+            "Path": "/EmailSetting/Index"
+        },
+        "IdentitySetting": {
+            "RoleName": "إعداد الهوية",
+            "PageName": "إعداد الهوية",
+            "Path": "/IdentitySetting/Index"
+        },
+        "LoginHistory": {
+            "RoleName": "تاريخ تسجيل الدخول",
+            "PageName": "تاريخ تسجيل الدخول",
+            "Path": "/LoginHistory/Index"
+        },
+        "Asset": {
+            "RoleName": "الأصول",
+            "PageName": "الأصول",
+            "Path": "/Asset/Index"
+        },
+        "AssetHistory": {
+            "RoleName": "تاريخ الأصول",
+            "PageName": "تاريخ الأصول",
+            "Path": "/AssetHistory/Index"
+        },
+        "Comment": {
+            "RoleName": "تعليق",
+            "PageName": "تعليق",
+            "Path": "/Comment/Index"
+        },
+        "PrintBarcode": {
+            "RoleName": "طباعة الباركود",
+            "PageName": "طباعة الباركود",
+            "Path": "/Barcode/Index"
+        },
+        "PrintQRcode": {
+            "RoleName": "طباعة رمز الاستجابة السريعة",
+            "PageName": "طباعة رمز الاستجابة السريعة",
+            "Path": "/QRCode/Index"
+        },
+        "Employee": {
+            "RoleName": "إدارة الموظفين",
+            "PageName": "إدارة الموظفين",
+            "Path": "/Employee/Index"
+        },
+        "Designation": {
+            "RoleName": "المسمى الوظيفي",
+            "PageName": "المسمى الوظيفي",
+            "Path": "/Designation/Index"
+        },
+        "AssetCategorie": {
+            "RoleName": "فئة الأصول",
+            "PageName": "فئة الأصول",
+            "Path": "/AssetCategorie/Index"
+        },
+        "AssetSubCategorie": {
+            "RoleName": "فئة فرعية للأصول",
+            "PageName": "فئة فرعية للأصول",
+            "Path": "/AssetSubCategorie/Index"
+        },
+        "AssetStatus": {
+            "RoleName": "حالة الأصول",
+            "PageName": "حالة الأصول",
+            "Path": "/AssetStatus/Index"
+        },
+        "Supplier": {
+            "RoleName": "المورد",
+            "PageName": "إدارة المورد",
+            "Path": "/Supplier/Index"
+        },
+        "Department": {
+            "RoleName": "القسم",
+            "PageName": "القسم",
+            "Path": "/Department/Index"
+        },
+        "SubDepartment": {
+            "RoleName": "القسم الفرعي",
+            "PageName": "القسم الفرعي",
+            "Path": "/SubDepartment/Index"
+        },
+        "CompanyInfo": {
+            "RoleName": "معلومات الشركة",
+            "PageName": "معلومات الشركة",
+            "Path": "/CompanyInfo/Index"
+        },
+        "AssetInfoReport": {
+            "PageName": "معلومات الأصول",
+            "Path": "/AssetInfoReport/Index"
+        },
+        "AssetStatusReport": {
+            "RoleName": "حالة الأصول",
+            "PageName": "حالة الأصول",
+            "Path": "/Report/AssetStatusReport"
+        },
+        "AssetAllocationReport": {
+            "RoleName": "تقرير تخصيص الأصول",
+            "PageName": "تقرير تخصيص الأصول",
+            "Path": "/Report/AssetAllocationReport"
+        },
+        "AssetRequest": {
+            "RoleName": "طلب الأصول",
+            "PageName": "طلب الأصول",
+            "Path": "/AssetRequest/Index"
+        },
+        "AssetIssue": {
+            "RoleName": "إصدار الأصول",
+            "PageName": "إصدار الأصول",
+            "Path": "/AssetIssue/Index"
+        },
+        "SystemRole": {
+            "RoleName": "الدور النظامي",
+            "PageName": "الدور النظامي",
+            "Path": "/SystemRole/Index"
+        },
+        "ManageUserRoles": {
+            "RoleName": "إدارة أدوار المستخدمين",
+            "PageName": "إدارة أدوار المستخدمين",
+            "Path": "/ManageUserRoles/Index"
+        }
+    }
+}
