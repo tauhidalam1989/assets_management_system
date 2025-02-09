@@ -1,72 +1,71 @@
 @model AMS.Models.AssetViewModel.AssetCRUDViewModel
-
 <table class="CustomBlueTable" style="width:100%;" border="1">
     <tr>
-        <th>Id</th>
+        <th>@Resource.Id</th>
         <td>@Model.Id</td>
     </tr>
     <tr>
-        <th>Asset Id</th>
+        <th>@Resource.Asset_Id</th>
         <td>@Model.AssetId</td>
     </tr>
     <tr>
-        <th>Barcode</th>
+        <th>@Resource.Barcode</th>
         <td>
             <img src="@Model.Barcode" alt="" />
         </td>
     </tr>
     <tr>
-        <th>QRCode</th>
+        <th>@Resource.QRCode</th>
         <td>
             <img src="@Model.QRCodeImage" alt="" />
         </td>
     </tr>
     <tr>
-        <th>Asset Model No</th>
+        <th>@Resource.Asset_Model_No</th>
         <td>@Model.AssetModelNo</td>
     </tr>
     <tr>
-        <th>Name</th>
+        <th>@Resource.Name</th>
         <td>@Model.Name</td>
     </tr>
     <tr>
-        <th>Asset Status</th>
+        <th>@Resource.AssetStatus</th>
         <td>@Model.AssetStatusDisplay</td>
     </tr>
     <tr>
-        <th>Description</th>
+        <th>@Resource.Description</th>
         <td>@Model.Description</td>
     </tr>
     <tr>
-        <th>Category</th>
+        <th>@Resource.Category</th>
         <td>@Model.CategoryDisplay</td>
     </tr>
     <tr>
-        <th>Sub Category</th>
+        <th>@Resource.SubCategory</th>
         <td>@Model.SubCategoryDisplay</td>
     </tr>
     <tr>
-        <th>Quantity</th>
+        <th>@Resource.Quantity</th>
         <td>@Model.Quantity</td>
     </tr>
     <tr>
-        <th>Unit Price</th>
+        <th>@Resource.UnitPrice</th>
         <td>@Model.UnitPrice</td>
     </tr>
     <tr>
-        <th>Supplier</th>
+        <th>@Resource.Supplier</th>
         <td>@Model.SupplierDisplay</td>
     </tr>
     <tr>
-        <th>Location</th>
+        <th>@Resource.Location</th>
         <td>@Model.Location</td>
     </tr>
     <tr>
-        <th>Department</th>
+        <th>@Resource.Department</th>
         <td>@Model.DepartmentDisplay</td>
     </tr>
     <tr>
-        <th>Sub Department</th>
+        <th>@Resource.SubDepartment</th>
         <td>@Model.SubDepartmentDisplay</td>
     </tr>
     <tr>
@@ -74,11 +73,11 @@
         <td>@Model.WarranetyInMonth</td>
     </tr>
     <tr>
-        <th>Depreciation In Month</th>
+        <th>@Resource.DepreciationInMonth</th>
         <td>@Model.DepreciationInMonth</td>
     </tr>
     <tr>
-        <th>Image</th>
+        <th>@Resource.Image</th>
         <td>
             <div class="user-panel mt-2 pb-2 mb-2 d-flex">
                 <div class="image">
@@ -93,7 +92,7 @@
         </td>
     </tr>
     <tr>
-        <th>Purchase Receipt</th>
+        <th>@Resource.PurchaseReceipt</th>
         <td>
             @if (Model.PurchaseReceipt != null)
             {
@@ -104,43 +103,43 @@
         </td>
     </tr>
     <tr>
-        <th>Date Of Purchase</th>
+        <th>@Resource.Date_Of_Purchase</th>
         <td>@Model.DateOfPurchase</td>
     </tr>
     <tr>
-        <th>Date Of Manufacture</th>
+        <th>@Resource.ManufactureDate</th>
         <td>@Model.DateOfManufacture</td>
     </tr>
     <tr>
-        <th>Year Of Valuation</th>
+        <th>@Resource.ValuationYear</th>
         <td>@Model.YearOfValuation</td>
     </tr>
     <tr>
-        <th>Assign User Id</th>
+        <th>@Resource.AssignUserId</th>
         <td>@Model.AssignEmployeeId</td>
     </tr>
     <tr>
-        <th>Is Avilable</th>
+        <th>@Resource.IsAvilable</th>
         <td>@Model.IsAvilable</td>
     </tr>
     <tr>
-        <th>Note</th>
+        <th>@Resource.Note</th>
         <td>@Model.Note</td>
     </tr>
     <tr>
-        <th>Created Date</th>
+        <th>@Resource.CreatedDate</th>
         <td>@Model.CreatedDate</td>
     </tr>
     <tr>
-        <th>Modified Date</th>
+        <th>@Resource.ModifiedDate</th>
         <td>@Model.ModifiedDate</td>
     </tr>
     <tr>
-        <th>Created By</th>
+        <th>@Resource.CreatedBy</th>
         <td>@Model.CreatedBy</td>
     </tr>
     <tr>
-        <th>Modified By</th>
+        <th>@Resource.ModifiedBy</th>
         <td>@Model.ModifiedBy</td>
     </tr>
 </table>

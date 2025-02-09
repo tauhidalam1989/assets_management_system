@@ -20,8 +20,6 @@ builder.Services.AddControllersWithViews()
     .AddDataAnnotationsLocalization(); // Add data annotations localization
 
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
-builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
-
 var supportedCultures = new[] { "en-US", "ar-SA" };
 var localizationOptions = new RequestLocalizationOptions()
     .SetDefaultCulture("en-US")

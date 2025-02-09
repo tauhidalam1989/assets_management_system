@@ -2178,4 +2178,190 @@ the outcome in the appropriate box.</value>
   <data name="VERYGOOD" xml:space="preserve">
     <value>VERY GOOD</value>
   </data>
+  <data name="Asset_Id" xml:space="preserve">
+    <value>Asset Id</value>
+  </data>
+  <data name="Asset_List" xml:space="preserve">
+    <value>Asset List</value>
+  </data>
+  <data name="Asset_Model_No" xml:space="preserve">
+    <value>Asset Model No</value>
+  </data>
+  <data name="Asset_Unassigned_Msg" xml:space="preserve">
+    <value>Asset Unassigned Successful</value>
+  </data>
+  <data name="Assigned_Asset_Msg" xml:space="preserve">
+    <value>Already Assigned this Asset to the Selected Employee, Please Check!</value>
+  </data>
+  <data name="Date Of Purchase" xml:space="preserve">
+    <value>Date Of Purchase</value>
+  </data>
+  <data name="Msg_Delete" xml:space="preserve">
+    <value>Do you want to delete this item?</value>
+  </data>
+  <data name="Emp_IsEmpty_Msg" xml:space="preserve">
+    <value>Employee field can not be null or empty.</value>
+  </data>
+  <data name="Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="Unit Price" xml:space="preserve">
+    <value>Unit Price</value>
+  </data>
+  <data name="Allocate" xml:space="preserve">
+    <value>Allocate</value>
+  </data>
+  <data name="AssetAssign" xml:space="preserve">
+    <value>Asset Assign</value>
+  </data>
+  <data name="AssetHistory" xml:space="preserve">
+    <value>Asset History</value>
+  </data>
+  <data name="AssetInfo" xml:space="preserve">
+    <value>Assest Info</value>
+  </data>
+  <data name="AssetName" xml:space="preserve">
+    <value>Asset Name</value>
+  </data>
+  <data name="AssetStatus" xml:space="preserve">
+    <value>Asset Status</value>
+  </data>
+  <data name="AssigneeInfo" xml:space="preserve">
+    <value>Assignee Info</value>
+  </data>
+  <data name="AssignEmployee" xml:space="preserve">
+    <value>Assign Employee</value>
+  </data>
+  <data name="AssignUserId" xml:space="preserve">
+    <value>Assign User Id</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="Barcode" xml:space="preserve">
+    <value>Barcode</value>
+  </data>
+  <data name="BasicInfo" xml:space="preserve">
+    <value>Basic Info</value>
+  </data>
+  <data name="ChooseFile" xml:space="preserve">
+    <value>Choose a file</value>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="CommentBy" xml:space="preserve">
+    <value>Comment By</value>
+  </data>
+  <data name="CommentDate" xml:space="preserve">
+    <value>Comment Date</value>
+  </data>
+  <data name="CommentHistory" xml:space="preserve">
+    <value>Comment History</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="CreatedBy" xml:space="preserve">
+    <value>Created By</value>
+  </data>
+  <data name="CreatedDate" xml:space="preserve">
+    <value>Created Date</value>
+  </data>
+  <data name="DepreciationInMonth" xml:space="preserve">
+    <value>Depreciation In Month</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="EmployeeId" xml:space="preserve">
+    <value>Employee Id</value>
+  </data>
+  <data name="IsAvilable" xml:space="preserve">
+    <value>Is Avilable</value>
+  </data>
+  <data name="IssueLog" xml:space="preserve">
+    <value>Issue Log</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="ManufactureDate" xml:space="preserve">
+    <value>Date Of Manufacture</value>
+  </data>
+  <data name="ModifiedBy" xml:space="preserve">
+    <value>Modified By</value>
+  </data>
+  <data name="ModifiedDate" xml:space="preserve">
+    <value>Modified Date</value>
+  </data>
+  <data name="Msg_Del_Success" xml:space="preserve">
+    <value>Asset has been deleted successfully. Asset ID:</value>
+  </data>
+  <data name="Msg_IsEmpty" xml:space="preserve">
+    <value>Employee is null or empty</value>
+  </data>
+  <data name="NotAssigned" xml:space="preserve">
+    <value>This resource is not assigned yet.</value>
+  </data>
+  <data name="OtherInfo" xml:space="preserve">
+    <value>Other Info</value>
+  </data>
+  <data name="PurchaseReceipt" xml:space="preserve">
+    <value>Purchase Receipt</value>
+  </data>
+  <data name="QRCode" xml:space="preserve">
+    <value>QRCode</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="RequestLog" xml:space="preserve">
+    <value>Request Log</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="SubCategory" xml:space="preserve">
+    <value>Sub Category</value>
+  </data>
+  <data name="SubDepartment" xml:space="preserve">
+    <value>Sub Department</value>
+  </data>
+  <data name="Supplier" xml:space="preserve">
+    <value>Supplier</value>
+  </data>
+  <data name="UnitPrice" xml:space="preserve">
+    <value>Unit Price</value>
+  </data>
+  <data name="ValuationYear" xml:space="preserve">
+    <value>Year Of Valuation</value>
+  </data>
+  <data name="AddAsset" xml:space="preserve">
+    <value>Add Asset</value>
+  </data>
+  <data name="AllocateAssest" xml:space="preserve">
+    <value>Allocate Assest</value>
+  </data>
+  <data name="AssestNotAssigned" xml:space="preserve">
+    <value>This asset is not assigned yet to employees.</value>
+  </data>
+  <data name="AssetDetails" xml:space="preserve">
+    <value>Asset Details</value>
+  </data>
+  <data name="AssigneeAsset" xml:space="preserve">
+    <value>Assignee Asset</value>
+  </data>
+  <data name="commentIsEmpty" xml:space="preserve">
+    <value>New comment field can not be null or empty.</value>
+  </data>
+  <data name="EditAsset" xml:space="preserve">
+    <value>Edit Asset</value>
+  </data>
+  <data name="UserDetail" xml:space="preserve">
+    <value>User Detail</value>
+  </data>
 </root>

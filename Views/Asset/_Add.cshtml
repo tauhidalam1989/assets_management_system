@@ -1,7 +1,7 @@
 @model AMS.Models.AssetViewModel.AssetCRUDViewModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = Resource.Create;
 }
 
 <div>
@@ -19,15 +19,15 @@
                         <ul class="nav nav-tabs" id="custom-tabs-three-tab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" id="BasicInfo" data-toggle="pill" href="#divBasicInfo"
-                                    role="tab" aria-controls="BasicInfo" aria-selected="true">Basic Info</a>
+                                    role="tab" aria-controls="BasicInfo" aria-selected="true">@Resource.BasicInfo</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="OtherInfo" data-toggle="pill" href="#divOtherInfo" role="tab"
-                                    aria-controls="OtherInfo" aria-selected="true">Other Info</a>
+                                   aria-controls="OtherInfo" aria-selected="true">@Resource.OtherInfo</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="OtherTab" data-toggle="pill" href="#divOtherTab" role="tab"
-                                    aria-controls="OtherTab" aria-selected="true">Asset Assign</a>
+                                    aria-controls="OtherTab" aria-selected="true">@Resource.AssetAssign</a>
                             </li>
                         </ul>
                     </div>
@@ -173,7 +173,7 @@
                                                 <select asp-for="SubDepartment"
                                                     asp-items="@ViewBag._LoadddlSubDepartment" id="SubDepartment"
                                                     class="form-control" style="width:100%;">
-                                                    <option disabled selected>--- SELECT ---</option>
+                                                    <option disabled selected>---  SELECT ---</option>
                                                 </select>
                                                 <span asp-validation-for="SubDepartment" class="text-danger"></span>
                                             </div>
@@ -235,7 +235,7 @@
                                             <label asp-for="ImageURL" class="col-sm-3 col-form-label"></label>
                                             <div class="col-sm-9">
                                                 <span class="control-fileupload">
-                                                    <label for="file">Choose a file :</label>
+                                                    <label for="file">@Resource.ChooseFile :</label>
                                                     <input type="file" asp-for="ImageURLDetails" />
                                                 </span>
                                             </div>
@@ -244,7 +244,7 @@
                                             <label asp-for="PurchaseReceipt" class="col-sm-3 col-form-label"></label>
                                             <div class="col-sm-9">
                                                 <span class="control-fileupload">
-                                                    <label for="file">Choose a file :</label>
+                                                    <label for="file">@Resource.ChooseFile :</label>
                                                     <input type="file" asp-for="PurchaseReceiptDetails" />
                                                 </span>
                                             </div>
@@ -289,7 +289,7 @@
                         <div class="col-sm-6">
                             <input type="button" id="btnSave" value="Save" onclick="SaveAsset()" class="btn btn-info">
                             <button type="button" id="btnClose" class="btn btn-danger"
-                                data-dismiss="modal">Close</button>
+                                data-dismiss="modal">@Resource.Close</button>
                         </div>
                     </div>
                 </div>

@@ -1,13 +1,21 @@
+
 $(document).ready(function () {
     document.title = 'Asset';
-
+    var delMsg = $('#resourceDel').data('del-msg');
+    var deleteMsg = $('#resourceDelete').data('delete-msg');
+    var issuccess = $('#resourcesuccessDelete').data('success-delete-msg');
+    var allocate = $('#resourceAllocate').data('allocate-msg');
+    var edit = $('#resourceEdit').data('edit-msg');
+    var print = $('#resourcePrint').data('print-msg');
+    var allocateassest = $('#resourceAllocateAssest').data('allocate-assest-msg');
+    var editval = $('#resourceEditVal').data('editval-msg');
+    var addval = $('#resourceAddVal').data('addval-msg');
+    var assestdetail = $('#resourceAssestDetail').data('assestdetail-msg');
     $("#tblAsset").DataTable({
         paging: true,
         select: true,
         "order": [[0, "desc"]],
         dom: 'Bfrtip',
-
-
         buttons: [
             'pageLength',
             {
@@ -132,7 +140,7 @@ $(document).ready(function () {
         "columns": [
             {
                 data: "Id", "name": "Id", render: function (data, type, row) {
-                    return "<a href='#' class='fa fa-eye' onclick=Details('" + row.Id + "');>" + row.Id + "</a>";
+                    return "<a href='#' class='fa fa-eye' onclick='Details(\"" + row.Id + "\", \"" + assestdetail + "\");'>" + row.Id + "</a>";
                 }
             },
             {
@@ -156,19 +164,19 @@ $(document).ready(function () {
             },
             {
                 data: "UserProfileId", "name": "UserProfileId", render: function (data, type, row) {
-                    return "<a href='#' class='fa fa-plus' onclick=AllocateAsset('" + row.Id + "');>Allocate</a>";
+                    return "<a href='#' class='fa fa-plus' onclick='AllocateAsset(\"" + row.Id + "\", \"" + allocateassest + "\");'>" + allocate + "</a>";
                 },
                 Width: "50px",
             },
             {
                 data: null, render: function (data, type, row) {
-                    return "<a href='#' class='btn btn-link btn-xs' onclick=PrintAsset('" + row.Id + "');><span class='fa fa-print'>Print</span></a>";
+                    return "<a href='#' class='btn btn-link btn-xs' onclick=PrintAsset('" + row.Id + "');><span class='fa fa-print'>"+print+"</span></a>";
                 }
             },
             {
                 data: null, render: function (data, type, row) {
                     if (row.IsAdmin) {
-                        return "<a href='#' class='btn btn-info btn-xs' onclick=AddEdit('" + row.Id + "');>Edit</a>";
+                        return "<a href='#' class='btn btn-info btn-xs' onclick=AddEdit(\"" + row.Id + "\", \"" + editval + "\", \"" + addval + "\");>"+edit+"</a>";
                     }
                     else {
                         return "-";
@@ -176,14 +184,15 @@ $(document).ready(function () {
                 }
             },
             {
-                data: null, render: function (data, type, row) {
-                    if (row.IsAdmin) {
-                        return "<a href='#' class='btn btn-danger btn-xs' onclick=Delete('" + row.Id + "'); >Delete</a>";
-                    }
-                    else {
+                
+                render: function (data, type, row) {
+                     if (row.IsAdmin) {
+                        return "<a href='#' class='btn btn-danger btn-xs' onclick=\"Delete('" + row.Id + "', '" + deleteMsg + "', '" + issuccess + "');\">"+delMsg+"</a>";
+                    } else {
                         return "-";
                     }
                 }
+
             }
         ],
 

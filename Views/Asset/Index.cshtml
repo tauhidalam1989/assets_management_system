@@ -1,4 +1,14 @@
 @{
+    var msgdel = Resource.Delete;
+    var msgdelete = Resource.Msg_Delete;
+    var allocate = Resource.Allocate;
+    var allocateasset = Resource.AllocateAssest;
+    var edit = Resource.Edit;
+    var print = Resource.Print;
+    var msgsuccessdelete = Resource.Msg_Del_Success;
+    var editval = Resource.EditAsset;
+    var addval = Resource.AddAsset;
+    var assestdetail = Resource.AssetDetails;
     var _IsInRole = User.IsInRole("Admin");
     if (_IsInRole)
     {
@@ -25,8 +35,18 @@
         margin-bottom: 1px;
     }
 </style>
+<div id="resourceDel" data-del-msg="@msgdel"></div>
+<div id="resourceDelete" data-delete-msg="@msgdelete"></div>
+<div id="resourcesuccessDelete" data-success-delete-msg="@msgsuccessdelete"></div>
+<div id="resourceAllocate" data-allocate-msg="@allocate"></div>
+<div id="resourceAllocateAssest" data-allocate-assest-msg="@allocateasset"></div>
+<div id="resourceEdit" data-edit-msg="@edit"></div>
+<div id="resourcePrint" data-print-msg="@print"></div>
+<div id="resourceEditVal" data-editval-msg="@editval"></div>
+<div id="resourceAddVal" data-addval-msg="@addval"></div>
+<div id="resourceAssestDetail" data-assestdetail-msg="@assestdetail"></div>
 <script>
     $(document).ready(function () {
-        DataTableCustomSearchBox('450px', 'Search Asset');
+        DataTableCustomSearchBox('450px', @Resource.Search);
     });
 </script>

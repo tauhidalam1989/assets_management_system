@@ -1,14 +1,13 @@
 @model AMS.Models.AssetViewModel.AssetCRUDViewModel
-
-<h5>Asset ID: @Model.Id, Name: @Model.Name</h5>
+<h5>@Resource.Asset_Id: @Model.Id, Name: @Model.Name</h5>
 <table class="CustomBlueTable">
     <thead>
         <tr>
-            <th>Id</th>
-            <th>Assign Employee</th>
-            <th>Action</th>
-            <th>Note</th>
-            <th>Created Date</th>
+            <th>@Resource.Id</th>
+            <th>@Resource.AssignEmployee</th>
+            <th>@Resource.Action</th>
+            <th>@Resource.Note</th>
+            <th>@Resource.CreatedDate</th>
         </tr>
     </thead>
     <tbody>

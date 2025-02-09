@@ -2168,4 +2168,190 @@
   <data name="VERYGOOD" xml:space="preserve">
     <value>جيد جدا</value>
   </data>
+  <data name="Asset_Id" xml:space="preserve">
+    <value>معرف الأصل</value>
+  </data>
+  <data name="Asset_List" xml:space="preserve">
+    <value>قائمة الأصول</value>
+  </data>
+  <data name="Asset_Model_No" xml:space="preserve">
+    <value>رقم نموذج الأصل</value>
+  </data>
+  <data name="Asset_Unassigned_Msg" xml:space="preserve">
+    <value>تم إلغاء تعيين الأصل بنجاح</value>
+  </data>
+  <data name="Assigned_Asset_Msg" xml:space="preserve">
+    <value>تم تعيين هذا الأصل بالفعل للموظف المحدد، يرجى التحقق!</value>
+  </data>
+  <data name="Date Of Purchase" xml:space="preserve">
+    <value>تاريخ الشراء</value>
+  </data>
+  <data name="Msg_Delete" xml:space="preserve">
+    <value>هل ترغب في حذف هذه العنصر؟</value>
+  </data>
+  <data name="Emp_IsEmpty_Msg" xml:space="preserve">
+    <value>حقل الموظف لا يمكن أن يكون فارغاً أو غير مملوء</value>
+  </data>
+  <data name="Id" xml:space="preserve">
+    <value>هوية</value>
+  </data>
+  <data name="Unit Price" xml:space="preserve">
+    <value>سعر الوحدة</value>
+  </data>
+  <data name="Allocate" xml:space="preserve">
+    <value>تخصيص</value>
+  </data>
+  <data name="AssetAssign" xml:space="preserve">
+    <value>تخصيص الأصول</value>
+  </data>
+  <data name="AssetHistory" xml:space="preserve">
+    <value>تاريخ الأصل</value>
+  </data>
+  <data name="AssetInfo" xml:space="preserve">
+    <value>معلومات الأصل</value>
+  </data>
+  <data name="AssetName" xml:space="preserve">
+    <value>اسم الأصل</value>
+  </data>
+  <data name="AssetStatus" xml:space="preserve">
+    <value>حالة الأصل</value>
+  </data>
+  <data name="AssigneeInfo" xml:space="preserve">
+    <value>معلومات المكلف</value>
+  </data>
+  <data name="AssignEmployee" xml:space="preserve">
+    <value>تعيين الموظف</value>
+  </data>
+  <data name="AssignUserId" xml:space="preserve">
+    <value>تعيين معرف المستخدم</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>رجوع</value>
+  </data>
+  <data name="Barcode" xml:space="preserve">
+    <value>الرمز الشريطي</value>
+  </data>
+  <data name="BasicInfo" xml:space="preserve">
+    <value>معلومات أساسية</value>
+  </data>
+  <data name="ChooseFile" xml:space="preserve">
+    <value>الرجاء اختيار الملف</value>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>تعليق</value>
+  </data>
+  <data name="CommentBy" xml:space="preserve">
+    <value>التعليق بواسطة</value>
+  </data>
+  <data name="CommentDate" xml:space="preserve">
+    <value>تاريخ التعليق</value>
+  </data>
+  <data name="CommentHistory" xml:space="preserve">
+    <value>سجل التعليقات</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>إنشاء</value>
+  </data>
+  <data name="CreatedBy" xml:space="preserve">
+    <value>تم الإنشاء بواسطة</value>
+  </data>
+  <data name="CreatedDate" xml:space="preserve">
+    <value>تاريخ الإنشاء</value>
+  </data>
+  <data name="DepreciationInMonth" xml:space="preserve">
+    <value>الاهتلاك في الشهر</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>وصف</value>
+  </data>
+  <data name="EmployeeId" xml:space="preserve">
+    <value>رقم الموظف</value>
+  </data>
+  <data name="IsAvilable" xml:space="preserve">
+    <value>متاح</value>
+  </data>
+  <data name="IssueLog" xml:space="preserve">
+    <value>سجل المشاكل</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>الموقع</value>
+  </data>
+  <data name="ManufactureDate" xml:space="preserve">
+    <value>تاريخ الصنع</value>
+  </data>
+  <data name="ModifiedBy" xml:space="preserve">
+    <value>تم التعديل بواسطة</value>
+  </data>
+  <data name="ModifiedDate" xml:space="preserve">
+    <value>تاريخ التعديل</value>
+  </data>
+  <data name="Msg_Del_Success" xml:space="preserve">
+    <value>تم حذف الأصل بنجاح. معرف الأصل</value>
+  </data>
+  <data name="Msg_IsEmpty" xml:space="preserve">
+    <value>الموظف فارغ أو غير موجود</value>
+  </data>
+  <data name="NotAssigned" xml:space="preserve">
+    <value>لم يتم تعيين هذه الموارد بعد</value>
+  </data>
+  <data name="OtherInfo" xml:space="preserve">
+    <value>معلومات إضافية</value>
+  </data>
+  <data name="PurchaseReceipt" xml:space="preserve">
+    <value>إيصال الشراء</value>
+  </data>
+  <data name="QRCode" xml:space="preserve">
+    <value>الرمز الاستجابة السريعة</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>الكمية</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>إزالة</value>
+  </data>
+  <data name="RequestLog" xml:space="preserve">
+    <value>سجل الطلبات</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>اختر</value>
+  </data>
+  <data name="SubCategory" xml:space="preserve">
+    <value>الفئة الفرعية</value>
+  </data>
+  <data name="SubDepartment" xml:space="preserve">
+    <value>القسم الفرعي</value>
+  </data>
+  <data name="Supplier" xml:space="preserve">
+    <value>المورد</value>
+  </data>
+  <data name="UnitPrice" xml:space="preserve">
+    <value>سعر الوحدة</value>
+  </data>
+  <data name="ValuationYear" xml:space="preserve">
+    <value>سنة التقييم</value>
+  </data>
+  <data name="AddAsset" xml:space="preserve">
+    <value>إضافة أصل</value>
+  </data>
+  <data name="AllocateAssest" xml:space="preserve">
+    <value>تخصيص الأصل</value>
+  </data>
+  <data name="AssestNotAssigned" xml:space="preserve">
+    <value>لم يتم تعيين هذا الأصل بعد للموظفين</value>
+  </data>
+  <data name="Asset Details" xml:space="preserve">
+    <value>تفاصيل الأصل</value>
+  </data>
+  <data name="AssigneeAsset" xml:space="preserve">
+    <value>تعيين الأصل</value>
+  </data>
+  <data name="commentIsEmpty" xml:space="preserve">
+    <value>حقل التعليق الجديد لا يمكن أن يكون فارغًا أو فارغًا</value>
+  </data>
+  <data name="EditAsset" xml:space="preserve">
+    <value>تعديل الأصل</value>
+  </data>
+  <data name="UserDetail" xml:space="preserve">
+    <value>تفاصيل المستخدم</value>
+  </data>
 </root>

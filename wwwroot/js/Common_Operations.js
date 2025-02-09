@@ -1,4 +1,3 @@
-
 var SaveBase = function (apiUrl, _formName, tableName) {
     if (!$("#" + _formName).valid()) {
         return;
@@ -27,9 +26,10 @@ var SaveBase = function (apiUrl, _formName, tableName) {
         });
 }
 
-var DeleteBase = function (_url, _message, tableName) {
+var DeleteBase = function (_url, _message, tableName,_title) {
     Swal.fire({
-        title: 'Do you want to delete this item?',
+        //title: 'Do you want to delete this item?',
+        title: _title,
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',

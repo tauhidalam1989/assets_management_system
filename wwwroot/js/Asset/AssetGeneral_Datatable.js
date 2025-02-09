@@ -1,6 +1,8 @@
+
+
 $(document).ready(function () {
     document.title = 'Asset';
-
+    
     $("#tblAsset").DataTable({
         paging: true,
         select: true,

@@ -1,39 +1,39 @@
 $(document).ready(function () {
-    $("#AssignEmployeeId").select2();
+    $("#AssignEmployeeId").select2();    
 });
 
-var Details = function (id) {
+var Details = function (id, assetdetail) {
     var url = "/Asset/Details?id=" + id;
-    $('#titleExtraBigModal').html("Asset Details");
+    $('#titleExtraBigModal').html(assetdetail);
     loadExtraBigModal(url);
 };
 
-var DetailsGeneral = function (id) {
+var DetailsGeneral = function (id, assetdetail) {
     var url = "/Asset/DetailsGeneral?id=" + id;
-    $('#titleExtraBigModal').html("Asset Details");
+    $('#titleExtraBigModal').html(assetdetail);
     loadExtraBigModal(url);
 };
 
-var AssignEmployeeInfo = function (id) {
+var AssignEmployeeInfo = function (id,val1,val2) {
     if (id == 0) {
-        FieldValidationAlert(null, 'This asset is not assigned yet to employees. ', "info");
+        FieldValidationAlert(null, val1, "info");
     }
     else {
         var url = "/UserManagement/ViewUserDetails?Id=" + id;
-        $('#titleExtraBigModal').html("User Details ");
+        $('#titleExtraBigModal').html(val2);
         loadExtraBigModal(url);
     }
 };
 
-var UnassignedAssetWarning = function (id) {
-    FieldValidationAlert(null, 'This asset is not assigned yet to employees. ', "info");
+var UnassignedAssetWarning = function (id, val1) {
+    FieldValidationAlert(null, val1, "info");
 };
 
 
-var Delete = function (id) {
+var Delete = function (id,_title,_Issuccess) {
     if (DemoUserAccountLockAll() == 1) return;
     Swal.fire({
-        title: 'Do you want to delete this item?',
+        title: _title,
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
@@ -45,7 +45,7 @@ var Delete = function (id) {
                 type: "DELETE",
                 url: "/Asset/Delete?id=" + id,
                 success: function (result) {
-                    var message = "Asset has been deleted successfully. Asset ID: " + result.Id;
+                    var message = _Issuccess + result.Id;
                     Swal.fire({
                         title: message,
                         icon: 'info',
@@ -60,11 +60,11 @@ var Delete = function (id) {
 };
 
 
-var AddNewComment = function (IsView) {
+var AddNewComment = function (IsView,_title) {
     var _CommentMessage = $("#CommentMessage").val();
     if (_CommentMessage == "" || _CommentMessage == null) {
         Swal.fire({
-            title: 'New comment field can not be null or empty.',
+            title: _title,
             icon: "warning",
             onAfterClose: () => {
                 $("#CommentMessage").focus();
@@ -92,9 +92,9 @@ var AddNewComment = function (IsView) {
 };
 
 
-var DeleteComment = function (id, IsView) {
+var DeleteComment = function (id, IsView,_title) {
     Swal.fire({
-        title: 'Do you want to delete this item?',
+        title: _title,
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
@@ -141,13 +141,13 @@ var PrintAsset = function (id) {
     location.href = "/Asset/PrintAsset?id=" + id;
 };
 
-var AddEdit = function (id) {
+var AddEdit = function (id,edit,add) {
     var url = "/Asset/AddEdit?id=" + id;
     if (id > 0) {
-        $('#titleExtraBigModal').html("Edit Asset");
+        $('#titleExtraBigModal').html(edit);
     }
     else {
-        $('#titleExtraBigModal').html("Add Asset");
+        $('#titleExtraBigModal').html(add);
     }
     loadExtraBigModal(url);
 };

@@ -4,7 +4,7 @@
 @model AMS.Models.DashboardViewModel.SharedUIDataViewModel
  @using Microsoft.AspNetCore.Localization
 @using Microsoft.Extensions.Localization
-@using ViewRes
+
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
 
     <form asp-controller="Home" asp-action="SetLanguage" method="post">
@@ -22,17 +22,10 @@
         </select>
     </form>
 
-
-    <p>@Resource.Accept</p>
     <a href="@Url.Action("Index", "Dashboard")" class="brand-link">
         <img src='~/images/AMS.png' alt="AdminLTE Logo" class="brand-image img-circle elevation-3">
         <span class="brand-text font-weight-light">Asset MS</span>
     </a>
-
-
-
-    
-
 
     <div class="sidebar">
         @if (Model.MainMenuViewModel.UserProfile)
