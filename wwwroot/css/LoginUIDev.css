@@ -7,10 +7,14 @@ body {
 }
 
 #form-section {
-    background: #ffffff; 
+    background: linear-gradient(90deg, rgba(103, 153, 25, 1) 33%, rgba(22, 106, 106, 1) 82%);
     height: 100vh;
     padding-left: 0;
     padding-right: 0;
+}
+.donthaveAccount{
+
+    color:white
 }
 
 #auth-form {
@@ -20,7 +24,7 @@ body {
 
 #auth-logo {
     padding: 10% 11%;
-    background: #171e28;
+    background: #286556;
 }
 
 .form-material .form-control.focus,
@@ -112,7 +116,7 @@ body {
 }
 
 .text-dark {
-    color: #171e28;
+    color: white !important;
 }
 
 .form-horizontal .checkbox {
