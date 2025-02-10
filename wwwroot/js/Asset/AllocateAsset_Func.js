@@ -5,7 +5,7 @@ var AllocateAsset = function (id, allocateassest) {
     loadExtraBigModal(url);
 };
 
-var AllocateAssetSave = function (_title, allocateassest) {
+var AllocateAssetSave = function (_title, allocateassest,val1) {
     var _AssetId = $("#AssetId").val();
     var _EmployeeId = $("#AssetAssignEmployeeId").val();
 
@@ -33,7 +33,7 @@ var AllocateAssetSave = function (_title, allocateassest) {
         success: function (result) {
             if (result == true) {
                 Swal.fire({
-                    title: 'Assest Assigned successfully',
+                    title: val1,
                     icon: "warning",
                     onAfterClose: () => {
                         $("#AssetAssignEmployeeId").focus();

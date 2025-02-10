@@ -97,7 +97,7 @@
             @if (Model.PurchaseReceipt != null)
             {
                 <span>@Model.PurchaseReceipt</span>
-                <input type="button" id="btnDownloadPurchaseReceipt" class="btn btn-xs btn-danger" value="Download"
+                <input type="button" id="btnDownloadPurchaseReceipt" class="btn btn-xs btn-danger" value="@Resource.Download"
                     onclick="DownloadPurchaseReceipt(@Model.Id);" />
             }
         </td>
@@ -146,7 +146,7 @@
 
 <script>
     var DownloadPurchaseReceipt = function (id) {
-        $("#btnDownloadPurchaseReceipt").val("Download...");
+        $("#btnDownloadPurchaseReceipt").val(@Resource.Download +"...");
         $("#btnDownloadPurchaseReceipt").attr("disabled", "disabled");
 
         $.ajax({
@@ -157,9 +157,9 @@
                 saveByteArray(result.FileName, _base64ToArrayBuffer, result.ContentType);
 
                 setTimeout(function () {
-                    $("#btnDownloadPurchaseReceipt").val("Download");
+                    $("#btnDownloadPurchaseReceipt").val(@Resource.Download);
                     $("#btnDownloadPurchaseReceipt").removeAttr('disabled');
-                    toastr.success("File Downloaded successfully.");
+                    toastr.success(@Resource.FileDownload);
                 }, 1500);
             }
         });

@@ -23,7 +23,7 @@
                     @String.Format("{0:f}", item.CreatedDate)
                 </td>
                 <td>
-                    <a href="#" class="btn btn-danger btn-xs" onclick="DeleteComment('@item.Id', true)">@Resource.Delete</a>
+                    <a href="#" class="btn btn-danger btn-xs" onclick="DeleteComment('@item.Id', true,'@Resource.Msg_Delete')">@Resource.Delete</a>
                 </td>
             </tr>
         }
@@ -39,7 +39,7 @@
     <span asp-validation-for="CommentMessage" class="text-danger"></span>
 </div>
 <div class="form-group">
-    <input type="button" value="Add Comment" class="btn btn-info" onclick="AddNewComment(true)">
+    <input type="button" value="@Resource.AddComment" class="btn btn-info" onclick="AddNewComment(true,'@Resource.commentIsEmpty')">
 </div>
 
 <script>

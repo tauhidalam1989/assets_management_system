@@ -152,17 +152,17 @@ var AddEdit = function (id,edit,add) {
     loadExtraBigModal(url);
 };
 
-var SaveAsset = function () {
+var SaveAsset = function (val1,val2,val3,val4) {
     if (!FieldValidation('#Name')) {
-        FieldValidationAlert('#Name', 'Asset Name is Required.', "warning");
+        FieldValidationAlert('#Name', val1, "warning");
         return;
     }
     if (!FieldValidation('#Category')) {
-        FieldValidationAlert('#Category', 'Asset Category is Required.', "warning");
+        FieldValidationAlert('#Category', val2, "warning");
         return;
     }
 
-    $("#btnSave").prop('value', 'Please Wait');
+    $("#btnSave").prop('value',val3);
     $('#btnSave').prop('disabled', true);
 
     $.ajax({
@@ -189,32 +189,32 @@ var SaveAsset = function () {
             });
         },
         error: function (errormessage) {
-            $("#btnSave").prop('value', 'Save');
+            $("#btnSave").prop('value', val4);
             SwalSimpleAlert(errormessage.responseText, "warning");
         }
     });
 }
 
 
-var UpdateBarcode = function () {
+var UpdateBarcode = function (val1,val2) {
     var _AssetId = $("#AssetId").val();
     if (_AssetId.length > 10) {
-        FieldValidationAlert('#AssetId', 'Max lenght is 10.', "warning");
+        FieldValidationAlert('#AssetId', val1, "warning");
         return;
     }
 
     Swal.fire({
-        title: 'Barcode Updated',
+        title: val2,
         icon: "success"
     }).then(function () {
         $("#Barcode").JsBarcode(_AssetId);
     });
 }
 
-var GenerateQRCode = function () {
+var GenerateQRCode = function (val1) {
     var _QRCode = $("#QRCode").val();
     if (_QRCode.length > 20) {
-        FieldValidationAlert('#QRCode', 'Max lenght is 20.', "warning");
+        FieldValidationAlert('#QRCode', val1, "warning");
         return;
     }
     $('#divQRCode').empty();

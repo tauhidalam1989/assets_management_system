@@ -1,9 +1,7 @@
 @model AMS.Models.AssetViewModel.AssetCRUDViewModel
-
 @{
     ViewData["Title"] = Resource.Create;
 }
-
 <div>
     <div class="row">
         <div class="col-md-12">
@@ -31,7 +29,6 @@
                             </li>
                         </ul>
                     </div>
-
                     <div class="card-body">
                         <div class="tab-content" id="tabContent">
                             <div class="tab-pane fade show active" id="divBasicInfo" role="tabpanel"
@@ -46,7 +43,7 @@
                                                 <span asp-validation-for="AssetId" class="text-danger"></span>
                                             </div>
                                             <div class="col-sm-4">
-                                                <input type="button" value="Update Barcode" onclick="UpdateBarcode()"
+                                                <input type="button" value="@Resource.BarcodeUpdated" onclick="UpdateBarcode(@Resource.MaxLength10)"
                                                     class="btn btn-sm btn-info" />
                                             </div>
                                         </div>
@@ -115,8 +112,7 @@
                                                     id="QRCode" />
                                             </div>
                                             <div class="col-sm-4">
-                                                <input type="button" value="Update QRCode" onclick="GenerateQRCode()"
-                                                    class="btn btn-sm btn-success" />
+                                                <input type="button" value="@Resource.UpdateQRCode" onclick="GenerateQRCode(@Resource.MaxLength20)" class="btn btn-sm btn-success" />
                                             </div>
                                         </div>
                                         <div class="form-group row">
@@ -131,7 +127,7 @@
                                             <div class="col-sm-9">
                                                 <select asp-for="Category" asp-items="@ViewBag._LoadddlAssetCategorie"
                                                     id="Category" class="form-control" style="width:100%;">
-                                                    <option disabled selected>--- SELECT ---</option>
+                                                    <option disabled selected>--- @Resource.Select ---</option>
                                                 </select>
                                                 <span asp-validation-for="Category" class="text-danger"></span>
                                             </div>
@@ -142,7 +138,7 @@
                                                 <select asp-for="SubCategory"
                                                     asp-items="@ViewBag._LoadddlAssetSubCategorie" id="SubCategory"
                                                     class="form-control" style="width:100%;">
-                                                    <option disabled selected>--- SELECT ---</option>
+                                                    <option disabled selected>--- @Resource.Select ---</option>
                                                 </select>
                                                 <span asp-validation-for="SubCategory" class="text-danger"></span>
                                             </div>
@@ -152,7 +148,7 @@
                                             <div class="col-sm-9">
                                                 <select asp-for="Supplier" asp-items="@ViewBag._LoadddlSupplier"
                                                     id="Supplier" class="form-control" style="width:100%;">
-                                                    <option disabled selected>--- SELECT ---</option>
+                                                    <option disabled selected>--- @Resource.Select ---</option>
                                                 </select>
                                                 <span asp-validation-for="Supplier" class="text-danger"></span>
                                             </div>
@@ -162,7 +158,7 @@
                                             <div class="col-sm-9">
                                                 <select asp-for="Department" asp-items="@ViewBag._LoadddlDepartment"
                                                     id="Department" class="form-control" style="width:100%;">
-                                                    <option disabled selected>--- SELECT ---</option>
+                                                    <option disabled selected>--- @Resource.Select ---</option>
                                                 </select>
                                                 <span asp-validation-for="Department" class="text-danger"></span>
                                             </div>
@@ -173,7 +169,7 @@
                                                 <select asp-for="SubDepartment"
                                                     asp-items="@ViewBag._LoadddlSubDepartment" id="SubDepartment"
                                                     class="form-control" style="width:100%;">
-                                                    <option disabled selected>---  SELECT ---</option>
+                                                    <option disabled selected>---  @Resource.Select ---</option>
                                                 </select>
                                                 <span asp-validation-for="SubDepartment" class="text-danger"></span>
                                             </div>
@@ -269,7 +265,7 @@
                                             <div class="col-sm-8">
                                                 <select asp-for="AssignEmployeeId" asp-items="@ViewBag._LoadddlEmployee"
                                                     id="AssignEmployeeId" class="form-control" style="width:100%;">
-                                                    <option selected value="0">Unassigned</option>
+                                                    <option selected value="0">@Resource.Unassigned</option>
                                                 </select>
                                                 <span asp-validation-for="AssignEmployeeId" class="text-danger"></span>
                                             </div>
@@ -287,7 +283,7 @@
                         <div class="col-sm-6">
                         </div>
                         <div class="col-sm-6">
-                            <input type="button" id="btnSave" value="Save" onclick="SaveAsset()" class="btn btn-info">
+                            <input type="button" id="btnSave" value="@Resource.Save" onclick="SaveAsset(@Resource.AssetRequired,@Resource.AssetCatRequired,@Resource.PleaseWait,@Resource.Save)" class="btn btn-info">
                             <button type="button" id="btnClose" class="btn btn-danger"
                                 data-dismiss="modal">@Resource.Close</button>
                         </div>
@@ -325,7 +321,7 @@
 
     $(document).ready(function () {
         setTimeout(function () {
-            GenerateQRCode();
+            GenerateQRCode(@Resource.MaxLength20);
         }, 500);
     });
 </script>

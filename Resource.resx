@@ -2364,4 +2364,40 @@ the outcome in the appropriate box.</value>
   <data name="UserDetail" xml:space="preserve">
     <value>User Detail</value>
   </data>
+  <data name="AssetCatRequired" xml:space="preserve">
+    <value>Asset Category is Required.</value>
+  </data>
+  <data name="AssetRequired" xml:space="preserve">
+    <value>Asset Name is Required.</value>
+  </data>
+  <data name="BarcodeUpdated" xml:space="preserve">
+    <value>Barcode Updated</value>
+  </data>
+  <data name="MaxLength10" xml:space="preserve">
+    <value>Max lenght is 10</value>
+  </data>
+  <data name="MaxLength20" xml:space="preserve">
+    <value>Max lenght is 20</value>
+  </data>
+  <data name="PleaseWait" xml:space="preserve">
+    <value>Please Wait</value>
+  </data>
+  <data name="AddComment" xml:space="preserve">
+    <value>Add Comment</value>
+  </data>
+  <data name="AssetSuccessFulMsg" xml:space="preserve">
+    <value>Assest Assigned successfully</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="FileDownload" xml:space="preserve">
+    <value>File Downloaded successfully.</value>
+  </data>
+  <data name="Unassigned" xml:space="preserve">
+    <value>Unassigned</value>
+  </data>
+  <data name="UpdateQRCode" xml:space="preserve">
+    <value>Update QRCode</value>
+  </data>
 </root>

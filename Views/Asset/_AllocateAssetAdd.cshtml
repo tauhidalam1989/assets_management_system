@@ -32,7 +32,7 @@
                         @Html.DisplayFor(modelItem => item.Status)
                     </td>
                     <td>
-                        <a href="#" class="btn btn-danger btn-xs" onclick="RemoveAllocateAsset('@item.Id')">@Resource.Remove</a>
+                        <a href="#" class="btn btn-danger btn-xs" onclick="RemoveAllocateAsset('@item.Id','@Resource.Msg_Delete','@Resource.AllocateAssest')">@Resource.Remove</a>
                     </td>
                 </tr>
             }
@@ -57,7 +57,7 @@
     </div>
     <div class="col-6 col-sm-6">
         <div class="col-6 col-sm-6">
-            <input type="button" id="btnAssigneeAsset" value="@Resource.AssigneeAsset" onclick="AllocateAssetSave()"
+            <input type="button" id="btnAssigneeAsset" value="@Resource.AssigneeAsset" onclick="AllocateAssetSave('@Resource.Emp_IsEmpty_Msg','@Resource.AllocateAssest','@Resource.AssetSuccessFulMsg')"
                 class="btn btn-success">
         </div>
     </div>

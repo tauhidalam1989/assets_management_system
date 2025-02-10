@@ -2354,4 +2354,40 @@
   <data name="UserDetail" xml:space="preserve">
     <value>تفاصيل المستخدم</value>
   </data>
+  <data name="AssetCatRequired" xml:space="preserve">
+    <value>فئة الأصل مطلوبة</value>
+  </data>
+  <data name="AssetRequired" xml:space="preserve">
+    <value>اسم الأصل مطلوب</value>
+  </data>
+  <data name="BarcodeUpdated" xml:space="preserve">
+    <value>تم تحديث الباركود</value>
+  </data>
+  <data name="MaxLength10" xml:space="preserve">
+    <value>الحد الأقصى للطول هو 10</value>
+  </data>
+  <data name="MaxLength20" xml:space="preserve">
+    <value>الحد الأقصى للطول هو 20  </value>
+  </data>
+  <data name="PleaseWait" xml:space="preserve">
+    <value>يرجى الانتظار</value>
+  </data>
+  <data name="AddComment" xml:space="preserve">
+    <value>إضافة تعليق</value>
+  </data>
+  <data name="AssetSuccessFulMsg" xml:space="preserve">
+    <value>تم تعيين الأصل بنجاح</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>تنزيل</value>
+  </data>
+  <data name="FileDownload" xml:space="preserve">
+    <value>تم تنزيل الملف بنجاح</value>
+  </data>
+  <data name="Unassigned" xml:space="preserve">
+    <value>غير معين</value>
+  </data>
+  <data name="UpdateQRCode" xml:space="preserve">
+    <value>تحديث الباركود</value>
+  </data>
 </root>

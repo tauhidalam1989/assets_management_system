@@ -297,6 +297,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Comment.
+        /// </summary>
+        public static string AddComment {
+            get {
+                return ResourceManager.GetString("AddComment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add Contract.
         /// </summary>
         public static string AddContract {
@@ -729,6 +738,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Asset Category is Required..
+        /// </summary>
+        public static string AssetCatRequired {
+            get {
+                return ResourceManager.GetString("AssetCatRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Asset Details.
         /// </summary>
         public static string AssetDetails {
@@ -765,11 +783,29 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Asset Name is Required..
+        /// </summary>
+        public static string AssetRequired {
+            get {
+                return ResourceManager.GetString("AssetRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Asset Status.
         /// </summary>
         public static string AssetStatus {
             get {
                 return ResourceManager.GetString("AssetStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Assest Assigned successfully.
+        /// </summary>
+        public static string AssetSuccessFulMsg {
+            get {
+                return ResourceManager.GetString("AssetSuccessFulMsg", resourceCulture);
             }
         }
         
@@ -914,6 +950,15 @@ namespace ViewRes {
         public static string Barcode {
             get {
                 return ResourceManager.GetString("Barcode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Barcode Updated.
+        /// </summary>
+        public static string BarcodeUpdated {
+            get {
+                return ResourceManager.GetString("BarcodeUpdated", resourceCulture);
             }
         }
         
@@ -2140,6 +2185,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Download.
+        /// </summary>
+        public static string Download {
+            get {
+                return ResourceManager.GetString("Download", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Download Attachement.
         /// </summary>
         public static string Download_Attachement {
@@ -2622,6 +2676,15 @@ namespace ViewRes {
         public static string Female {
             get {
                 return ResourceManager.GetString("Female", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to File Downloaded successfully..
+        /// </summary>
+        public static string FileDownload {
+            get {
+                return ResourceManager.GetString("FileDownload", resourceCulture);
             }
         }
         
@@ -3543,6 +3606,24 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Max lenght is 10.
+        /// </summary>
+        public static string MaxLength10 {
+            get {
+                return ResourceManager.GetString("MaxLength10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Max lenght is 20.
+        /// </summary>
+        public static string MaxLength20 {
+            get {
+                return ResourceManager.GetString("MaxLength20", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Meal.
         /// </summary>
         public static string Meal {
@@ -4358,6 +4439,15 @@ namespace ViewRes {
         public static string PleaseSelect {
             get {
                 return ResourceManager.GetString("PleaseSelect", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please Wait.
+        /// </summary>
+        public static string PleaseWait {
+            get {
+                return ResourceManager.GetString("PleaseWait", resourceCulture);
             }
         }
         
@@ -6478,6 +6568,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Unassigned.
+        /// </summary>
+        public static string Unassigned {
+            get {
+                return ResourceManager.GetString("Unassigned", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Unit Price.
         /// </summary>
         public static string Unit_Price {
@@ -6519,6 +6618,15 @@ namespace ViewRes {
         public static string UpdateEmployeeLeave {
             get {
                 return ResourceManager.GetString("UpdateEmployeeLeave", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update QRCode.
+        /// </summary>
+        public static string UpdateQRCode {
+            get {
+                return ResourceManager.GetString("UpdateQRCode", resourceCulture);
             }
         }
         

@@ -12124,13 +12124,15 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
 
 .sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active,
 .sidebar-light-primary .nav-sidebar > .nav-item > .nav-link.active {
-  background-color: #3e886d;
-  color: #ffffff;
+    /*background-color: #3e886d;*/
+    background-color: #82bb4a;
+    color: #ffffff;
 }
 
 .sidebar-dark-primary .nav-sidebar.nav-legacy > .nav-item > .nav-link.active,
 .sidebar-light-primary .nav-sidebar.nav-legacy > .nav-item > .nav-link.active {
-  border-color: #3e886d;
+    /* border-color: #3e886d;*/
+    border-color: #82bb4a;
 }
 
 .sidebar-dark-secondary .nav-sidebar > .nav-item > .nav-link.active,
