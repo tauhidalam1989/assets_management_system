@@ -2400,4 +2400,10 @@ the outcome in the appropriate box.</value>
   <data name="UpdateQRCode" xml:space="preserve">
     <value>Update QRCode</value>
   </data>
+  <data name="ProjectName" xml:space="preserve">
+    <value>Asset Management System</value>
+  </data>
+  <data name="SignOut" xml:space="preserve">
+    <value>Sign Out</value>
+  </data>
 </root>

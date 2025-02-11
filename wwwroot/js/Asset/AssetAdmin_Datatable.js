@@ -176,7 +176,7 @@ $(document).ready(function () {
             {
                 data: null, render: function (data, type, row) {
                     if (row.IsAdmin) {
-                        return "<a href='#' class='btn btn-info btn-xs' onclick=AddEdit(\"" + row.Id + "\", \"" + editval + "\", \"" + addval + "\");>"+edit+"</a>";
+                        return "<a href='#' class='btn btn-info btn-xs' onclick='AddEdit(\"" + row.Id + "\", \"" + editval + "\", \"" + addval + "\");'>" + edit + "</a>";
                     }
                     else {
                         return "-";

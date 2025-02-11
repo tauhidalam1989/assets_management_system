@@ -1,16 +1,17 @@
-﻿@inject AMS.Services.IFunctional _iFunctional;
+﻿@using Microsoft.AspNetCore.Http
+@inject AMS.Services.IFunctional _iFunctional;
 @{
     var _GetSharedUIData = await _iFunctional.GetSharedUIData(User);
 }
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US" dir="@((Context.Session.GetString("culture") == "en-US") ? "ltr" : "rtl")">
+@* <html lang="en-US"> *@
 <head>
     <meta charset="utf-8" />
     <link rel="icon" href="~/images/favicon.ico" type="image/gif" sizes="16x16">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Asset Management Sys</title>
+    <title>@ViewData["Title"] - @Resource.ProjectName</title>
 
     <link rel="stylesheet" href="~/AdminLTE/plugins/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
@@ -20,7 +21,7 @@
     <script src="~/AdminLTE/plugins/jquery/jquery.min.js"></script>
     <link rel="stylesheet" href="~/AdminLTE/plugins/jqvmap/jqvmap.min.css">
     <link rel="stylesheet" href="~/AdminLTE/dist/css/adminlte.css">
-    
+
     <link href="../wwwroot/AdminLTE/dist/css/adminlte.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/AdminLTE/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
     <link rel="stylesheet" href="~/AdminLTE/plugins/daterangepicker/daterangepicker.css">
@@ -35,8 +36,9 @@
     <link href="~/DataTables/buttons.dataTables.css" rel="stylesheet" />
     <link href="~/lib/toastr/toastr.min.css" rel="stylesheet" />
     <link href="~/AdminLTE/plugins/select2/css/select2.css" rel="stylesheet" />
-
+  
 </head>
+
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
         <partial name="_AdminlteMainHeader" model="_GetSharedUIData.LoginViewModel" />

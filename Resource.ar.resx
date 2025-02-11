@@ -2390,4 +2390,10 @@
   <data name="UpdateQRCode" xml:space="preserve">
     <value>تحديث الباركود</value>
   </data>
+  <data name="ProjectName" xml:space="preserve">
+    <value>نظام إدارة الأصول</value>
+  </data>
+  <data name="SignOut" xml:space="preserve">
+    <value>تسجيل الخروج</value>
+  </data>
 </root>

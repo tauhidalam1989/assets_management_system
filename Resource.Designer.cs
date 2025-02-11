@@ -4803,6 +4803,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Asset Management System.
+        /// </summary>
+        public static string ProjectName {
+            get {
+                return ResourceManager.GetString("ProjectName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Promotion.
         /// </summary>
         public static string Promotion {
@@ -5970,6 +5979,15 @@ namespace ViewRes {
         public static string Sending_SMS1 {
             get {
                 return ResourceManager.GetString("Sending SMS1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sign Out.
+        /// </summary>
+        public static string SignOut {
+            get {
+                return ResourceManager.GetString("SignOut", resourceCulture);
             }
         }
         

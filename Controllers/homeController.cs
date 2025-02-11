@@ -6,6 +6,7 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult SetLanguage(string culture, string returnUrl)
     {
+        HttpContext.Session.SetString("culture", culture);
         Response.Cookies.Append(
             CookieRequestCultureProvider.DefaultCookieName,
             CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
