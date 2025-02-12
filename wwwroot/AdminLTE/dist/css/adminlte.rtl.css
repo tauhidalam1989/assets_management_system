@@ -8,3 +8,70 @@ body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-fo
     margin-right: 250px !important;
     margin-left: 0px!important;
 }
+/* Ensure sidebar switches direction when in RTL mode */
+/*[dir="rtl"] */
+.nav-sidebar .nav-item > .nav-link {
+    text-align: right !important;
+    padding-right: 1rem;
+    padding-left: 0.5rem;
+}
+
+     Move icons to the right 
+/*    [dir="rtl"] */
+     .nav-sidebar .nav-item > .nav-link .nav-icon {
+        margin-left: 0.75rem;
+        margin-right: 0;
+    }
+
+     Adjust dropdown arrows for submenus 
+ /*   [dir="rtl"] */
+     .nav-sidebar .nav-item > .nav-link .right {
+        left: 1rem;
+        right: auto;
+        transform: rotate(180deg);
+    }
+
+ Ensure submenu items align properly 
+/*[dir="rtl"] */
+ .nav-treeview .nav-item > .nav-link {
+    padding-right: 2rem !important;
+    padding-left: 0.5rem;
+}
+
+     Adjust submenu icons to the right 
+/*    [dir="rtl"] */
+     .nav-treeview .nav-item > .nav-link .nav-icon {
+        margin-left: 0.5rem;
+        margin-right: 0;
+    }
+
+ Ensure the submenu arrow is properly aligned 
+/*[dir="rtl"] */
+ .nav-item.has-treeview > .nav-link .right {
+    left: 1rem;
+    right: auto;
+}
+
+ Fix badge alignment in RTL 
+/*[dir="rtl"] */
+ .nav-item > .nav-link .badge {
+    right: auto;
+    left: 1rem;
+}
+ Ensure sidebar hides properly when collapsed in RTL mode 
+/*[dir="rtl"]*/
+ .sidebar-collapse .main-sidebar {
+    margin-right: -250px !important;
+    margin-left: auto !important;
+}
+
+ Ensure content expands when sidebar is collapsed in RTL mode 
+/*[dir="rtl"]*/
+ .sidebar-collapse .content-wrapper,
+/*[dir="rtl"]*/
+ .sidebar-collapse .main-footer,
+/*[dir="rtl"]*/
+ .sidebar-collapse .main-header {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+}

@@ -1893,5 +1893,28 @@
   Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
+$(document).ready(function () {
+    $(".nav-link").on("click", function () {
+        if ($("html").attr("dir") === "rtl") {
+            if ($("body").hasClass("sidebar-collapse")) {
+                $(".main-sidebar").css("transform", "translateX(100%)");
+            } else {
+                $(".main-sidebar").css("transform", "translateX(0)");
+            }
+        }
+    });
 
+    // Ensure AdminLTE sidebar toggle works in RTL
+    $(".nav-link[data-widget='pushmenu']").on("click", function () {
+        if ($("html").attr("dir") === "rtl") {
+            setTimeout(function () {
+                if ($("body").hasClass("sidebar-collapse")) {
+                    $(".main-sidebar").css("transform", "translateX(100%)");
+                } else {
+                    $(".main-sidebar").css("transform", "translateX(0)");
+                }
+            }, 300);
+        }
+    });
+});
 //# sourceMappingURL=adminlte.js.map

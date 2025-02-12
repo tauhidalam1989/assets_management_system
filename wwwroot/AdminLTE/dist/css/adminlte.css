@@ -11438,7 +11438,8 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
 }
 
 .sidebar-collapse .main-sidebar, .sidebar-collapse .main-sidebar::before {
-  margin-left: -250px;
+    /*margin-left: -250px;*/
+    margin-right: 250px;
 }
 
 .sidebar-collapse .main-sidebar .nav-sidebar.nav-child-indent .nav-treeview {
@@ -11446,10 +11447,11 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
 }
 
 @media (max-width: 767.98px) {
-  .main-sidebar, .main-sidebar::before {
-    box-shadow: none !important;
-    margin-left: -250px;
-  }
+    .main-sidebar, .main-sidebar::before {
+        box-shadow: none !important;
+        /*margin-left: -250px;*/
+        margin-right: 250px;
+    }
   .sidebar-open .main-sidebar, .sidebar-open .main-sidebar::before {
     margin-left: 0;
   }
