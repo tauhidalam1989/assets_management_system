@@ -1,12 +1,13 @@
+
 <div class="wrapper">
     <div class="panel panel-hash">
         <div class="panel-heading">
             <div class="row">
                 <div class="col-md-5">
-                    <a class="fa fa-plus-square fa-2x" onclick="AddEdit(0)"></a>
+                    <a class="fa fa-plus-square fa-2x" onclick="AddEdit(0,'@Resource.EditAssetCategory','@Resource.AddAssetCategory')"></a>
                 </div>
                 <div class="col-md-7 pull-right">
-                    <h5 class="pull-right"><b>&nbsp;Asset Categorie List</b></h5>
+                    <h5 class="pull-right"><b>&nbsp;@Resource.Asset_List</b></h5>
                 </div>
             </div>
         </div>
@@ -15,10 +16,10 @@
             <table id="tblAssetCategorie" class="CustomBlueTable" style="width:100%">
                 <thead>
                     <tr>
-                        <th>Id</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Created Date</th>
+                        <th>@Resource.Id</th>
+                        <th>@Resource.Name</th>
+                        <th>@Resource.Description</th>
+                        <th>@Resource.CreatedDate</th>
                         <th></th>
                         <th></th>
                     </tr>
@@ -27,7 +28,28 @@
         </div>
     </div>
 </div>
-
+@{
+    var msgtitle = Resource.AssetCategoryTitle;
+    var assestcat = Resource.AssetCategoryDetails;
+    var editassetcat = Resource.AssetCategoryTitle;
+    var addassetcat = Resource.AssetCategoryDetails;
+    var editmsg = Resource.Edit;
+    var printmsg = Resource.Print;
+    var yesmsg = Resource.Yes;
+    var msgassetcatdel = Resource.Msg_AssetCatDelete;
+    var delmsg = Resource.Delete;
+    var deletemsg = Resource.Msg_Delete;
+}
+<div id="resourceTitle" data-title-msg="@msgtitle"></div>
+<div id="resourceassestcat" data-asset-cat-msg="@assestcat"></div>
+<div id="resourceEditassetcat" data-editassetcat-msg="@editassetcat"></div>
+<div id="resourceAddassetcat" data-addassetcat-msg="@addassetcat"></div>
+<div id="resourceEdit" data-edit-msg="@editmsg"></div>
+<div id="resourcePrint" data-edit-msg="@printmsg"></div>
+<div id="resourceDel" data-del-msg="@delmsg"></div>
+<div id="resourceDelMsg" data-delete-msg="@deletemsg"></div>
+<div id="resourceYesMsg" data-yes-msg="@yesmsg"></div>
+<div id="resourceAssetCatDel" data-assetcatdel-msg="@msgassetcatdel"></div>
 <style>
     .panel-heading {
         padding: 0px 0px 0px 5px;

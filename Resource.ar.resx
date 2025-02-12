@@ -2396,4 +2396,19 @@
   <data name="SignOut" xml:space="preserve">
     <value>تسجيل الخروج</value>
   </data>
+  <data name="AddAssetCategory" xml:space="preserve">
+    <value>إضافة فئة الأصل</value>
+  </data>
+  <data name="AssetCategoryDetails" xml:space="preserve">
+    <value>تفاصيل فئة الأصل</value>
+  </data>
+  <data name="AssetCategoryTitle" xml:space="preserve">
+    <value>فئة الأصل</value>
+  </data>
+  <data name="EditAssetCategory" xml:space="preserve">
+    <value>تحرير فئة الأصل</value>
+  </data>
+  <data name="Msg_AssetCatDelete" xml:space="preserve">
+    <value>تم حذف فئة الأصل بنجاح. معرف فئة الأصل</value>
+  </data>
 </root>

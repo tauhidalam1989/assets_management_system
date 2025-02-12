@@ -1,18 +1,23 @@
 $(document).ready(function () {
-    document.title = 'Asset Categorie';
-
+    var doctitle = $('#resourceTitle').data('title-msg');
+    var assetcatdet = $('#resourceassestcat').data('asset-cat-msg');
+    var editassetcat = $('#resourceEditassetcat').data('editassetcat-msg');
+    var addassetcat = $('#resourceAddassetcat').data('addassetcat-msg');
+    var edit = $('#resourceEdit').data('edit-msg');
+    var print = $('#resourcePrint').data('print-msg');
+    var del = $('#resourceDel').data('del-msg');
+    var delmsg = $('#resourceDelMsg').data('delete-msg');
+    var yes = $('#resourceYesMsg').data('yes-msg');
+    var msgassetcatdel = $('#resourceAssetCatDel').data('assetcatdel-msg');
+    document.title = doctitle;
     $("#tblAssetCategorie").DataTable({
         paging: true,
         select: true,
         "order": [[0, "desc"]],
         dom: 'Bfrtip',
-
-
         buttons: [
             'pageLength',
         ],
-
-
         "processing": true,
         "serverSide": true,
         "filter": true, //Search Box
@@ -29,7 +34,8 @@ $(document).ready(function () {
         "columns": [
             {
                 data: "Id", "name": "Id", render: function (data, type, row) {
-                    return "<a href='#' class='fa fa-eye' onclick=Details('" + row.Id + "');>" + row.Id + "</a>";
+                    return "<a href='#' class='fa fa-eye' onclick='Details(\"" + row.Id + "\", \"" + assetcatdet + "\");'>" + row.Id + "</a>";
+
                 }
             },
             { "data": "Name", "name": "Name" },
@@ -47,12 +53,14 @@ $(document).ready(function () {
             },
             {
                 data: null, render: function (data, type, row) {
-                    return "<a href='#' class='btn btn-info btn-xs' onclick=AddEdit('" + row.Id + "');>Edit</a>";
+                    return "<a href='#' class='btn btn-info btn-xs' onclick='AddEdit(\"" + row.Id + "\", \"" + editassetcat + "\", \"" + addassetcat + "\");'>" + edit + "</a>";
+
                 }
             },
             {
                 data: null, render: function (data, type, row) {
-                    return "<a href='#' class='btn btn-danger btn-xs' onclick=Delete('" + row.Id + "'); >Delete</a>";
+                    return "<a href='#' class='btn btn-danger btn-xs' onclick='Delete(\"" + row.Id + "\", \"" + delmsg + "\", \"" + yes + "\", \"" + msgassetcatdel + "\");'>" + del + "</a>";
+
                 }
             }
         ],

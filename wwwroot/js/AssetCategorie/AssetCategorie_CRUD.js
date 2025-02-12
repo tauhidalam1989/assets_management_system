@@ -1,28 +1,28 @@
-var Details = function (id) {
+var Details = function (id, assetcatdet) {
     var url = "/AssetCategorie/Details?id=" + id;
-    $('#titleBigModal').html("Asset Categorie Details");
+    $('#titleBigModal').html(assetcatdet);
     loadBigModal(url);
 };
 
 
-var AddEdit = function (id) {
+var AddEdit = function (id,editassetcat,addassetcat) {
     var url = "/AssetCategorie/AddEdit?id=" + id;
     if (id > 0) {
-        $('#titleBigModal').html("Edit Asset Categorie");
+        $('#titleBigModal').html(editassetcat);
     }
     else {
-        $('#titleBigModal').html("Add Asset Categorie");
+        $('#titleBigModal').html(addassetcat);
     }
     loadBigModal(url);
 };
 
-var Save = function () {
+var Save = function (pleasewait,save) {
     if (!$("#frmAssetCategorie").valid()) {
         return;
     }
 
     var _frmAssetCategorie = $("#frmAssetCategorie").serialize();
-    $("#btnSave").val("Please Wait");
+    $("#btnSave").val(pleasewait);
     $('#btnSave').attr('disabled', 'disabled');
     $.ajax({
         type: "POST",
@@ -34,7 +34,7 @@ var Save = function () {
                 icon: "success"
             }).then(function () {
                 document.getElementById("btnClose").click();
-                $("#btnSave").val("Save");
+                $("#btnSave").val(save);
                 $('#btnSave').removeAttr('disabled');
                 $('#tblAssetCategorie').DataTable().ajax.reload();
             });
@@ -45,22 +45,22 @@ var Save = function () {
     });
 }
 
-var Delete = function (id) {
+var Delete = function (id, msgdelete, yes, msgassetcatdel) {
     if (DemoUserAccountLockAll() == 1) return;
     Swal.fire({
-        title: 'Do you want to delete this item?',
+        title: msgdelete,
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes'
+        confirmButtonText: yes
     }).then((result) => {
         if (result.value) {
             $.ajax({
                 type: "POST",
                 url: "/AssetCategorie/Delete?id=" + id,
                 success: function (result) {
-                    var message = "Asset Categorie has been deleted successfully. Asset Categorie ID: " + result.Id;
+                    var message = msgassetcatdel + result.Id;
                     Swal.fire({
                         title: message,
                         icon: 'info',

@@ -2406,4 +2406,19 @@ the outcome in the appropriate box.</value>
   <data name="SignOut" xml:space="preserve">
     <value>Sign Out</value>
   </data>
+  <data name="AddAssetCategory" xml:space="preserve">
+    <value>Add Asset Category</value>
+  </data>
+  <data name="AssetCategoryDetails" xml:space="preserve">
+    <value>Asset Category Details</value>
+  </data>
+  <data name="AssetCategoryTitle" xml:space="preserve">
+    <value>Asset Category</value>
+  </data>
+  <data name="EditAssetCategory" xml:space="preserve">
+    <value>Edit Asset Category</value>
+  </data>
+  <data name="Msg_AssetCatDelete" xml:space="preserve">
+    <value>Asset Categorie has been deleted successfully. Asset Categorie ID:</value>
+  </data>
 </root>

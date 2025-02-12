@@ -297,6 +297,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Asset Category.
+        /// </summary>
+        public static string AddAssetCategory {
+            get {
+                return ResourceManager.GetString("AddAssetCategory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add Comment.
         /// </summary>
         public static string AddComment {
@@ -734,6 +743,24 @@ namespace ViewRes {
         public static string AssetAssign {
             get {
                 return ResourceManager.GetString("AssetAssign", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Asset Category Details.
+        /// </summary>
+        public static string AssetCategoryDetails {
+            get {
+                return ResourceManager.GetString("AssetCategoryDetails", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Asset Category.
+        /// </summary>
+        public static string AssetCategoryTitle {
+            get {
+                return ResourceManager.GetString("AssetCategoryTitle", resourceCulture);
             }
         }
         
@@ -2284,6 +2311,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Edit Asset Category.
+        /// </summary>
+        public static string EditAssetCategory {
+            get {
+                return ResourceManager.GetString("EditAssetCategory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Edit New Leave.
         /// </summary>
         public static string EditNewLeave {
@@ -3782,6 +3818,15 @@ namespace ViewRes {
         public static string Monday {
             get {
                 return ResourceManager.GetString("Monday", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Asset Categorie has been deleted successfully. Asset Categorie ID:.
+        /// </summary>
+        public static string Msg_AssetCatDelete {
+            get {
+                return ResourceManager.GetString("Msg_AssetCatDelete", resourceCulture);
             }
         }
         
