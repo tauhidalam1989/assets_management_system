@@ -4,11 +4,16 @@
     var _GetSharedUIData = await _iFunctional.GetSharedUIData(User);
 }
 <!DOCTYPE html>
-<html lang="en-US" dir="@((Context.Session.GetString("culture") == "en-US") ? "ltr" : "rtl")">
+<html lang="@Context.Session.GetString("culture")" dir="@((Context.Session.GetString("culture") == "ar-SA") ? "rtl" : "ltr")">
+
 @* <html lang="en-US"> *@
 <head>
     <meta charset="utf-8" />
     <link rel="icon" href="~/images/favicon.ico" type="image/gif" sizes="16x16">
+    @if (Context.Session.GetString("culture") == "ar-SA")
+    {
+        <link rel="stylesheet" href="~/AdminLTE/dist/css/adminlte.rtl.css" />
+    }
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - @Resource.ProjectName</title>
@@ -39,7 +44,7 @@
   
 </head>
 
-<body class="hold-transition sidebar-mini layout-fixed">
+<body class="hold-transition">
     <div class="wrapper">
         <partial name="_AdminlteMainHeader" model="_GetSharedUIData.LoginViewModel" />
         <partial name="_AdminlteMainSidebar" model="_GetSharedUIData" />

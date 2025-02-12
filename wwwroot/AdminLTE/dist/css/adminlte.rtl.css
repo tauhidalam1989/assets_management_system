@@ -1,0 +1,10 @@
+﻿
+body:not(.sidebar-mini-md) .main-header {
+    transition: margin-right 0.3s ease-in-out;
+    margin-left: 0px!important;
+}
+body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-footer, body:not(.sidebar-mini-md) .main-header {
+    transition: margin-left 0.3s ease-in-out;
+    margin-right: 250px !important;
+    margin-left: 0px!important;
+}
