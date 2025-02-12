@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Dynamic.Core;
+using ViewRes;
 
 namespace AMS.Controllers
 {
@@ -139,7 +140,7 @@ namespace AMS.Controllers
                         _context.Entry(_AssetCategorie).CurrentValues.SetValues(vm);
                         await _context.SaveChangesAsync();
 
-                        var _AlertMessage = "AssetCategorie Updated Successfully. ID: " + _AssetCategorie.Id;
+                        var _AlertMessage = Resource.Msg_AssetCatUpdateSuccess + " : " + _AssetCategorie.Id;
                         return new JsonResult(_AlertMessage);
                     }
                     else
@@ -152,7 +153,7 @@ namespace AMS.Controllers
                         _context.Add(_AssetCategorie);
                         await _context.SaveChangesAsync();
 
-                        var _AlertMessage = "AssetCategorie Created Successfully. ID: " + _AssetCategorie.Id;
+                        var _AlertMessage = Resource.Msg_AssetCatSuccess + " :"+ _AssetCategorie.Id;
                         return new JsonResult(_AlertMessage);
                     }
                 }

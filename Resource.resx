@@ -2419,6 +2419,12 @@ the outcome in the appropriate box.</value>
     <value>Edit Asset Category</value>
   </data>
   <data name="Msg_AssetCatDelete" xml:space="preserve">
-    <value>Asset Categorie has been deleted successfully. Asset Categorie ID:</value>
+    <value>Asset Category has been deleted successfully. Asset Categorie ID:</value>
+  </data>
+  <data name="Msg_AssetCatSuccess" xml:space="preserve">
+    <value>AssetCategory Created Successfully. ID:</value>
+  </data>
+  <data name="Msg_AssetCatUpdateSuccess" xml:space="preserve">
+    <value>AssetCategory Updated Successfully. ID:</value>
   </data>
 </root>

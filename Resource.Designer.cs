@@ -3822,11 +3822,29 @@ namespace ViewRes {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Asset Categorie has been deleted successfully. Asset Categorie ID:.
+        ///   Looks up a localized string similar to Asset Category has been deleted successfully. Asset Categorie ID:.
         /// </summary>
         public static string Msg_AssetCatDelete {
             get {
                 return ResourceManager.GetString("Msg_AssetCatDelete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AssetCategory Created Successfully. ID:.
+        /// </summary>
+        public static string Msg_AssetCatSuccess {
+            get {
+                return ResourceManager.GetString("Msg_AssetCatSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AssetCategory Updated Successfully. ID:.
+        /// </summary>
+        public static string Msg_AssetCatUpdateSuccess {
+            get {
+                return ResourceManager.GetString("Msg_AssetCatUpdateSuccess", resourceCulture);
             }
         }
         

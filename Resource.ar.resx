@@ -2411,4 +2411,10 @@
   <data name="Msg_AssetCatDelete" xml:space="preserve">
     <value>تم حذف فئة الأصل بنجاح. معرف فئة الأصل</value>
   </data>
+  <data name="Msg_AssetCatSuccess" xml:space="preserve">
+    <value>تم إنشاء فئة الأصول بنجاح. المعرف</value>
+  </data>
+  <data name="Msg_AssetCatUpdateSuccess" xml:space="preserve">
+    <value>تم تحديث فئة الأصول بنجاح. المعرف</value>
+  </data>
 </root>
