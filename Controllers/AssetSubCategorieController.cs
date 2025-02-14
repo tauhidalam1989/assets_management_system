@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Dynamic.Core;
+using ViewRes;
 
 namespace AMS.Controllers
 {
@@ -137,7 +138,7 @@ namespace AMS.Controllers
                     _context.Entry(_AssetSubCategorie).CurrentValues.SetValues(vm);
                     await _context.SaveChangesAsync();
 
-                    _JsonResultViewModel.AlertMessage = "Asset Sub Categorie Updated Successfully. ID: " + _AssetSubCategorie.Id;
+                    _JsonResultViewModel.AlertMessage = Resource.Msg_UpdateAssestSubCatSuccess + _AssetSubCategorie.Id;
                     _JsonResultViewModel.IsSuccess = true;
                     return new JsonResult(_JsonResultViewModel);
                 }
@@ -151,7 +152,7 @@ namespace AMS.Controllers
                     _context.Add(_AssetSubCategorie);
                     await _context.SaveChangesAsync();
 
-                    _JsonResultViewModel.AlertMessage = "Asset Sub Categorie Created Successfully. ID: " + _AssetSubCategorie.Id;
+                    _JsonResultViewModel.AlertMessage = Resource.Msg_CreateAssestSubCatSuccess + _AssetSubCategorie.Id;
                     _JsonResultViewModel.IsSuccess = true;
                     return new JsonResult(_JsonResultViewModel);
                 }

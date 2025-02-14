@@ -2427,4 +2427,25 @@ the outcome in the appropriate box.</value>
   <data name="Msg_AssetCatUpdateSuccess" xml:space="preserve">
     <value>AssetCategory Updated Successfully. ID:</value>
   </data>
+  <data name="AddAssetSubCatDet" xml:space="preserve">
+    <value>Add Asset Sub Category Details</value>
+  </data>
+  <data name="AssetSubCatDet" xml:space="preserve">
+    <value>Asset Sub Category Details</value>
+  </data>
+  <data name="AssetSubCatTitle" xml:space="preserve">
+    <value>Asset Sub Category List</value>
+  </data>
+  <data name="EditAssetSubCatDet" xml:space="preserve">
+    <value>Edit Asset Sub Category Details</value>
+  </data>
+  <data name="Msg_AssetSubCatDelete" xml:space="preserve">
+    <value>Asset Sub Category Details has been deleted successfully. Asset Sub Category Details ID:</value>
+  </data>
+  <data name="Msg_CreateAssestSubCatSuccess" xml:space="preserve">
+    <value>Asset Sub Category Created Successfully. ID:</value>
+  </data>
+  <data name="Msg_UpdateAssestSubCatSuccess" xml:space="preserve">
+    <value>Asset Sub Category Updated Successfully. ID:</value>
+  </data>
 </root>

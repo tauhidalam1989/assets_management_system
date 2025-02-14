@@ -1,6 +1,14 @@
 $(document).ready(function () {
-    document.title = 'AssetSubCategorie';
-
+    var doctitle = $('#resourceTitle').data('title-msg');
+    var assetsubcatdet = $('#resourceassestsubcat').data('asset-subcat-msg');
+    var editassetsubcat = $('#resourceEditassetsubcat').data('editassetsubcat-msg');
+    var addassetsubcat = $('#resourceAddassetsubcat').data('addassetsubcat-msg');
+    var edit = $('#resourceEdit').data('edit-msg');
+    var del = $('#resourceDel').data('del-msg');
+    var delmsg = $('#resourceDelMsg').data('delete-msg');
+    var yes = $('#resourceYesMsg').data('yes-msg');
+    var msgassetsubcatdel = $('#resourceAssetSubCatDel').data('assetsubcatdel-msg');
+    document.title = doctitle;
     $("#tblAssetSubCategorie").DataTable({
         paging: true,
         select: true,
@@ -29,7 +37,7 @@ $(document).ready(function () {
         "columns": [
             {
                 data: "Id", "name": "Id", render: function (data, type, row) {
-                    return "<a href='#' class='fa fa-eye' onclick=Details('" + row.Id + "');>" + row.Id + "</a>";
+                    return "<a href='#' class='fa fa-eye' onclick='Details(\"" + row.Id + "\", \"" + assetsubcatdet + "\");'>" + row.Id + "</a>";
                 }
             },
             { "data": "Name", "name": "Name" },
@@ -48,12 +56,12 @@ $(document).ready(function () {
             },
             {
                 data: null, render: function (data, type, row) {
-                    return "<a href='#' class='btn btn-info btn-xs' onclick=AddEdit('" + row.Id + "');>Edit</a>";
+                    return "<a href='#' class='btn btn-info btn-xs' onclick='AddEdit(\"" + row.Id + "\", \"" + editassetsubcat + "\", \"" + addassetsubcat + "\");'>" + edit + "</a>";
                 }
             },
             {
                 data: null, render: function (data, type, row) {
-                    return "<a href='#' class='btn btn-danger btn-xs' onclick=Delete('" + row.Id + "'); >Delete</a>";
+                    return "<a href='#' class='btn btn-danger btn-xs' onclick='Delete(\"" + row.Id + "\", \"" + delmsg + "\", \"" + yes + "\", \"" + msgassetsubcatdel + "\");'>" + del + "</a>";
                 }
             }
         ],

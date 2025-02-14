@@ -10,7 +10,7 @@ using ViewRes;
 
 namespace AMS.Controllers
 {
-   // [Authorize]
+    [Authorize]
     [Route("[controller]/[action]")]
     public class AssetCategorieController : Controller
     {
@@ -22,7 +22,7 @@ namespace AMS.Controllers
             _context = context;
             _iCommon = iCommon;
         }
-        //[Authorize(Roles = Pages.MainMenu.AssetCategorie.RoleName)]
+        [Authorize(Roles = Pages.MainMenu.AssetCategorie.RoleName)]
         [HttpGet]
         public IActionResult Index()
         {

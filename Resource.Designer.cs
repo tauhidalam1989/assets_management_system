@@ -306,6 +306,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Asset Sub Category Details.
+        /// </summary>
+        public static string AddAssetSubCatDet {
+            get {
+                return ResourceManager.GetString("AddAssetSubCatDet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add Comment.
         /// </summary>
         public static string AddComment {
@@ -824,6 +833,24 @@ namespace ViewRes {
         public static string AssetStatus {
             get {
                 return ResourceManager.GetString("AssetStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Asset Sub Category Details.
+        /// </summary>
+        public static string AssetSubCatDet {
+            get {
+                return ResourceManager.GetString("AssetSubCatDet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Asset Sub Category List.
+        /// </summary>
+        public static string AssetSubCatTitle {
+            get {
+                return ResourceManager.GetString("AssetSubCatTitle", resourceCulture);
             }
         }
         
@@ -2316,6 +2343,15 @@ namespace ViewRes {
         public static string EditAssetCategory {
             get {
                 return ResourceManager.GetString("EditAssetCategory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit Asset Sub Category Details.
+        /// </summary>
+        public static string EditAssetSubCatDet {
+            get {
+                return ResourceManager.GetString("EditAssetSubCatDet", resourceCulture);
             }
         }
         
@@ -3849,6 +3885,24 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Asset Sub Category Details has been deleted successfully. Asset Sub Category Details ID:.
+        /// </summary>
+        public static string Msg_AssetSubCatDelete {
+            get {
+                return ResourceManager.GetString("Msg_AssetSubCatDelete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Asset Sub Category Created Successfully. ID:.
+        /// </summary>
+        public static string Msg_CreateAssestSubCatSuccess {
+            get {
+                return ResourceManager.GetString("Msg_CreateAssestSubCatSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Asset has been deleted successfully. Asset ID:.
         /// </summary>
         public static string Msg_Del_Success {
@@ -3872,6 +3926,15 @@ namespace ViewRes {
         public static string Msg_IsEmpty {
             get {
                 return ResourceManager.GetString("Msg_IsEmpty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Asset Sub Category Updated Successfully. ID:.
+        /// </summary>
+        public static string Msg_UpdateAssestSubCatSuccess {
+            get {
+                return ResourceManager.GetString("Msg_UpdateAssestSubCatSuccess", resourceCulture);
             }
         }
         

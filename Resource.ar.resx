@@ -2417,4 +2417,25 @@
   <data name="Msg_AssetCatUpdateSuccess" xml:space="preserve">
     <value>تم تحديث فئة الأصول بنجاح. المعرف</value>
   </data>
+  <data name="AddAssetSubCatDet" xml:space="preserve">
+    <value>إضافة تفاصيل الفئة الفرعية للأصول</value>
+  </data>
+  <data name="AssetSubCatDet" xml:space="preserve">
+    <value>تفاصيل الفئة الفرعية للأصول</value>
+  </data>
+  <data name="AssetSubCatTitle" xml:space="preserve">
+    <value>قائمة الفئات الفرعية للأصول</value>
+  </data>
+  <data name="EditAssetSubCatDet" xml:space="preserve">
+    <value>تحرير تفاصيل الفئة الفرعية للأصول</value>
+  </data>
+  <data name="Msg_AssetSubCatDelete" xml:space="preserve">
+    <value>تم حذف تفاصيل الفئة الفرعية للأصول بنجاح. معرف تفاصيل الفئة الفرعية للأصول</value>
+  </data>
+  <data name="Msg_CreateAssestSubCatSuccess" xml:space="preserve">
+    <value>تم إنشاء الفئة الفرعية للأصول بنجاح. المعرف</value>
+  </data>
+  <data name="Msg_UpdateAssestSubCatSuccess" xml:space="preserve">
+    <value>تم تحديث الفئة الفرعية للأصول بنجاح. المعرف</value>
+  </data>
 </root>

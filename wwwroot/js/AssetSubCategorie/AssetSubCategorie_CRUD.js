@@ -1,28 +1,28 @@
-var Details = function (id) {
+var Details = function (id,assestsubcatdet) {
     var url = "/AssetSubCategorie/Details?id=" + id;
-    $('#titleBigModal').html("Asset Sub Categorie Details");
+    $('#titleBigModal').html(assestsubcatdet);
     loadBigModal(url);
 };
 
 
-var AddEdit = function (id) {
+var AddEdit = function (id, editassestsubcat,addassestsubcat) {
     var url = "/AssetSubCategorie/AddEdit?id=" + id;
     if (id > 0) {
-        $('#titleBigModal').html("Edit Asset Sub Categorie Details");
+        $('#titleBigModal').html(editassestsubcat);
     }
     else {
-        $('#titleBigModal').html("Add Asset Sub Categorie Details");
+        $('#titleBigModal').html(addassestsubcat);
     }
     loadBigModal(url);
 };
 
-var Save = function () {
+var Save = function (pleasewait,save) {
     if (!$("#frmAssetSubCategorie").valid()) {
         return;
     }
 
     var _frmAssetSubCategorie = $("#frmAssetSubCategorie").serialize();
-    $("#btnSave").val("Please Wait");
+    $("#btnSave").val(pleasewait);
     $('#btnSave').attr('disabled', 'disabled');
     $.ajax({
         type: "POST",
@@ -34,7 +34,7 @@ var Save = function () {
                 icon: "success"
             }).then(function () {
                 document.getElementById("btnClose").click();
-                $("#btnSave").val("Save");
+                $("#btnSave").val(save);
                 $('#btnSave').removeAttr('disabled');
                 $('#tblAssetSubCategorie').DataTable().ajax.reload();
             });
@@ -45,22 +45,22 @@ var Save = function () {
     });
 }
 
-var Delete = function (id) {
+var Delete = function (id, delmsg, yes, msgassetsubcatdel) {
     if (DemoUserAccountLockAll() == 1) return;
     Swal.fire({
-        title: 'Do you want to delete this item?',
+        title: delmsg,
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes'
+        confirmButtonText: yes
     }).then((result) => {
         if (result.value) {
             $.ajax({
                 type: "DELETE",
                 url: "/AssetSubCategorie/Delete?id=" + id,
                 success: function (result) {
-                    var message = "Asset Sub Categorie Details has been deleted successfully. Asset Sub Categorie Details ID: " + result.Id;
+                    var message = msgassetsubcatdel + " " + result.Id;
                     Swal.fire({
                         title: message,
                         icon: 'info',

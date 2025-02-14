@@ -3,10 +3,10 @@
         <div class="panel-heading">
             <div class="row">
                 <div class="col-md-5">
-                    <a class="fa fa-plus-square fa-2x" onclick="AddEdit(0)"></a>
+                    <a class="fa fa-plus-square fa-2x" onclick="AddEdit(0,'@Resource.EditAssetSubCatDet','@Resource.AddAssetSubCatDet')"></a>
                 </div>
                 <div class="col-md-7 pull-right">
-                    <h5 class="pull-right"><b>&nbsp;Asset Sub Categorie List</b></h5>
+                    <h5 class="pull-right"><b>&nbsp;@Resource.AssetSubCatTitle</b></h5>
                 </div>
             </div>
         </div>
@@ -15,12 +15,11 @@
             <table id="tblAssetSubCategorie" class="CustomBlueTable" style="width:100%">
                 <thead>
                     <tr>
-                        <th>Id</th>
-                        <th>Asset Categorie</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>CreatedDate</th>
-
+                        <th>@Resource.Id</th>
+                        <th>@Resource.AssetCategoryTitle</th>
+                        <th>@Resource.Name</th>
+                        <th>@Resource.Description</th>
+                        <th>@Resource.CreatedDate</th>
                         <th></th>
                         <th></th>
                     </tr>
@@ -31,7 +30,26 @@
 
     <partial name="~/Views/UIComponents/_bootstrapAlert.cshtml" />
 </div>
-
+@{
+    var msgtitle = Resource.AssetCategoryTitle;
+    var assestsubcat = Resource.AssetSubCatDet;
+    var editassetsubcat = Resource.EditAssetSubCatDet;
+    var addassetsubcat = Resource.AddAssetSubCatDet;
+    var editmsg = Resource.Edit;
+    var yesmsg = Resource.Yes;
+    var msgassetsubcatdel = Resource.Msg_AssetSubCatDelete;
+    var delmsg = Resource.Delete;
+    var deletemsg = Resource.Msg_Delete;
+}
+<div id="resourceTitle" data-title-msg="@msgtitle"></div>
+<div id="resourceassestsubcat" data-asset-subcat-msg="@assestsubcat"></div>
+<div id="resourceEditassetsubcat" data-editassetsubcat-msg="@editassetsubcat"></div>
+<div id="resourceAddassetsubcat" data-addassetsubcat-msg="@addassetsubcat"></div>
+<div id="resourceEdit" data-edit-msg="@editmsg"></div>
+<div id="resourceDel" data-del-msg="@delmsg"></div>
+<div id="resourceDelMsg" data-delete-msg="@deletemsg"></div>
+<div id="resourceYesMsg" data-yes-msg="@yesmsg"></div>
+<div id="resourceAssetSubCatDel" data-assetsubcatdel-msg="@msgassetsubcatdel"></div>
 <style>
     .panel-heading {
         padding: 0px 0px 0px 5px;
