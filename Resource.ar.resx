@@ -120,95 +120,17 @@
   <data name="Accept" xml:space="preserve">
     <value>قبول </value>
   </data>
-  <data name="Accept1" xml:space="preserve">
-    <value>موافقة</value>
-  </data>
-  <data name="Accepted" xml:space="preserve">
-    <value>مقبول</value>
-  </data>
-  <data name="AccommodationTelephone" xml:space="preserve">
-    <value>رقم السكن </value>
-  </data>
   <data name="Action" xml:space="preserve">
     <value>الإجراء</value>
   </data>
   <data name="Add" xml:space="preserve">
     <value>إضافة</value>
   </data>
-  <data name="Add1" xml:space="preserve">
-    <value>إضافة</value>
-  </data>
-  <data name="AddContract" xml:space="preserve">
-    <value>إضافة عقد </value>
-  </data>
-  <data name="AddContract1" xml:space="preserve">
-    <value>إضافة عقد </value>
-  </data>
-  <data name="AddNewEmployee" xml:space="preserve">
-    <value>إضافة موظف جديد</value>
-  </data>
-  <data name="AddNewLeave" xml:space="preserve">
-    <value>إضافة إجازة جديدة</value>
-  </data>
-  <data name="Addressed to (Ar)" xml:space="preserve">
-    <value>موجهة إلى (باللغة العربية)</value>
-  </data>
-  <data name="Addressed to (En)" xml:space="preserve">
-    <value>موجهة إلى (باللغة الإنجليزية)</value>
-  </data>
-  <data name="AddTicketDetails" xml:space="preserve">
-    <value>إضافة تفاصيل تذكرة طيران</value>
-  </data>
   <data name="AdvanceSearch" xml:space="preserve">
     <value>البحث المتقدم</value>
   </data>
-  <data name="AllEmployees" xml:space="preserve">
-    <value>كافة الموظفين </value>
-  </data>
-  <data name="Allowances" xml:space="preserve">
-    <value>البدلات</value>
-  </data>
-  <data name="Annual Leave" xml:space="preserve">
-    <value>الاجازة السنوية </value>
-  </data>
-  <data name="Annual Vacation for the Month" xml:space="preserve">
-    <value>اجازة سنوية لشهر </value>
-  </data>
-  <data name="ANNUAL VACATION FOR THE MONTH OF YYYYMM" xml:space="preserve">
-    <value>الموظفين في إجازة إعتيادية لشهر </value>
-  </data>
-  <data name="AppliedOn" xml:space="preserve">
-    <value>ينطبق على</value>
-  </data>
-  <data name="Apporved" xml:space="preserve">
-    <value>تمت الموافقة</value>
-  </data>
-  <data name="Approve" xml:space="preserve">
-    <value>يوافق </value>
-  </data>
-  <data name="Approve Leave Request Screen" xml:space="preserve">
-    <value>شاشة الموافقة</value>
-  </data>
-  <data name="Approving" xml:space="preserve">
-    <value>الموافقة</value>
-  </data>
-  <data name="Arrival Date" xml:space="preserve">
-    <value>تاريخ الوصول</value>
-  </data>
-  <data name="ArrivalDateKKMC" xml:space="preserve">
-    <value>تاريخ الوصول إلى مدينة الملك خالد العسكرية</value>
-  </data>
-  <data name="ArrivalDateKSA" xml:space="preserve">
-    <value>تاريخ الوصول إلى المملكة العربية السعودية </value>
-  </data>
-  <data name="BalanceLeave" xml:space="preserve">
-    <value>رصيد الإجازات</value>
-  </data>
   <data name="BasicData" xml:space="preserve">
     <value>البيانات الاساسية</value>
-  </data>
-  <data name="BasicSalary" xml:space="preserve">
-    <value>أساسي الراتب</value>
   </data>
   <data name="BirthDate" xml:space="preserve">
     <value>تاريخ الميلاد</value>
@@ -216,23 +138,11 @@
   <data name="BirthPalce" xml:space="preserve">
     <value>محل الميلاد</value>
   </data>
-  <data name="BloodType" xml:space="preserve">
-    <value>نوع فصيلة الدم </value>
-  </data>
   <data name="Browse" xml:space="preserve">
     <value>يتصفح </value>
   </data>
-  <data name="Calculate No of Days" xml:space="preserve">
-    <value>حساب عدد الايام</value>
-  </data>
   <data name="Cancel" xml:space="preserve">
     <value>إلغاء</value>
-  </data>
-  <data name="Cancel Leave" xml:space="preserve">
-    <value>إلغاء الإجازة</value>
-  </data>
-  <data name="Cancelled" xml:space="preserve">
-    <value>ملغي</value>
   </data>
   <data name="Category" xml:space="preserve">
     <value>الفئة</value>
@@ -240,29 +150,11 @@
   <data name="Category is Required" xml:space="preserve">
     <value>مطلوب تحديد الفئة مطلوبة</value>
   </data>
-  <data name="Causes" xml:space="preserve">
-    <value>الأسباب</value>
-  </data>
-  <data name="CertificateExpiryDate" xml:space="preserve">
-    <value>تاريخ إنتهاء صلاحية الشهادة </value>
-  </data>
-  <data name="CertificateInformation" xml:space="preserve">
-    <value>معلومات الشهادة</value>
-  </data>
-  <data name="CertificatesDetails" xml:space="preserve">
-    <value>تفاصيل الشهادات </value>
-  </data>
   <data name="ChangePassword" xml:space="preserve">
     <value>تغيير كلمة المرور</value>
   </data>
   <data name="Changes" xml:space="preserve">
     <value>تغييرات</value>
-  </data>
-  <data name="Changes1" xml:space="preserve">
-    <value>تغير </value>
-  </data>
-  <data name="CivilStatus" xml:space="preserve">
-    <value>الحالة المدنية </value>
   </data>
   <data name="Class" xml:space="preserve">
     <value>يصنف </value>
@@ -276,47 +168,11 @@
   <data name="Contact" xml:space="preserve">
     <value>تفاصيل</value>
   </data>
-  <data name="Contact1" xml:space="preserve">
-    <value>الاتصال </value>
-  </data>
-  <data name="ContactDetails" xml:space="preserve">
-    <value>معلومات الاتصال </value>
-  </data>
-  <data name="ContraactTerm" xml:space="preserve">
-    <value>شروط العقد</value>
-  </data>
-  <data name="Contract" xml:space="preserve">
-    <value>العقد</value>
-  </data>
-  <data name="ContractDetails" xml:space="preserve">
-    <value>تفاصيل العقد</value>
-  </data>
-  <data name="ContractEndDate" xml:space="preserve">
-    <value>نهاية تاريخ العقد</value>
-  </data>
-  <data name="ContractEndDAte1" xml:space="preserve">
-    <value>تاريخ نهاية العقد</value>
-  </data>
-  <data name="Contracting Source" xml:space="preserve">
-    <value>نوع التعاقد</value>
-  </data>
-  <data name="ContractStartDate" xml:space="preserve">
-    <value>تاريخ بداية العقد</value>
-  </data>
-  <data name="ContractStatus" xml:space="preserve">
-    <value>حالة العقد</value>
-  </data>
-  <data name="ContractType" xml:space="preserve">
-    <value>نوع العقد</value>
-  </data>
   <data name="Country" xml:space="preserve">
     <value>الدولة</value>
   </data>
   <data name="Create New Account" xml:space="preserve">
     <value>إنشاء حساب جديد </value>
-  </data>
-  <data name="CreateNewAccountforNonHospitalStaff" xml:space="preserve">
-    <value>إنشاء حساب جديد لغير موظفي المستشفى</value>
   </data>
   <data name="Date" xml:space="preserve">
     <value>التاريخ</value>
@@ -324,92 +180,20 @@
   <data name="Date of Birth" xml:space="preserve">
     <value>تاريخ الميلاد </value>
   </data>
-  <data name="Days" xml:space="preserve">
-    <value>الايام</value>
-  </data>
   <data name="Delete" xml:space="preserve">
     <value>يحذف</value>
   </data>
   <data name="Department" xml:space="preserve">
     <value>القسم</value>
   </data>
-  <data name="DepartmentActingSignPerson" xml:space="preserve">
-    <value>Department Acting Sign Person</value>
-  </data>
-  <data name="DepartmentFrom" xml:space="preserve">
-    <value>المغادرة من </value>
-  </data>
-  <data name="DepartmentTo" xml:space="preserve">
-    <value>المغادرة إلى </value>
-  </data>
-  <data name="DepartOn" xml:space="preserve">
-    <value>يغادر بتاريخ</value>
-  </data>
-  <data name="Departure Date" xml:space="preserve">
-    <value>تاريخ المغادرة</value>
-  </data>
-  <data name="DependentDetails" xml:space="preserve">
-    <value>تفاصيل المرافق </value>
-  </data>
-  <data name="DependentName" xml:space="preserve">
-    <value>إسم المرافق</value>
-  </data>
-  <data name="DependentNameAr" xml:space="preserve">
-    <value>إسم المرافق العربية</value>
-  </data>
   <data name="Destination" xml:space="preserve">
     <value>جهة الوصول</value>
-  </data>
-  <data name="Disapproved" xml:space="preserve">
-    <value>غير موافق </value>
-  </data>
-  <data name="Document Image" xml:space="preserve">
-    <value>ارفاق الصورة</value>
-  </data>
-  <data name="DocumentName" xml:space="preserve">
-    <value>إسم الوثيقة</value>
-  </data>
-  <data name="DocumentNumber" xml:space="preserve">
-    <value>رقم الوثيقة</value>
   </data>
   <data name="Download Image" xml:space="preserve">
     <value>تحميل الصورة</value>
   </data>
   <data name="Edit" xml:space="preserve">
     <value>تعديل</value>
-  </data>
-  <data name="Edit Contract" xml:space="preserve">
-    <value>تعديل العقد</value>
-  </data>
-  <data name="Edit1" xml:space="preserve">
-    <value>تعديل</value>
-  </data>
-  <data name="Edit2" xml:space="preserve">
-    <value>تعديل</value>
-  </data>
-  <data name="EditNewLeave" xml:space="preserve">
-    <value>تعديل إجازة جديدة</value>
-  </data>
-  <data name="EditPersonalchangeRequestPCRDetails" xml:space="preserve">
-    <value>طلب تعديل بيانات موظف </value>
-  </data>
-  <data name="Education" xml:space="preserve">
-    <value>التعليم </value>
-  </data>
-  <data name="EducationDetails" xml:space="preserve">
-    <value>تفاصيل التعليم </value>
-  </data>
-  <data name="EducationDetails1" xml:space="preserve">
-    <value />
-  </data>
-  <data name="EffectiveDate" xml:space="preserve">
-    <value>إعتباراً من تاريخ </value>
-  </data>
-  <data name="EligibleforOverTime" xml:space="preserve">
-    <value>يستحق بدل العمل الإضافي </value>
-  </data>
-  <data name="EligibleforTicket" xml:space="preserve">
-    <value>يستحق تذاكر الطيران </value>
   </data>
   <data name="EmailID" xml:space="preserve">
     <value>إسم المستخدم للإيميل </value>
@@ -419,15 +203,6 @@
   </data>
   <data name="Employee" xml:space="preserve">
     <value>الرقم الوظيفي</value>
-  </data>
-  <data name="Employee Details" xml:space="preserve">
-    <value>بيانات الموظف</value>
-  </data>
-  <data name="Employee Start Work" xml:space="preserve">
-    <value>تاريخ بداية العمل </value>
-  </data>
-  <data name="Employee Start Work Date" xml:space="preserve">
-    <value>تاريخ مباشرة العمل </value>
   </data>
   <data name="Employee#" xml:space="preserve">
     <value>الرقم الوظيفي</value>
@@ -441,59 +216,14 @@
   <data name="End Date" xml:space="preserve">
     <value>تاريخ النهاية </value>
   </data>
-  <data name="End Of Contract" xml:space="preserve">
-    <value>نهاية العقد</value>
-  </data>
-  <data name="Enter Score" xml:space="preserve">
-    <value>ادخل التقيم </value>
-  </data>
-  <data name="EnteranceNumber" xml:space="preserve">
-    <value>رقم الحدود </value>
-  </data>
-  <data name="EOCDate" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Evaluation" xml:space="preserve">
-    <value>تقييم</value>
-  </data>
   <data name="Exit" xml:space="preserve">
     <value>الخروج </value>
-  </data>
-  <data name="ExpiryDate" xml:space="preserve">
-    <value>تاريخ إنتهاء الصلاحية</value>
-  </data>
-  <data name="ExtendedMonths" xml:space="preserve">
-    <value>شهور التمديد</value>
-  </data>
-  <data name="Face Mask Measurement" xml:space="preserve">
-    <value>قياس قناع الوجه</value>
-  </data>
-  <data name="FamilyName" xml:space="preserve">
-    <value>إسم العائلة</value>
   </data>
   <data name="Female" xml:space="preserve">
     <value>انثى </value>
   </data>
-  <data name="FireandSafety Examination" xml:space="preserve">
-    <value>اختبار الإطفاء والسلامة</value>
-  </data>
   <data name="FirstName" xml:space="preserve">
     <value>الإسم الأول </value>
-  </data>
-  <data name="FlightDetails" xml:space="preserve">
-    <value>تفاصيل الرحلة</value>
-  </data>
-  <data name="Food" xml:space="preserve">
-    <value>الطعام</value>
-  </data>
-  <data name="For confidential" xml:space="preserve">
-    <value>سري</value>
-  </data>
-  <data name="For Medical Exam" xml:space="preserve">
-    <value>الكشف الطبي </value>
-  </data>
-  <data name="For PD Approval" xml:space="preserve">
-    <value />
   </data>
   <data name="ForgetPassword" xml:space="preserve">
     <value>نسيت كلمة السر</value>
@@ -504,56 +234,11 @@
   <data name="Gender" xml:space="preserve">
     <value>الجنس</value>
   </data>
-  <data name="GosiAmount" xml:space="preserve">
-    <value>مبلغ التأمينات</value>
-  </data>
-  <data name="GosiNumber" xml:space="preserve">
-    <value>رقم التأمينات</value>
-  </data>
-  <data name="GUARANTEE" xml:space="preserve">
-    <value>الكفيل</value>
-  </data>
-  <data name="Has Evacuation" xml:space="preserve">
-    <value>تم تقيمه</value>
-  </data>
-  <data name="Has Fire and Safety" xml:space="preserve">
-    <value>حصل على تدريب الحرائق والسلامة</value>
-  </data>
-  <data name="Has Medical Examination" xml:space="preserve">
-    <value>تم الكشف الطبي</value>
-  </data>
-  <data name="Hire Date:" xml:space="preserve">
-    <value>تاريخ بداية العمل </value>
-  </data>
-  <data name="HiringDate" xml:space="preserve">
-    <value>تاريخ بداية العمل </value>
-  </data>
-  <data name="HoldbyMSD" xml:space="preserve">
-    <value>تم إيقافه من قبل الخدمات الطبية</value>
-  </data>
-  <data name="Hospital Director Approval" xml:space="preserve">
-    <value>موافقة مدير المستشفى</value>
-  </data>
-  <data name="Hospital Employee" xml:space="preserve">
-    <value>موظفين المستشفي </value>
-  </data>
-  <data name="Hospital Employee (Contracts)" xml:space="preserve">
-    <value>موظفين المستشفي (العقود)</value>
-  </data>
-  <data name="HospitalTicket" xml:space="preserve">
-    <value>تذكرة المستشفى</value>
-  </data>
-  <data name="Housing" xml:space="preserve">
-    <value>الإسكان </value>
-  </data>
   <data name="Identification" xml:space="preserve">
     <value>هوية </value>
   </data>
   <data name="Identification Details" xml:space="preserve">
     <value>تفاصيل التعريف </value>
-  </data>
-  <data name="IdentificationCertificate" xml:space="preserve">
-    <value>شهادة تحديد الهوية </value>
   </data>
   <data name="IdentificationInformation" xml:space="preserve">
     <value>معلومات التعريف </value>
@@ -561,71 +246,14 @@
   <data name="Image" xml:space="preserve">
     <value>صورة</value>
   </data>
-  <data name="Inflation" xml:space="preserve">
-    <value>التضخم</value>
-  </data>
   <data name="Information" xml:space="preserve">
     <value>معلومات </value>
-  </data>
-  <data name="IqamaExpiryDate" xml:space="preserve">
-    <value>تاريخ إنتهاء صلاحية الإقامة</value>
-  </data>
-  <data name="IqamaIDExpiryDate" xml:space="preserve">
-    <value />
-  </data>
-  <data name="IqamaIDIssueDate" xml:space="preserve">
-    <value />
-  </data>
-  <data name="IqamaIssueDate" xml:space="preserve">
-    <value>تاريخ إصدار الإقامة </value>
-  </data>
-  <data name="IqamaNationalID" xml:space="preserve">
-    <value>رقم الإقامة / الهوية الوطنية</value>
-  </data>
-  <data name="IqamaNumber" xml:space="preserve">
-    <value>رقم الإقامة </value>
   </data>
   <data name="JobTitle" xml:space="preserve">
     <value>المسمى الوظيفي </value>
   </data>
-  <data name="JobTitle1" xml:space="preserve">
-    <value>المسمى الوظيفي </value>
-  </data>
-  <data name="Justification" xml:space="preserve">
-    <value>المبرر </value>
-  </data>
-  <data name="JustificationArabic" xml:space="preserve">
-    <value>المبرر العربية</value>
-  </data>
   <data name="LastName" xml:space="preserve">
     <value>الإسم الأخير</value>
-  </data>
-  <data name="Leave balance on" xml:space="preserve">
-    <value>رصيد الاجازات من</value>
-  </data>
-  <data name="Leave Details" xml:space="preserve">
-    <value>بيانات الاجازات</value>
-  </data>
-  <data name="Leave Information" xml:space="preserve">
-    <value>بيانات الاجازة</value>
-  </data>
-  <data name="LeaveDetails" xml:space="preserve">
-    <value>بيانات الاجازة</value>
-  </data>
-  <data name="LeaveFrom" xml:space="preserve">
-    <value>الإجازة من </value>
-  </data>
-  <data name="LeaveInfo" xml:space="preserve">
-    <value>بيانات الاجازة</value>
-  </data>
-  <data name="LeaveReason" xml:space="preserve">
-    <value>سبب الإجازة</value>
-  </data>
-  <data name="LeaveTo" xml:space="preserve">
-    <value>الإجازة إلى</value>
-  </data>
-  <data name="LeaveType" xml:space="preserve">
-    <value>نوع الإجازة</value>
   </data>
   <data name="Login" xml:space="preserve">
     <value>الدخول </value>
@@ -639,21 +267,6 @@
   <data name="Married" xml:space="preserve">
     <value>متزوج</value>
   </data>
-  <data name="Mask Measurenemt Results Information" xml:space="preserve">
-    <value>بيانات اختبار قناع الوجه</value>
-  </data>
-  <data name="MaximumScore" xml:space="preserve">
-    <value>الحد الأدني للدرجة  </value>
-  </data>
-  <data name="Medical Assessment" xml:space="preserve">
-    <value>الفحص الطبي</value>
-  </data>
-  <data name="Medical Card" xml:space="preserve">
-    <value>البطاقة الطبية </value>
-  </data>
-  <data name="Medical FIT/UNFIT" xml:space="preserve">
-    <value>لائق طبيا/غير لائق طبيا</value>
-  </data>
   <data name="Message" xml:space="preserve">
     <value>رسالة</value>
   </data>
@@ -666,182 +279,29 @@
   <data name="Name" xml:space="preserve">
     <value>الإسم</value>
   </data>
-  <data name="Name Ar" xml:space="preserve">
-    <value>الاسم بالعربي</value>
-  </data>
-  <data name="NameArabic" xml:space="preserve">
-    <value>الإسم باللغة العربية</value>
-  </data>
-  <data name="NameEnglish" xml:space="preserve">
-    <value>الإسم باللغة الإنجليزية</value>
-  </data>
-  <data name="Nationality" xml:space="preserve">
-    <value>الجنسية</value>
-  </data>
-  <data name="NetSalary" xml:space="preserve">
-    <value>صافي الراتب </value>
-  </data>
-  <data name="NewLeave" xml:space="preserve">
-    <value>إجازة جديدة </value>
-  </data>
   <data name="Next" xml:space="preserve">
     <value>التالي</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>لا </value>
   </data>
-  <data name="NumberofDays" xml:space="preserve">
-    <value>عدد الأيام </value>
-  </data>
-  <data name="NumberofLeave" xml:space="preserve">
-    <value>عدد الإجازة</value>
-  </data>
   <data name="Other" xml:space="preserve">
     <value>اخرى </value>
-  </data>
-  <data name="Owing Day" xml:space="preserve">
-    <value>الايام التعويضية</value>
-  </data>
-  <data name="Owing Days Type" xml:space="preserve">
-    <value>نوع الاجازة النعويضية</value>
-  </data>
-  <data name="OwingDays" xml:space="preserve">
-    <value>الأيام المستحقة </value>
-  </data>
-  <data name="Passport" xml:space="preserve">
-    <value>الجواز</value>
-  </data>
-  <data name="Passport Details" xml:space="preserve">
-    <value>بيانات الجواز</value>
-  </data>
-  <data name="Passport Expiration Months" xml:space="preserve">
-    <value>تاريخ نهاية الجواز بالشهر </value>
-  </data>
-  <data name="Passport/Iqama Information" xml:space="preserve">
-    <value>معلومات الجواز/الاقامه </value>
-  </data>
-  <data name="PassportDetails" xml:space="preserve">
-    <value>بيانات الجواز</value>
-  </data>
-  <data name="PassportExpiryDate" xml:space="preserve">
-    <value>تاريخ إنتهاء صلاحية الجهاز</value>
-  </data>
-  <data name="PassportIDDetails" xml:space="preserve">
-    <value>تفاصيل الجواز / الهوية</value>
-  </data>
-  <data name="PassportInformation" xml:space="preserve">
-    <value>معلومات الجواز </value>
-  </data>
-  <data name="PassportIssueDate" xml:space="preserve">
-    <value>تاريخ إصدار الجواز</value>
-  </data>
-  <data name="PassportNumber" xml:space="preserve">
-    <value>رقم الجواز </value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>كلمة السر</value>
   </data>
-  <data name="PCR Details List" xml:space="preserve">
-    <value>قائمة تفاصيل تغيير معلومات</value>
-  </data>
-  <data name="PCR Information" xml:space="preserve">
-    <value>طلب تغير مسمى وظيفي </value>
-  </data>
-  <data name="PCRDetailList" xml:space="preserve">
-    <value>قائمة تفاصيل تغيير معلومات</value>
-  </data>
-  <data name="PCRInformation" xml:space="preserve">
-    <value>معلومات تعديل بيانات الموظف</value>
-  </data>
   <data name="Pending" xml:space="preserve">
     <value>معلق</value>
-  </data>
-  <data name="Pending New Leave" xml:space="preserve">
-    <value>Pending New Leave</value>
-  </data>
-  <data name="Pending1" xml:space="preserve">
-    <value>معلق</value>
-  </data>
-  <data name="PersonalDetails" xml:space="preserve">
-    <value>تفاصيل شخصية </value>
   </data>
   <data name="Picture" xml:space="preserve">
     <value>الصورة</value>
   </data>
-  <data name="PlaceofIssue" xml:space="preserve">
-    <value>مكان الإصدار</value>
-  </data>
-  <data name="PlassportIssueDate" xml:space="preserve">
-    <value />
-  </data>
   <data name="PleaseSelect" xml:space="preserve">
     <value>فضلك إختر </value>
   </data>
-  <data name="Pls, enter the MONTH as format YYYYMM" xml:space="preserve">
-    <value />
-  </data>
-  <data name="PointofHire" xml:space="preserve">
-    <value>نقطة التعاقد </value>
-  </data>
-  <data name="Position" xml:space="preserve">
-    <value>الوظيفة </value>
-  </data>
-  <data name="Position (From)" xml:space="preserve">
-    <value>المنصب الوظيفي (من)</value>
-  </data>
-  <data name="Position (To)" xml:space="preserve">
-    <value>المنصب الوظيفي (الى)</value>
-  </data>
-  <data name="Position Change Request Information" xml:space="preserve">
-    <value>طلب تغيير معلومات</value>
-  </data>
-  <data name="Position Number" xml:space="preserve">
-    <value>رقم الوظيفة </value>
-  </data>
-  <data name="PositionCivilaffairchange" xml:space="preserve">
-    <value>تعيير الوظيفة في الأحوال المدنية </value>
-  </data>
-  <data name="PositionFrom" xml:space="preserve">
-    <value>المنصب الوظيفي (من)</value>
-  </data>
-  <data name="PositioninIqama" xml:space="preserve">
-    <value>الوظيفة في الإقامة </value>
-  </data>
-  <data name="PositionNumberFrom" xml:space="preserve">
-    <value>رقم الوظيفة (من) </value>
-  </data>
-  <data name="PositionNumberTo" xml:space="preserve">
-    <value>رقم الوظيفة (إلى) </value>
-  </data>
-  <data name="PositionTitle" xml:space="preserve">
-    <value>المسمى الوظيفي </value>
-  </data>
-  <data name="PositionTitleFrom" xml:space="preserve">
-    <value>مسمى الوظيفة (من)</value>
-  </data>
-  <data name="PositionTitleTo" xml:space="preserve">
-    <value>مسمى الوظيفة (إلى) </value>
-  </data>
-  <data name="PositionTo" xml:space="preserve">
-    <value>المنصب الوظيفي (الى)</value>
-  </data>
-  <data name="PostBoxNumber" xml:space="preserve">
-    <value>رقم صندوق البريد </value>
-  </data>
-  <data name="PresentAddress" xml:space="preserve">
-    <value>العنوان الحالي</value>
-  </data>
-  <data name="PresentAddressinArabic" xml:space="preserve">
-    <value>العنوان الحالي باللغة العربية</value>
-  </data>
   <data name="PreviewImage" xml:space="preserve">
     <value>معاينة الصورة</value>
-  </data>
-  <data name="PrevilageDetails" xml:space="preserve">
-    <value>تفاصيل المميزات </value>
-  </data>
-  <data name="PrevilegeName" xml:space="preserve">
-    <value>إسم الميزة </value>
   </data>
   <data name="Previous" xml:space="preserve">
     <value>السابق</value>
@@ -849,92 +309,14 @@
   <data name="Print" xml:space="preserve">
     <value>طباعة</value>
   </data>
-  <data name="PRINT : Locum List REPORT" xml:space="preserve">
-    <value>طباعة : تقرير الموظفين المؤقتين</value>
-  </data>
-  <data name="PRINT : STATISTIC REPORT" xml:space="preserve">
-    <value>طباعة : التقرير الإحصائي</value>
-  </data>
-  <data name="PRINT : TOTAL NUMBER OF STAFF ON LEAVE (3 reports)" xml:space="preserve">
-    <value>طباعة : عدد الموظفين المجازين (3 تقارير)</value>
-  </data>
-  <data name="Print PCR1" xml:space="preserve">
-    <value>طباعة  تغيير(1)</value>
-  </data>
-  <data name="Print PCR2" xml:space="preserve">
-    <value>طباعة  تغيير(2)</value>
-  </data>
-  <data name="Print1" xml:space="preserve">
-    <value>طباعة</value>
-  </data>
-  <data name="Print2" xml:space="preserve">
-    <value>طباعة </value>
-  </data>
-  <data name="Processed" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ProcessingKind" xml:space="preserve">
-    <value>نوع الإجراء</value>
-  </data>
-  <data name="Promotion" xml:space="preserve">
-    <value>ترقية</value>
-  </data>
   <data name="Purpose" xml:space="preserve">
     <value>الغرض منه</value>
-  </data>
-  <data name="Qualification" xml:space="preserve">
-    <value>المؤهلات</value>
-  </data>
-  <data name="QualificationinArabic" xml:space="preserve">
-    <value>المؤهلات باللغة العربية</value>
-  </data>
-  <data name="Rarity" xml:space="preserve">
-    <value>الندرة</value>
-  </data>
-  <data name="Recontract" xml:space="preserve">
-    <value>اعادة تجديد العقد</value>
-  </data>
-  <data name="RecontractDetails" xml:space="preserve">
-    <value>تفاصيل إعادة التعاقد </value>
-  </data>
-  <data name="RecontractInformation" xml:space="preserve">
-    <value>معلومات إعادة التعاقد </value>
-  </data>
-  <data name="RecruitingAgency" xml:space="preserve">
-    <value>وكالة التوظيف</value>
-  </data>
-  <data name="ReferenceDocument" xml:space="preserve">
-    <value>وثيقة المرجع </value>
   </data>
   <data name="Register" xml:space="preserve">
     <value>أخصائي</value>
   </data>
-  <data name="Register Non-Hospital Staff" xml:space="preserve">
-    <value>تسجيل مستخدم من خارج المستشفى</value>
-  </data>
-  <data name="RegisterNonHospitalStaff" xml:space="preserve">
-    <value>تسجيل غير موظفي المستشفى </value>
-  </data>
-  <data name="RegisterNumberDocumentID" xml:space="preserve">
-    <value>رقم التسجيل / وثيقة الهوية </value>
-  </data>
   <data name="Rejected" xml:space="preserve">
     <value>مرفوض</value>
-  </data>
-  <data name="Relation" xml:space="preserve">
-    <value>العلاقة</value>
-  </data>
-  <data name="RelativeAddress" xml:space="preserve">
-    <value>عنوان قريب لك</value>
-  </data>
-  <data name="RelativeMobilenumber" xml:space="preserve">
-    <value>رقم هاتف قريب لك </value>
-  </data>
-  <data name="RelativeName" xml:space="preserve">
-    <value>إسم قريب لك</value>
-  </data>
-  <data name="Religion" xml:space="preserve">
-    <value>الديانة</value>
   </data>
   <data name="Remark" xml:space="preserve">
     <value>ملاحظات</value>
@@ -942,23 +324,11 @@
   <data name="RememberMe" xml:space="preserve">
     <value>تذكرني</value>
   </data>
-  <data name="Renewed" xml:space="preserve">
-    <value>تم تجديده</value>
-  </data>
   <data name="Reponse" xml:space="preserve">
     <value>رد</value>
   </data>
-  <data name="Reponse1" xml:space="preserve">
-    <value>رد </value>
-  </data>
   <data name="Request Date" xml:space="preserve">
     <value>تاريخ الطلب </value>
-  </data>
-  <data name="Request Tracking" xml:space="preserve">
-    <value>متابعة الطلب</value>
-  </data>
-  <data name="Request Tracking Information" xml:space="preserve">
-    <value>بيانات متابعة الطلب </value>
   </data>
   <data name="Required" xml:space="preserve">
     <value>مطلوب</value>
@@ -969,65 +339,14 @@
   <data name="Return" xml:space="preserve">
     <value>العودة</value>
   </data>
-  <data name="Return_ To_Work" xml:space="preserve">
-    <value>العودة الى العمل</value>
-  </data>
   <data name="ReturnOn" xml:space="preserve">
     <value>العودة على </value>
   </data>
   <data name="Route" xml:space="preserve">
     <value>المسار </value>
   </data>
-  <data name="Salary" xml:space="preserve">
-    <value>الراتب </value>
-  </data>
-  <data name="Salary1" xml:space="preserve">
-    <value>الراتب </value>
-  </data>
-  <data name="SalaryDetails" xml:space="preserve">
-    <value>تفاصيل الراتب</value>
-  </data>
-  <data name="SalaryFrom" xml:space="preserve">
-    <value>الراتب من </value>
-  </data>
-  <data name="SalaryScaleGrade" xml:space="preserve">
-    <value>الدرجة في جدول الرواتب </value>
-  </data>
-  <data name="SalaryTo" xml:space="preserve">
-    <value>الراتب إلى </value>
-  </data>
-  <data name="Saudi Council" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Saudi Student" xml:space="preserve">
-    <value>طالب سعوي </value>
-  </data>
-  <data name="Saudi Student1" xml:space="preserve">
-    <value>طالبه سعوية </value>
-  </data>
-  <data name="SaudiCouncilDetails" xml:space="preserve">
-    <value>تفاصيل الهيئة السعودية</value>
-  </data>
-  <data name="SaudiCouncilInformation" xml:space="preserve">
-    <value>معلومات الهيئة السعودية</value>
-  </data>
-  <data name="SaudiIdIqamaNo" xml:space="preserve">
-    <value>الهوية الوطنية السعودية / رقم الإقامة</value>
-  </data>
-  <data name="SaudiSalaryLevel" xml:space="preserve">
-    <value>مستوى الراتب السعودي</value>
-  </data>
   <data name="Save" xml:space="preserve">
     <value>حفظ</value>
-  </data>
-  <data name="Score" xml:space="preserve">
-    <value>درجة التقيم</value>
-  </data>
-  <data name="Score1" xml:space="preserve">
-    <value>درجة التقيم</value>
-  </data>
-  <data name="ScoreType" xml:space="preserve">
-    <value>نوع الدرجة </value>
   </data>
   <data name="ScreenName" xml:space="preserve">
     <value>إسم الشاشة</value>
@@ -1035,62 +354,8 @@
   <data name="Search" xml:space="preserve">
     <value>بحث</value>
   </data>
-  <data name="Search By Any Word" xml:space="preserve">
-    <value>البحث عن طريق أي كلمة</value>
-  </data>
-  <data name="Search By Any Word1" xml:space="preserve">
-    <value>بحث بأي كلمة</value>
-  </data>
-  <data name="Search By Employee Number" xml:space="preserve">
-    <value>بحث برقم الموظف</value>
-  </data>
-  <data name="Search By Employee Number1" xml:space="preserve">
-    <value>بحث برقم الموظف</value>
-  </data>
-  <data name="Search1" xml:space="preserve">
-    <value>البحث</value>
-  </data>
-  <data name="Search2" xml:space="preserve">
-    <value>بحث</value>
-  </data>
-  <data name="Search3" xml:space="preserve">
-    <value>البحث</value>
-  </data>
-  <data name="Search4" xml:space="preserve">
-    <value>بحث</value>
-  </data>
-  <data name="SearchByAnyValue" xml:space="preserve">
-    <value>البحث بواسطة أي قيمة</value>
-  </data>
-  <data name="Section per Contract is Required" xml:space="preserve">
-    <value>مطلوب تحديد القسم</value>
-  </data>
-  <data name="SectionPerContract" xml:space="preserve">
-    <value>القسم حسب العقد</value>
-  </data>
   <data name="Select Date" xml:space="preserve">
     <value>ادخل التاريخ</value>
-  </data>
-  <data name="Select Date1" xml:space="preserve">
-    <value>ادخل التاريخ</value>
-  </data>
-  <data name="Select Leave Type is Required" xml:space="preserve">
-    <value>ادخل نوع المغادرة</value>
-  </data>
-  <data name="SelectDocument" xml:space="preserve">
-    <value>إختر الوثيقة </value>
-  </data>
-  <data name="Send Sms" xml:space="preserve">
-    <value>ارسال رسالة نصية </value>
-  </data>
-  <data name="Send Sms Information" xml:space="preserve">
-    <value>ارسال رسالة نصية </value>
-  </data>
-  <data name="Sending SMS" xml:space="preserve">
-    <value>ارسال رسالة نصية</value>
-  </data>
-  <data name="Sending SMS1" xml:space="preserve">
-    <value>ارسال رسالة نصية</value>
   </data>
   <data name="SigntoYourAccount" xml:space="preserve">
     <value>التسجيل في حسابك </value>
@@ -1098,86 +363,17 @@
   <data name="Single" xml:space="preserve">
     <value>اعزب </value>
   </data>
-  <data name="Single1" xml:space="preserve">
-    <value>اعزب </value>
-  </data>
-  <data name="Specialty" xml:space="preserve">
-    <value>التخصص </value>
-  </data>
   <data name="Start Date" xml:space="preserve">
-    <value>تاريخ البداية </value>
-  </data>
-  <data name="Start Date1" xml:space="preserve">
     <value>تاريخ البداية </value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>الحالة</value>
   </data>
-  <data name="Status To is Required" xml:space="preserve">
-    <value>مطلوب تحديد الحالة</value>
-  </data>
-  <data name="Status1" xml:space="preserve">
-    <value>الحالة</value>
-  </data>
-  <data name="StatusFrom" xml:space="preserve">
-    <value>الحالة من </value>
-  </data>
-  <data name="StatusTO" xml:space="preserve">
-    <value>الحالة إلى</value>
-  </data>
-  <data name="TakenScore" xml:space="preserve">
-    <value>الدرجة المأخوذة</value>
-  </data>
-  <data name="Termination" xml:space="preserve">
-    <value>فسخ عقد </value>
-  </data>
-  <data name="The Certificate is Expired , please Renew" xml:space="preserve">
-    <value>الشهادة منتهية , يرجى التجديد</value>
-  </data>
-  <data name="The Leave days balance is" xml:space="preserve">
-    <value>رصيد أيام الإجازة هو</value>
-  </data>
-  <data name="The Owing days balance is" xml:space="preserve">
-    <value>رصيد الأيام التعويضية المستحق هو</value>
-  </data>
-  <data name="This Employee Number is Not Registered" xml:space="preserve">
-    <value>الرقم الوظيفي غير مسجل </value>
-  </data>
-  <data name="This Employee Vacation is Hold by MSD" xml:space="preserve">
-    <value>اجازة الموظف معلقه من قبل الخدمات الطبية</value>
-  </data>
-  <data name="Ticket" xml:space="preserve">
-    <value>التذكرة</value>
-  </data>
-  <data name="Ticketing" xml:space="preserve">
-    <value>إستحقاق التذاكر </value>
-  </data>
   <data name="To" xml:space="preserve">
     <value>إلى </value>
   </data>
-  <data name="TotalDays" xml:space="preserve">
-    <value>إجمالي عدد الأيام </value>
-  </data>
-  <data name="TotalOwingDays" xml:space="preserve">
-    <value>إجمالي عدد الأيام المستحقة</value>
-  </data>
-  <data name="TQM Statistic Report" xml:space="preserve">
-    <value>تقرير احصائية لقسم الجودة </value>
-  </data>
-  <data name="TQM Statistic Report1" xml:space="preserve">
-    <value>تقرير احصائية قسم الجودة </value>
-  </data>
-  <data name="Transport" xml:space="preserve">
-    <value>النقل </value>
-  </data>
-  <data name="TypeofTicket" xml:space="preserve">
-    <value>نوع التذكرة</value>
-  </data>
   <data name="Update" xml:space="preserve">
     <value>تحديث </value>
-  </data>
-  <data name="UpdateEmployeeLeave" xml:space="preserve">
-    <value>تحديث إجازة الموظف </value>
   </data>
   <data name="User Previlege Setting" xml:space="preserve">
     <value>اعدادات صلاحيات المستخدم</value>
@@ -1185,44 +381,8 @@
   <data name="UserName" xml:space="preserve">
     <value>إسم المستخدم</value>
   </data>
-  <data name="UserPrevilegeSettings" xml:space="preserve">
-    <value>اعدادات صلاحيات المستخدم</value>
-  </data>
-  <data name="Verification Certificate" xml:space="preserve">
-    <value>شهادة تعريف</value>
-  </data>
-  <data name="Verification Information" xml:space="preserve">
-    <value>معلومات شهادة التعريف</value>
-  </data>
   <data name="View" xml:space="preserve">
     <value>عرض</value>
-  </data>
-  <data name="View1" xml:space="preserve">
-    <value>عرض </value>
-  </data>
-  <data name="ViewLeaveApplication" xml:space="preserve">
-    <value>عرض نموذج طلب الإجازة</value>
-  </data>
-  <data name="VisaJob" xml:space="preserve">
-    <value>تأشيرة عمل</value>
-  </data>
-  <data name="VisaNumber" xml:space="preserve">
-    <value>رقم التأشيرة </value>
-  </data>
-  <data name="VisaType" xml:space="preserve">
-    <value>نوع التأشيرة</value>
-  </data>
-  <data name="Waiting for Medical Result" xml:space="preserve">
-    <value>بإنتظار نتيجة الفحص الطبي</value>
-  </data>
-  <data name="Waiting Med. Result" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Work Location" xml:space="preserve">
-    <value>مكان العمل </value>
-  </data>
-  <data name="WorkTelephone" xml:space="preserve">
-    <value>هاتف العمل</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>نعم</value>
@@ -1230,38 +390,14 @@
   <data name="ZipCode" xml:space="preserve">
     <value>الرمز البريدي </value>
   </data>
-  <data name="Saudi Commission for Health Specialties" xml:space="preserve">
-    <value>الهيئة السعودية للتخصصات الصحية</value>
-  </data>
-  <data name="Document Attachement" xml:space="preserve">
-    <value>ارفاق الصورة</value>
-  </data>
   <data name="Download Attachement" xml:space="preserve">
     <value>تحميل الصورة</value>
-  </data>
-  <data name="DocumentNameAr" xml:space="preserve">
-    <value>إسم  بالعربي</value>
-  </data>
-  <data name="AddEditSchedule" xml:space="preserve">
-    <value>اضافة / تعديل الجدول</value>
   </data>
   <data name="AddToList" xml:space="preserve">
     <value>اضافة للقائمة</value>
   </data>
   <data name="AssignDepartment" xml:space="preserve">
     <value>القسم المعني</value>
-  </data>
-  <data name="AttendanceSchedule" xml:space="preserve">
-    <value>جدول الحضور</value>
-  </data>
-  <data name="AttendanceScheInfo" xml:space="preserve">
-    <value>معلومات جدول الحضور</value>
-  </data>
-  <data name="CancelExcuse" xml:space="preserve">
-    <value>الغاء الاستذان</value>
-  </data>
-  <data name="CreateSchedule" xml:space="preserve">
-    <value>انشاء جدول</value>
   </data>
   <data name="DateFrom" xml:space="preserve">
     <value>تاريخ من</value>
@@ -1272,119 +408,14 @@
   <data name="Del" xml:space="preserve">
     <value>حذف</value>
   </data>
-  <data name="EditSchedule" xml:space="preserve">
-    <value>تعديل الجدول</value>
-  </data>
   <data name="EmployeeNo" xml:space="preserve">
     <value>الرقم الوظيفي</value>
   </data>
   <data name="EmpNo" xml:space="preserve">
     <value>الرقم الوظيفي  #</value>
   </data>
-  <data name="ExcuseDate" xml:space="preserve">
-    <value>تاريخ الاستذان</value>
-  </data>
-  <data name="ExcuseDetails" xml:space="preserve">
-    <value>تقديم استئذان</value>
-  </data>
-  <data name="ExcuseInformation" xml:space="preserve">
-    <value>معلومات الاستذان</value>
-  </data>
-  <data name="Friday" xml:space="preserve">
-    <value>الجمعة</value>
-  </data>
-  <data name="GetAllEmployee" xml:space="preserve">
-    <value>اختيار جميع الموظفين</value>
-  </data>
-  <data name="Monday" xml:space="preserve">
-    <value>الأثنين</value>
-  </data>
-  <data name="OffDays" xml:space="preserve">
-    <value>ايام العطلة</value>
-  </data>
-  <data name="Remarks" xml:space="preserve">
-    <value>ملاحظات</value>
-  </data>
-  <data name="Saturday" xml:space="preserve">
-    <value>السبت</value>
-  </data>
-  <data name="Sunday" xml:space="preserve">
-    <value>الأحد</value>
-  </data>
-  <data name="Thursday" xml:space="preserve">
-    <value>الخميس</value>
-  </data>
-  <data name="TimeFrom" xml:space="preserve">
-    <value>الوقت من</value>
-  </data>
-  <data name="TimeTo" xml:space="preserve">
-    <value>الوقت الى</value>
-  </data>
-  <data name="Tuesday" xml:space="preserve">
-    <value>الثلاثاء</value>
-  </data>
-  <data name="ViewSchedule" xml:space="preserve">
-    <value>عرض الجدول</value>
-  </data>
-  <data name="Wednesday" xml:space="preserve">
-    <value>الأربعاء</value>
-  </data>
-  <data name="AddNewMilitaryStaff" xml:space="preserve">
-    <value>ادخال موظف عسكري جديد</value>
-  </data>
-  <data name="AnyWord" xml:space="preserve">
-    <value>بالبحث بأي كلمة</value>
-  </data>
-  <data name="LeaveFromDate" xml:space="preserve">
-    <value />
-  </data>
-  <data name="MilitaryInformation" xml:space="preserve">
-    <value>معلومات العسكريين</value>
-  </data>
-  <data name="MilitaryLeave" xml:space="preserve">
-    <value>اجازة العسكريين</value>
-  </data>
-  <data name="MilitaryLeaveInformation" xml:space="preserve">
-    <value>بيانات اجازة العسكريين</value>
-  </data>
-  <data name="MilitaryStaffDetails" xml:space="preserve">
-    <value>معلومات العسكريين</value>
-  </data>
-  <data name="MilitaryStaffNo" xml:space="preserve">
-    <value>الرقم العسكري #</value>
-  </data>
-  <data name="MilitaryStaffNumber" xml:space="preserve">
-    <value>الرقم العسكري</value>
-  </data>
-  <data name="NationalID" xml:space="preserve">
-    <value>السجل المدني</value>
-  </data>
-  <data name="NoOfDays" xml:space="preserve">
-    <value>عدد الأيام</value>
-  </data>
-  <data name="TelephoneNumber" xml:space="preserve">
-    <value>رقم الهاتف</value>
-  </data>
-  <data name="Acting" xml:space="preserve">
-    <value>مكلف</value>
-  </data>
-  <data name="Acting Authorized Employee Signature" xml:space="preserve">
-    <value>توقيع الموظف صاحب الصلاحية</value>
-  </data>
-  <data name="Acting Authorized Employee Signature Information" xml:space="preserve">
-    <value>معلومات الموظف صاحب الصلاحية</value>
-  </data>
-  <data name="Acting Sign Employee Information" xml:space="preserve">
-    <value>معلومات الموظف صاحب الصلاحية</value>
-  </data>
   <data name="Active" xml:space="preserve">
     <value>نشط</value>
-  </data>
-  <data name="Add Employee" xml:space="preserve">
-    <value>إضافة موظف</value>
-  </data>
-  <data name="Add New Leave" xml:space="preserve">
-    <value>إضافة إجازة جديدة</value>
   </data>
   <data name="Add/Edit" xml:space="preserve">
     <value>إضلفة/تعديل</value>
@@ -1392,134 +423,20 @@
   <data name="Amount" xml:space="preserve">
     <value>المبلغ</value>
   </data>
-  <data name="As of Date" xml:space="preserve">
-    <value>من تاريخ</value>
-  </data>
-  <data name="Authorized Position" xml:space="preserve">
-    <value>الوظيفة مخولة الصلاحية</value>
-  </data>
-  <data name="Business Leave" xml:space="preserve">
-    <value>رحلة عمل</value>
-  </data>
-  <data name="Business Leave Outside KSA" xml:space="preserve">
-    <value>رحلة عمل خارج المملكة العربية السعودية</value>
-  </data>
-  <data name="Calculate" xml:space="preserve">
-    <value>إحتساب</value>
-  </data>
-  <data name="Comments1" xml:space="preserve">
-    <value>تعليقات</value>
-  </data>
-  <data name="Contract Position" xml:space="preserve">
-    <value>الوظيفة في العقد</value>
-  </data>
   <data name="Dashboard" xml:space="preserve">
     <value>لوحة التحكم</value>
-  </data>
-  <data name="Days(Ar)" xml:space="preserve">
-    <value>يوم/أيام (باللغة العربية)</value>
-  </data>
-  <data name="Days1" xml:space="preserve">
-    <value>يوم/أيام</value>
-  </data>
-  <data name="DisApproved1" xml:space="preserve">
-    <value>غير موافق عليها</value>
-  </data>
-  <data name="Edit Leave" xml:space="preserve">
-    <value>تعديل إجازة</value>
-  </data>
-  <data name="End Date1" xml:space="preserve">
-    <value>تاريخ النهاية</value>
   </data>
   <data name="Full Name" xml:space="preserve">
     <value>الإسم الكامل</value>
   </data>
-  <data name="Letter Date" xml:space="preserve">
-    <value>تاريخ الخطاب</value>
-  </data>
-  <data name="Letter From (Ar)" xml:space="preserve">
-    <value>من (باللغة العربية)</value>
-  </data>
-  <data name="Letter From(En)" xml:space="preserve">
-    <value>من (باللغة الإنجليزية)</value>
-  </data>
-  <data name="Letter Number" xml:space="preserve">
-    <value>رقم الخطاب</value>
-  </data>
-  <data name="Letter To (Ar)" xml:space="preserve">
-    <value>موجه إلى (باللغة العربية)</value>
-  </data>
-  <data name="Letter To (En)" xml:space="preserve">
-    <value>موجه إلى (باللغة الإنجليزية)</value>
-  </data>
-  <data name="Name Title" xml:space="preserve">
-    <value>اللقب</value>
-  </data>
   <data name="Notification Details" xml:space="preserve">
     <value>تفاصيل الإشعار</value>
-  </data>
-  <data name="Place of Acting" xml:space="preserve">
-    <value>مكان التكليف</value>
-  </data>
-  <data name="Place of Scholarship" xml:space="preserve">
-    <value>مكان الإيفاد/الإبتعاث</value>
-  </data>
-  <data name="Place To (Ar)" xml:space="preserve">
-    <value>جهة الرحلة (باللغة العربية)</value>
-  </data>
-  <data name="Place To (En)" xml:space="preserve">
-    <value>جهة الرحلة (باللغة الإنجليزية)</value>
-  </data>
-  <data name="Purpose1" xml:space="preserve">
-    <value>الغرض</value>
-  </data>
-  <data name="Qualification Degree" xml:space="preserve">
-    <value>درجة المؤهل العلمي</value>
-  </data>
-  <data name="rate/Day" xml:space="preserve">
-    <value>قيمة الإنتداب لليوم</value>
-  </data>
-  <data name="Request Tracking1" xml:space="preserve">
-    <value>طلب تعقب</value>
   </data>
   <data name="Requested" xml:space="preserve">
     <value>تم الطلب</value>
   </data>
-  <data name="Scholarship" xml:space="preserve">
-    <value>إيفاد/إبتعاث</value>
-  </data>
   <data name="Search All" xml:space="preserve">
     <value>بحث بواسطة الكل</value>
-  </data>
-  <data name="Search by Acting" xml:space="preserve">
-    <value>البحث بواسطة التكليف</value>
-  </data>
-  <data name="Search By Scholarship" xml:space="preserve">
-    <value>البحث بواسطة الإيفاد/الإبتعاث</value>
-  </data>
-  <data name="Start Date2" xml:space="preserve">
-    <value>تاريخ البداية</value>
-  </data>
-  <data name="Status on Date" xml:space="preserve">
-    <value>الحالة حتى تاريخه</value>
-  </data>
-  <data name="Status2" xml:space="preserve">
-    <value>الحالة</value>
-  </data>
-  <data name="Status3" xml:space="preserve">
-    <value>الحالة</value>
-  </data>
-  <data name="Total Number of Days" xml:space="preserve">
-    <value>عدد الأيام الإجمالي</value>
-  </data>
-  <data name="Track Leave details" xml:space="preserve">
-    <value> تعقب تفاصيل الإجازة</value>
-  </data>
-  <data name="Transport/Accomdation Provided" xml:space="preserve">
-    <value>مؤمن سكن/مواصلات</value>
-  </data>
-  <data name="Type of Course" xml:space="preserve">
-    <value>نوع الدورة</value>
   </data>
   <data name="User" xml:space="preserve">
     <value>المستخدم</value>
@@ -1530,643 +447,38 @@
   <data name="NewPassword" xml:space="preserve">
     <value>كلمة المرور</value>
   </data>
-  <data name="PositionDetails" xml:space="preserve">
-    <value>الوظيفة الموظف</value>
-  </data>
   <data name="Ban" xml:space="preserve">
     <value>حظر </value>
   </data>
   <data name="Clear" xml:space="preserve">
     <value>مسح</value>
   </data>
-  <data name="Department Acting Sign Person" xml:space="preserve">
-    <value>الشخص المصرح له بالقسم </value>
-  </data>
-  <data name="Leave Notification Details" xml:space="preserve">
-    <value>اجازة موظفي القسم</value>
-  </data>
-  <data name="PCR Notification Details" xml:space="preserve">
-    <value>معلومات تعديل المسمي الوظيفي </value>
-  </data>
-  <data name="PCR Request Details" xml:space="preserve">
-    <value>طلب معلومات المسمي الوظيفي </value>
-  </data>
-  <data name="Recontract Notification Details" xml:space="preserve">
-    <value>معلومات العقد الجديد</value>
-  </data>
-  <data name="Requested Leave Details" xml:space="preserve">
-    <value>طلب معلومات الاجازة </value>
-  </data>
-  <data name="Requested New Leave Information" xml:space="preserve">
-    <value>معلومات طلب اجازة جديدة </value>
-  </data>
-  <data name="Requested Recontract Details" xml:space="preserve">
-    <value>طلب معلومات تجديد العقد </value>
-  </data>
-  <data name="Ticket Class" xml:space="preserve">
-    <value>فئة التتذكرة </value>
-  </data>
-  <data name="Ticket Details" xml:space="preserve">
-    <value>معلومات التذكرة</value>
-  </data>
-  <data name="Track" xml:space="preserve">
-    <value>تتبع حاله الطلب </value>
-  </data>
   <data name="Slno" xml:space="preserve">
     <value>رقم سري</value>
-  </data>
-  <data name="ApprovalNotification" xml:space="preserve">
-    <value>Approval Notification</value>
-  </data>
-  <data name="Approval_Notifications" xml:space="preserve">
-    <value>اجازة موظفين القسم</value>
-  </data>
-  <data name="Leave_End_Date" xml:space="preserve">
-    <value>نهاية تاريخ الاجازة</value>
-  </data>
-  <data name="Leave_Start_Date" xml:space="preserve">
-    <value>تاريخ بداية الاجازة</value>
-  </data>
-  <data name="On_over_or_early_return" xml:space="preserve">
-    <value>عند التجاوز اوالعودة المبكره</value>
-  </data>
-  <data name="RequestedTo" xml:space="preserve">
-    <value>موجه الي</value>
-  </data>
-  <data name="Return_Date" xml:space="preserve">
-    <value>العودة من الاجازة</value>
-  </data>
-  <data name="Return_To_Work" xml:space="preserve">
-    <value>العودة من الاجازة</value>
   </data>
   <data name="Action1" xml:space="preserve">
     <value>الإجراء</value>
   </data>
-  <data name="AddDriver" xml:space="preserve">
-    <value>إضافة السائق</value>
-  </data>
-  <data name="AddGoing" xml:space="preserve">
-    <value>إضافة ذهاب</value>
-  </data>
-  <data name="AddNewTrip" xml:space="preserve">
-    <value>إضافة رحلة جديدة</value>
-  </data>
-  <data name="AddReturn" xml:space="preserve">
-    <value>إضافة عودة</value>
-  </data>
-  <data name="ApprovalHotelRequest" xml:space="preserve">
-    <value>الموافقة على طلب الفندق</value>
-  </data>
-  <data name="ApprovalTransportRequest" xml:space="preserve">
-    <value>طلب الموافقة على المواصلات </value>
-  </data>
-  <data name="ArrivalDate" xml:space="preserve">
-    <value>تاريخ الوصول</value>
-  </data>
-  <data name="Bleeper" xml:space="preserve">
-    <value>بليب</value>
-  </data>
-  <data name="CancelHotel" xml:space="preserve">
-    <value>إلغاء الفندق</value>
-  </data>
-  <data name="CheckIn" xml:space="preserve">
-    <value>تسجيل الدخول</value>
-  </data>
-  <data name="CheckOut" xml:space="preserve">
-    <value>تسجيل الخروج</value>
-  </data>
-  <data name="DepartureDate" xml:space="preserve">
-    <value>تاريخ المغلدرة</value>
-  </data>
-  <data name="Dependent" xml:space="preserve">
-    <value>المرافق</value>
-  </data>
-  <data name="DependentName(Arabic)" xml:space="preserve">
-    <value>اسم المرافق باللغة العربية</value>
-  </data>
-  <data name="DependentName(English)" xml:space="preserve">
-    <value>اسم المرافق باللغة الإنجليزية</value>
-  </data>
-  <data name="DependentTransportNeeded" xml:space="preserve">
-    <value>إحتياج نقل شخص مرافق</value>
-  </data>
-  <data name="Destination1" xml:space="preserve">
-    <value>الوجهة </value>
-  </data>
-  <data name="DocumentsAttached" xml:space="preserve">
-    <value>المستندات المرفقة</value>
-  </data>
-  <data name="DriverName" xml:space="preserve">
-    <value>اسم السائق</value>
-  </data>
-  <data name="Employee1" xml:space="preserve">
-    <value>الرقم الوظيفي</value>
-  </data>
-  <data name="Hospital" xml:space="preserve">
-    <value>المستشفى</value>
-  </data>
-  <data name="HotelApproval" xml:space="preserve">
-    <value>موافقة الفندق</value>
-  </data>
-  <data name="HotelName" xml:space="preserve">
-    <value>اسم الفندق</value>
-  </data>
-  <data name="HotelReservation" xml:space="preserve">
-    <value>حجز الفندق</value>
-  </data>
-  <data name="HotelStatus" xml:space="preserve">
-    <value>حالة الفندق</value>
-  </data>
-  <data name="Meal" xml:space="preserve">
-    <value>الوجبة</value>
-  </data>
   <data name="Mobile" xml:space="preserve">
     <value>رقم الجوال</value>
-  </data>
-  <data name="NeedInternationalTransport" xml:space="preserve">
-    <value>إحتياج مواصلات دولية</value>
-  </data>
-  <data name="NeedInternationalTransportType" xml:space="preserve">
-    <value>إحتياج نوع المواصلات الدولية</value>
-  </data>
-  <data name="NoofNight" xml:space="preserve">
-    <value>عدد الليالي</value>
-  </data>
-  <data name="OneWay" xml:space="preserve">
-    <value>وجهة واحدة</value>
-  </data>
-  <data name="PaidBy" xml:space="preserve">
-    <value>الدفع بواسطة</value>
-  </data>
-  <data name="Passenger" xml:space="preserve">
-    <value>المسافر</value>
-  </data>
-  <data name="PickupArea" xml:space="preserve">
-    <value>منطقة الإلتقاط</value>
-  </data>
-  <data name="PickUpTime" xml:space="preserve">
-    <value>وقت الإلتقاط</value>
-  </data>
-  <data name="PickupTime1" xml:space="preserve">
-    <value>وقت الإلتقاط</value>
   </data>
   <data name="Preview" xml:space="preserve">
     <value>معاينة</value>
   </data>
-  <data name="Remarks1" xml:space="preserve">
-    <value>ملاحظات</value>
-  </data>
   <data name="ReturnDate" xml:space="preserve">
     <value>تاريخ العودة</value>
-  </data>
-  <data name="RoomMate" xml:space="preserve">
-    <value>رفيق في الغرفة</value>
-  </data>
-  <data name="RoomType" xml:space="preserve">
-    <value>نوع الغرفة</value>
-  </data>
-  <data name="RoomType1" xml:space="preserve">
-    <value>نوع الغرفة</value>
   </data>
   <data name="RoundTrip" xml:space="preserve">
     <value>وجهات متعددة</value>
   </data>
-  <data name="SearchTripDetails" xml:space="preserve">
-    <value>بحث تفاصيل الرحلة</value>
-  </data>
-  <data name="SeatsComingBack" xml:space="preserve">
-    <value>مقاعد العودة</value>
-  </data>
-  <data name="SeatsNeededGoing" xml:space="preserve">
-    <value>المقاعد اللازمة</value>
-  </data>
-  <data name="SelectDocument1" xml:space="preserve">
-    <value>إضافة مستندات</value>
-  </data>
-  <data name="TelNo(Home)" xml:space="preserve">
-    <value>رقم هاتف المنزل</value>
-  </data>
-  <data name="TelNo(Work)" xml:space="preserve">
-    <value>رقم هاتف العمل</value>
-  </data>
-  <data name="Transport1" xml:space="preserve">
-    <value>المواصلات</value>
-  </data>
-  <data name="TransportType" xml:space="preserve">
-    <value>نوع المواصلات</value>
-  </data>
-  <data name="TravelDate" xml:space="preserve">
-    <value>تاريخ الرحلة</value>
-  </data>
-  <data name="TripandTranspotationApproval" xml:space="preserve">
-    <value>الموافقة على الرحلة والمواصلات </value>
-  </data>
-  <data name="TripDate" xml:space="preserve">
-    <value>تاريخ الرحلة</value>
-  </data>
-  <data name="TripID" xml:space="preserve">
-    <value>رقم الرحلة</value>
-  </data>
-  <data name="Type" xml:space="preserve">
-    <value>نوع المواصلات</value>
-  </data>
-  <data name="TimeBack" xml:space="preserve">
-    <value>Time Back</value>
-  </data>
-  <data name="TimeBkDate" xml:space="preserve">
-    <value>Time Back Date</value>
-  </data>
-  <data name="TimeBkReason" xml:space="preserve">
-    <value>Time Back Reason</value>
-  </data>
-  <data name="EnterDate" xml:space="preserve">
-    <value>Enter Date</value>
-  </data>
-  <data name="Acceptsresponsibilityforpatientcare" xml:space="preserve">
-    <value>يقبل المسئوليات نحو العناية بالمرضى</value>
-  </data>
-  <data name="Acknowledgesmedicalerrors" xml:space="preserve">
-    <value>يعترف بالأخطاء الطبية</value>
-  </data>
-  <data name="Actasaresource" xml:space="preserve">
-    <value>يعمل كمرجع للزملاء وبقية الفريق الطبي</value>
-  </data>
-  <data name="Actasprecept" xml:space="preserve">
-    <value>يساهم بفعالية في تعليم الطلاب والموظفين الجدد</value>
-  </data>
-  <data name="Actaspreceptor" xml:space="preserve">
-    <value>يساهم بفعالية في تعليم الطلاب والموظفين الجدد</value>
-  </data>
-  <data name="Activelyparticipate" xml:space="preserve">
-    <value>يشارك بفعالية في توثيق وتعليم المريض وعائلته</value>
-  </data>
-  <data name="AdherestoMedicalStaffByLawsandPolicies" xml:space="preserve">
-    <value>يلتزم بالسياسات واللوائح الطبية</value>
-  </data>
-  <data name="Allocatesresources" xml:space="preserve">
-    <value>يستعمل الموارد جيداً</value>
-  </data>
-  <data name="ATTENDANCEPUNCTUALITY" xml:space="preserve">
-    <value>7.الحضور والغياب</value>
-  </data>
-  <data name="BasicLifeSupport" xml:space="preserve">
-    <value>شهادة الإنعاش الرئوي</value>
-  </data>
-  <data name="CHIEFOFDEPARTMENTSUPERVISOR" xml:space="preserve">
-    <value>مسئول القسم / المشرف</value>
-  </data>
-  <data name="CMEhoursrequirement" xml:space="preserve">
-    <value>ساعات التعليم المستمرة المطلوبة مرضية</value>
-  </data>
-  <data name="Communicateseffectivelyhealthcare" xml:space="preserve">
-    <value>يتواصل بفعالية مع الكوادر الصحية الأخرى</value>
-  </data>
-  <data name="CommunicateseffectivelywithPat" xml:space="preserve">
-    <value>يتواصل بفعالية مع المرضى وعوائلهم</value>
-  </data>
-  <data name="CommunicateseffectivelywithPhysicians" xml:space="preserve">
-    <value>يتواصل بفعالية مع الأطباء</value>
-  </data>
-  <data name="COMPETENCY" xml:space="preserve">
-    <value>1.الكفاءة</value>
-  </data>
-  <data name="Completeadmission" xml:space="preserve">
-    <value>يكمل تقييم المريض خلال المدة المحددة في سياسة الدخول</value>
-  </data>
-  <data name="Completemandatory" xml:space="preserve">
-    <value>أكمل متطلبات الكفاءة الإلزامية خلال فترة التجربة وبشكل سنوي</value>
-  </data>
-  <data name="Comprehensive" xml:space="preserve">
-    <value>شامل</value>
-  </data>
-  <data name="CONTINUOUSMEDICAL" xml:space="preserve">
-    <value>ساعات التعليم الطبي المستمر
-( 0.5 لكل ساعة تعليم طبي مستمر )  </value>
-  </data>
-  <data name="Coordinatesandimproves" xml:space="preserve">
-    <value>يتعاون مع الفرق الطبية الأخرى لتطوير رعاية المريض</value>
-  </data>
-  <data name="Criteria" xml:space="preserve">
-    <value>المعايير</value>
-  </data>
-  <data name="Demonstratesaccountability" xml:space="preserve">
-    <value>يظهر الإلتزام والمسئولية</value>
-  </data>
-  <data name="Developedindividualized" xml:space="preserve">
-    <value>يضع خطة فردية للمريض حسب معلومات التقييم</value>
-  </data>
-  <data name="Handhygiene" xml:space="preserve">
-    <value>غسل اليدين ، إجراءات مكافحة العدوى</value>
-  </data>
-  <data name="Hasknowledge" xml:space="preserve">
-    <value>ملم بإستعمال الأجهزة الطبية بطرقة مناسبة</value>
-  </data>
-  <data name="InfectionControlCourse" xml:space="preserve">
-    <value>شهادة مكافحة العدوى</value>
-  </data>
-  <data name="INTERPERSONAL" xml:space="preserve">
-    <value>3.المهارات الشخصية والتواصل</value>
-  </data>
-  <data name="Knowandutilizebasic" xml:space="preserve">
-    <value>ملم بأساسيات الإكلينيكية وتطبيقها في جميع المرضى</value>
-  </data>
-  <data name="KNOWLEDGECLINICALSKILLS" xml:space="preserve">
-    <value>2.المعرفة والمهارات الإكلينيكي</value>
-  </data>
-  <data name="Legible" xml:space="preserve">
-    <value>مقروء</value>
-  </data>
-  <data name="Maintainsmedicalrecordsthatare" xml:space="preserve">
-    <value>يحافظ على السجل الطبي للمريض من خلال جعله
- </value>
-  </data>
-  <data name="Maintainspatientsconfidentiality" xml:space="preserve">
-    <value>يحافظ على سرية وخصوصية المريض</value>
-  </data>
-  <data name="OrientationCourse" xml:space="preserve">
-    <value>شهادة حضور دورة تعريفية بالمستشفى (للموظفين الجدد)</value>
-  </data>
-  <data name="ParticipateinQualityImprovement" xml:space="preserve">
-    <value>يساهم في نشاطات تطوير الجودة</value>
-  </data>
-  <data name="PatientCare" xml:space="preserve">
-    <value>1.العناية بالمريض</value>
-  </data>
-  <data name="PRACTICEBASEDLEARNINGS" xml:space="preserve">
-    <value>5.التطوير والتعليم المبني على الممارسة</value>
-  </data>
-  <data name="PROFESSIONALISM" xml:space="preserve">
-    <value>4.المهنية</value>
-  </data>
-  <data name="ProfessionalProfile" xml:space="preserve">
-    <value>1. الملف المهني</value>
-  </data>
-  <data name="Provideguidance" xml:space="preserve">
-    <value>يقدم الدعم والمشورة للزملاء وأعضاء الفريق الطبي</value>
-  </data>
-  <data name="QualityPatientSafety" xml:space="preserve">
-    <value>شهادة حضور دورة في تحسين الجودة وسلامة المرضى</value>
-  </data>
-  <data name="Recognizetheneed" xml:space="preserve">
-    <value>يعي إحتياج القسم ويتواجد لساعات إضافية إن لزم الأمر</value>
-  </data>
-  <data name="Refer/reportpatient" xml:space="preserve">
-    <value>يبلغ /يحول حالة المريض للطبيب حسب الحاجة</value>
-  </data>
-  <data name="ReportsSentinelevents" xml:space="preserve">
-    <value>يقوم بالتبليغ عند الحدث الخطير</value>
-  </data>
-  <data name="SaudiCommission" xml:space="preserve">
-    <value>تسجيل الهيئة السعودية</value>
-  </data>
-  <data name="Section1" xml:space="preserve">
-    <value>الجزء الاول</value>
-  </data>
-  <data name="Section2" xml:space="preserve">
-    <value>الجزء الثاني</value>
-  </data>
-  <data name="SYSTEMSBASED" xml:space="preserve">
-    <value>6.الممارسة المبنية على الأنظمة</value>
-  </data>
-  <data name="Timely" xml:space="preserve">
-    <value>يسجل المعلومات في حينها</value>
-  </data>
-  <data name="UpdatedCurriculum" xml:space="preserve">
-    <value>سيرة ذاتية محدثة</value>
-  </data>
-  <data name="Useresultsofquality" xml:space="preserve">
-    <value>يستخدم نتائج نشاطات التحسين والتطوير للتغيير</value>
-  </data>
-  <data name="Usesperformance" xml:space="preserve">
-    <value>يستعمل تقويم الأداء في تطوير ممارسته للمهنة</value>
-  </data>
   <data name="A-EXCELLENT" xml:space="preserve">
     <value>أ- ممتاز</value>
-  </data>
-  <data name="ACCEPTABLE" xml:space="preserve">
-    <value>مقبول</value>
-  </data>
-  <data name="ADAPTABILITY" xml:space="preserve">
-    <value>القابلية للتكيف</value>
-  </data>
-  <data name="ADDITIONALFACTORS" xml:space="preserve">
-    <value>يقات على قدرة الموظف لاستخدام مبادرته/مبادرتها للتعامل مع المشاكل</value>
-  </data>
-  <data name="APPEARANCE" xml:space="preserve">
-    <value>لمظهر</value>
-  </data>
-  <data name="ATTITUDE" xml:space="preserve">
-    <value>الموقف</value>
-  </data>
-  <data name="B-VERY GOOD" xml:space="preserve">
-    <value>ب- جيد جدا</value>
-  </data>
-  <data name="C-GOOD" xml:space="preserve">
-    <value>ج- جيد</value>
-  </data>
-  <data name="CHIEFOFDEPARTMENT/SUPERVISOR" xml:space="preserve">
-    <value>مسئول القسم / المشرف</value>
-  </data>
-  <data name="COMMENTS2" xml:space="preserve">
-    <value>التوصيات</value>
-  </data>
-  <data name="Commentson" xml:space="preserve">
-    <value>تعليقات على المظهر العام للموظف وعلاقته بتوقعات القسم والمقاييس المقبولة في المملكة العربية السعودية.</value>
-  </data>
-  <data name="Commentsontheemployee's" xml:space="preserve">
-    <value>تعليقات على المظهر العام للموظف وعلاقته بتوقعات القسم والمقاييس المقبولة في المملكة العربية السعودية.</value>
-  </data>
-  <data name="COMMUNICATION" xml:space="preserve">
-    <value>التواصل</value>
-  </data>
-  <data name="D-ACCEPTABLE" xml:space="preserve">
-    <value>د- مقبول</value>
-  </data>
-  <data name="DECISION" xml:space="preserve">
-    <value>اتخاذ القرارات</value>
-  </data>
-  <data name="DEVELOPMENT" xml:space="preserve">
-    <value>التطوير</value>
-  </data>
-  <data name="DidNotPassProbation" xml:space="preserve">
-    <value>عدم اجتياز الفترة التجريبية</value>
-  </data>
-  <data name="Doesemployeeconsider" xml:space="preserve">
-    <value>هل ينظر الموظف للحقائق ويحصل على المعلومات ويعرض الحكم الصائب</value>
-  </data>
-  <data name="Doesemployeedemonstrate" xml:space="preserve">
-    <value>مدى إظهار الموظف مهاراته القيادية وكسب الاحترام وإظهار الثقة والحماس والتعاون في تحقيق الأهداف؟ كيف يقود الآخرين بنجاح لتحقيق هدف عام؟ هل يزيد إنتاجية الموظفين ووعيهم بتكلفة تقديم الخدمة والتأكد من وصولها بشكل كاف وفعال؟</value>
-  </data>
-  <data name="Doesemployeedisplayapositive" xml:space="preserve">
-    <value>مدى ايجابية الموظف تجاه العمل خاصة للمرضى وأقارب المريض والموظفين والمراجعين في ظروف تنطوي على تحديات </value>
-  </data>
-  <data name="Doesemployeehave" xml:space="preserve">
-    <value>مدى قدرة الموظف على التعرف على مشاكل الموظفين السائدة واقتراح حلول لها في الوقت المناسب؟ هل الموظف مساند؟ </value>
-  </data>
-  <data name="Doesstaffdeveloplans" xml:space="preserve">
-    <value>عوامل أخرى للمشرفين ورؤساء الأقسام فقط</value>
-  </data>
-  <data name="Doesstaffprovide" xml:space="preserve">
-    <value>مدى قدرة الموظف على إيصال المعلومات المهنية وذات الصلة وفي حينها لأقارب المرضى وزملائه من أجل فهم أفضل لأهداف وخدمات المستشفى</value>
-  </data>
-  <data name="DoestheemployeeAdaptibily" xml:space="preserve">
-    <value>مدى رغبة الموظف في تبني تحسينات جديدة للعمل ومدى تكيف الموظف في العمل داخل القسم والمستشفى؟</value>
-  </data>
-  <data name="Doestheemployeeattend" xml:space="preserve">
-    <value>انتظام الموظف بالحضور/ قيم غياب الموظف (بإذن وبدون إذن) وأرفق سجل الإجازات</value>
-  </data>
-  <data name="Doesthestaffcontinuallyproduce" xml:space="preserve">
-    <value>إنتاجية الموظف وبشكل مستمر في كافة مجالات العمل لتحقيق مستوى العمل المطلوب </value>
-  </data>
-  <data name="Doesthestaffregularly" xml:space="preserve">
-    <value>كيفية أداء الموظف عمله بانتظام مع حجم العمل والمستوى المطلوب للقسم</value>
-  </data>
-  <data name="DoNotRecontract" xml:space="preserve">
-    <value>عدم تجديد العقد</value>
-  </data>
-  <data name="E-UNACCEPTABLE" xml:space="preserve">
-    <value>ه- غير مقبول</value>
-  </data>
-  <data name="EmployeePerformanceEvaluation" xml:space="preserve">
-    <value>تقييم أداء موظف</value>
-  </data>
-  <data name="EXCELLENT" xml:space="preserve">
-    <value>ممتاز</value>
-  </data>
-  <data name="FACTOR" xml:space="preserve">
-    <value>البند</value>
-  </data>
-  <data name="Farexceeds" xml:space="preserve">
-    <value>يزيد كثيرا عن المتطلبات الأساسية</value>
-  </data>
-  <data name="Fulfillsessential" xml:space="preserve">
-    <value>يفي بالمتطلبات الأساسية</value>
-  </data>
-  <data name="fulfillsmore" xml:space="preserve">
-    <value>يزيد بأكثر من المتطلبات الأساسية</value>
-  </data>
-  <data name="GOOD" xml:space="preserve">
-    <value>جيد</value>
-  </data>
-  <data name="HEADOFDEPARTMENT" xml:space="preserve">
-    <value>رئيس القسم</value>
-  </data>
-  <data name="INITIATIVE /CREATIVITY" xml:space="preserve">
-    <value>المبادرة / الابتكار</value>
-  </data>
-  <data name="Isemployeeinterested" xml:space="preserve">
-    <value>هل الموظف مهتم بالتطوير عن طريق تقديم التدريب والتموين؟ هل يحددون عملية الطرق الجديدة والمحسنة في إقناع المرضى والزملاء والمراجعين؟ هل يدعم الموظف التحسينات المقترحة من قبل الآخرين؟</value>
-  </data>
-  <data name="Isthestaffcompletely" xml:space="preserve">
-    <value>مدى دراية كاملة بكافة جوانب العمل مدى المعرفة والتدريب والخبرة المطلوبة من الموظف لأداء العمل بشكل حرفي</value>
-  </data>
-  <data name="Itisthehospitalpolicy" xml:space="preserve">
-    <value>من سياسة المستشفى تقييم موظفيها سنوي اّ وأثناء الفترة التجريبية. الغرض
-من هذا التقييم هو تقديم فرصة للمشرف والموظف لمناقشة أداء عمل
-الموظف وصفاته واكتشاف طرق لتحسين إنتاجية العمل وقناعة الموظف
-والأداء المتوقع من الموظف.</value>
-  </data>
-  <data name="JOBKNOWLEDGE" xml:space="preserve">
-    <value>معرفة العمل</value>
-  </data>
-  <data name="LEADERSHIP" xml:space="preserve">
-    <value>القيادة</value>
-  </data>
-  <data name="Liststrongpointsindicate" xml:space="preserve">
-    <value>أذكر النقاط القوية ووضح أي مجالات تتطلب التحسين ووضع أهداف تحسين مناسبة يتم القيام بها أثناء مدة التقييم التالية.</value>
-  </data>
-  <data name="Meetsmost" xml:space="preserve">
-    <value>يفي بمعظم وليس بكل المتطلبات الأساسية</value>
-  </data>
-  <data name="Needforgeneral" xml:space="preserve">
-    <value>يحتاج لتدريب عام وتحسين</value>
   </data>
   <data name="Note" xml:space="preserve">
     <value>ملاحظة:</value>
   </data>
-  <data name="ORGANIZATION" xml:space="preserve">
-    <value>القسم</value>
-  </data>
-  <data name="OVERALLRATE" xml:space="preserve">
-    <value>المستوى العام</value>
-  </data>
-  <data name="PassProbation" xml:space="preserve">
-    <value>تياز الفترة التجريبية</value>
-  </data>
-  <data name="PROBLEMSOLVING" xml:space="preserve">
-    <value>حل المشاكل</value>
-  </data>
-  <data name="PUNCTUALITY" xml:space="preserve">
-    <value>الالتزام بمواعيد العمل / الحضور</value>
-  </data>
-  <data name="QUALITYOFWORK" xml:space="preserve">
-    <value>جودة العمل</value>
-  </data>
-  <data name="QUANTITYOFWORK" xml:space="preserve">
-    <value>كمية العمل</value>
-  </data>
   <data name="Rate" xml:space="preserve">
     <value>المستوى</value>
-  </data>
-  <data name="RATE1" xml:space="preserve">
-    <value>المستو</value>
-  </data>
-  <data name="RATING" xml:space="preserve">
-    <value>المستوى</value>
-  </data>
-  <data name="RATINGSHEDULE" xml:space="preserve">
-    <value>جدول الدرجات</value>
-  </data>
-  <data name="Recontract1" xml:space="preserve">
-    <value>تجديد العقد</value>
-  </data>
-  <data name="SECTIONI" xml:space="preserve">
-    <value>( 9 عوامل فقط ) القسم</value>
-  </data>
-  <data name="SECTIONI -Contains9factors" xml:space="preserve">
-    <value>القسم 1: يحتوي على تسعة ( 9) عوامل. يطبق هذا القسم على كافة الموظفين
-بدون استثناء. اختار رقم بين واحد ( 1) حتى خمسة ( 5) (الأرقام بأكملها فقط)
-خمسة ( 5) هي الأعلى وتعني ممتاز وواحد ( 1) هو الأقل ويعني مستوى غير
-مقبول.
-القسم 2 : يحتوي هذا القسم على خمسة ( 5) عوامل ويطبق على المشرفين
-ورؤساء الأقسام فقط بالإضافة للقسم واحد ( 1). لاحتساب الإجمالي الكل يّ، اجمع
-الإجمالي من كل قسم وسجل الناتج في الخانة الملائمة.</value>
-  </data>
-  <data name="SECTIONI1" xml:space="preserve">
-    <value>القسم</value>
-  </data>
-  <data name="SECTIONII" xml:space="preserve">
-    <value>القسم 2  ( 5 عوامل فقط )</value>
-  </data>
-  <data name="SECTIONII1" xml:space="preserve">
-    <value>المبادرة / الابتكار</value>
-  </data>
-  <data name="String" xml:space="preserve">
-    <value>معدلات الاداء</value>
-  </data>
-  <data name="String1" xml:space="preserve">
-    <value>التنظيم والتخطيط</value>
-  </data>
-  <data name="String2" xml:space="preserve">
-    <value>مدى تطوير الموظف للخطط والبرامج والأهداف لمواجهة المشكلات</value>
-  </data>
-  <data name="String3" xml:space="preserve">
-    <value>المحتملة عند التنفيذ هل هو فعال في وظيفته الحالية وإعداده للترقية القادمة</value>
-  </data>
-  <data name="TOTALSCORESECTIONI" xml:space="preserve">
-    <value>إجمالي درجات القسم 1</value>
-  </data>
-  <data name="TOTALSCORESECTIONI&amp;II" xml:space="preserve">
-    <value>: إجمالي درجات القسم 1 و 2</value>
-  </data>
-  <data name="TOTALSCORESECTIONII" xml:space="preserve">
-    <value>: إجمالي درجات القسم</value>
-  </data>
-  <data name="UNACCEPTABLE" xml:space="preserve">
-    <value>غير مقبول</value>
-  </data>
-  <data name="VERYGOOD" xml:space="preserve">
-    <value>جيد جدا</value>
   </data>
   <data name="Asset_Id" xml:space="preserve">
     <value>معرف الأصل</value>
@@ -2258,9 +570,6 @@
   <data name="CreatedDate" xml:space="preserve">
     <value>تاريخ الإنشاء</value>
   </data>
-  <data name="DepreciationInMonth" xml:space="preserve">
-    <value>الاهتلاك في الشهر</value>
-  </data>
   <data name="Description" xml:space="preserve">
     <value>وصف</value>
   </data>
@@ -2309,9 +618,6 @@
   <data name="Remove" xml:space="preserve">
     <value>إزالة</value>
   </data>
-  <data name="RequestLog" xml:space="preserve">
-    <value>سجل الطلبات</value>
-  </data>
   <data name="Select" xml:space="preserve">
     <value>اختر</value>
   </data>
@@ -2321,14 +627,8 @@
   <data name="SubDepartment" xml:space="preserve">
     <value>القسم الفرعي</value>
   </data>
-  <data name="Supplier" xml:space="preserve">
-    <value>المورد</value>
-  </data>
   <data name="UnitPrice" xml:space="preserve">
     <value>سعر الوحدة</value>
-  </data>
-  <data name="ValuationYear" xml:space="preserve">
-    <value>سنة التقييم</value>
   </data>
   <data name="AddAsset" xml:space="preserve">
     <value>إضافة أصل</value>
@@ -2437,5 +737,17 @@
   </data>
   <data name="Msg_UpdateAssestSubCatSuccess" xml:space="preserve">
     <value>تم تحديث الفئة الفرعية للأصول بنجاح. المعرف</value>
+  </data>
+  <data name="DepreciationInMonth" xml:space="preserve">
+    <value>الاستهلاك في الشهر</value>
+  </data>
+  <data name="RequestLog" xml:space="preserve">
+    <value>سجل الطلبات</value>
+  </data>
+  <data name="Supplier" xml:space="preserve">
+    <value>المورد</value>
+  </data>
+  <data name="ValuationYear" xml:space="preserve">
+    <value>سنة التقييم</value>
   </data>
 </root>
