@@ -1,7 +1,9 @@
 $(document).ready(function () {
-    document.title = 'Asset Info Report';
+    var doctitle = $('#resourceasseinforeport').data('title');
+    var print = $('#resourceasseprint').data('print');
+    document.title = doctitle;
     Loadddl();
-    GetAssetInfoReportData(0, 0);
+    GetAssetInfoReportData(0, 0, print);
 });
 
 var Loadddl = function () {
@@ -15,7 +17,7 @@ var Loadddl = function () {
 }
 
 
-var GetAssetInfoReportData = function (_CategoryId, _SubCategoryId) {
+var GetAssetInfoReportData = function (_CategoryId, _SubCategoryId,print) {
     $("#tblAssetInfoReport").DataTable({
         paging: true,
         select: true,
@@ -171,7 +173,7 @@ var GetAssetInfoReportData = function (_CategoryId, _SubCategoryId) {
             },
             {
                 data: null, render: function (data, type, row) {
-                    return "<a href='#' class='btn btn-link btn-xs' onclick=PrintAsset('" + row.Id + "');><span class='fa fa-print'>Print</span></a>";
+                    return "<a href='#' class='btn btn-link btn-xs' onclick=PrintAsset('" + row.Id + "');><span class='fa fa-print'>" + print +"</span></a>";
                 }
             }
         ],

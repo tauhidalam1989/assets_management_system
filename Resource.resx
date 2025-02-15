@@ -801,4 +801,13 @@
   <data name="Operationfailed" xml:space="preserve">
     <value>Operation failed</value>
   </data>
+  <data name="AllCategory" xml:space="preserve">
+    <value>All Category</value>
+  </data>
+  <data name="AllSubCategory" xml:space="preserve">
+    <value>All Sub Category</value>
+  </data>
+  <data name="AsseInfoReport" xml:space="preserve">
+    <value>Asset Info Report</value>
+  </data>
 </root>

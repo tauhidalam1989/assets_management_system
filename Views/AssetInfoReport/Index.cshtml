@@ -1,21 +1,21 @@
 <div class="wrapper">
     <div class="row">
         <div class="col-md-4">
-            <select id="CategoryId" style="width: 100%;" onchange="DisplayAssetInfoReportData()" class="form-control"
+            <select id="CategoryId" style="width: 100%;" onchange="DisplayAssetInfoReportData('@Resource.Search','@Resource.Print')" class="form-control"
                 required>
-                <option value="0" selected>All Category</option>
+                <option value="0" selected>@Resource.AllCategory</option>
             </select>
         </div>
         <div class="col-md-2">
         </div>
         <div class="col-md-4">
             <select id="SubCategoryId" style="width: 100%;" asp-items="@ViewBag.ddlBranch"
-                onchange="DisplayAssetInfoReportData()" class="form-control" required>
-                <option value="0" selected>All Sub Category</option>
+                    onchange="DisplayAssetInfoReportData('@Resource.Search','@Resource.Print')" class="form-control" required>
+                <option value="0" selected>@Resource.AllSubCategory</option>
             </select>
         </div>
         <div class="col-md-2 text-right">
-            <button type="button" id="printButton" class="btn btn-info"><i class="fa fa-print"></i> Print</button>
+            <button type="button" id="printButton" class="btn btn-info"><i class="fa fa-print"></i> @Resource.Print</button>
         </div>
     </div>
 
@@ -25,7 +25,7 @@
                 <div class="col-md-5">
                 </div>
                 <div class="col-md-7 pull-right">
-                    <h5 class="pull-right"><b>&nbsp;Asset Info</b></h5>
+                    <h5 class="pull-right"><b>&nbsp;@Resource.AssetInfo</b></h5>
                 </div>
             </div>
         </div>
@@ -34,13 +34,13 @@
             <table id="tblAssetInfoReport" class="PrintReportTable" style="width:100%">
                 <thead>
                     <tr>
-                        <th>Id</th>
-                        <th>Image</th>
-                        <th>Asset Id</th>
-                        <th>Asset Model No</th>
-                        <th>Name</th>
-                        <th>Unit Price</th>
-                        <th>Date Of Purchase</th>
+                        <th>@Resource.Id</th>
+                        <th>@Resource.Image</th>
+                        <th>@Resource.Asset_Id</th>
+                        <th>@Resource.Asset_Model_No</th>
+                        <th>@Resource.Name</th>
+                        <th>@Resource.UnitPrice</th>
+                        <th>@Resource.Date_Of_Purchase</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -48,10 +48,16 @@
         </div>
     </div>
 </div>
+@{
+    var title = Resource.AsseInfoReport;
+    var print = Resource.Print;
+}
+<div id="resourceasseinforeport" data-title="@title"></div>
+<div id="resourceasseprint" data-print="@print"></div>
 <script src="~/js/AssetInfoReport/AssetInfoReport_Datatable.js"></script>
 
 <script>
-    var DisplayAssetInfoReportData = function () {
+    var DisplayAssetInfoReportData = function (search, print) {
         var _tblAssetInfoReport = $("#tblAssetInfoReport").DataTable();
         _tblAssetInfoReport.clear();
         _tblAssetInfoReport.destroy();
@@ -59,8 +65,8 @@
         var _CategoryId = $("#CategoryId").val();
         var _SubCategoryId = $("#SubCategoryId").val();
 
-        GetAssetInfoReportData(_CategoryId, _SubCategoryId);
-        DataTableCustomSearchBox('450px', 'Search...');
+        GetAssetInfoReportData(_CategoryId, _SubCategoryId,print);
+        DataTableCustomSearchBox('450px', search);
     }
 
     $("#printButton").on("click", function () {

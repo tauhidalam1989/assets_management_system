@@ -780,4 +780,13 @@
   <data name="Operationfailed" xml:space="preserve">
     <value>فشلت العملية</value>
   </data>
+  <data name="All Category" xml:space="preserve">
+    <value>جميع الفئات</value>
+  </data>
+  <data name="AllSubCategory" xml:space="preserve">
+    <value>جميع الفئات الفرعية</value>
+  </data>
+  <data name="AsseInfoReport" xml:space="preserve">
+    <value>تقرير معلومات الأصول</value>
+  </data>
 </root>

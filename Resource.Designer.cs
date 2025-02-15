@@ -187,6 +187,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to All Category.
+        /// </summary>
+        public static string AllCategory {
+            get {
+                return ResourceManager.GetString("AllCategory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to All Employees.
         /// </summary>
         public static string AllEmployees {
@@ -223,11 +232,29 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to All Sub Category.
+        /// </summary>
+        public static string AllSubCategory {
+            get {
+                return ResourceManager.GetString("AllSubCategory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Amount.
         /// </summary>
         public static string Amount {
             get {
                 return ResourceManager.GetString("Amount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Asset Info Report.
+        /// </summary>
+        public static string AsseInfoReport {
+            get {
+                return ResourceManager.GetString("AsseInfoReport", resourceCulture);
             }
         }
         
