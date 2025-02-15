@@ -5,7 +5,7 @@
                 <div class="col-md-5">
                 </div>
                 <div class="col-md-7 pull-right">
-                    <h5 class="pull-right"><b>&nbsp;Asset History List</b></h5>
+                    <h5 class="pull-right"><b>&nbsp;@Resource.AssetHistoryList</b></h5>
                 </div>
             </div>
         </div>
@@ -14,19 +14,30 @@
             <table id="tblAssetHistory" class="CustomBlueTable" style="width:100%">
                 <thead>
                     <tr>
-                        <th>Id</th>
-                        <th>Asset Id</th>
-                        <th>Assign Employee</th>
-                        <th>Action</th>
-                        <th>Note</th>
-                        <th>Created Date</th>
+                        <th>@Resource.Id</th>
+                        <th>@Resource.Asset_Id</th>
+                        <th>@Resource.AssignEmployee</th>
+                        <th>@Resource.Action</th>
+                        <th>@Resource.Note</th>
+                        <th>@Resource.CreatedDate</th>
                     </tr>
                 </thead>
             </table>
         </div>
     </div>
 </div>
-
+@{
+    var title = Resource.AssetHistoryList;
+    var asssesthistdet = Resource.AssetHistoryDetails;
+    var editassesthist = Resource.EditAssetHistory;
+    var addassesthist = Resource.AddAssetHistory;
+    var assestdet = Resource.AssetDetails;
+}
+<div id="resourcetitle" data-title="@title"></div>
+<div id="resourceasssesthistdet" data-asssesthistdet="@asssesthistdet"></div>
+<div id="resourceeditassesthist" data-editassesthist="@editassesthist"></div>
+<div id="resourceaddassesthist" data-addassesthist="@addassesthist"></div>
+<div id="resourceassestdet" data-assestdet="@assestdet"></div>
 <style>
     .panel-heading {
         padding: 0px 0px 0px 5px;

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Dynamic.Core;
+using ViewRes;
 
 namespace AMS.Controllers
 {
@@ -21,7 +22,7 @@ namespace AMS.Controllers
             _context = context;
             _iCommon = iCommon;
         }
-        [Authorize(Roles = Pages.MainMenu.AssetHistory.RoleName)]
+       [Authorize(Roles = Pages.MainMenu.AssetHistory.RoleName)]
         [HttpGet]
         public IActionResult Index()
         {
@@ -114,7 +115,7 @@ namespace AMS.Controllers
                             vm.ModifiedBy = HttpContext.User.Identity.Name;
                             _context.Entry(_AssetHistory).CurrentValues.SetValues(vm);
                             await _context.SaveChangesAsync();
-                            TempData["successAlert"] = "Asset History Updated Successfully. ID: " + _AssetHistory.Id;
+                            TempData["successAlert"] = Resource.MSG_AssestHistUpdate + ": " + _AssetHistory.Id;
                             return RedirectToAction(nameof(Index));
                         }
                         else
@@ -126,11 +127,11 @@ namespace AMS.Controllers
                             _AssetHistory.ModifiedBy = HttpContext.User.Identity.Name;
                             _context.Add(_AssetHistory);
                             await _context.SaveChangesAsync();
-                            TempData["successAlert"] = "Asset History Created Successfully. ID: " + _AssetHistory.Id;
+                            TempData["successAlert"] = Resource.MSG_AssestHistCreate + ": " + _AssetHistory.Id;
                             return RedirectToAction(nameof(Index));
                         }
                     }
-                    TempData["errorAlert"] = "Operation failed.";
+                    TempData["errorAlert"] = Resource.Operationfailed + ".";
                     return View("Index");
                 }
                 catch (DbUpdateConcurrencyException)

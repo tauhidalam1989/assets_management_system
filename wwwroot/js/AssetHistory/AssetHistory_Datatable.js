@@ -1,5 +1,10 @@
 $(document).ready(function () {
-    document.title = 'Asset History';
+    var doctitle = $('#resourcetitle').data('title');
+    var asssesthistdet = $('#resourceasssesthistdet').data('asssesthistdet');
+    var editassesthist = $('#resourceresourceeditassesthist').data('resourceeditassesthist');
+    var addassesthist = $('#resourceaddassesthist').data('addassesthist');
+    var assestdet = $('#resourceassestdet').data('assestdet');
+    document.title = doctitle;
 
     $("#tblAssetHistory").DataTable({
         paging: true,
@@ -28,12 +33,12 @@ $(document).ready(function () {
         "columns": [
             {
                 data: "Id", "name": "Id", render: function (data, type, row) {
-                    return "<a href='#' onclick=Details('" + row.Id + "');>" + row.Id + "</a>";
+                    return "<a href='#' class='fa fa-eye' onclick='Details(\"" + row.Id + "\", \"" + asssesthistdet + "\");'>" + row.Id + "</a>";
                 }
             },
             {
                 data: "AssetId", "name": "AssetId", render: function (data, type, row) {
-                    return "<a href='#' onclick=AssetDetails('" + row.AssetId + "');>" + row.AssetDisplay + "</a>";
+                    return "<a href='#' onclick='AssetDetails(\"" + row.AssetId + "\", \"" + assestdet + "\");'>" + row.AssetDisplay + "</a>";
                 }
             },
             { "data": "AssignEmployeeDisplay", "name": "AssignEmployeeDisplay" },

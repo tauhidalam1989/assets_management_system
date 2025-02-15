@@ -1,44 +1,44 @@
-var Details = function (id) {
+var Details = function (id,assesthistdet) {
     var url = "/AssetHistory/Details?id=" + id;
-    $('#titleBigModal').html("Asset History Details");
+    $('#titleBigModal').html(assesthistdet);
     loadBigModal(url);
 };
 
-var AssetDetails = function (id) {
+var AssetDetails = function (id,assestdet) {
     var url = "/Asset/Details?id=" + id;
-    $('#titleExtraBigModal').html("Asset Details");
+    $('#titleExtraBigModal').html(assestdet);
     loadExtraBigModal(url);
 };
 
-var AddEdit = function (id) {
+var AddEdit = function (id,editassesthist,addassesthist) {
     var url = "/AssetHistory/AddEdit?id=" + id;
     if (id > 0) {
-        $('#titleMediumModal').html("Edit Asset History");
+        $('#titleMediumModal').html(editassesthist);
     }
     else {
-        $('#titleMediumModal').html("Add Asset History");
+        $('#titleMediumModal').html(addassesthist);
     }
     loadMediumModal(url);
 };
 
-var Delete = function (id) {
+var Delete = function (id,delqt,yes,delmsg,deleted) {
     Swal.fire({
-        title: 'Do you want to delete this item?',
+        title: delqt,
         type: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes'
+        confirmButtonText: yes
     }).then((result) => {
         if (result.value) {
             $.ajax({
                 type: "DELETE",
                 url: "/AssetHistory/Delete?id=" + id,
                 success: function (result) {
-                    var message = "Asset History has been deleted successfully. AssetHistory ID: " + result.Id;
+                    var message = delmsg +": " + result.Id;
                     Swal.fire({
                         title: message,
-                        text: 'Deleted!',
+                        text: deleted + '!',
                         onAfterClose: () => {
                             location.reload();
                         }

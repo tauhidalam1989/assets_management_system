@@ -133,6 +133,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Asset History.
+        /// </summary>
+        public static string AddAssetHistory {
+            get {
+                return ResourceManager.GetString("AddAssetHistory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add Asset Sub Category Details.
         /// </summary>
         public static string AddAssetSubCatDet {
@@ -318,6 +327,24 @@ namespace ViewRes {
         public static string AssetHistory {
             get {
                 return ResourceManager.GetString("AssetHistory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Asset History Details.
+        /// </summary>
+        public static string AssetHistoryDetails {
+            get {
+                return ResourceManager.GetString("AssetHistoryDetails", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Asset History List.
+        /// </summary>
+        public static string AssetHistoryList {
+            get {
+                return ResourceManager.GetString("AssetHistoryList", resourceCulture);
             }
         }
         
@@ -835,6 +862,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Deleted.
+        /// </summary>
+        public static string Deleted {
+            get {
+                return ResourceManager.GetString("Deleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Department.
         /// </summary>
         public static string Department {
@@ -912,6 +948,15 @@ namespace ViewRes {
         public static string EditAssetCategory {
             get {
                 return ResourceManager.GetString("EditAssetCategory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit Asset History.
+        /// </summary>
+        public static string EditAssetHistory {
+            get {
+                return ResourceManager.GetString("EditAssetHistory", resourceCulture);
             }
         }
         
@@ -1375,6 +1420,33 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Asset History has been deleted successfully. AssetHistory ID:.
+        /// </summary>
+        public static string MSG_AssestHist {
+            get {
+                return ResourceManager.GetString("MSG_AssestHist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Asset History Created Successfully. ID.
+        /// </summary>
+        public static string MSG_AssestHistCreate {
+            get {
+                return ResourceManager.GetString("MSG_AssestHistCreate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Asset History Updated Successfully. ID.
+        /// </summary>
+        public static string MSG_AssestHistUpdate {
+            get {
+                return ResourceManager.GetString("MSG_AssestHistUpdate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Asset Category has been deleted successfully. Asset Categorie ID:.
         /// </summary>
         public static string Msg_AssetCatDelete {
@@ -1515,6 +1587,15 @@ namespace ViewRes {
         public static string Notification_Details {
             get {
                 return ResourceManager.GetString("Notification Details", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Operation failed.
+        /// </summary>
+        public static string Operationfailed {
+            get {
+                return ResourceManager.GetString("Operationfailed", resourceCulture);
             }
         }
         

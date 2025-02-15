@@ -750,4 +750,34 @@
   <data name="ValuationYear" xml:space="preserve">
     <value>سنة التقييم</value>
   </data>
+  <data name="AddAssetHistory" xml:space="preserve">
+    <value>إضافة تاريخ الأصول</value>
+  </data>
+  <data name="AssetDetails" xml:space="preserve">
+    <value>تفاصيل الأصول</value>
+  </data>
+  <data name="AssetHistoryDetails" xml:space="preserve">
+    <value>تفاصيل تاريخ الأصول</value>
+  </data>
+  <data name="AssetHistoryList" xml:space="preserve">
+    <value>قائمة تاريخ الأصول</value>
+  </data>
+  <data name="Deleted" xml:space="preserve">
+    <value>تم الحذف</value>
+  </data>
+  <data name="EditAssetHistory" xml:space="preserve">
+    <value>تعديل تاريخ الأصول</value>
+  </data>
+  <data name="MSG_AssestHist" xml:space="preserve">
+    <value>تم حذف تاريخ الأصول بنجاح. معرف تاريخ الأصول</value>
+  </data>
+  <data name="MSG_AssestHistCreate" xml:space="preserve">
+    <value>تم إنشاء تاريخ الأصول بنجاح. المعرف</value>
+  </data>
+  <data name="MSG_AssestHistUpdate" xml:space="preserve">
+    <value>تم تحديث تاريخ الأصول بنجاح. المعرف</value>
+  </data>
+  <data name="Operationfailed" xml:space="preserve">
+    <value>فشلت العملية</value>
+  </data>
 </root>

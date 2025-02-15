@@ -774,4 +774,31 @@
   <data name="ValuationYear" xml:space="preserve">
     <value>Valuation Year</value>
   </data>
+  <data name="AddAssetHistory" xml:space="preserve">
+    <value>Add Asset History</value>
+  </data>
+  <data name="AssetHistoryDetails" xml:space="preserve">
+    <value>Asset History Details</value>
+  </data>
+  <data name="AssetHistoryList" xml:space="preserve">
+    <value>Asset History List</value>
+  </data>
+  <data name="Deleted" xml:space="preserve">
+    <value>Deleted</value>
+  </data>
+  <data name="EditAssetHistory" xml:space="preserve">
+    <value>Edit Asset History</value>
+  </data>
+  <data name="MSG_AssestHist" xml:space="preserve">
+    <value>Asset History has been deleted successfully. AssetHistory ID:</value>
+  </data>
+  <data name="MSG_AssestHistCreate" xml:space="preserve">
+    <value>Asset History Created Successfully. ID</value>
+  </data>
+  <data name="MSG_AssestHistUpdate" xml:space="preserve">
+    <value>Asset History Updated Successfully. ID</value>
+  </data>
+  <data name="Operationfailed" xml:space="preserve">
+    <value>Operation failed</value>
+  </data>
 </root>
