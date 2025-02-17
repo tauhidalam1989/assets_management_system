@@ -870,4 +870,43 @@
   <data name="MSG_AssestIssueUpdateSuccess" xml:space="preserve">
     <value>Asset Issue Updated Successfully. ID</value>
   </data>
+  <data name="OutOfStock" xml:space="preserve">
+    <value>Out Of Stock</value>
+  </data>
+  <data name="AddAssetRequest" xml:space="preserve">
+    <value>Add Asset Request</value>
+  </data>
+  <data name="ApprovedBy" xml:space="preserve">
+    <value>Approved By</value>
+  </data>
+  <data name="AssetRequestDetails" xml:space="preserve">
+    <value>Asset Request Details</value>
+  </data>
+  <data name="AssetRequestList" xml:space="preserve">
+    <value>Asset Request List</value>
+  </data>
+  <data name="EditAssetRequest" xml:space="preserve">
+    <value>Edit Asset Request</value>
+  </data>
+  <data name="MSG_AssetReqCreate" xml:space="preserve">
+    <value>Asset Request Created Successfully. ID</value>
+  </data>
+  <data name="MSG_AssetReqDelete" xml:space="preserve">
+    <value>Asset Request has been deleted successfully. Asset Request ID:</value>
+  </data>
+  <data name="MSG_AssetReqUpdate" xml:space="preserve">
+    <value>Asset Request Updated Successfully. ID</value>
+  </data>
+  <data name="ReceiveDate" xml:space="preserve">
+    <value>Receive Date</value>
+  </data>
+  <data name="RequestDate" xml:space="preserve">
+    <value>Request Date</value>
+  </data>
+  <data name="RequestDetails" xml:space="preserve">
+    <value>Request Details</value>
+  </data>
+  <data name="RequestedEmployee" xml:space="preserve">
+    <value>Requested Employee</value>
+  </data>
 </root>

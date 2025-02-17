@@ -849,4 +849,43 @@
   <data name="MSG_AssestIssueUpdateSuccess" xml:space="preserve">
     <value>تم تحديث مشكلة الأصول بنجاح. المعرف</value>
   </data>
+  <data name="OutOfStock" xml:space="preserve">
+    <value>نفد من المخزون</value>
+  </data>
+  <data name="AddAssetRequest" xml:space="preserve">
+    <value>إضافة طلب الأصول</value>
+  </data>
+  <data name="ApprovedBy" xml:space="preserve">
+    <value>تم الموافقة بواسطة</value>
+  </data>
+  <data name="AssetRequestDetails" xml:space="preserve">
+    <value>تفاصيل طلب الأصول</value>
+  </data>
+  <data name="AssetRequestList" xml:space="preserve">
+    <value>قائمة طلبات الأصول</value>
+  </data>
+  <data name="EditAssetRequest" xml:space="preserve">
+    <value>تعديل طلب الأصول</value>
+  </data>
+  <data name="MSG_AssetReqCreate" xml:space="preserve">
+    <value>تم إنشاء طلب الأصول بنجاح. المعرف</value>
+  </data>
+  <data name="MSG_AssetReqDelete" xml:space="preserve">
+    <value>تم حذف طلب الأصول بنجاح. معرف طلب الأصول</value>
+  </data>
+  <data name="MSG_AssetReqUpdate" xml:space="preserve">
+    <value>تم تحديث طلب الأصول بنجاح. المعرف</value>
+  </data>
+  <data name="ReceiveDate" xml:space="preserve">
+    <value>تاريخ الاستلام</value>
+  </data>
+  <data name="RequestDate" xml:space="preserve">
+    <value>تاريخ الطلب</value>
+  </data>
+  <data name="RequestDetails" xml:space="preserve">
+    <value>تفاصيل الطلب</value>
+  </data>
+  <data name="RequestedEmployee" xml:space="preserve">
+    <value>الموظف المطلوب</value>
+  </data>
 </root>

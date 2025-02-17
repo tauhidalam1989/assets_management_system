@@ -160,6 +160,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Asset Request.
+        /// </summary>
+        public static string AddAssetRequest {
+            get {
+                return ResourceManager.GetString("AddAssetRequest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add Asset Sub Category Details.
         /// </summary>
         public static string AddAssetSubCatDet {
@@ -264,6 +273,15 @@ namespace ViewRes {
         public static string Amount {
             get {
                 return ResourceManager.GetString("Amount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Approved By.
+        /// </summary>
+        public static string ApprovedBy {
+            get {
+                return ResourceManager.GetString("ApprovedBy", resourceCulture);
             }
         }
         
@@ -444,6 +462,24 @@ namespace ViewRes {
         public static string AssetName {
             get {
                 return ResourceManager.GetString("AssetName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Asset Request Details.
+        /// </summary>
+        public static string AssetRequestDetails {
+            get {
+                return ResourceManager.GetString("AssetRequestDetails", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Asset Request List.
+        /// </summary>
+        public static string AssetRequestList {
+            get {
+                return ResourceManager.GetString("AssetRequestList", resourceCulture);
             }
         }
         
@@ -1060,6 +1096,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Edit Asset Request.
+        /// </summary>
+        public static string EditAssetRequest {
+            get {
+                return ResourceManager.GetString("EditAssetRequest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Edit Asset Sub Category Details.
         /// </summary>
         public static string EditAssetSubCatDet {
@@ -1636,6 +1681,33 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Asset Request Created Successfully. ID.
+        /// </summary>
+        public static string MSG_AssetReqCreate {
+            get {
+                return ResourceManager.GetString("MSG_AssetReqCreate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Asset Request has been deleted successfully. Asset Request ID:.
+        /// </summary>
+        public static string MSG_AssetReqDelete {
+            get {
+                return ResourceManager.GetString("MSG_AssetReqDelete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Asset Request Updated Successfully. ID.
+        /// </summary>
+        public static string MSG_AssetReqUpdate {
+            get {
+                return ResourceManager.GetString("MSG_AssetReqUpdate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Asset Sub Category Details has been deleted successfully. Asset Sub Category Details ID:.
         /// </summary>
         public static string Msg_AssetSubCatDelete {
@@ -1785,6 +1857,15 @@ namespace ViewRes {
         public static string OtherInfo {
             get {
                 return ResourceManager.GetString("OtherInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Out Of Stock.
+        /// </summary>
+        public static string OutOfStock {
+            get {
+                return ResourceManager.GetString("OutOfStock", resourceCulture);
             }
         }
         
@@ -1951,6 +2032,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Receive Date.
+        /// </summary>
+        public static string ReceiveDate {
+            get {
+                return ResourceManager.GetString("ReceiveDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Register.
         /// </summary>
         public static string Register {
@@ -1996,11 +2086,38 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Request Date.
+        /// </summary>
+        public static string RequestDate {
+            get {
+                return ResourceManager.GetString("RequestDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Request Details.
+        /// </summary>
+        public static string RequestDetails {
+            get {
+                return ResourceManager.GetString("RequestDetails", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Requested.
         /// </summary>
         public static string Requested {
             get {
                 return ResourceManager.GetString("Requested", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Requested Employee.
+        /// </summary>
+        public static string RequestedEmployee {
+            get {
+                return ResourceManager.GetString("RequestedEmployee", resourceCulture);
             }
         }
         

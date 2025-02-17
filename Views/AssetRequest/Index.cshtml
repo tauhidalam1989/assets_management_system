@@ -3,10 +3,10 @@
         <div class="panel-heading">
             <div class="row">
                 <div class="col-md-5">
-                    <a class="fa fa-plus-square fa-2x" onclick="AddEdit(0)"></a>
+                    <a class="fa fa-plus-square fa-2x" onclick="AddEdit(0,'@Resource.EditAssetRequest','@Resource.AddAssetRequest')"></a>
                 </div>
                 <div class="col-md-7 pull-right">
-                    <h5 class="pull-right"><b>&nbsp;Asset Request List</b></h5>
+                    <h5 class="pull-right"><b>&nbsp;@Resource.AssetRequestList</b></h5>
                 </div>
             </div>
         </div>
@@ -15,14 +15,13 @@
             <table id="tblAssetRequest" class="CustomBlueTable" style="width:100%">
                 <thead>
                     <tr>
-                        <th>Id</th>
-                        <th>Asset</th>
-                        <th>Requested Employee</th>
-                        <th style="background-color: black;">Approved By Employee</th>
-                        <th>Status</th>
-                        <th>Request Date</th>
-                        <th>Receive Date</th>
-
+                        <th>@Resource.Id</th>
+                        <th>@Resource.Asset</th>
+                        <th>@Resource.RequestedEmployee</th>
+                        <th style="background-color: black;">@Resource.ApprovedBy</th>
+                        <th>@Resource.Status</th>
+                        <th>@Resource.RequestDate</th>
+                        <th>@Resource.ReceiveDate</th>
                         <th></th>
                         <th></th>
                     </tr>
@@ -31,7 +30,26 @@
         </div>
     </div>
 </div>
-
+@{
+    var title = Resource.AssetRequestList;
+    var edit = Resource.Edit;
+    var delete = Resource.Delete;
+    var yes = Resource.Yes;
+    var assetreqdet = Resource.AssetRequestDetails;
+    var editassetreq = Resource.EditAssetRequest;
+    var addassetreq = Resource.AddAssetRequest;
+    var delmsg = Resource.Msg_Delete;
+    var assetreqdel = Resource.MSG_AssetReqDelete;
+}
+<div id="resourceTitle" data-title-msg="@title"></div>
+<div id="resourceedit" data-edit-msg="@edit"></div>
+<div id="resourcedelete" data-delete-msg="@delete"></div>
+<div id="resourceyes" data-yes-msg="@yes"></div>
+<div id="resourceassetreqdet" data-assetreqdet-msg="@assetreqdet"></div>
+<div id="resourceEditassetreq" data-editassetreq-msg="@editassetreq"></div>
+<div id="resourceAddassetreq" data-addassetreq-msg="@addassetreq"></div>
+<div id="resourceDelMsg" data-delmsg-msg="@delmsg"></div>
+<div id="resourceassetreqdel" data-assetreqdel-msg="@assetreqdel"></div>
 <style>
     .panel-heading {
         padding: 0px 0px 0px 5px;

@@ -1,28 +1,28 @@
-var Details = function (id) {
+var Details = function (id,assetreqdet) {
     var url = "/AssetRequest/Details?id=" + id;
-    $('#titleBigModal').html("Asset Request Details");
+    $('#titleBigModal').html(assetreqdet);
     loadBigModal(url);
 };
 
 
-var AddEdit = function (id) {
+var AddEdit = function (id,editassetreq,addassetreq) {
     var url = "/AssetRequest/AddEdit?id=" + id;
     if (id > 0) {
-        $('#titleExtraBigModal').html("Edit Asset Request");
+        $('#titleExtraBigModal').html(editassetreq);
     }
     else {
-        $('#titleExtraBigModal').html("Add Asset Request");
+        $('#titleExtraBigModal').html(addassetreq);
     }
     loadExtraBigModal(url);
 };
 
-var SaveAssetRequest = function () {
+var SaveAssetRequest = function (pleasewait, save) {
     if (!$("#frmAssetRequest").valid()) {
         return;
     }
 
     var _frmAssetRequest = $("#frmAssetRequest").serialize();
-    $("#btnSave").val("Please Wait");
+    $("#btnSave").val(pleasewait);
     $('#btnSave').attr('disabled', 'disabled');
     $.ajax({
         type: "POST",
@@ -34,7 +34,7 @@ var SaveAssetRequest = function () {
                 icon: "success"
             }).then(function () {
                 document.getElementById("btnClose").click();
-                $("#btnSave").val("Save");
+                $("#btnSave").val(save);
                 $('#btnSave').removeAttr('disabled');
                 $('#tblAssetRequest').DataTable().ajax.reload();
             });
@@ -45,22 +45,22 @@ var SaveAssetRequest = function () {
     });
 }
 
-var Delete = function (id) {
+var Delete = function (id,del,yes,msgdel) {
     if (DemoUserAccountLockAll() == 1) return;
     Swal.fire({
-        title: 'Do you want to delete this item?',
+        title: del,
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes'
+        confirmButtonText: yes
     }).then((result) => {
         if (result.value) {
             $.ajax({
                 type: "POST",
                 url: "/AssetRequest/Delete?id=" + id,
                 success: function (result) {
-                    var message = "Asset Request has been deleted successfully. Asset Request ID: " + result.Id;
+                    var message = msgdel + ": " + result.Id;
                     Swal.fire({
                         title: message,
                         icon: 'info',
