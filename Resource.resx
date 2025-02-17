@@ -876,6 +876,9 @@
   <data name="AddAssetRequest" xml:space="preserve">
     <value>Add Asset Request</value>
   </data>
+  <data name="AddAssetStatus" xml:space="preserve">
+    <value>Add Asset Status</value>
+  </data>
   <data name="ApprovedBy" xml:space="preserve">
     <value>Approved By</value>
   </data>
@@ -885,8 +888,17 @@
   <data name="AssetRequestList" xml:space="preserve">
     <value>Asset Request List</value>
   </data>
+  <data name="AssetStatusDetails" xml:space="preserve">
+    <value>Asset Status Details</value>
+  </data>
+  <data name="AssetStatusList" xml:space="preserve">
+    <value>Asset Status List</value>
+  </data>
   <data name="EditAssetRequest" xml:space="preserve">
     <value>Edit Asset Request</value>
+  </data>
+  <data name="EditAssetStatus" xml:space="preserve">
+    <value>Edit Asset Status</value>
   </data>
   <data name="MSG_AssetReqCreate" xml:space="preserve">
     <value>Asset Request Created Successfully. ID</value>
@@ -896,6 +908,15 @@
   </data>
   <data name="MSG_AssetReqUpdate" xml:space="preserve">
     <value>Asset Request Updated Successfully. ID</value>
+  </data>
+  <data name="MSG_AssetStatusCreate" xml:space="preserve">
+    <value>AssetStatus Created Successfully. ID</value>
+  </data>
+  <data name="MSG_AssetStatusDelete" xml:space="preserve">
+    <value>Asset Status has been deleted successfully. Asset Status ID</value>
+  </data>
+  <data name="MSG_AssetStatusUpdate" xml:space="preserve">
+    <value>Asset Status Updated Successfully. ID</value>
   </data>
   <data name="ReceiveDate" xml:space="preserve">
     <value>Receive Date</value>

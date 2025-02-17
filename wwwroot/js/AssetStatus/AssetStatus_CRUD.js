@@ -1,28 +1,28 @@
-var Details = function (id) {
+var Details = function (id,assetstatusdet) {
     var url = "/AssetStatus/Details?id=" + id;
-    $('#titleBigModal').html("Asset Status Details");
+    $('#titleBigModal').html(assetstatusdet);
     loadBigModal(url);
 };
 
 
-var AddEdit = function (id) {
+var AddEdit = function (id,edit,add) {
     var url = "/AssetStatus/AddEdit?id=" + id;
     if (id > 0) {
-        $('#titleBigModal').html("Edit Asset Status");
+        $('#titleBigModal').html(edit);
     }
     else {
-        $('#titleBigModal').html("Add Asset Status");
+        $('#titleBigModal').html(add);
     }
     loadBigModal(url);
 };
 
-var Save = function () {
+var Save = function (pleasewait,save) {
     if (!$("#frmAssetStatus").valid()) {
         return;
     }
 
     var _frmAssetStatus = $("#frmAssetStatus").serialize();
-    $("#btnSave").val("Please Wait");
+    $("#btnSave").val(pleasewait);
     $('#btnSave').attr('disabled', 'disabled');
     $.ajax({
         type: "POST",
@@ -34,7 +34,7 @@ var Save = function () {
                 icon: "success"
             }).then(function () {
                 document.getElementById("btnClose").click();
-                $("#btnSave").val("Save");
+                $("#btnSave").val(save);
                 $('#btnSave').removeAttr('disabled');
                 $('#tblAssetStatus').DataTable().ajax.reload();
             });
@@ -45,22 +45,22 @@ var Save = function () {
     });
 }
 
-var Delete = function (id) {
+var Delete = function (id,del,yes,delmsg) {
     if (DemoUserAccountLockAll() == 1) return;
     Swal.fire({
-        title: 'Do you want to delete this item?',
+        title: del,
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes'
+        confirmButtonText: yes
     }).then((result) => {
         if (result.value) {
             $.ajax({
                 type: "POST",
                 url: "/AssetStatus/Delete?id=" + id,
                 success: function (result) {
-                    var message = "Asset Status has been deleted successfully. Asset Status ID: " + result.Id;
+                    var message = delmsg + ": " + result.Id;
                     Swal.fire({
                         title: message,
                         icon: 'info',

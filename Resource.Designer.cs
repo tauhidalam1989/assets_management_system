@@ -169,6 +169,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Asset Status.
+        /// </summary>
+        public static string AddAssetStatus {
+            get {
+                return ResourceManager.GetString("AddAssetStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add Asset Sub Category Details.
         /// </summary>
         public static string AddAssetSubCatDet {
@@ -498,6 +507,24 @@ namespace ViewRes {
         public static string AssetStatus {
             get {
                 return ResourceManager.GetString("AssetStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Asset Status Details.
+        /// </summary>
+        public static string AssetStatusDetails {
+            get {
+                return ResourceManager.GetString("AssetStatusDetails", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Asset Status List.
+        /// </summary>
+        public static string AssetStatusList {
+            get {
+                return ResourceManager.GetString("AssetStatusList", resourceCulture);
             }
         }
         
@@ -1105,6 +1132,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Edit Asset Status.
+        /// </summary>
+        public static string EditAssetStatus {
+            get {
+                return ResourceManager.GetString("EditAssetStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Edit Asset Sub Category Details.
         /// </summary>
         public static string EditAssetSubCatDet {
@@ -1704,6 +1740,33 @@ namespace ViewRes {
         public static string MSG_AssetReqUpdate {
             get {
                 return ResourceManager.GetString("MSG_AssetReqUpdate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AssetStatus Created Successfully. ID.
+        /// </summary>
+        public static string MSG_AssetStatusCreate {
+            get {
+                return ResourceManager.GetString("MSG_AssetStatusCreate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Asset Status has been deleted successfully. Asset Status ID.
+        /// </summary>
+        public static string MSG_AssetStatusDelete {
+            get {
+                return ResourceManager.GetString("MSG_AssetStatusDelete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Asset Status Updated Successfully. ID.
+        /// </summary>
+        public static string MSG_AssetStatusUpdate {
+            get {
+                return ResourceManager.GetString("MSG_AssetStatusUpdate", resourceCulture);
             }
         }
         

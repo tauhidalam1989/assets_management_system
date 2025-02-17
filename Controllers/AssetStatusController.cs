@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Dynamic.Core;
-
+using ViewRes;
 namespace AMS.Controllers
 {
     [Authorize]
@@ -136,7 +136,7 @@ namespace AMS.Controllers
                             _context.Entry(_AssetStatus).CurrentValues.SetValues(vm);
                             await _context.SaveChangesAsync();
 
-                            var _AlertMessage = "AssetStatus Updated Successfully. ID: " + _AssetStatus.Id;
+                            var _AlertMessage = Resource.MSG_AssetStatusUpdate +  ": " + _AssetStatus.Id;
                             return new JsonResult(_AlertMessage);
                         }
                         else
@@ -149,7 +149,7 @@ namespace AMS.Controllers
                             _context.Add(_AssetStatus);
                             await _context.SaveChangesAsync();
 
-                            var _AlertMessage = "AssetStatus Created Successfully. ID: " + _AssetStatus.Id;
+                            var _AlertMessage = Resource.MSG_AssetStatusCreate + ": " + _AssetStatus.Id;
                             return new JsonResult(_AlertMessage);
                         }
                     }

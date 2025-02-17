@@ -3,10 +3,10 @@
         <div class="panel-heading">
             <div class="row">
                 <div class="col-md-5">                  
-                    <a class="fa fa-plus-square fa-2x" onclick="AddEdit(0)"></a>
+                    <a class="fa fa-plus-square fa-2x" onclick="AddEdit(0,'@Resource.EditAssetStatus','@Resource.AddAssetStatus')"></a>
                 </div>
                 <div class="col-md-7 pull-right">
-                    <h5 class="pull-right"><b>&nbsp;Asset Status List</b></h5>
+                    <h5 class="pull-right"><b>&nbsp;@Resource.AssetStatusList</b></h5>
                 </div>
             </div>
         </div>
@@ -15,11 +15,10 @@
             <table id="tblAssetStatus" class="CustomBlueTable" style="width:100%">
                 <thead>
                     <tr>
-                        <th>Id</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Created Date</th>                      
-
+                        <th>@Resource.Id</th>
+                        <th>@Resource.Name</th>
+                        <th>@Resource.Description</th>
+                        <th>@Resource.CreatedDate</th>
                         <th></th>
                         <th></th>
                     </tr>
@@ -28,7 +27,26 @@
         </div>
     </div>
 </div>
-
+@{
+    var title=Resource.AssetStatus;
+    var assetstatusdet = Resource.AssetStatusDetails;
+    var editassetstatus = Resource.EditAssetStatus;
+    var addassetstatus = Resource.AddAssetStatus;
+    var del = Resource.Delete;
+    var msgdel = Resource.Msg_Delete;
+    var assetstatusselete = Resource.MSG_AssetStatusDelete;
+    var yes = Resource.Yes;
+    var edit = Resource.Edit;
+}
+<div id="resourceTitle" data-title-msg="@title"></div>
+<div id="resourceassetstatusdet" data-assetstatusdet-msg="@assetstatusdet"></div>
+<div id="resourceeditassetstatus" data-editassetstatus-msg="@editassetstatus"></div>
+<div id="resourceaddassetstatus" data-addassetstatus-msg="@addassetstatus"></div>
+<div id="resourceassetstatusselete" data-assetstatusselete-msg="@assetstatusselete"></div>
+<div id="resourcemsgdel" data-msgdel-msg="@msgdel"></div>
+<div id="resourcedel" data-del-msg="@del"></div>
+<div id="resourceyes" data-yes-msg="@yes"></div>
+<div id="resourceedit" data-edit-msg="@edit"></div>
 <style>
     .panel-heading {
         padding: 0px 0px 0px 5px;

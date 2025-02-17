@@ -855,6 +855,9 @@
   <data name="AddAssetRequest" xml:space="preserve">
     <value>إضافة طلب الأصول</value>
   </data>
+  <data name="AddAssetStatus" xml:space="preserve">
+    <value>إضافة حالة الأصول</value>
+  </data>
   <data name="ApprovedBy" xml:space="preserve">
     <value>تم الموافقة بواسطة</value>
   </data>
@@ -864,8 +867,17 @@
   <data name="AssetRequestList" xml:space="preserve">
     <value>قائمة طلبات الأصول</value>
   </data>
+  <data name="AssetStatusDetails" xml:space="preserve">
+    <value>تفاصيل حالة الأصول</value>
+  </data>
+  <data name="AssetStatusList" xml:space="preserve">
+    <value>قائمة حالة الأصول</value>
+  </data>
   <data name="EditAssetRequest" xml:space="preserve">
     <value>تعديل طلب الأصول</value>
+  </data>
+  <data name="EditAssetStatus" xml:space="preserve">
+    <value>تعديل حالة الأصول</value>
   </data>
   <data name="MSG_AssetReqCreate" xml:space="preserve">
     <value>تم إنشاء طلب الأصول بنجاح. المعرف</value>
@@ -875,6 +887,15 @@
   </data>
   <data name="MSG_AssetReqUpdate" xml:space="preserve">
     <value>تم تحديث طلب الأصول بنجاح. المعرف</value>
+  </data>
+  <data name="MSG_AssetStatusCreate" xml:space="preserve">
+    <value>تم إنشاء حالة الأصول بنجاح. المعرف</value>
+  </data>
+  <data name="MSG_AssetStatusDelete" xml:space="preserve">
+    <value>تم حذف حالة الأصول بنجاح. معرف حالة الأصول</value>
+  </data>
+  <data name="MSG_AssetStatusUpdate" xml:space="preserve">
+    <value>تم تحديث حالة الأصول بنجاح. المعرف</value>
   </data>
   <data name="ReceiveDate" xml:space="preserve">
     <value>تاريخ الاستلام</value>

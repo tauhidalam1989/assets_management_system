@@ -1,6 +1,14 @@
 $(document).ready(function () {
-    document.title = 'Asset Status';
-
+    var doctitle = $('#resourceTitle').data('title-msg');
+    document.title = doctitle;   
+    var assetstatusdet = $('#resourceassetstatusdet').data('assetstatusdet-msg');
+    var editassetstatus = $('#resourceeditassetstatus').data('editassetstatus-msg');
+    var addassetstatus = $('#resourceaddassetstatus').data('addassetstatus-msg');
+    var edit = $('#resourceedit').data('edit-msg');
+    var del = $('#resourcedel').data('del-msg');
+    var yes = $('#resourceyes').data('yes-msg');
+    var delmsg = $('#resourcemsgdel').data('msgdel-msg');
+    var assetstatusselete = $('#resourceassetstatusselete').data('assetstatusselete-msg');
     $("#tblAssetStatus").DataTable({
         paging: true,
         select: true,
@@ -29,7 +37,7 @@ $(document).ready(function () {
         "columns": [
             {
                 data: "Id", "name": "Id", render: function (data, type, row) {
-                    return "<a href='#' class='fa fa-eye' onclick=Details('" + row.Id + "');>" + row.Id + "</a>";
+                    return "<a href='#' class='fa fa-eye' onclick='Details(\"" + row.Id + "\", \"" + assetstatusdet + "\");'>" + row.Id + "</a>";
                 }
             },
             { "data": "Name", "name": "Name" },
@@ -47,12 +55,12 @@ $(document).ready(function () {
             },
             {
                 data: null, render: function (data, type, row) {
-                    return "<a href='#' class='btn btn-info btn-xs' onclick=AddEdit('" + row.Id + "');>Edit</a>";
+                    return "<a href='#' class='btn btn-info btn-xs' onclick='AddEdit(\"" + row.Id + "\", \"" + editassetstatus + "\", \"" + addassetstatus + "\");'>" + edit + "</a>";
                 }
             },
             {
                 data: null, render: function (data, type, row) {
-                    return "<a href='#' class='btn btn-danger btn-xs' onclick=Delete('" + row.Id + "'); >Delete</a>";
+                    return "<a href='#' class='btn btn-danger btn-xs' onclick='Delete(\"" + row.Id + "\", \"" + delmsg + "\", \"" + yes + "\", \"" + assetstatusselete + "\");'>" + del + "</a>";
                 }
             }
         ],

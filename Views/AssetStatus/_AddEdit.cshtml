@@ -1,7 +1,7 @@
 @model AMS.Models.AssetStatusViewModel.AssetStatusCRUDViewModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = @Resource.Create;
 }
 
 <div>
@@ -23,8 +23,8 @@
                     <span asp-validation-for="Description" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <input type="button" id="btnSave" value="Save" onclick="Save()" class="btn btn-info">
-                    <button type="button" id="btnClose" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <input type="button" id="btnSave" value="@Resource.Save" onclick="Save('@Resource.PleaseWait','@Resource.Save')" class="btn btn-info">
+                    <button type="button" id="btnClose" class="btn btn-danger" data-dismiss="modal">@Resource.Close</button>
                 </div>
             </form>
         </div>
