@@ -810,4 +810,64 @@
   <data name="AsseInfoReport" xml:space="preserve">
     <value>Asset Info Report</value>
   </data>
+  <data name="Accepted" xml:space="preserve">
+    <value>Accepted</value>
+  </data>
+  <data name="AddAssetIssue" xml:space="preserve">
+    <value>Add Asset Issue</value>
+  </data>
+  <data name="Asset" xml:space="preserve">
+    <value>Asset</value>
+  </data>
+  <data name="AssetIssue" xml:space="preserve">
+    <value>Asset Issue</value>
+  </data>
+  <data name="AssetIssueDetails" xml:space="preserve">
+    <value>Asset Issue Details</value>
+  </data>
+  <data name="AssetIssueList" xml:space="preserve">
+    <value>Asset Issue List</value>
+  </data>
+  <data name="Blocker" xml:space="preserve">
+    <value>Blocker</value>
+  </data>
+  <data name="EditAssetIssue" xml:space="preserve">
+    <value>Edit Asset Issue</value>
+  </data>
+  <data name="ExpectedFixDate" xml:space="preserve">
+    <value>Expected Fix Date</value>
+  </data>
+  <data name="Hold" xml:space="preserve">
+    <value>Hold</value>
+  </data>
+  <data name="InProgress" xml:space="preserve">
+    <value>In Progress</value>
+  </data>
+  <data name="IssueDescription" xml:space="preserve">
+    <value>Issue Description</value>
+  </data>
+  <data name="MSG_AssestIssueDel" xml:space="preserve">
+    <value>Asset Issue has been deleted successfully. Asset Issue ID</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="RaisedBy" xml:space="preserve">
+    <value>Raised By</value>
+  </data>
+  <data name="Resolved" xml:space="preserve">
+    <value>Resolved</value>
+  </data>
+  <data name="ResolvedDate" xml:space="preserve">
+    <value>Resolved Date</value>
+  </data>
+  <data name="SelectStatus" xml:space="preserve">
+    <value>Select Status</value>
+  </data>
+  <data name="MSG_AssestIssueCreateSuccess" xml:space="preserve">
+    <value>Asset Issue Created Successfully. ID</value>
+  </data>
+  <data name="MSG_AssestIssueUpdateSuccess" xml:space="preserve">
+    <value>Asset Issue Updated Successfully. ID</value>
+  </data>
 </root>

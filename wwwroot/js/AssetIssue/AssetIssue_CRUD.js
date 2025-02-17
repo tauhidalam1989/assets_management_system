@@ -1,27 +1,27 @@
-var Details = function (id) {
+var Details = function (id,det) {
     var url = "/AssetIssue/Details?id=" + id;
-    $('#titleBigModal').html("Asset Issue Details");
+    $('#titleBigModal').html(det);
     loadBigModal(url);
 };
 
-var AddEdit = function (id) {
+var AddEdit = function (id,edit,add) {
     var url = "/AssetIssue/AddEdit?id=" + id;
     if (id > 0) {
-        $('#titleExtraBigModal').html("Edit Asset Issue");
+        $('#titleExtraBigModal').html(edit);
     }
     else {
-        $('#titleExtraBigModal').html("Add Asset Issue");
+        $('#titleExtraBigModal').html(add);
     }
     loadExtraBigModal(url);
 };
 
-var SaveAssetIssue = function () {
+var SaveAssetIssue = function (pleasewait,save) {
     if (!$("#frmAssetIssue").valid()) {
         return;
     }
 
     var _frmAssetIssue = $("#frmAssetIssue").serialize();
-    $("#btnSave").val("Please Wait");
+    $("#btnSave").val(pleasewait);
     $('#btnSave').attr('disabled', 'disabled');
     $.ajax({
         type: "POST",
@@ -33,7 +33,7 @@ var SaveAssetIssue = function () {
                 icon: "success"
             }).then(function () {
                 document.getElementById("btnClose").click();
-                $("#btnSave").val("Save");
+                $("#btnSave").val(save);
                 $('#btnSave').removeAttr('disabled');
                 $('#tblAssetIssue').DataTable().ajax.reload();
             });
@@ -44,22 +44,22 @@ var SaveAssetIssue = function () {
     });
 }
 
-var Delete = function (id) {
+var Delete = function (id,delqt,yes,delmsg) {
     if (DemoUserAccountLockAll() == 1) return;
     Swal.fire({
-        title: 'Do you want to delete this item?',
+        title: delqt,
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes'
+        confirmButtonText: yes
     }).then((result) => {
         if (result.value) {
             $.ajax({
                 type: "POST",
                 url: "/AssetIssue/Delete?id=" + id,
                 success: function (result) {
-                    var message = "Asset Issue has been deleted successfully. Asset Issue ID: " + result.Id;
+                    var message = delmsg + ": " + result.Id;
                     Swal.fire({
                         title: message,
                         icon: 'info',

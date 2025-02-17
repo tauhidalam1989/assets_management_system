@@ -1,5 +1,15 @@
 $(document).ready(function () {
-    document.title = 'AssetIssue';
+    var doctitle = $('#resourceTitle').data('title-msg');
+    var editassetissue = $('#resourceEditassetissue').data('editassetissue-msg');
+    var addassetissue = $('#resourceAddassetissue').data('addassetissue-msg');
+    var edit = $('#resourceEdit').data('edit-msg');
+    var print = $('#resourcePrint').data('print-msg');
+    var del = $('#resourceDel').data('del-msg');
+    var delmsg = $('#resourceDelMsg').data('delete-msg');
+    var yes = $('#resourceYesMsg').data('yes-msg');
+    var assetissuedet = $('#resourceassetissuedet').data('assetissuedet-msg');
+    var assetissuedel = $('#resourceassetissuedel').data('msgassetissuedel-msg');
+    document.title = doctitle;
 
     $("#tblAssetIssue").DataTable({
         paging: true,
@@ -29,7 +39,7 @@ $(document).ready(function () {
         "columns": [
             {
                 data: "Id", "name": "Id", render: function (data, type, row) {
-                    return "<a href='#' class='fa fa-eye' onclick=Details('" + row.Id + "');>" + row.Id + "</a>";
+                    return "<a href='#' class='fa fa-eye' onclick='Details(\"" + row.Id + "\", \"" + assetissuedet + "\");'>" + row.Id + "</a>";
                 }
             },
             { "data": "AssetDisplay", "name": "AssetDisplay" },
@@ -68,7 +78,7 @@ $(document).ready(function () {
             {
                 data: null, render: function (data, type, row) {                 
                     if (row.IsAdmin) {
-                        return "<a href='#' class='btn btn-info btn-xs' onclick=AddEdit('" + row.Id + "');>Edit</a>";
+                        return "<a href='#' class='btn btn-info btn-xs' onclick='AddEdit(\"" + row.Id + "\", \"" + editassetissue + "\", \"" + addassetissue + "\");'>" + edit + "</a>";
                     }
                     else {
                         return "-";
@@ -78,7 +88,7 @@ $(document).ready(function () {
             {
                 data: null, render: function (data, type, row) {                   
                     if (row.IsAdmin) {
-                        return "<a href='#' class='btn btn-danger btn-xs' onclick=Delete('" + row.Id + "'); >Delete</a>";
+                        return "<a href='#' class='btn btn-danger btn-xs' onclick='Delete(\"" + row.Id + "\", \"" + delmsg + "\", \"" + yes + "\", \"" + assetissuedel + "\");'>" + del + "</a>";
                     }
                     else {
                         return "-";

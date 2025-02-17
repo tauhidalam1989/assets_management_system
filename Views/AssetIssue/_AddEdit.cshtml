@@ -1,7 +1,7 @@
 @model AMS.Models.AssetIssueViewModel.AssetIssueCRUDViewModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = Resource.Create;
 }
 
 <div>
@@ -20,7 +20,7 @@
                             <div class="col-sm-9">
                                 <select asp-for="AssetId" asp-items="@ViewBag.LoadddlAssetName" id="AssetId"
                                     class="form-control" style="width:100%;">
-                                    <option disabled selected>--- SELECT ---</option>
+                                    <option disabled selected>--- @Resource.Select ---</option>
                                 </select>
                                 <span asp-validation-for="AssetId" class="text-danger"></span>
                             </div>
@@ -30,7 +30,7 @@
                             <div class="col-sm-9">
                                 <select asp-for="RaisedByEmployeeId" asp-items="@ViewBag.LoadddlEmployee"
                                     id="RaisedByEmployeeId" class="form-control" style="width:100%;">
-                                    <option disabled selected>--- SELECT ---</option>
+                                    <option disabled selected>--- @Resource.Select ---</option>
                                 </select>
                                 <span asp-validation-for="RaisedByEmployeeId" class="text-danger"></span>
                             </div>
@@ -47,16 +47,16 @@
                             <label asp-for="Status" class="col-sm-3 col-form-label"></label>
                             <div class="col-sm-9">
                                 <select asp-for="Status" id="Status" class="form-control" required>
-                                    <option value="none" selected>Select Status</option>
-                                    <option value="New">New</option>
-                                    <option value="In Progress">In Progress</option>
-                                    <option value="Resolved">Resolved</option>
-                                    <option value="Blocker">Blocker</option>
-                                    <option value="Pending">Pending</option>
-                                    <option value="Hold">Hold</option>
-                                    <option value="Rejected">Rejected</option>
-                                    <option value="Accepted">Accepted</option>
-                                    <option value="Close">Close</option>
+                                    <option value="none" selected>@Resource.SelectStatus</option>
+                                    <option value="New">@Resource.New</option>
+                                    <option value="In Progress">@Resource.InProgress</option>
+                                    <option value="Resolved">@Resource.Resolved</option>
+                                    <option value="Blocker">@Resource.Blocker</option>
+                                    <option value="Pending">@Resource.Pending</option>
+                                    <option value="Hold">@Resource.Hold</option>
+                                    <option value="Rejected">@Resource.Rejected</option>
+                                    <option value="Accepted">@Resource.Accepted</option>
+                                    <option value="Close">@Resource.Close</option>
                                 </select>
                                 <span asp-validation-for="Status" class="text-danger"></span>
                             </div>
@@ -90,10 +90,10 @@
                         <div class="form-group row">
                             <label class="col-sm-3 col-form-label"></label>
                             <div class="col-sm-9">
-                                <input type="button" id="btnSave" value="Save" onclick="SaveAssetIssue()"
+                                <input type="button" id="btnSave" value="@Resource.Save" onclick="SaveAssetIssue()"
                                     class="btn btn-info">
                                 <button type="button" id="btnClose" class="btn btn-danger"
-                                    data-dismiss="modal">Close</button>
+                                    data-dismiss="modal">@Resource.Close</button>
                             </div>
                         </div>
                     </div>

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Dynamic.Core;
+using ViewRes;
 
 namespace AMS.Controllers
 {
@@ -132,7 +133,7 @@ namespace AMS.Controllers
                     _context.Entry(_AssetIssue).CurrentValues.SetValues(vm);
                     await _context.SaveChangesAsync();
 
-                    var _AlertMessage = "Asset Issue Updated Successfully. ID: " + _AssetIssue.Id;
+                    var _AlertMessage = Resource.MSG_AssestIssueUpdateSuccess + ": " + _AssetIssue.Id;
                     return new JsonResult(_AlertMessage);
                 }
                 else
@@ -145,7 +146,7 @@ namespace AMS.Controllers
                     _context.Add(_AssetIssue);
                     await _context.SaveChangesAsync();
 
-                    var _AlertMessage = "Asset Issue Created Successfully. ID: " + _AssetIssue.Id;
+                    var _AlertMessage = Resource.MSG_AssestIssueCreateSuccess + ": " + _AssetIssue.Id;
                     return new JsonResult(_AlertMessage);
                 }
             }

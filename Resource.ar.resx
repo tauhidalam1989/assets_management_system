@@ -789,4 +789,64 @@
   <data name="AsseInfoReport" xml:space="preserve">
     <value>تقرير معلومات الأصول</value>
   </data>
+  <data name="Accepted" xml:space="preserve">
+    <value>مقبول</value>
+  </data>
+  <data name="AddAssetIssue" xml:space="preserve">
+    <value>إضافة مشكلة الأصل</value>
+  </data>
+  <data name="Asset" xml:space="preserve">
+    <value>أصل</value>
+  </data>
+  <data name="AssetIssue" xml:space="preserve">
+    <value>مشكلة الأصل</value>
+  </data>
+  <data name="AssetIssueDetails" xml:space="preserve">
+    <value>تفاصيل مشكلة الأصل</value>
+  </data>
+  <data name="AssetIssueList" xml:space="preserve">
+    <value>قائمة مشاكل الأصول</value>
+  </data>
+  <data name="Blocker" xml:space="preserve">
+    <value>معرقل</value>
+  </data>
+  <data name="EditAssetIssue" xml:space="preserve">
+    <value>تعديل مشكلة الأصل</value>
+  </data>
+  <data name="ExpectedFixDate" xml:space="preserve">
+    <value>تاريخ الإصلاح المتوقع</value>
+  </data>
+  <data name="Hold" xml:space="preserve">
+    <value>معلق</value>
+  </data>
+  <data name="InProgress" xml:space="preserve">
+    <value>قيد التنفيذ</value>
+  </data>
+  <data name="IssueDescription" xml:space="preserve">
+    <value>وصف المشكلة</value>
+  </data>
+  <data name="MSG_AssestIssueDel" xml:space="preserve">
+    <value>تم حذف مشكلة الأصل بنجاح. معرف مشكلة الأصل</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>جديد</value>
+  </data>
+  <data name="RaisedBy" xml:space="preserve">
+    <value>تم رفعه بواسطة</value>
+  </data>
+  <data name="Resolved" xml:space="preserve">
+    <value>تم الحل</value>
+  </data>
+  <data name="ResolvedDate" xml:space="preserve">
+    <value>تاريخ الحل</value>
+  </data>
+  <data name="SelectStatus" xml:space="preserve">
+    <value>اختر الحالة</value>
+  </data>
+  <data name="MSG_AssestIssueCreateSuccess" xml:space="preserve">
+    <value>تم إنشاء مشكلة الأصول بنجاح. المعرف</value>
+  </data>
+  <data name="MSG_AssestIssueUpdateSuccess" xml:space="preserve">
+    <value>تم تحديث مشكلة الأصول بنجاح. المعرف</value>
+  </data>
 </root>

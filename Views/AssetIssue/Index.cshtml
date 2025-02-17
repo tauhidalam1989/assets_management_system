@@ -3,10 +3,10 @@
         <div class="panel-heading">
             <div class="row">
                 <div class="col-md-5">
-                    <a class="fa fa-plus-square fa-2x" onclick="AddEdit(0)"></a>
+                    <a class="fa fa-plus-square fa-2x" onclick="AddEdit(0,'@Resource.EditAssetIssue','@Resource.AddAssetIssue')"></a>
                 </div>
                 <div class="col-md-7 pull-right">
-                    <h5 class="pull-right"><b>&nbsp;Asset Issue List</b></h5>
+                    <h5 class="pull-right"><b>&nbsp;@Resource.AssetIssueList</b></h5>
                 </div>
             </div>
         </div>
@@ -15,12 +15,12 @@
             <table id="tblAssetIssue" class="CustomBlueTable" style="width:100%">
                 <thead>
                     <tr>
-                        <th>Id</th>
-                        <th>Asset</th>
-                        <th>Raised By Employee</th>
-                        <th>Status</th>
-                        <th>Expected Fix Date</th>
-                        <th>Resolved Date</th>
+                        <th>@Resource.Id</th>
+                        <th>@Resource.Asset</th>
+                        <th>@Resource.RaisedBy</th>
+                        <th>@Resource.Status</th>
+                        <th>@Resource.ExpectedFixDate</th>
+                        <th>@Resource.ResolvedDate</th>
 
                         <th></th>
                         <th></th>
@@ -30,7 +30,30 @@
         </div>
     </div>
 </div>
+@{
+    var msgtitle = Resource.AssetIssue;    
+    var editassetissue = Resource.EditAssetIssue;
+    var addassetissue = Resource.AddAssetIssue;
+    var editmsg = Resource.Edit;
+    var printmsg = Resource.Print;
+    var yesmsg = Resource.Yes;
+    var msgassetissuedel = Resource.MSG_AssestIssueDel;
+    var delmsg = Resource.Delete;
+    var deletemsg = Resource.Msg_Delete;
+    var assetissuedet = Resource.AssetIssueDetails;
+    
+}
+<div id="resourceTitle" data-title-msg="@msgtitle"></div>
+<div id="resourceassetissuedet" data-assetissuedet-msg="@assetissuedet"></div>
+<div id="resourceEditassetissue" data-editassetissue-msg="@editassetissue"></div>
+<div id="resourceAddassetissue" data-addassetissue-msg="@addassetissue"></div>
+<div id="resourceEdit" data-edit-msg="@editmsg"></div>
+<div id="resourcePrint" data-edit-msg="@printmsg"></div>
+<div id="resourceDel" data-del-msg="@delmsg"></div>
+<div id="resourceDelMsg" data-delete-msg="@deletemsg"></div>
+<div id="resourceYesMsg" data-yes-msg="@yesmsg"></div>
 
+<div id="resourceassetissuedel" data-msgassetissuedel-msg="@msgassetissuedel"></div>
 <style>
     .panel-heading {
         padding: 0px 0px 0px 5px;
