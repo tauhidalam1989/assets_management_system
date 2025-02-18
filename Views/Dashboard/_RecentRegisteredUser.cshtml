@@ -3,19 +3,19 @@
 <hr />
 
 <div class="panel panel-hash">
-    <div class="panel-heading"><h4><b>Recent Registered</b></h4></div>
+    <div class="panel-heading"><h4><b>@Resource.RecentRegistered</b></h4></div>
     <div class="panel-body scroll panel-height">
         <table class="CustomBlueTable">
             <thead>
                 <tr>
-                    <th>Profile ID</th>
-                    <th>Profile Picture</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Phone Number</th>
-                    <th>Email</th>
-                    <th>Created Date</th>
-                    <th>Created By</th>
+                    <th>@Resource.ProfileID</th>
+                    <th>@Resource.ProfilePicture</th>
+                    <th>@Resource.FirstName</th>
+                    <th>@Resource.LastName</th>
+                    <th>@Resource.Phone</th>
+                    <th>@Resource.Email</th>
+                    <th>@Resource.CreatedDate</th>
+                    <th>@Resource.CreatedBy</th>
                 </tr>
             </thead>
             <tbody>
@@ -38,7 +38,7 @@
                                 </div>
                             </td>
                             <td>
-                                <a href='#' class='btn btn-link btn-xs' onclick=ViewUserDetails('@item.UserProfileId')>@item.FirstName</a>
+                                <a href='#' class='btn btn-link btn-xs' onclick="ViewUserDetails('@item.UserProfileId','@Resource.UserDetails')">@item.FirstName</a>
                             </td>
                             <td>@item.LastName</td>
                             <td>@item.PhoneNumber</td>

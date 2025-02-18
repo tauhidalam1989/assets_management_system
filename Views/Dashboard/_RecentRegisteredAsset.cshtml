@@ -1,23 +1,22 @@
 ﻿@model AMS.Models.DashboardViewModel.DashboardSummaryViewModel
 
 <hr />
-
 <div class="panel panel-hash">
     <div class="panel-heading">
-        <h4><b>Recent Asset</b></h4>
+        <h4><b>@Resource.RecentAsset</b></h4>
     </div>
     <div class="panel-body scroll panel-height">
         <table class="CustomBlueTable" id="tblAsset">
             <thead>
                 <tr>
-                    <th>Id</th>
-                    <th>Image</th>
-                    <th>Asset Id</th>
-                    <th>Asset Model No</th>
-                    <th>Name</th>
-                    <th>Unit Price</th>
-                    <th>Date Of Purchase</th>
-                    <th>Date Of Manufacture</th>
+                    <th>@Resource.Id</th>
+                    <th>@Resource.Image</th>
+                    <th>@Resource.AssetId</th>
+                    <th>@Resource.Asset_Model_No</th>
+                    <th>@Resource.Name</th>
+                    <th>@Resource.UnitPrice</th>
+                    <th>@Resource.Date_Of_Purchase</th>
+                    <th>@Resource.ManufactureDate</th>
                 </tr>
             </thead>
             <tbody>
@@ -38,7 +37,7 @@
                             <td>@item.AssetId</td>
                             <td>@item.AssetModelNo</td>
                             <td>
-                                <a href='#' class='btn btn-link btn-xs' onclick=Details('@item.Id')>@item.Name</a>
+                                <a href='#' class='btn btn-link btn-xs' onclick="Details('@item.Id','@Resource.AssetDetails')">@item.Name</a>
                             </td>
                             <td>@item.UnitPrice</td>
                             <td>@item.DateOfPurchase.ToString("dd MMMM yyyy")</td>

@@ -15,9 +15,9 @@
     $("#" + UserProfileId).prop('selectedIndex', 0);
 };
 
-var ViewUserDetails = function (Id) {
+var ViewUserDetails = function (Id,userdet) {
     var url = "/UserManagement/ViewUserDetails?Id=" + Id;
-    $('#titleExtraBigModal').html("User Details ");
+    $('#titleExtraBigModal').html(userdet);
     loadExtraBigModal(url);
 };
 
@@ -27,14 +27,14 @@ var ResetPasswordAdmin = function (id) {
     loadMediumModal(url);
 };
 
-var AddEditUserAccount = function (id) {
+var AddEditUserAccount = function (id,edituser,adduser) {
     if (DemoUserAccountLockAll() == 1) return;
     var url = "/UserManagement/AddEditUserAccount?id=" + id;
     if (id > 0) {
-        $('#titleExtraBigModal').html("Edit User");
+        $('#titleExtraBigModal').html(edituser);
     }
     else {
-        $('#titleExtraBigModal').html("Add User");
+        $('#titleExtraBigModal').html(adduser);
     }
     loadExtraBigModal(url);
 
