@@ -1,6 +1,7 @@
 @model AMS.Models.DesignationViewModel.DesignationCRUDViewModel
 
-@{ ViewData["Title"] = "Create"; }
+@{
+    ViewData["Title"] = Resource.Create; }
 
 <div>
     <div class="row">
@@ -23,8 +24,8 @@
                 </div>
                               
                 <div class="form-group">
-                    <input type="button" value="Save" onclick="Save()" class="btn btn-info">
-                    <button type="button" id="btnClose" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <input type="button" value="@Resource.Save" onclick="Save()" class="btn btn-info">
+                    <button type="button" id="btnClose" class="btn btn-danger" data-dismiss="modal">@Resource.Close</button>
                 </div>
             </form>
         </div>

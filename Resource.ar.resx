@@ -942,6 +942,9 @@
   <data name="AddDepartment" xml:space="preserve">
     <value>إضافة قسم</value>
   </data>
+  <data name="AddDesignation" xml:space="preserve">
+    <value>إضافة مسمى وظيفي</value>
+  </data>
   <data name="AddNewAsset" xml:space="preserve">
     <value>إضافة أصل جديد</value>
   </data>
@@ -990,8 +993,20 @@
   <data name="DepartmentList" xml:space="preserve">
     <value>قائمة الأقسام</value>
   </data>
+  <data name="Designation" xml:space="preserve">
+    <value>المسمى الوظيفي</value>
+  </data>
+  <data name="DesignationDetails" xml:space="preserve">
+    <value>تفاصيل المسمى الوظيفي</value>
+  </data>
+  <data name="DesignationList" xml:space="preserve">
+    <value>قائمة المسميات الوظيفية</value>
+  </data>
   <data name="EditDepartment" xml:space="preserve">
     <value>تعديل القسم</value>
+  </data>
+  <data name="EditDesignation" xml:space="preserve">
+    <value>تعديل المسمى الوظيفي</value>
   </data>
   <data name="EditUser" xml:space="preserve">
     <value>تعديل المستخدم</value>
@@ -1034,6 +1049,15 @@
   </data>
   <data name="MSG_DeptUpdateSuccess" xml:space="preserve">
     <value>تم تحديث القسم بنجاح. المعرف</value>
+  </data>
+  <data name="MSG_DesigCreateSuccess" xml:space="preserve">
+    <value>تم إنشاء المسمى الوظيفي بنجاح. المعرف</value>
+  </data>
+  <data name="MSG_DesigDelSuccess" xml:space="preserve">
+    <value>تم حذف المسمى الوظيفي بنجاح. معرف المسمى الوظيفي</value>
+  </data>
+  <data name="MSG_DesigUpdateSuccess" xml:space="preserve">
+    <value>تم تحديث المسمى الوظيفي بنجاح. المعرف</value>
   </data>
   <data name="Phone" xml:space="preserve">
     <value>هاتف</value>

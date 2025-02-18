@@ -9,6 +9,7 @@ using System;
 using System.Linq;
 using System.Linq.Dynamic.Core;
 using System.Threading.Tasks;
+using ViewRes;
 
 namespace AMS.Controllers
 {
@@ -138,7 +139,7 @@ namespace AMS.Controllers
                             _context.Entry(_Designation).CurrentValues.SetValues(vm);
                             await _context.SaveChangesAsync();
 
-                            var _AlertMessage = "Designation Updated Successfully. ID: " + _Designation.Id;
+                            var _AlertMessage = Resource.MSG_DesigUpdateSuccess + ": " + _Designation.Id;
                             return new JsonResult(_AlertMessage);
                         }
                         else
@@ -150,11 +151,11 @@ namespace AMS.Controllers
                             _Designation.ModifiedBy = HttpContext.User.Identity.Name;
                             _context.Add(_Designation);
                             await _context.SaveChangesAsync();
-                            var _AlertMessage = "Designation Created Successfully. ID: " + _Designation.Id;
+                            var _AlertMessage = Resource.MSG_DesigCreateSuccess + ": " + _Designation.Id;
                             return new JsonResult(_AlertMessage);
                         }
                     }
-                    return new JsonResult("Operation failed.");
+                    return new JsonResult(Resource.Operationfailed);
                 }
                 catch (DbUpdateConcurrencyException ex)
                 {

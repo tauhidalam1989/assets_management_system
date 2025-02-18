@@ -1,5 +1,14 @@
 $(document).ready(function () {
-    document.title = 'Designation';
+    var title = $('#resourcetitle').data('title');
+    var yes = $('#resourceyes').data('yes');
+    var edit = $('#resourceedit').data('edit');
+    var del = $('#resourcedel').data('del');
+    var adddesg = $('#resourceadddesg').data('adddesg');
+    var editdesg = $('#resourceeditdesg').data('editdesg');
+    var desgdet = $('#resourcedesgdet').data('desgdet');
+    var msgdel = $('#resourcemsgdel').data('msgdel');
+    var delmsg = $('#resourcedelmsg').data('delmsg');
+    document.title = title;
 
     $("#tblDesignation").DataTable({
         paging: true,
@@ -29,7 +38,7 @@ $(document).ready(function () {
         "columns": [
             {
                 data: "Id", "name": "Id", render: function (data, type, row) {
-                    return "<a href='#' onclick=Details('" + row.Id + "');>" + row.Id + "</a>";
+                    return "<a href='#' onclick='Details(\"" + row.Id + "\", \"" + desgdet + "\");'>" + row.Id + "</a>";
                 }
             },
             { "data": "Name", "name": "Name" },
@@ -47,12 +56,12 @@ $(document).ready(function () {
             },
             {
                 data: null, render: function (data, type, row) {
-                    return "<a href='#' class='btn btn-info btn-xs' onclick=AddEdit('" + row.Id + "');>Edit</a>";
+                    return "<a href='#' class='btn btn-info btn-xs' onclick='AddEdit(\"" + row.Id + "\", \"" + editdesg + "\", \"" + adddesg + "\");'>" + edit + "</a>";
                 }
             },
             {
                 data: null, render: function (data, type, row) {
-                    return "<a href='#' class='btn btn-danger btn-xs' onclick=Delete('" + row.Id + "'); >Delete</a>";
+                    return "<a href='#' class='btn btn-danger btn-xs' onclick='Delete(\"" + row.Id + "\", \"" + msgdel + "\", \"" + yes + "\", \"" + delmsg + "\");'>" + del + "</a>";
                 }
             }
         ],

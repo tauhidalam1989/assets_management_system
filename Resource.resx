@@ -963,6 +963,9 @@
   <data name="AddDepartment" xml:space="preserve">
     <value>Add Department</value>
   </data>
+  <data name="AddDesignation" xml:space="preserve">
+    <value>Add Designation</value>
+  </data>
   <data name="AddNewAsset" xml:space="preserve">
     <value>Add New Asset</value>
   </data>
@@ -1011,8 +1014,20 @@
   <data name="DepartmentList" xml:space="preserve">
     <value>Department List</value>
   </data>
+  <data name="Designation" xml:space="preserve">
+    <value>Designation</value>
+  </data>
+  <data name="DesignationDetails" xml:space="preserve">
+    <value>Designation Details</value>
+  </data>
+  <data name="DesignationList" xml:space="preserve">
+    <value>Designation List</value>
+  </data>
   <data name="EditDepartment" xml:space="preserve">
     <value>Edit Department</value>
+  </data>
+  <data name="EditDesignation" xml:space="preserve">
+    <value>Edit Designation</value>
   </data>
   <data name="EditUser" xml:space="preserve">
     <value>Edit User</value>
@@ -1055,6 +1070,15 @@
   </data>
   <data name="MSG_DeptUpdateSuccess" xml:space="preserve">
     <value>Department Updated Successfully. ID</value>
+  </data>
+  <data name="MSG_DesigCreateSuccess" xml:space="preserve">
+    <value>Designation Created Successfully. ID</value>
+  </data>
+  <data name="MSG_DesigDelSuccess" xml:space="preserve">
+    <value>Designation has been deleted successfully. Designation ID</value>
+  </data>
+  <data name="MSG_DesigUpdateSuccess" xml:space="preserve">
+    <value>Designation Updated Successfully. ID</value>
   </data>
   <data name="Phone" xml:space="preserve">
     <value>Phone</value>

@@ -214,6 +214,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Designation.
+        /// </summary>
+        public static string AddDesignation {
+            get {
+                return ResourceManager.GetString("AddDesignation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add New Asset.
         /// </summary>
         public static string AddNewAsset {
@@ -1249,6 +1258,33 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Designation.
+        /// </summary>
+        public static string Designation {
+            get {
+                return ResourceManager.GetString("Designation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Designation Details.
+        /// </summary>
+        public static string DesignationDetails {
+            get {
+                return ResourceManager.GetString("DesignationDetails", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Designation List.
+        /// </summary>
+        public static string DesignationList {
+            get {
+                return ResourceManager.GetString("DesignationList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Destination.
         /// </summary>
         public static string Destination {
@@ -1353,6 +1389,15 @@ namespace ViewRes {
         public static string EditDepartment {
             get {
                 return ResourceManager.GetString("EditDepartment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit Designation.
+        /// </summary>
+        public static string EditDesignation {
+            get {
+                return ResourceManager.GetString("EditDesignation", resourceCulture);
             }
         }
         
@@ -2136,6 +2181,33 @@ namespace ViewRes {
         public static string MSG_DeptUpdateSuccess {
             get {
                 return ResourceManager.GetString("MSG_DeptUpdateSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Designation Created Successfully. ID.
+        /// </summary>
+        public static string MSG_DesigCreateSuccess {
+            get {
+                return ResourceManager.GetString("MSG_DesigCreateSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Designation has been deleted successfully. Designation ID.
+        /// </summary>
+        public static string MSG_DesigDelSuccess {
+            get {
+                return ResourceManager.GetString("MSG_DesigDelSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Designation Updated Successfully. ID.
+        /// </summary>
+        public static string MSG_DesigUpdateSuccess {
+            get {
+                return ResourceManager.GetString("MSG_DesigUpdateSuccess", resourceCulture);
             }
         }
         

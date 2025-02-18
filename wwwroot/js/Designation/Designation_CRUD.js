@@ -1,17 +1,17 @@
-var Details = function (id) {
+var Details = function (id,desgdet) {
     var url = "/Designation/Details?id=" + id;
-    $('#titleMediumModal').html("Designation Details");
+    $('#titleMediumModal').html(desgdet);
     loadMediumModal(url);
 };
 
 
-var AddEdit = function (id) {
+var AddEdit = function (id,editdesg,adddesg) {
     var url = "/Designation/AddEdit?id=" + id;
     if (id > 0) {
-        $('#titleMediumModal').html("Edit Designation");
+        $('#titleMediumModal').html(editdesg);
     }
     else {
-        $('#titleMediumModal').html("Add Designation");
+        $('#titleMediumModal').html(adddesg);
     }
     loadMediumModal(url);
 };
@@ -41,22 +41,22 @@ var Save = function () {
     });
 }
 
-var Delete = function (id) {
+var Delete = function (id,msgdel,yes,delmsg) {
     if (DemoUserAccountLockAll() == 1) return;
     Swal.fire({
-        title: 'Do you want to delete this item?',
+        title: msgdel,
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes'
+        confirmButtonText: yes
     }).then((result) => {
         if (result.value) {
             $.ajax({
                 type: "DELETE",
                 url: "/Designation/Delete?id=" + id,
                 success: function (result) {
-                    var message = "Designation has been deleted successfully. Designation ID: " + result.Id;
+                    var message = delmsg + ": " + result.Id;
                     Swal.fire({
                         title: message,
                         icon: 'info',
