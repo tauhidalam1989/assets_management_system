@@ -1,6 +1,7 @@
-$(document).ready(function() {
-    document.title = 'Audit Logs';
-
+$(document).ready(function() {    
+    var title = $('#resourcetitle').data('title');
+    var assetlogdetail = $('#resourceassetlogdetail').data('assetlogdetail');
+    document.title = title;
     $("#tblAuditLogs").DataTable({
         paging: true,
         select: true,
@@ -32,7 +33,7 @@ $(document).ready(function() {
                 data: "Id",
                 "name": "Id",
                 render: function(data, type, row) {
-                    return "<a href='#' class='fa fa-eye' onclick=Details('" + row.Id + "');>" + row.Id + "</a>";
+                    return "<a href='#' class='fa fa-eye' onclick='Details(\"" + row.Id + "\", \"" + assetlogdetail + "\");'>" + row.Id + "</a>";
                 }
             },
             { "data": "UserId", "name": "UserId" },

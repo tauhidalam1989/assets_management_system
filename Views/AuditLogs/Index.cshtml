@@ -5,7 +5,7 @@
                 <div class="col-md-5">
                 </div>
                 <div class="col-md-7 pull-right">
-                    <h5 class="pull-right"><b>&nbsp;Audit Logs List</b></h5>
+                    <h5 class="pull-right"><b>&nbsp;@Resource.AuditLogsList</b></h5>
                 </div>
             </div>
         </div>
@@ -14,19 +14,24 @@
             <table id="tblAuditLogs" class="CustomBlueTable" style="width:100%">
                 <thead>
                     <tr>
-                        <th>Id</th>
-                        <th>User Id</th>
-                        <th>Type</th>
-                        <th style="background-color: gray;">Table Name</th>
-                        <th>Date Time</th>                                              
-                        <th>Primary Key</th>
+                        <th>@Resource.Id</th>
+                        <th>@Resource.UserId</th>
+                        <th>@Resource.Type</th>
+                        <th style="background-color: gray;">@Resource.TableName</th>
+                        <th>@Resource.DateTime</th>
+                        <th>@Resource.PrimaryKey</th>
                     </tr>
                 </thead>
             </table>
         </div>
     </div>
 </div>
-
+@{
+    var title = Resource.AuditLogs;
+    var assetlogdetail = Resource.AuditLogsList;
+}
+<div id="resourcetitle" data-title="@title"></div>
+<div id="resourceassetlogdetail" data-assetlogdetail="@assetlogdetail"></div>
 <style>
     .panel-heading {
         padding: 0px 0px 0px 5px;

@@ -1,5 +1,5 @@
-var Details = function(id) {
+var Details = function(id,assetlogdetail) {
     var url = "/AuditLogs/Details?id=" + id;
-    $('#titleExtraBigModal').html("Audit Logs Details");
+    $('#titleExtraBigModal').html(assetlogdetail);
     loadExtraBigModal(url);
 };

@@ -909,4 +909,31 @@
   <data name="RequestedEmployee" xml:space="preserve">
     <value>الموظف المطلوب</value>
   </data>
+  <data name="AffectedColumns" xml:space="preserve">
+    <value>الأعمدة المتأثرة</value>
+  </data>
+  <data name="AuditLogs" xml:space="preserve">
+    <value>سجلات التدقيق</value>
+  </data>
+  <data name="AuditLogsList" xml:space="preserve">
+    <value>قائمة سجلات التدقيق</value>
+  </data>
+  <data name="DateTime" xml:space="preserve">
+    <value>تاريخ ووقت</value>
+  </data>
+  <data name="NewValues" xml:space="preserve">
+    <value>القيم الجديدة</value>
+  </data>
+  <data name="OldValues" xml:space="preserve">
+    <value>القيم القديمة</value>
+  </data>
+  <data name="PrimaryKey" xml:space="preserve">
+    <value>المفتاح الأساسي</value>
+  </data>
+  <data name="TableName" xml:space="preserve">
+    <value>اسم الجدول</value>
+  </data>
+  <data name="UserId" xml:space="preserve">
+    <value>معرّف المستخدم</value>
+  </data>
 </root>

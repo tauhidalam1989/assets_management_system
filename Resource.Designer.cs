@@ -223,6 +223,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Affected Columns.
+        /// </summary>
+        public static string AffectedColumns {
+            get {
+                return ResourceManager.GetString("AffectedColumns", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to All Category.
         /// </summary>
         public static string AllCategory {
@@ -610,6 +619,24 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Audit Logs.
+        /// </summary>
+        public static string AuditLogs {
+            get {
+                return ResourceManager.GetString("AuditLogs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Audit Logs List.
+        /// </summary>
+        public static string AuditLogsList {
+            get {
+                return ResourceManager.GetString("AuditLogsList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Back.
         /// </summary>
         public static string Back {
@@ -966,6 +993,15 @@ namespace ViewRes {
         public static string DateFrom {
             get {
                 return ResourceManager.GetString("DateFrom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Date Time.
+        /// </summary>
+        public static string DateTime {
+            get {
+                return ResourceManager.GetString("DateTime", resourceCulture);
             }
         }
         
@@ -1852,6 +1888,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to New Values.
+        /// </summary>
+        public static string NewValues {
+            get {
+                return ResourceManager.GetString("NewValues", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Next.
         /// </summary>
         public static string Next {
@@ -1893,6 +1938,15 @@ namespace ViewRes {
         public static string Notification_Details {
             get {
                 return ResourceManager.GetString("Notification Details", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Old Values.
+        /// </summary>
+        public static string OldValues {
+            get {
+                return ResourceManager.GetString("OldValues", resourceCulture);
             }
         }
         
@@ -2010,6 +2064,15 @@ namespace ViewRes {
         public static string Previous {
             get {
                 return ResourceManager.GetString("Previous", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Primary Key.
+        /// </summary>
+        public static string PrimaryKey {
+            get {
+                return ResourceManager.GetString("PrimaryKey", resourceCulture);
             }
         }
         
@@ -2374,6 +2437,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Table Name.
+        /// </summary>
+        public static string TableName {
+            get {
+                return ResourceManager.GetString("TableName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to To.
         /// </summary>
         public static string To {
@@ -2451,6 +2523,15 @@ namespace ViewRes {
         public static string UserDetail {
             get {
                 return ResourceManager.GetString("UserDetail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Id.
+        /// </summary>
+        public static string UserId {
+            get {
+                return ResourceManager.GetString("UserId", resourceCulture);
             }
         }
         
