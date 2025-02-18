@@ -1,23 +1,23 @@
-var Details = function (id) {
+var Details = function (id,comdet) {
     var url = "/Comment/Details?id=" + id;
-    $('#titleMediumModal').html("Comment Details");
+    $('#titleMediumModal').html(comdet);
     loadMediumModal(url);
 };
 
-var AssetDetails = function (id) {
+var AssetDetails = function (id,assetdet) {
     var url = "/Asset/Details?id=" + id;
-    $('#titleBigModal').html("Asset Details");
+    $('#titleBigModal').html(assetdet);
     loadBigModal(url);
 };
 
-var Delete = function (id) {
+var Delete = function (id,del,yes) {
     Swal.fire({
-        title: 'Do you want to delete this item?',
+        title: del,
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes'
+        confirmButtonText: yes
     }).then((result) => {
         if (result.value) {
             $.ajax({

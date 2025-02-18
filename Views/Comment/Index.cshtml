@@ -5,7 +5,7 @@
                 <div class="col-md-5">
                 </div>
                 <div class="col-md-7 pull-right">
-                    <h5 class="pull-right"><b>&nbsp;Comment List</b></h5>
+                    <h5 class="pull-right"><b>&nbsp;@Resource.CommentList</b></h5>
                 </div>
             </div>
         </div>
@@ -14,13 +14,13 @@
             <table id="tblComment" class="CustomBlueTable" style="width:100%">
                 <thead>
                     <tr>
-                        <th>Id</th>
-                        <th>Asset Id</th>
-                        <th>Asset Name</th>
-                        <th>Message</th>
-                        <th>Is Deleted</th>
-                        <th>Created Date</th>
-                        <th>Created By</th>
+                        <th>@Resource.Id</th>
+                        <th>@Resource.AssetId</th>
+                        <th>@Resource.AssetName</th>
+                        <th>@Resource.Message</th>
+                        <th>@Resource.IsDeleted</th>
+                        <th>@Resource.CreatedDate</th>
+                        <th>@Resource.CreatedBy</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -28,7 +28,20 @@
         </div>
     </div>
 </div>
-
+@{
+    var title = Resource.CommentList;
+    var yes = Resource.Yes;
+    var del = Resource.Delete;
+    var delmsg = Resource.Msg_Delete;
+    var comdet = Resource.CommentDetails;
+    var assetdet = Resource.AssetDetails;
+}
+<div id="resourcetitle" data-title="@title"></div>
+<div id="resourceyes" data-yes="@yes"></div>
+<div id="resourcedel" data-del="@del"></div>
+<div id="resourcedelmsg" data-delmsg="@delmsg"></div>
+<div id="resourcecomdet" data-comdet="@comdet"></div>
+<div id="resourceassetdet" data-assetdet="@assetdet"></div>
 <style>
     .panel-heading {
         padding: 0px 0px 0px 5px;

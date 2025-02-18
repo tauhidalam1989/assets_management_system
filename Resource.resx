@@ -960,6 +960,24 @@
   <data name="AssetBarcodeList" xml:space="preserve">
     <value>Asset Barcode List</value>
   </data>
+  <data name="AssetId" xml:space="preserve">
+    <value>AssetId</value>
+  </data>
+  <data name="CommentDetails" xml:space="preserve">
+    <value>Comment Details</value>
+  </data>
+  <data name="CommentList" xml:space="preserve">
+    <value>Comment List</value>
+  </data>
+  <data name="IsDeleted" xml:space="preserve">
+    <value>Is Deleted</value>
+  </data>
+  <data name="MSG_CommentAddSuccess" xml:space="preserve">
+    <value>Comment added successfully. ID</value>
+  </data>
+  <data name="MSG_CommentDelSuccess" xml:space="preserve">
+    <value>Comment deleted successfully. ID</value>
+  </data>
   <data name="TML" xml:space="preserve">
     <value>TML</value>
   </data>

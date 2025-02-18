@@ -939,6 +939,24 @@
   <data name="AssetBarcodeList" xml:space="preserve">
     <value>قائمة باركود الأصول</value>
   </data>
+  <data name="AssetId" xml:space="preserve">
+    <value>معرّف الأصل</value>
+  </data>
+  <data name="CommentDetails" xml:space="preserve">
+    <value>تفاصيل التعليق</value>
+  </data>
+  <data name="CommentList" xml:space="preserve">
+    <value>قائمة التعليقات</value>
+  </data>
+  <data name="IsDeleted" xml:space="preserve">
+    <value>تم الحذف" or "هل تم الحذف</value>
+  </data>
+  <data name="MSG_CommentAddSuccess" xml:space="preserve">
+    <value>تم إضافة التعليق بنجاح. المعرف</value>
+  </data>
+  <data name="MSG_CommentDelSuccess" xml:space="preserve">
+    <value>تم حذف التعليق بنجاح. المعرف</value>
+  </data>
   <data name="TML" xml:space="preserve">
     <value>تي إم إل</value>
   </data>

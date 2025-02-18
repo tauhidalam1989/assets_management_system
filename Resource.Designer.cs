@@ -448,6 +448,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to AssetId.
+        /// </summary>
+        public static string AssetId {
+            get {
+                return ResourceManager.GetString("AssetId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Assest Info.
         /// </summary>
         public static string AssetInfo {
@@ -853,6 +862,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Comment Details.
+        /// </summary>
+        public static string CommentDetails {
+            get {
+                return ResourceManager.GetString("CommentDetails", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Comment History.
         /// </summary>
         public static string CommentHistory {
@@ -867,6 +885,15 @@ namespace ViewRes {
         public static string commentIsEmpty {
             get {
                 return ResourceManager.GetString("commentIsEmpty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Comment List.
+        /// </summary>
+        public static string CommentList {
+            get {
+                return ResourceManager.GetString("CommentList", resourceCulture);
             }
         }
         
@@ -1519,6 +1546,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Is Deleted.
+        /// </summary>
+        public static string IsDeleted {
+            get {
+                return ResourceManager.GetString("IsDeleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Issue Description.
         /// </summary>
         public static string IssueDescription {
@@ -1821,6 +1857,24 @@ namespace ViewRes {
         public static string Msg_AssetSubCatDelete {
             get {
                 return ResourceManager.GetString("Msg_AssetSubCatDelete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Comment added successfully. ID.
+        /// </summary>
+        public static string MSG_CommentAddSuccess {
+            get {
+                return ResourceManager.GetString("MSG_CommentAddSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Comment deleted successfully. ID.
+        /// </summary>
+        public static string MSG_CommentDelSuccess {
+            get {
+                return ResourceManager.GetString("MSG_CommentDelSuccess", resourceCulture);
             }
         }
         

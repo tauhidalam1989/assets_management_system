@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Dynamic.Core;
+using ViewRes;
 
 namespace AMS.Controllers
 {
@@ -98,7 +99,7 @@ namespace AMS.Controllers
                 _Comment.ModifiedBy = HttpContext.User.Identity.Name;
                 _context.Add(_Comment);
                 await _context.SaveChangesAsync();
-                var message = "Comment added successfully. ID: " + _Comment.Id;
+                var message = Resource.MSG_CommentAddSuccess  + ": " + _Comment.Id;
                 return new JsonResult(message);
             }
             catch (DbUpdateConcurrencyException ex)
@@ -121,7 +122,7 @@ namespace AMS.Controllers
                 _context.Update(_Comment);
                 await _context.SaveChangesAsync();
 
-                var message = "Comment deleted successfully. ID: " + _Comment.Id;
+                var message = Resource.MSG_CommentDelSuccess + ": " + _Comment.Id;
                 return new JsonResult(message);
             }
             catch (Exception)

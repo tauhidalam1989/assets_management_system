@@ -1,5 +1,11 @@
 $(document).ready(function () {
-    document.title = 'Comment';
+    var title = $('#resourcetitle').data('title');
+    var comdet = $('#resourcecomdet').data('comdet');
+    var assetdet = $('#resourceassetdet').data('assetdet');
+    var yes = $('#resourceyes').data('yes');
+    var del = $('#resourcedel').data('del');
+    var delmsg = $('#resourcedelmsg').data('delmsg');
+    document.title = title;
 
     $("#tblComment").DataTable({
         paging: true,
@@ -29,13 +35,13 @@ $(document).ready(function () {
         "columns": [
             {
                 data: "Id", "name": "Id", render: function (data, type, row) {
-                    return "<a href='#' onclick=Details('" + row.Id + "');>" + row.Id + "</a>";
+                    return "<a href='#' class='fa fa-eye' onclick='Details(\"" + row.Id + "\", \"" + comdet + "\");'>" + row.Id + "</a>";
                 }
             },
             { "data": "AssetId", "name": "AssetId" },
             {
                 data: "AssetName", "name": "AssetName", render: function (data, type, row) {
-                    return "<a href='#' onclick=AssetDetails('" + row.AssetId + "');>" + row.AssetName + "</a>";
+                    return "<a href='#' onclick='AssetDetails(\"" + row.AssetId + "\", \"" + assetdet + "\");'>" + row.AssetName + "</a>";
                 }
             },
             { "data": "Message", "name": "Message" },
@@ -53,7 +59,7 @@ $(document).ready(function () {
             },
             {
                 data: null, render: function (data, type, row) {
-                    return "<a href='#' class='btn btn-danger btn-xs' onclick=Delete('" + row.Id + "'); >Delete</a>";
+                    return "<a href='#' class='btn btn-danger btn-xs' onclick='Delete(\"" + row.Id + "\", \"" + delmsg + "\", \"" + yes + "\");'>" + del + "</a>";
                 }
             }
         ],
