@@ -10,7 +10,7 @@ using ViewRes;
 
 namespace AMS.Controllers
 {
-    //[Authorize]
+    [Authorize]
     [Route("[controller]/[action]")]
     public class DepartmentController : Controller
     {
@@ -22,7 +22,7 @@ namespace AMS.Controllers
             _context = context;
             _iCommon = iCommon;
         }
-        //[Authorize(Roles = Pages.MainMenu.Department.RoleName)]
+        [Authorize(Roles = Pages.MainMenu.Department.RoleName)]
         [HttpGet]
         public IActionResult Index()
         {
