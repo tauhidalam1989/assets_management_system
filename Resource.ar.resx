@@ -936,11 +936,20 @@
   <data name="UserId" xml:space="preserve">
     <value>معرّف المستخدم</value>
   </data>
+  <data name="Address" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
   <data name="AssetBarcodeList" xml:space="preserve">
     <value>قائمة باركود الأصول</value>
   </data>
   <data name="AssetId" xml:space="preserve">
     <value>معرّف الأصل</value>
+  </data>
+  <data name="BackCompanyInfo" xml:space="preserve">
+    <value>العودة إلى معلومات الشركة</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>مدينة</value>
   </data>
   <data name="CommentDetails" xml:space="preserve">
     <value>تفاصيل التعليق</value>
@@ -948,8 +957,23 @@
   <data name="CommentList" xml:space="preserve">
     <value>قائمة التعليقات</value>
   </data>
+  <data name="CompanyInfo" xml:space="preserve">
+    <value>معلومات الشركة</value>
+  </data>
+  <data name="Currency" xml:space="preserve">
+    <value>عملة</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>بريد إلكتروني</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>فاكس</value>
+  </data>
   <data name="IsDeleted" xml:space="preserve">
     <value>تم الحذف" or "هل تم الحذف</value>
+  </data>
+  <data name="Logo" xml:space="preserve">
+    <value>شعار</value>
   </data>
   <data name="MSG_CommentAddSuccess" xml:space="preserve">
     <value>تم إضافة التعليق بنجاح. المعرف</value>
@@ -957,7 +981,19 @@
   <data name="MSG_CommentDelSuccess" xml:space="preserve">
     <value>تم حذف التعليق بنجاح. المعرف</value>
   </data>
+  <data name="MSG_CompanyInfoUpdateSuccess" xml:space="preserve">
+    <value>تم تحديث معلومات الشركة بنجاح. اسم الشركة</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>هاتف</value>
+  </data>
   <data name="TML" xml:space="preserve">
     <value>تي إم إل</value>
+  </data>
+  <data name="UpdateInfo" xml:space="preserve">
+    <value>تحديث المعلومات</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>موقع إلكتروني</value>
   </data>
 </root>

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Dynamic.Core;
+using ViewRes;
 
 namespace InvenToryPlus.Controllers
 {
@@ -51,7 +52,7 @@ namespace InvenToryPlus.Controllers
                 vm.ModifiedBy = HttpContext.User.Identity.Name;
                 _context.Entry(_CompanyInfo).CurrentValues.SetValues(vm);
                 await _context.SaveChangesAsync();
-                TempData["successAlert"] = "Company Info Updated Successfully. Company Name: " + _CompanyInfo.Name;
+                TempData["successAlert"] = Resource.MSG_CompanyInfoUpdateSuccess + ": " + _CompanyInfo.Name;
                 return RedirectToAction(nameof(Index));
             }
             catch (DbUpdateConcurrencyException)

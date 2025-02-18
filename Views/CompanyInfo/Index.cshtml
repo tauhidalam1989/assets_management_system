@@ -1,27 +1,27 @@
 ﻿@model AMS.Models.CompanyInfoViewModel.CompanyInfoCRUDViewModel
 @{
-    ViewData["Title"] = "Company Info";
+    ViewData["Title"] = @Resource.CompanyInfo;
 }
 
 <div class="wrapper">
     <div class="panel panel-hash">
         <div class="panel-heading">
             <div style="display: inline-block;">
-                <h3 class="pull-right"><b>Company Info</b></h3>
+                <h3 class="pull-right"><b>@Resource.CompanyInfo</b></h3>
             </div>
         </div>
         <div class="panel-body scroll panel-height">
             <table class="CustomBlueTable">
                 <tr>
-                    <th>ID</th>
+                    <th>@Resource.Id</th>
                     <td>@Model.Id</td>
                 </tr>
                 <tr>
-                    <th>Name</th>
+                    <th>@Resource.Name</th>
                     <td>@Model.Name</td>
                 </tr>
                 <tr>
-                    <th>Logo</th>
+                    <th>@Resource.Logo</th>
                     <td>
                         <div class="user-panel mt-2 pb-2 mb-2 d-flex">
                             <div class="image">
@@ -36,27 +36,27 @@
                     </td>
                 </tr>
                 <tr>
-                    <th>Currency</th>
+                    <th>@Resource.Currency</th>
                     <td>@Model.Currency</td>
                 </tr>
                 <tr>
-                    <th>Address</th>
+                    <th>@Resource.Address</th>
                     <td>@Model.Address</td>
                 </tr>
                 <tr>
-                    <th>City</th>
+                    <th>@Resource.City</th>
                     <td>@Model.City</td>
                 </tr>
                 <tr>
-                    <th>Country</th>
+                    <th>@Resource.Country</th>
                     <td>@Model.Country</td>
                 </tr>
                 <tr>
-                    <th>Phone</th>
+                    <th>@Resource.Phone</th>
                     <td>@Model.Phone</td>
                 </tr>
                 <tr>
-                    <th>Email</th>
+                    <th>@Resource.Email</th>
                     <td>@Model.Email</td>
                 </tr>
                 <tr>
@@ -64,22 +64,22 @@
                     <td>@Model.Fax</td>
                 </tr>
                 <tr>
-                    <th>Website</th>
+                    <th>@Resource.Website</th>
                     <td>@Model.Website</td>
                 </tr>
                 <tr>
-                    <th>Created Date</th>
+                    <th>@Resource.CreatedDate</th>
                     <td>@Model.CreatedDate.ToString("dddd, dd MMMM yyyy HH:mm:ss")</td>
                 </tr>
                 <tr>
-                    <th>Created By</th>
+                    <th>@Resource.CreatedBy</th>
                     <td>@Model.CreatedBy</td>
                 </tr>
                 <tr>
                     <th>
                     </th>
                     <td>
-                        <a class="btn btn-danger btn-sm" asp-action="Edit">Edit</a>
+                        <a class="btn btn-danger btn-sm" asp-action="Edit">@Resource.Edit</a>
                     </td>
                 </tr>
             </table>
