@@ -1,5 +1,14 @@
 $(document).ready(function () {
-    document.title = 'Department';
+    var title = $('#resourcetitle').data('title');
+    var editdept = $('#resourceeditdept').data('editdept');
+    var adddept = $('#resourceadddept').data('adddept');
+    var edit = $('#resourceedit').data('edit');
+    var yes = $('#resourceyes').data('yes');
+    var del = $('#resourcedel').data('del');
+    var delmsg = $('#resourcedelmsg').data('delmsg');
+    var msgdel = $('#resourcemsgdel').data('msgdel');
+    var deptdet = $('#resourcedeptdet').data('deptdet');
+    document.title = title;
 
     $("#tblDepartment").DataTable({
         paging: true,
@@ -29,7 +38,7 @@ $(document).ready(function () {
         "columns": [
             {
                 data: "Id", "name": "Id", render: function (data, type, row) {
-                    return "<a href='#' class='fa fa-eye' onclick=Details('" + row.Id + "');>" + row.Id + "</a>";
+                    return "<a href='#' class='fa fa-eye' onclick='Details(\"" + row.Id + "\", \"" + deptdet + "\");'>" + row.Id + "</a>";
                 }
             },
             { "data": "Name", "name": "Name" },
@@ -47,12 +56,12 @@ $(document).ready(function () {
             },
             {
                 data: null, render: function (data, type, row) {
-                    return "<a href='#' class='btn btn-info btn-xs' onclick=AddEdit('" + row.Id + "');>Edit</a>";
+                    return "<a href='#' class='fa fa-info' onclick='AddEdit(\"" + row.Id + "\", \"" + editdept + "\", \"" + adddept + "\");'>" + edit + "</a>";
                 }
             },
             {
                 data: null, render: function (data, type, row) {
-                    return "<a href='#' class='btn btn-danger btn-xs' onclick=Delete('" + row.Id + "'); >Delete</a>";
+                    return "<a href='#' class='btn btn-danger btn-xs' onclick='Delete(\"" + row.Id + "\", \"" + delmsg + "\", \"" + yes + "\", \"" + msgdel + "\");'>" + del + "</a>";
                 }
             }
         ],

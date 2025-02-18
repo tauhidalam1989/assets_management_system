@@ -6,10 +6,11 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Dynamic.Core;
+using ViewRes;
 
 namespace AMS.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [Route("[controller]/[action]")]
     public class DepartmentController : Controller
     {
@@ -21,7 +22,7 @@ namespace AMS.Controllers
             _context = context;
             _iCommon = iCommon;
         }
-        [Authorize(Roles = Pages.MainMenu.Department.RoleName)]
+        //[Authorize(Roles = Pages.MainMenu.Department.RoleName)]
         [HttpGet]
         public IActionResult Index()
         {
@@ -138,7 +139,7 @@ namespace AMS.Controllers
                     _context.Entry(_Department).CurrentValues.SetValues(vm);
                     await _context.SaveChangesAsync();
 
-                    var _AlertMessage = "Department Updated Successfully. ID: " + _Department.Id;
+                    var _AlertMessage = Resource.MSG_DeptUpdateSuccess + ": " + _Department.Id;
                     return new JsonResult(_AlertMessage);
                 }
                 else
@@ -151,7 +152,7 @@ namespace AMS.Controllers
                     _context.Add(_Department);
                     await _context.SaveChangesAsync();
 
-                    var _AlertMessage = "Department Created Successfully. ID: " + _Department.Id;
+                    var _AlertMessage = Resource.MSG_DeptCreateSuccess + ": " + _Department.Id;
                     return new JsonResult(_AlertMessage);
                 }
             }

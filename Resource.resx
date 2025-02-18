@@ -960,6 +960,9 @@
   <data name="ActiveUser" xml:space="preserve">
     <value>Active User</value>
   </data>
+  <data name="AddDepartment" xml:space="preserve">
+    <value>Add Department</value>
+  </data>
   <data name="AddNewAsset" xml:space="preserve">
     <value>Add New Asset</value>
   </data>
@@ -1002,6 +1005,15 @@
   <data name="Currency" xml:space="preserve">
     <value>Currency</value>
   </data>
+  <data name="DepartmentDetails" xml:space="preserve">
+    <value>Department Details</value>
+  </data>
+  <data name="DepartmentList" xml:space="preserve">
+    <value>Department List</value>
+  </data>
+  <data name="EditDepartment" xml:space="preserve">
+    <value>Edit Department</value>
+  </data>
   <data name="EditUser" xml:space="preserve">
     <value>Edit User</value>
   </data>
@@ -1034,6 +1046,15 @@
   </data>
   <data name="MSG_CompanyInfoUpdateSuccess" xml:space="preserve">
     <value>Company Info Updated Successfully. Company Name</value>
+  </data>
+  <data name="MSG_DeptCreateSuccess" xml:space="preserve">
+    <value>Department Created Successfully. ID</value>
+  </data>
+  <data name="MSG_DeptDelSuccess" xml:space="preserve">
+    <value>Department has been deleted successfully. Department ID</value>
+  </data>
+  <data name="MSG_DeptUpdateSuccess" xml:space="preserve">
+    <value>Department Updated Successfully. ID</value>
   </data>
   <data name="Phone" xml:space="preserve">
     <value>Phone</value>

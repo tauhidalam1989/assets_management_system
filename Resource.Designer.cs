@@ -205,6 +205,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Department.
+        /// </summary>
+        public static string AddDepartment {
+            get {
+                return ResourceManager.GetString("AddDepartment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add New Asset.
         /// </summary>
         public static string AddNewAsset {
@@ -1204,6 +1213,24 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Department Details.
+        /// </summary>
+        public static string DepartmentDetails {
+            get {
+                return ResourceManager.GetString("DepartmentDetails", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Department List.
+        /// </summary>
+        public static string DepartmentList {
+            get {
+                return ResourceManager.GetString("DepartmentList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Depreciation In Month.
         /// </summary>
         public static string DepreciationInMonth {
@@ -1317,6 +1344,15 @@ namespace ViewRes {
         public static string EditAssetSubCatDet {
             get {
                 return ResourceManager.GetString("EditAssetSubCatDet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit Department.
+        /// </summary>
+        public static string EditDepartment {
+            get {
+                return ResourceManager.GetString("EditDepartment", resourceCulture);
             }
         }
         
@@ -2073,6 +2109,33 @@ namespace ViewRes {
         public static string Msg_Delete {
             get {
                 return ResourceManager.GetString("Msg_Delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Department Created Successfully. ID.
+        /// </summary>
+        public static string MSG_DeptCreateSuccess {
+            get {
+                return ResourceManager.GetString("MSG_DeptCreateSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Department has been deleted successfully. Department ID.
+        /// </summary>
+        public static string MSG_DeptDelSuccess {
+            get {
+                return ResourceManager.GetString("MSG_DeptDelSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Department Updated Successfully. ID.
+        /// </summary>
+        public static string MSG_DeptUpdateSuccess {
+            get {
+                return ResourceManager.GetString("MSG_DeptUpdateSuccess", resourceCulture);
             }
         }
         

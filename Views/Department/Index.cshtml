@@ -3,10 +3,10 @@
         <div class="panel-heading">
             <div class="row">
                 <div class="col-md-5">
-                    <a class="fa fa-plus-square fa-2x" onclick="AddEdit(0)"></a>
+                    <a class="fa fa-plus-square fa-2x" onclick="AddEdit(0,'@Resource.EditDepartment','@Resource.AddDepartment')"></a>
                 </div>
                 <div class="col-md-7 pull-right">
-                    <h5 class="pull-right"><b>&nbsp;Department List</b></h5>
+                    <h5 class="pull-right"><b>&nbsp;@Resource.DepartmentList</b></h5>
                 </div>
             </div>
         </div>
@@ -15,10 +15,10 @@
             <table id="tblDepartment" class="CustomBlueTable" style="width:100%">
                 <thead>
                     <tr>
-                        <th>Id</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Created Date</th>
+                        <th>@Resource.Id</th>
+                        <th>@Resource.Name</th>
+                        <th>@Resource.Description</th>
+                        <th>@Resource.CreatedDate</th>
                         <th></th>
                         <th></th>
                     </tr>
@@ -27,7 +27,26 @@
         </div>
     </div>
 </div>
-
+@{
+    var title = Resource.Department;
+    var editdept = Resource.EditDepartment;
+    var adddept = Resource.AddDepartment;
+    var edit = Resource.Edit;
+    var yes = Resource.Yes;
+    var del = Resource.Delete;
+    var delmsg = Resource.Msg_Delete;
+    var msgdel = Resource.MSG_DeptDelSuccess;
+    var deptdet = Resource.DepartmentDetails;
+}
+<div id="resourcetitle" data-title="@title"></div>
+<div id="resourceedit" data-edit="@edit"></div>
+<div id="resourceeditdept" data-editdept="@editdept"></div>
+<div id="resourceadddept" data-adddept="@adddept"></div>
+<div id="resourceyes" data-yes="@yes"></div>
+<div id="resourcedel" data-del="@del"></div>
+<div id="resourcedelmsg" data-delmsg="@delmsg"></div>
+<div id="resourcemsgdel" data-msgdel="@msgdel"></div>
+<div id="resourcedeptdet" data-deptdet="@deptdet"></div>
 <style>
     .panel-heading {
         padding: 0px 0px 0px 5px;

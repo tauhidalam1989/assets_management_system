@@ -939,6 +939,9 @@
   <data name="ActiveUser" xml:space="preserve">
     <value>المستخدم النشط</value>
   </data>
+  <data name="AddDepartment" xml:space="preserve">
+    <value>إضافة قسم</value>
+  </data>
   <data name="AddNewAsset" xml:space="preserve">
     <value>إضافة أصل جديد</value>
   </data>
@@ -981,6 +984,15 @@
   <data name="Currency" xml:space="preserve">
     <value>عملة</value>
   </data>
+  <data name="DepartmentDetails" xml:space="preserve">
+    <value>تفاصيل القسم</value>
+  </data>
+  <data name="DepartmentList" xml:space="preserve">
+    <value>قائمة الأقسام</value>
+  </data>
+  <data name="EditDepartment" xml:space="preserve">
+    <value>تعديل القسم</value>
+  </data>
   <data name="EditUser" xml:space="preserve">
     <value>تعديل المستخدم</value>
   </data>
@@ -1013,6 +1025,15 @@
   </data>
   <data name="MSG_CompanyInfoUpdateSuccess" xml:space="preserve">
     <value>تم تحديث معلومات الشركة بنجاح. اسم الشركة</value>
+  </data>
+  <data name="MSG_DeptCreateSuccess" xml:space="preserve">
+    <value>تم إنشاء القسم بنجاح. المعرف</value>
+  </data>
+  <data name="MSG_DeptDelSuccess" xml:space="preserve">
+    <value>تم حذف القسم بنجاح. معرف القسم</value>
+  </data>
+  <data name="MSG_DeptUpdateSuccess" xml:space="preserve">
+    <value>تم تحديث القسم بنجاح. المعرف</value>
   </data>
   <data name="Phone" xml:space="preserve">
     <value>هاتف</value>
