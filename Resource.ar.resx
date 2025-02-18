@@ -936,4 +936,10 @@
   <data name="UserId" xml:space="preserve">
     <value>معرّف المستخدم</value>
   </data>
+  <data name="AssetBarcodeList" xml:space="preserve">
+    <value>قائمة باركود الأصول</value>
+  </data>
+  <data name="TML" xml:space="preserve">
+    <value>تي إم إل</value>
+  </data>
 </root>

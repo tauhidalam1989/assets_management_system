@@ -376,6 +376,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Asset Barcode List.
+        /// </summary>
+        public static string AssetBarcodeList {
+            get {
+                return ResourceManager.GetString("AssetBarcodeList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Asset Category Details.
         /// </summary>
         public static string AssetCategoryDetails {
@@ -2442,6 +2451,15 @@ namespace ViewRes {
         public static string TableName {
             get {
                 return ResourceManager.GetString("TableName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TML.
+        /// </summary>
+        public static string TML {
+            get {
+                return ResourceManager.GetString("TML", resourceCulture);
             }
         }
         

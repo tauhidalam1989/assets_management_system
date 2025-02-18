@@ -1,5 +1,9 @@
 $(document).ready(function () {
-    document.title = 'Asset Barcode List';
+    var title = $('#resourcetitle').data('title');
+    var tml = $('#resourcetml').data('tml');
+    var print = $('#resourceprint').data('print');
+    var assetdet = $('#resourceassetdet').data('assetdet');
+    document.title = title;
 
     $("#tblBarcode").DataTable({
         paging: true,
@@ -29,7 +33,7 @@ $(document).ready(function () {
         "columns": [
             {
                 data: "Id", "name": "Id", render: function (data, type, row) {
-                    return "<a href='#' class='fa fa-eye' onclick=Details('" + row.Id + "');>" + row.Id + "</a>";
+                    return "<a href='#' class='fa fa-eye' onclick='Details(\"" + row.Id + "\", \"" + assetdet + "\");'>" + row.Id + "</a>";
                 }
             },
             { "data": "AssetName", "name": "AssetName" },
@@ -42,7 +46,7 @@ $(document).ready(function () {
             },
             {
                 data: null, render: function (data, type, row) {
-                    var _BarcodePrintActionHTML = BarcodePrintActionHTML(row);
+                    var _BarcodePrintActionHTML = BarcodePrintActionHTML(row,print,tml);
                     return _BarcodePrintActionHTML;
                 }
             }
@@ -69,23 +73,23 @@ var BarcodeContentHTML = function (data) {
     return html;
 }
 
-var BarcodePrintActionHTML = function (data) {
+var BarcodePrintActionHTML = function (data,print,tml) {
     var html = '';
     var _Metadata = data.AssetId + '/' + data.AssetModelNo + '/' + data.Department + '/' + data.AssignUserName;
 
     html = '<div>' +
         '<button class="btn btn-success" onclick="printBarcodeDiv(' + data.Id + ')">' +
-        '<span class="fa fa-print"></span> Print</button>&nbsp;' +
+        '<span class="fa fa-print"></span>'+ print +' </button>&nbsp;' +
         '<button class="btn btn-sm btn-secondary" onclick="printBarcodeDivThurmal(\'' + data.Barcode + '\', \'' + _Metadata + '\')">' +
-        '<span class="">TML</span></button>' +
+        '<span class="">'+tml+'</span></button>' +
         '</div>';
 
     return html;
 }
 
 
-var Details = function (id) {
+var Details = function (id,assetdet) {
     var url = "/Asset/Details?id=" + id;
-    $('#titleExtraBigModal').html("Asset Details");
+    $('#titleExtraBigModal').html(assetdet);
     loadExtraBigModal(url);
 };

@@ -957,4 +957,10 @@
   <data name="UserId" xml:space="preserve">
     <value>User Id</value>
   </data>
+  <data name="AssetBarcodeList" xml:space="preserve">
+    <value>Asset Barcode List</value>
+  </data>
+  <data name="TML" xml:space="preserve">
+    <value>TML</value>
+  </data>
 </root>
