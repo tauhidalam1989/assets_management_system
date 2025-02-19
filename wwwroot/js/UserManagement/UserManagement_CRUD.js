@@ -21,8 +21,8 @@ var ViewUserDetails = function (Id,userdet) {
     loadExtraBigModal(url);
 };
 
-var ResetPasswordAdmin = function (id) {
-    $('#titleMediumModal').html("<h4>Reset Password</h4>");
+var ResetPasswordAdmin = function (id, ResetPassword) {
+    $('#titleMediumModal').html("<h4>" + ResetPassword + "</h4>");
     var url = "/UserManagement/ResetPasswordAdmin?id=" + id;
     loadMediumModal(url);
 };
@@ -43,31 +43,31 @@ var AddEditUserAccount = function (id,edituser,adduser) {
     }, 200);
 };
 
-var SaveUser = function () {
+var SaveUser = function (fnamereq, lnamereq, fillinput,updatuser,creatuser,save) {
     if (!$("#ApplicationUserForm").valid()) {
         return;
     }
 
     if (!FieldValidation('#FirstName')) {
-        FieldValidationAlert('#FirstName', 'First Name is Required.', "warning");
+        FieldValidationAlert('#FirstName', fnamereq, "warning");
         return;
     }
     if (!FieldValidation('#LastName')) {
-        FieldValidationAlert('#LastName', 'Last Name is Required.', "warning");
+        FieldValidationAlert('#LastName', lnamereq, "warning");
         return;
     }
 
     if (!$("#ApplicationUserForm").valid()) {
-        FieldValidationAlert('#ConfirmPassword', 'Please fill up all input properly.', "warning");
+        FieldValidationAlert('#ConfirmPassword', fillinput, "warning");
         return;
     }
 
     var _UserProfileId = $("#UserProfileId").val();
     if (_UserProfileId > 0) {
-        $("#btnSave").prop('value', 'Updating User');
+        $("#btnSave").prop('value', updatuser);
     }
     else {
-        $("#btnSave").prop('value', 'Creating User');
+        $("#btnSave").prop('value', creatuser);
     }
     $('#btnSave').prop('disabled', true);
 
@@ -79,7 +79,7 @@ var SaveUser = function () {
         contentType: false,
         success: function (result) {
             $('#btnSave').prop('disabled', false);
-            $("#btnSave").prop('value', 'Save');
+            $("#btnSave").prop('value', save);
             if (result.IsSuccess) {
                 Swal.fire({
                     title: result.AlertMessage,
@@ -116,14 +116,14 @@ var SaveUser = function () {
     });
 }
 
-var DeleteUserAccount = function (id) {
+var DeleteUserAccount = function (id,delmsg,yes) {
     Swal.fire({
-        title: 'Do you want to delete this user?',
+        title: delmsg,
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes'
+        confirmButtonText: yes
     }).then((result) => {
         if (result.value) {
             $.ajax({
@@ -143,14 +143,14 @@ var DeleteUserAccount = function (id) {
     });
 };
 
-var UpdateUserRole = function (id) {
-    $('#titleExtraBigModal').html("<h4>Manage Page Access</h4>");
+var UpdateUserRole = function (id, ManagePageAccess) {
+    $('#titleExtraBigModal').html("<h4>" + ManagePageAccess +"</h4>");
     var url = "/ManageUserRoles/UpdateUserRole?id=" + id;
     loadExtraBigModal(url);
 };
 
-var SaveUpdateUserRole = function () {
-    $("#btnUpdateRole").val("Please Wait");
+var SaveUpdateUserRole = function (pleasewait,save) {
+    $("#btnUpdateRole").val(pleasewait);
     $('#btnUpdateRole').attr('disabled', 'disabled');
 
     var _frmManageRole = $("#frmManageRole").serialize();
@@ -159,7 +159,7 @@ var SaveUpdateUserRole = function () {
         url: "/ManageUserRoles/SaveUpdateUserRole",
         data: _frmManageRole,
         success: function (result) {
-            $("#btnUpdateRole").val("Save");
+            $("#btnUpdateRole").val(save);
             $('#btnUpdateRole').removeAttr('disabled');
             if (result.IsSuccess) {
                 Swal.fire({
@@ -184,9 +184,9 @@ var SaveUpdateUserRole = function () {
     });
 }
 
-var AllocateAsset = function (id) {
+var AllocateAsset = function (id,allocateasset) {
     var url = "/UserManagement/AllocateAsset?id=" + id;
-    $('#titleExtraBigModal').html("Allocate Asset");
+    $('#titleExtraBigModal').html(allocateasset);
     loadExtraBigModal(url);
 };
 

@@ -4,11 +4,11 @@
     <table class="CustomBlueTable" id="tbllistAssetAssigned" style="width:100%;" border="1">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>Asset Name</th>
-                <th>Employee Name</th>
-                <th>Date</th>
-                <th>Status</th>
+                <th>@Resource.Id</th>
+                <th>@Resource.AssetName</th>
+                <th>@Resource.Employee</th>
+                <th>@Resource.Date</th>
+                <th>@Resource.Status</th>
                 <th></th>
             </tr>
         </thead>
@@ -32,7 +32,7 @@
                         @Html.DisplayFor(modelItem => item.Status)
                     </td>
                     <td>
-                        <a href="#" class="btn btn-danger btn-xs" onclick="RemoveAllocateAsset('@item.Id')">Remove</a>
+                        <a href="#" class="btn btn-danger btn-xs" onclick="RemoveAllocateAsset('@item.Id','@Resource.Msg_Delete','@Resource.Yes','@Resource.AssetUnassignSuccess','@Resource.AllocateAssest')">@Resource.Remove</a>
                     </td>
                 </tr>
             }
@@ -45,11 +45,11 @@
     <input asp-for="EmployeeId" id="EmployeeId" hidden />
     <div class="col-6 col-sm-6">
         <div class="form-group row">
-            <label class="col-sm-2 col-form-label">Asset:</label>
+            <label class="col-sm-2 col-form-label">@Resource.Asset:</label>
             <div class="col-sm-10">
                 <select asp-for="AssetId" asp-items="@ViewBag.ddlAsset" id="AssetId" class="form-control"
                     style="width:100%;">
-                    <option disabled selected>--- SELECT ---</option>
+                    <option disabled selected>--- @Resource.Select ---</option>
                 </select>
                 <span asp-validation-for="AssetId" class="text-danger"></span>
             </div>
@@ -57,7 +57,7 @@
     </div>
     <div class="col-6 col-sm-6">
         <div class="col-6 col-sm-6">
-            <input type="button" id="btnAssigneeAsset" value="Assignee Asset" onclick="AllocateAssetSave()"
+            <input type="button" id="btnAssigneeAsset" value="@Resource.AssigneeAsset" onclick="AllocateAssetSave('@Resource.AssetIsNotNull')"
                 class="btn btn-success">
         </div>
     </div>
@@ -69,13 +69,13 @@
         $("#AssetId").select2();
     });
 
-    var AllocateAssetSave = function () {
+    var AllocateAssetSave = function (AssetIsNotNull) {
         var _AssetId = $("#AssetId").val();
         var _EmployeeId = $("#EmployeeId").val();
 
         if (_AssetId == "" || _AssetId == null) {
             Swal.fire({
-                title: 'Asset field can not be null or empty.',
+                title: AssetIsNotNull,
                 icon: "warning",
                 onAfterClose: () => {
                     $("#AssetId").focus();
@@ -103,14 +103,14 @@
     };
 
 
-    var RemoveAllocateAsset = function (id) {
+    var RemoveAllocateAsset = function (id, msgdel, yes, AssetUnassignSuccess,alloasset) {
         Swal.fire({
-            title: 'Do you want to delete this item?',
+            title: msgdel,
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
-            confirmButtonText: 'Yes'
+            confirmButtonText: yes
         }).then((result) => {
             if (result.value) {
                 $.ajax({
@@ -118,11 +118,11 @@
                     url: "/UserManagement/RemoveAllocateAsset?id=" + id,
                     success: function (result) {
                         Swal.fire({
-                            title: "Asset Unassigned Successful",
+                            title: AssetUnassignSuccess,
                             icon: 'info',
                             onAfterClose: () => {
                                 var url = "/UserManagement/AllocateAsset?id=" + result.EmployeeId;
-                                $('#titleExtraBigModal').html("Allocate Asset");
+                                $('#titleExtraBigModal').html(alloasset);
                                 loadExtraBigModal(url);
                             }
                         });

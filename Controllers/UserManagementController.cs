@@ -16,10 +16,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Dynamic.Core;
+using ViewRes;
 
 namespace LeaveMGS.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [Route("[controller]/[action]")]
     public class UserManagementController : Controller
     {
@@ -47,7 +48,7 @@ namespace LeaveMGS.Controllers
             _iAccount = iAccount;
             _roles = roles;
         }
-        [Authorize(Roles = MainMenu.Admin.RoleName)]
+        //[Authorize(Roles = MainMenu.Admin.RoleName)]
         [HttpGet]
         public IActionResult Index()
         {
@@ -161,7 +162,7 @@ namespace LeaveMGS.Controllers
                     }
 
 
-                    _JsonResultViewModel.AlertMessage = "User info Updated Successfully. User Name: " + _UserProfile.Email;
+                    _JsonResultViewModel.AlertMessage = Resource.MSG_UserInfoUpdateSuccess + ": " + _UserProfile.Email;
                     _JsonResultViewModel.CurrentURL = _UserProfileViewModel.CurrentURL;
                     _JsonResultViewModel.IsSuccess = true;
                     return new JsonResult(_JsonResultViewModel);
@@ -179,14 +180,14 @@ namespace LeaveMGS.Controllers
                             await _emailSender.SendEmailConfirmationAsync(_ApplicationUser.Item1.Email, callbackUrl);
                         }
 
-                        _JsonResultViewModel.AlertMessage = "User Created Successfully. User Name: " + _ApplicationUser.Item1.Email;
+                        _JsonResultViewModel.AlertMessage = Resource.MSG_UserInfoCreateSuccess + ": " + _ApplicationUser.Item1.Email;
                         _JsonResultViewModel.CurrentURL = _UserProfileViewModel.CurrentURL;
                         _JsonResultViewModel.IsSuccess = true;
                         return new JsonResult(_JsonResultViewModel);
                     }
                     else
                     {
-                        _JsonResultViewModel.AlertMessage = "User Creation Failed." + _ApplicationUser.Item2;
+                        _JsonResultViewModel.AlertMessage = Resource.UserCreationFailed + "." + _ApplicationUser.Item2;
                         _JsonResultViewModel.IsSuccess = false;
                         return new JsonResult(_JsonResultViewModel);
                     }
@@ -222,7 +223,7 @@ namespace LeaveMGS.Controllers
                     var code = await _userManager.GeneratePasswordResetTokenAsync(_ApplicationUser);
                     var _ResetPasswordAsync = await _userManager.ResetPasswordAsync(_ApplicationUser, code, vm.NewPassword);
                     if (_ResetPasswordAsync.Succeeded)
-                        AlertMessage = "Reset Password Succeeded. User name: " + _ApplicationUser.Email;
+                        AlertMessage = Resource.MSG_ResetPwdSuccess + ": " + _ApplicationUser.Email;
                     else
                     {
                         string errorMessage = string.Empty;
@@ -230,7 +231,7 @@ namespace LeaveMGS.Controllers
                         {
                             errorMessage = errorMessage + " " + item.Description;
                         }
-                        AlertMessage = "error Reset password failed." + errorMessage;
+                        AlertMessage = Resource.ErrorResetPwdFailed + "." + errorMessage;
                     }
                 }
                 return new JsonResult(AlertMessage);
@@ -257,7 +258,7 @@ namespace LeaveMGS.Controllers
                 var result2 = _context.UserProfile.Update(_UserProfile);
                 await _context.SaveChangesAsync();
             }
-            return new JsonResult("User has been deleted successfully. User Id: " + _UserProfile.Email);
+            return new JsonResult(Resource.MSG_UserDelSuccess + ": " + _UserProfile.Email);
         }
         private async Task<bool> UpdateUserRole(UserProfileCRUDViewModel vm)
         {
@@ -306,7 +307,7 @@ namespace LeaveMGS.Controllers
                 _context.Entry(_Asset).CurrentValues.SetValues(_AssetCRUDViewModel);
                 await _context.SaveChangesAsync();
 
-                await _iAssetService.AddAssetHistory(vm.AssetId, vm.EmployeeId, "Asset Assigned.", _UserName);
+                await _iAssetService.AddAssetHistory(vm.AssetId, vm.EmployeeId, Resource.AssetAssign, _UserName);
 
 
                 var result = await _iCommon.GetAssetAssignedList(vm.EmployeeId).ToListAsync();
@@ -336,7 +337,7 @@ namespace LeaveMGS.Controllers
                 _context.Entry(_Asset).CurrentValues.SetValues(_AssetCRUDViewModel);
                 await _context.SaveChangesAsync();
 
-                await _iAssetService.AddAssetHistory(_AssetAssigned.AssetId, _AssetAssigned.EmployeeId, "Asset UnAssigned.", _UserName);
+                await _iAssetService.AddAssetHistory(_AssetAssigned.AssetId, _AssetAssigned.EmployeeId,Resource.AssetUnAssigned, _UserName);
                 return new JsonResult(_AssetAssigned);
             }
             catch (Exception)

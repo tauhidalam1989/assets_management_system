@@ -5,11 +5,11 @@
         <ul class="nav nav-tabs" id="custom-tabs-three-tab" role="tablist">
             <li class="nav-item">
                 <a class="nav-link active" id="Tab01" data-toggle="pill" href="#divTab01" role="tab"
-                    aria-controls="Tab01" aria-selected="true">Summary</a>
+                    aria-controls="Tab01" aria-selected="true">@Resource.Summary</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" id="Tab02" data-toggle="pill" href="#divTab02" role="tab" aria-controls="Tab02"
-                    aria-selected="true">Details</a>
+                   aria-selected="true">@Resource.Details</a>
             </li>
         </ul>
     </div>
@@ -28,7 +28,7 @@
                             <div class="row">
                                 <div class="col-6 col-sm-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">First Name</label>
+                                        <label class="col-sm-3 col-form-label">@Resource.FirstName</label>
                                         <div class="col-sm-9">
                                             <input asp-for="FirstName" class="form-control" id="FirstName"
                                                 type="text" />
@@ -36,14 +36,14 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Last Name</label>
+                                        <label class="col-sm-3 col-form-label">@Resource.LastName</label>
                                         <div class="col-sm-9">
                                             <input asp-for="LastName" class="form-control" id="LastName" type="text" />
                                             <span asp-validation-for="LastName" class="text-danger"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Phone Number</label>
+                                        <label class="col-sm-3 col-form-label">@Resource.Phone</label>
                                         <div class="col-sm-9">
                                             <input asp-for="PhoneNumber" class="form-control" id="PhoneNumber"
                                                 type="text" />
@@ -51,14 +51,14 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Email</label>
+                                        <label class="col-sm-3 col-form-label">@Resource.Email</label>
                                         <div class="col-sm-9">
                                             <input asp-for="Email" class="form-control" id="Email" type="email" />
                                             <span asp-validation-for="Email" class="text-danger"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Password</label>
+                                        <label class="col-sm-3 col-form-label">@Resource.Password</label>
                                         <div class="col-sm-9">
                                             <input asp-for="PasswordHash" class="form-control" id="PasswordHash"
                                                 type="password" />
@@ -66,7 +66,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-sm-4 col-form-label">Confirm Password</label>
+                                        <label class="col-sm-4 col-form-label">@Resource.ConfirmPassword</label>
                                         <div class="col-sm-8">
                                             <input asp-for="ConfirmPassword" class="form-control" id="ConfirmPassword"
                                                 type="password" />
@@ -77,14 +77,14 @@
 
                                 <div class="col-6 col-sm-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Address</label>
+                                        <label class="col-sm-3 col-form-label">@Resource.Address</label>
                                         <div class="col-sm-9">
                                             <input asp-for="Address" class="form-control" id="Address" type="text" />
                                             <span asp-validation-for="Address" class="text-danger"></span>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Country</label>
+                                        <label class="col-sm-3 col-form-label">@Resource.Country</label>
                                         <div class="col-sm-9">
                                             <input asp-for="Country" class="form-control" id="Country" type="text" />
                                             <span asp-validation-for="Country" class="text-danger"></span>
@@ -95,14 +95,14 @@
                                         <div class="col-sm-9">
                                             <select asp-for="RoleId" asp-items="@ViewBag.ddlManageUserRoles" id="RoleId"
                                                 class="form-control" style="width:100%;">
-                                                <option disabled selected>--- SELECT ---</option>
+                                                <option disabled selected>--- @Resource.Select ---</option>
                                             </select>
                                             <span asp-validation-for="RoleId" class="text-danger"></span>
                                         </div>
                                     </div>
 
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label" for="file">Choose a file :</label>
+                                        <label class="col-sm-3 col-form-label" for="file">@Resource.Chooseafile :</label>
                                         <div class="col-sm-9">
                                             <span class="control-fileupload">
                                                 <input type="file" asp-for="ProfilePictureDetails" />
@@ -113,10 +113,12 @@
                                     <div class="form-group row">
                                         <label class="col-sm-3 col-form-label"></label>
                                         <div class="col-sm-9">
-                                            <input type="button" id="btnSave" value="Save" onclick="SaveUser()"
+                                            <input type="button" id="btnSave" value="@Resource.Save" onclick="SaveUser('@Resource.FirstNameRequired','@Resource.LastNameRequired','@Resource.FillInput','@Resource.UpdatingUser','@Resource.CreatingUser','@Resource.Save')"
                                                 class="btn btn-info">
                                             <button type="button" id="btnAddEditUserAccountClose" class="btn btn-danger"
-                                                data-dismiss="modal">Close</button>
+                                                    data-dismiss="modal">
+                                                @Resource.Close
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -130,46 +132,46 @@
                 <div class="row">
                     <div class="col-6 col-sm-6">
                         <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Employee Id</label>
+                            <label class="col-sm-3 col-form-label">@Resource.EmployeeId</label>
                             <div class="col-sm-9">
                                 <input asp-for="EmployeeId" class="form-control" id="EmployeeId" type="text" />
                                 <span asp-validation-for="EmployeeId" class="text-danger"></span>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Date Of Birth</label>
+                            <label class="col-sm-3 col-form-label">@Resource.BirthDate</label>
                             <div class="col-sm-9">
                                 <input asp-for="DateOfBirth" class="form-control" id="LastName" type="date" />
                                 <span asp-validation-for="DateOfBirth" class="text-danger"></span>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Designation</label>
+                            <label class="col-sm-3 col-form-label">@Resource.Designation</label>
                             <div class="col-sm-9">
                                 <select asp-for="Designation" asp-items="@ViewBag.ddlDesignation" id="Designation"
                                     class="form-control" style="width:100%;">
-                                    <option disabled selected>--- SELECT ---</option>
+                                    <option disabled selected>--- @Resource.Select ---</option>
                                 </select>
                                 <span asp-validation-for="Designation" class="text-danger"></span>
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Department</label>
+                            <label class="col-sm-3 col-form-label">@Resource.Department</label>
                             <div class="col-sm-9">
                                 <select asp-for="Department" asp-items="@ViewBag.ddlDepartment" id="Department"
                                     class="form-control" style="width:100%;">
-                                    <option disabled selected>--- SELECT ---</option>
+                                    <option disabled selected>--- @Resource.Select ---</option>
                                 </select>
                                 <span asp-validation-for="Department" class="text-danger"></span>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-sm-4 col-form-label">Sub Department</label>
+                            <label class="col-sm-4 col-form-label">@Resource.SubDepartment</label>
                             <div class="col-sm-8">
                                 <select asp-for="SubDepartment" asp-items="@ViewBag.ddlSubDepartment" id="SubDepartment"
                                     class="form-control" style="width:100%;">
-                                    <option disabled selected>--- SELECT ---</option>
+                                    <option disabled selected>--- @Resource.Select ---</option>
                                 </select>
                             </div>
                         </div>
@@ -177,25 +179,25 @@
 
                     <div class="col-6 col-sm-6">
                         <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Joining Date</label>
+                            <label class="col-sm-3 col-form-label">@Resource.JoiningDate</label>
                             <div class="col-sm-9">
                                 <input asp-for="JoiningDate" class="form-control" id="JoiningDate" type="Date" />
                                 <span asp-validation-for="JoiningDate" class="text-danger"></span>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Leaving Date</label>
+                            <label class="col-sm-3 col-form-label">@Resource.LeavingDate</label>
                             <div class="col-sm-9">
                                 <input asp-for="LeavingDate" class="form-control" id="LeavingDate" type="Date" />
                                 <span asp-validation-for="LeavingDate" class="text-danger"></span>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Is Approver</label>
+                            <label class="col-sm-3 col-form-label">@Resource.IsApprover</label>
                             <div class="col-sm-9">
                                 <select asp-for="IsApprover" id="IsApprover" class="form-control">
-                                    <option value="1" selected>No</option>
-                                    <option value="2">Yes</option>
+                                    <option value="1" selected>@Resource.No</option>
+                                    <option value="2">@Resource.Yes</option>
                                 </select>
                                 <span asp-validation-for="IsApprover" class="text-danger"></span>
                             </div>

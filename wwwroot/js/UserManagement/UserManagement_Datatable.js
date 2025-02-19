@@ -1,5 +1,14 @@
 ﻿$(document).ready(function () {
-    document.title = 'User Account';
+    var title = $('#restitle').data('title');
+    var userdet = $('#resuserdet').data('userdet');
+    var allocasset = $('#resallocasset').data('allocasset');
+    var alloc = $('#resalloc').data('alloc');
+    var select = $('#resselect').data('select');
+    var edit = $('#resedit').data('edit');
+    var resetpwd = $('#resresetpwd').data('resetpwd');
+    var del = $('#resdel').data('del');
+    var managepageaccess = $('#resmanagepageaccess').data('managepageaccess');
+    document.title = title;
 
     $("#tblUserAccount").DataTable({
         paging: true,
@@ -28,7 +37,7 @@
         "columns": [
             {
                 data: "UserProfileId", "name": "UserProfileId", render: function (data, type, row) {
-                    return "<a href='#' class='fa fa-eye' onclick=ViewUserDetails('" + row.UserProfileId + "');>" + row.UserProfileId + "</a>";
+                    return "<a href='#' class='fa fa-eye' onclick='ViewUserDetails(\"" + row.UserProfileId + "\", \"" + userdet + "\");'>" + row.UserProfileId + "</a>";
                 }
             },
             {
@@ -38,7 +47,7 @@
             },
             {
                 data: "UserProfileId", "name": "UserProfileId", render: function (data, type, row) {
-                    return "<a href='#' onclick=ViewUserDetails('" + row.UserProfileId + "');>" + row.FirstName + "</a>";
+                    return "<a href='#' onclick='ViewUserDetails(\"" + row.UserProfileId + "\", \"" + userdet + "\");'>" + row.FirstName + "</a>";
                 }
             },
             { "data": "LastName", "name": "LastName", "autoWidth": true },
@@ -56,19 +65,19 @@
             },
             {
                 data: "UserProfileId", "name": "UserProfileId", render: function (data, type, row) {
-                    return "<a href='#' class='fa fa-plus' onclick=AllocateAsset('" + row.UserProfileId + "');>Allocate</a>";
+                    return "<a href='#' class='fa fa-plus' onclick='AllocateAsset(\"" + row.UserProfileId + "\", \"" + allocasset + "\");'>" + alloc + "</a>";
                 },
                 Width: "50px",
             },
             {
                 data: null, render: function (data, type, row) {
                     return "<select id='" + row.UserProfileId + "' onchange=funAction('" + row.UserProfileId + "'); class='btn-sm' style='width: 70px;'>" +
-                        "<option value='0'></option>" +
-                        "<option value='1'>Allocate Asset</option>" +
-                        "<option value='2'>Edit</option>" +
-                        "<option value='3'>Reset Password</option>" +
-                        "<option value='4'>Manage Page Access</option>" +
-                        "<option value='5'>Delete</option>" +
+                        "<option value='0'>"+select+"</option>" +
+                        "<option value='1'>" + allocasset +"</option>" +
+                        "<option value='2'>"+edit+"</option>" +
+                        "<option value='3'>" + resetpwd +"</option>" +
+                        "<option value='4'>" + managepageaccess +"</option>" +
+                        "<option value='5'>"+del+"</option>" +
                         "</select>";
                 },
                 autoWidth: false,

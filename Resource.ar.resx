@@ -1092,4 +1092,97 @@
   <data name="Website" xml:space="preserve">
     <value>موقع إلكتروني</value>
   </data>
+  <data name="Chooseafile" xml:space="preserve">
+    <value>اختر ملفًا</value>
+  </data>
+  <data name="CreatingUser" xml:space="preserve">
+    <value>إنشاء مستخدم</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>تفاصيل</value>
+  </data>
+  <data name="FillInput" xml:space="preserve">
+    <value>يرجى ملء جميع الحقول بشكل صحيح</value>
+  </data>
+  <data name="FirstNameRequired" xml:space="preserve">
+    <value>الاسم الأول مطلوب</value>
+  </data>
+  <data name="IsApprover" xml:space="preserve">
+    <value>هل هو المُعتمد</value>
+  </data>
+  <data name="JoiningDate" xml:space="preserve">
+    <value>تاريخ الانضمام</value>
+  </data>
+  <data name="LastNameRequired" xml:space="preserve">
+    <value>الاسم الأخير مطلوب</value>
+  </data>
+  <data name="LeavingDate" xml:space="preserve">
+    <value>تاريخ المغادرة</value>
+  </data>
+  <data name="Summary" xml:space="preserve">
+    <value>ملخص</value>
+  </data>
+  <data name="UpdatingUser" xml:space="preserve">
+    <value>تحديث المستخدم</value>
+  </data>
+  <data name="AddNew" xml:space="preserve">
+    <value>إضافة جديدة</value>
+  </data>
+  <data name="AllocateAsset" xml:space="preserve">
+    <value>تخصيص الأصل</value>
+  </data>
+  <data name="ApplicationUserId" xml:space="preserve">
+    <value>معرّف مستخدم التطبيق</value>
+  </data>
+  <data name="AssetIsNotNull" xml:space="preserve">
+    <value>حقل الأصول لا يمكن أن يكون فارغًا أو</value>
+  </data>
+  <data name="AssetUnAssigned" xml:space="preserve">
+    <value>تم إلغاء تعيين الأصل</value>
+  </data>
+  <data name="AssetUnassignSuccess" xml:space="preserve">
+    <value>تم إلغاء تعيين الأصل بنجاح</value>
+  </data>
+  <data name="ConfirmPasswordRequired" xml:space="preserve">
+    <value>تأكيد كلمة المرور مطلوب</value>
+  </data>
+  <data name="EmployeeList" xml:space="preserve">
+    <value>قائمة الموظفين</value>
+  </data>
+  <data name="ErrorResetPwdFailed" xml:space="preserve">
+    <value>فشل إعادة تعيين كلمة المرور</value>
+  </data>
+  <data name="ManagePageAccess" xml:space="preserve">
+    <value>إدارة وصول الصفحة</value>
+  </data>
+  <data name="ManageUser" xml:space="preserve">
+    <value>إدارة المستخدم</value>
+  </data>
+  <data name="MSG_ResetPwdSuccess" xml:space="preserve">
+    <value>تم إعادة تعيين كلمة المرور بنجاح. اسم المستخدم</value>
+  </data>
+  <data name="MSG_UserDelSuccess" xml:space="preserve">
+    <value>تم حذف المستخدم بنجاح. معرف المستخدم</value>
+  </data>
+  <data name="MSG_UserInfoCreateSuccess" xml:space="preserve">
+    <value>تم إنشاء المستخدم بنجاح. اسم المستخدم</value>
+  </data>
+  <data name="MSG_UserInfoUpdateSuccess" xml:space="preserve">
+    <value>تم تحديث معلومات المستخدم بنجاح. اسم المستخدم</value>
+  </data>
+  <data name="NewPasswordRequired" xml:space="preserve">
+    <value>كلمة المرور الجديدة مطلوبة</value>
+  </data>
+  <data name="ResetPassword" xml:space="preserve">
+    <value>إعادة تعيين كلمة المرور</value>
+  </data>
+  <data name="UserAccount" xml:space="preserve">
+    <value>حساب المستخدم</value>
+  </data>
+  <data name="UserCreationFailed" xml:space="preserve">
+    <value>فشل إنشاء المستخدم</value>
+  </data>
+  <data name="UserRole" xml:space="preserve">
+    <value>دور المستخدم</value>
+  </data>
 </root>

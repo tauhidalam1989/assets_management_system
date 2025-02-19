@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Manage User";
+    ViewData["Title"] = @Resource.ManageUser;
 }
 
 <div class="wrapper">
@@ -7,10 +7,10 @@
         <div class="panel-heading">
             <div class="row">
                 <div class="col-md-6">
-                    <button class="btn btn-sm btn-danger" onclick="AddEditUserAccount(0)">Add New</button>
+                    <button class="btn btn-sm btn-danger" onclick="AddEditUserAccount(0,'@Resource.EditUser','@Resource.AddUser')">@Resource.AddNew</button>
                 </div>
                 <div class="col-md-6 pull-right">
-                    <h5 class="pull-right"><b>&nbsp;User/Employee List</b></h5>
+                    <h5 class="pull-right"><b>&nbsp;@Resource.EmployeeList</b></h5>
                 </div>
             </div>
         </div>
@@ -18,22 +18,41 @@
             <table id="tblUserAccount" class="CustomBlueTable" style="width:100%">
                 <thead>
                     <tr>
-                        <th>Id</th>
-                        <th>Image</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Phone Number</th>
-                        <th>Email</th>
-                        <th>Created Date</th>
-                        <th>Allocate</th>
-                        <th>Action</th>
+                        <th>@Resource.Id</th>
+                        <th>@Resource.Image</th>
+                        <th>@Resource.FirstName</th>
+                        <th>@Resource.LastName</th>
+                        <th>@Resource.Phone</th>
+                        <th>@Resource.Email</th>
+                        <th>@Resource.CreatedDate</th>
+                        <th>@Resource.Allocate</th>
+                        <th>@Resource.Action</th>
                     </tr>
                 </thead>
             </table>
         </div>
     </div>
 </div>
-
+@{
+    var title = Resource.UserAccount;
+    var userdet = Resource.UserDetail;
+    var allocasset = Resource.AllocateAssest;
+    var alloc = Resource.Allocate;
+    var select = Resource.Select;
+    var edit = Resource.Edit;
+    var del = Resource.Delete;
+    var managepageaccess = Resource.ManagePageAccess;
+    var resetpwd = Resource.ResetPassword;
+}
+<div id="restitle" data-title="@title"></div>
+<div id="resuserdet" data-userdet="@userdet"></div>
+<div id="resallocasset" data-allocasset="@allocasset"></div>
+<div id="resalloc" data-alloc="@alloc"></div>
+<div id="resselect" data-select="@select"></div>
+<div id="resedit" data-edit="@edit"></div>
+<div id="resdel" data-del="@del"></div>
+<div id="resmanagepageaccess" data-managepageaccess="@managepageaccess"></div>
+<div id="resresetpwd" data-resetpwd="@resetpwd"></div>
 <style>
     .panel-heading {
         padding: 0px 0px 0px 5px;
