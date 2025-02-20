@@ -1,5 +1,7 @@
 $(document).ready(function () {
-    document.title = 'User Info From Browser';
+    var title = $('#restitle').data('title');
+    var userInfobrowdet = $('#resuserInfobrowdet').data('userInfobrowdet');
+    document.title = title;
 
     $("#tblUserInfoFromBrowser").DataTable({
         paging: true,
@@ -29,7 +31,7 @@ $(document).ready(function () {
         "columns": [
             {
                 data: "Id", "name": "Id", render: function (data, type, row) {
-                    return "<a href='#' class='fa fa-eye' onclick=Details('" + row.Id + "');>" + row.Id + "</a>";
+                    return "<a href='#' class='fa fa-eye' onclick='Details(\"" + row.Id + "\", \"" + userInfobrowdet + "\");'>" + row.Id + "</a>";
                 }
             },
             { "data": "BrowserUniqueID", "name": "BrowserUniqueID" },

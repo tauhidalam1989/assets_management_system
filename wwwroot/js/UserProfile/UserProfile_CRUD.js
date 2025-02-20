@@ -1,8 +1,8 @@
 
-var ResetPasswordGeneral = function () {
+var ResetPasswordGeneral = function (ResetPassword) {
     if (DemoUserAccountLockAll() == 1) return;
     var _ApplicationUserId = $("#ApplicationUserId_Index").val();
-    $('#titleMediumModal').html("<h4>Reset Password</h4>");
+    $('#titleMediumModal').html("<h4>" + ResetPassword +"</h4>");
     var url = "/UserProfile/ResetPasswordGeneral?ApplicationUserId=" + _ApplicationUserId;
     loadMediumModal(url);
 };

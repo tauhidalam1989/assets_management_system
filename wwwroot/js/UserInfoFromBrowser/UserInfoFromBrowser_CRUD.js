@@ -1,6 +1,6 @@
-var Details = function (id) {
+var Details = function (id,userinfobrowdet) {
     var url = "/UserInfoFromBrowser/Details?id=" + id;
-    $('#titleExtraBigModal').html("User Info From Browser Details");
+    $('#titleExtraBigModal').html(userinfobrowdet);
     loadExtraBigModal(url);
 };
 

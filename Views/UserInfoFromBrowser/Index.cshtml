@@ -6,7 +6,7 @@
                     <a class="fa fa-plus-square fa-2x" onclick="AddEdit(0)"></a>
                 </div>
                 <div class="col-md-7 pull-right">
-                    <h5 class="pull-right"><b>&nbsp;User Info From Browser List</b></h5>
+                    <h5 class="pull-right"><b>&nbsp;@Resource.UserInfoBrowserList</b></h5>
                 </div>
             </div>
         </div>
@@ -15,21 +15,26 @@
             <table id="tblUserInfoFromBrowser" class="ItemTranTable" style="width:100%">
                 <thead>
                     <tr>
-                        <th>Id</th>
-                        <th>Browser Unique ID</th>
-                        <th>Lat</th>
-                        <th>Long</th>
-                        <th>Time Zone</th>
-                        <th>Browser Major</th>
-                        <th>Browser Name</th>
-                        <th>Created Date</th>
+                        <th>@Resource.Id</th>
+                        <th>@Resource.BrowserUniqueID</th>
+                        <th>@Resource.Lat</th>
+                        <th>@Resource.Long</th>
+                        <th>@Resource.TimeZone</th>
+                        <th>@Resource.BrowserMajor</th>
+                        <th>@Resource.BrowserName</th>
+                        <th>@Resource.CreatedDate</th>
                     </tr>
                 </thead>
             </table>
         </div>
     </div>
 </div>
-
+@{
+    var title = Resource.UserInfoBrowserList;
+    var userInfobrowdet = Resource.UserInfoBrowserDet;
+}
+<div id="restitle" data-title="@title"></div>
+<div id="resuserInfobrowdet" data-userInfobrowdet="@userInfobrowdet"></div>
 <style>
     .panel-heading {
         padding: 0px 0px 0px 5px;

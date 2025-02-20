@@ -1206,4 +1206,67 @@
   <data name="UserRole" xml:space="preserve">
     <value>User Role</value>
   </data>
+  <data name="BrowserMajor" xml:space="preserve">
+    <value>Browser Major</value>
+  </data>
+  <data name="BrowserName" xml:space="preserve">
+    <value>Browser Name</value>
+  </data>
+  <data name="BrowserUniqueID" xml:space="preserve">
+    <value>Browser Unique ID</value>
+  </data>
+  <data name="BrowserVersion" xml:space="preserve">
+    <value>Browser Version</value>
+  </data>
+  <data name="CPUArchitecture" xml:space="preserve">
+    <value>CPU Architecture</value>
+  </data>
+  <data name="DeviceModel" xml:space="preserve">
+    <value>Device Model</value>
+  </data>
+  <data name="DeviceType" xml:space="preserve">
+    <value>Device Type</value>
+  </data>
+  <data name="DeviceVendor" xml:space="preserve">
+    <value>Device Vendor</value>
+  </data>
+  <data name="EditUserProfile" xml:space="preserve">
+    <value>Edit User Profile</value>
+  </data>
+  <data name="EngineName" xml:space="preserve">
+    <value>Engine Name</value>
+  </data>
+  <data name="EngineVersion" xml:space="preserve">
+    <value>Engine Version</value>
+  </data>
+  <data name="Lat" xml:space="preserve">
+    <value>Lat</value>
+  </data>
+  <data name="Long" xml:space="preserve">
+    <value>Long</value>
+  </data>
+  <data name="MSG_ChangePwdSuccess" xml:space="preserve">
+    <value>Change Password Succeeded. User name</value>
+  </data>
+  <data name="OS" xml:space="preserve">
+    <value>OS</value>
+  </data>
+  <data name="OSName" xml:space="preserve">
+    <value>OS Name</value>
+  </data>
+  <data name="TimeZone" xml:space="preserve">
+    <value>Time Zone</value>
+  </data>
+  <data name="UA" xml:space="preserve">
+    <value>UA</value>
+  </data>
+  <data name="UserInfoBrowserDet" xml:space="preserve">
+    <value>User Info From Browser Details</value>
+  </data>
+  <data name="UserInfoBrowserList" xml:space="preserve">
+    <value>User Info From Browser List</value>
+  </data>
+  <data name="UserProfile" xml:space="preserve">
+    <value>User Profile</value>
+  </data>
 </root>

@@ -1185,4 +1185,67 @@
   <data name="UserRole" xml:space="preserve">
     <value>دور المستخدم</value>
   </data>
+  <data name="BrowserMajor" xml:space="preserve">
+    <value>الإصدار الرئيسي للمتصفح</value>
+  </data>
+  <data name="BrowserName" xml:space="preserve">
+    <value>اسم المتصفح</value>
+  </data>
+  <data name="BrowserUniqueID" xml:space="preserve">
+    <value>معرف المتصفح الفريد</value>
+  </data>
+  <data name="BrowserVersion" xml:space="preserve">
+    <value>إصدار المتصفح</value>
+  </data>
+  <data name="CPUArchitecture" xml:space="preserve">
+    <value>بنية المعالج</value>
+  </data>
+  <data name="DeviceModel" xml:space="preserve">
+    <value>طراز الجهاز</value>
+  </data>
+  <data name="DeviceType" xml:space="preserve">
+    <value>نوع الجهاز</value>
+  </data>
+  <data name="DeviceVendor" xml:space="preserve">
+    <value>بائع الجهاز</value>
+  </data>
+  <data name="EditUserProfile" xml:space="preserve">
+    <value>تعديل ملف المستخدم</value>
+  </data>
+  <data name="EngineName" xml:space="preserve">
+    <value>اسم المحرك</value>
+  </data>
+  <data name="EngineVersion" xml:space="preserve">
+    <value>إصدار المحرك</value>
+  </data>
+  <data name="Lat" xml:space="preserve">
+    <value>خط العرض</value>
+  </data>
+  <data name="Long" xml:space="preserve">
+    <value>خط الطول</value>
+  </data>
+  <data name="MSG_ChangePwdSuccess" xml:space="preserve">
+    <value>تم تغيير كلمة المرور بنجاح. اسم المستخدم</value>
+  </data>
+  <data name="OS" xml:space="preserve">
+    <value>أ س</value>
+  </data>
+  <data name="OSName" xml:space="preserve">
+    <value>نظام التشغيل</value>
+  </data>
+  <data name="TimeZone" xml:space="preserve">
+    <value>المنطقة الزمنية</value>
+  </data>
+  <data name="UA" xml:space="preserve">
+    <value>و ا</value>
+  </data>
+  <data name="User Profile" xml:space="preserve">
+    <value>ملف المستخدم</value>
+  </data>
+  <data name="UserInfoBrowserDet" xml:space="preserve">
+    <value>معلومات المستخدم من تفاصيل المتصفح</value>
+  </data>
+  <data name="UserInfoBrowserList" xml:space="preserve">
+    <value>معلومات المستخدم من قائمة المتصفح</value>
+  </data>
 </root>

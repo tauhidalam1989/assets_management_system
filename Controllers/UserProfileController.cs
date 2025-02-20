@@ -6,10 +6,11 @@ using AMS.Models;
 using AMS.Models.UserProfileViewModel;
 using AMS.Services;
 using Microsoft.EntityFrameworkCore;
+using ViewRes;
 
 namespace AMS.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [Route("[controller]/[action]")]
     public class UserProfileController : Controller
     {
@@ -24,7 +25,7 @@ namespace AMS.Controllers
             _iCommon = iCommon;
             _userManager = userManager;
         }
-        [Authorize(Roles = Pages.MainMenu.UserProfile.RoleName)]
+        //[Authorize(Roles = Pages.MainMenu.UserProfile.RoleName)]
         [HttpGet]
         public async Task<IActionResult> Index()
         {
@@ -55,7 +56,7 @@ namespace AMS.Controllers
                 {
                     var result = await _userManager.ChangePasswordAsync(_ApplicationUser, vm.OldPassword, vm.NewPassword);
                     if (result.Succeeded)
-                        AlertMessage = "Change Password Succeeded. User name: " + _ApplicationUser.Email;
+                        AlertMessage = Resource.MSG_ChangePwdSuccess + ": " + _ApplicationUser.Email;
                     else
                     {
                         string errorMessage = string.Empty;

@@ -889,6 +889,42 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Browser Major.
+        /// </summary>
+        public static string BrowserMajor {
+            get {
+                return ResourceManager.GetString("BrowserMajor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Browser Name.
+        /// </summary>
+        public static string BrowserName {
+            get {
+                return ResourceManager.GetString("BrowserName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Browser Unique ID.
+        /// </summary>
+        public static string BrowserUniqueID {
+            get {
+                return ResourceManager.GetString("BrowserUniqueID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Browser Version.
+        /// </summary>
+        public static string BrowserVersion {
+            get {
+                return ResourceManager.GetString("BrowserVersion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cancel.
         /// </summary>
         public static string Cancel {
@@ -1119,6 +1155,15 @@ namespace ViewRes {
         public static string Country {
             get {
                 return ResourceManager.GetString("Country", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CPU Architecture.
+        /// </summary>
+        public static string CPUArchitecture {
+            get {
+                return ResourceManager.GetString("CPUArchitecture", resourceCulture);
             }
         }
         
@@ -1384,6 +1429,33 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Device Model.
+        /// </summary>
+        public static string DeviceModel {
+            get {
+                return ResourceManager.GetString("DeviceModel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Device Type.
+        /// </summary>
+        public static string DeviceType {
+            get {
+                return ResourceManager.GetString("DeviceType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Device Vendor.
+        /// </summary>
+        public static string DeviceVendor {
+            get {
+                return ResourceManager.GetString("DeviceVendor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Download.
         /// </summary>
         public static string Download {
@@ -1497,6 +1569,15 @@ namespace ViewRes {
         public static string EditUser {
             get {
                 return ResourceManager.GetString("EditUser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit User Profile.
+        /// </summary>
+        public static string EditUserProfile {
+            get {
+                return ResourceManager.GetString("EditUserProfile", resourceCulture);
             }
         }
         
@@ -1650,6 +1731,24 @@ namespace ViewRes {
         public static string End_Date {
             get {
                 return ResourceManager.GetString("End Date", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Engine Name.
+        /// </summary>
+        public static string EngineName {
+            get {
+                return ResourceManager.GetString("EngineName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Engine Version.
+        /// </summary>
+        public static string EngineVersion {
+            get {
+                return ResourceManager.GetString("EngineVersion", resourceCulture);
             }
         }
         
@@ -1960,6 +2059,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Lat.
+        /// </summary>
+        public static string Lat {
+            get {
+                return ResourceManager.GetString("Lat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Leaving Date.
         /// </summary>
         public static string LeavingDate {
@@ -2001,6 +2109,15 @@ namespace ViewRes {
         public static string LogOff {
             get {
                 return ResourceManager.GetString("LogOff", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Long.
+        /// </summary>
+        public static string Long {
+            get {
+                return ResourceManager.GetString("Long", resourceCulture);
             }
         }
         
@@ -2284,6 +2401,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Change Password Succeeded. User name.
+        /// </summary>
+        public static string MSG_ChangePwdSuccess {
+            get {
+                return ResourceManager.GetString("MSG_ChangePwdSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Comment added successfully. ID.
         /// </summary>
         public static string MSG_CommentAddSuccess {
@@ -2550,6 +2676,24 @@ namespace ViewRes {
         public static string Operationfailed {
             get {
                 return ResourceManager.GetString("Operationfailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OS.
+        /// </summary>
+        public static string OS {
+            get {
+                return ResourceManager.GetString("OS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OS Name.
+        /// </summary>
+        public static string OSName {
+            get {
+                return ResourceManager.GetString("OSName", resourceCulture);
             }
         }
         
@@ -3103,6 +3247,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Time Zone.
+        /// </summary>
+        public static string TimeZone {
+            get {
+                return ResourceManager.GetString("TimeZone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to TML.
         /// </summary>
         public static string TML {
@@ -3135,6 +3288,15 @@ namespace ViewRes {
         public static string Type {
             get {
                 return ResourceManager.GetString("Type", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to UA.
+        /// </summary>
+        public static string UA {
+            get {
+                return ResourceManager.GetString("UA", resourceCulture);
             }
         }
         
@@ -3265,11 +3427,38 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to User Info From Browser Details.
+        /// </summary>
+        public static string UserInfoBrowserDet {
+            get {
+                return ResourceManager.GetString("UserInfoBrowserDet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Info From Browser List.
+        /// </summary>
+        public static string UserInfoBrowserList {
+            get {
+                return ResourceManager.GetString("UserInfoBrowserList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to UserName.
         /// </summary>
         public static string UserName {
             get {
                 return ResourceManager.GetString("UserName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Profile.
+        /// </summary>
+        public static string UserProfile {
+            get {
+                return ResourceManager.GetString("UserProfile", resourceCulture);
             }
         }
         
