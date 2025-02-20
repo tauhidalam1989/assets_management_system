@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Dynamic.Core;
+using ViewRes;
 
 namespace AMS.Controllers
 {
@@ -136,7 +137,7 @@ namespace AMS.Controllers
                     vm.ModifiedBy = _UserName;
                     _context.Entry(_Supplier).CurrentValues.SetValues(vm);
                     await _context.SaveChangesAsync();                 
-                    var _AlertMessage = "Supplier Updated Successfully. ID: " + _Supplier.Id;
+                    var _AlertMessage = Resource.MSG_SupplierUpdateSuccess + ": " + _Supplier.Id;
                     return new JsonResult(_AlertMessage);
                 }
                 else
@@ -148,7 +149,7 @@ namespace AMS.Controllers
                     _Supplier.ModifiedBy = _UserName;
                     _context.Add(_Supplier);
                     await _context.SaveChangesAsync();
-                    var _AlertMessage = "Supplier Created Successfully. ID: " + _Supplier.Id;
+                    var _AlertMessage = Resource.MSG_SupplierCreateSuccess + ": " + _Supplier.Id;
                     return new JsonResult(_AlertMessage);
                 }
             }

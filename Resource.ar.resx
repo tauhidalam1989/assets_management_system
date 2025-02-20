@@ -1269,4 +1269,28 @@
   <data name="SubDeptDet" xml:space="preserve">
     <value>تفاصيل القسم الفرعي</value>
   </data>
+  <data name="AddSupplier" xml:space="preserve">
+    <value>إضافة مورد</value>
+  </data>
+  <data name="ContactPerson" xml:space="preserve">
+    <value>شخص الاتصال</value>
+  </data>
+  <data name="EditSupplier" xml:space="preserve">
+    <value>تعديل المورد</value>
+  </data>
+  <data name="MSG_SupplierCreateSuccess" xml:space="preserve">
+    <value>تم إنشاء المورد بنجاح. المعرف</value>
+  </data>
+  <data name="MSG_SupplierDeleteSuccess" xml:space="preserve">
+    <value>تم حذف المورد بنجاح. معرف المورد</value>
+  </data>
+  <data name="MSG_SupplierUpdateSuccess" xml:space="preserve">
+    <value>تم تحديث المورد بنجاح. المعرف</value>
+  </data>
+  <data name="SupplierDetails" xml:space="preserve">
+    <value>تفاصيل المورد</value>
+  </data>
+  <data name="SupplierList" xml:space="preserve">
+    <value>قائمة الموردين</value>
+  </data>
 </root>

@@ -1290,4 +1290,28 @@
   <data name="SubDeptDet" xml:space="preserve">
     <value>Sub Department Details</value>
   </data>
+  <data name="AddSupplier" xml:space="preserve">
+    <value>Add Supplier</value>
+  </data>
+  <data name="ContactPerson" xml:space="preserve">
+    <value>Contact Person</value>
+  </data>
+  <data name="EditSupplier" xml:space="preserve">
+    <value>Edit Supplier</value>
+  </data>
+  <data name="MSG_SupplierCreateSuccess" xml:space="preserve">
+    <value>Supplier Created Successfully. ID</value>
+  </data>
+  <data name="MSG_SupplierDeleteSuccess" xml:space="preserve">
+    <value>Supplier has been deleted successfully. Supplier ID</value>
+  </data>
+  <data name="MSG_SupplierUpdateSuccess" xml:space="preserve">
+    <value>Supplier Updated Successfully. ID</value>
+  </data>
+  <data name="SupplierDetails" xml:space="preserve">
+    <value>Supplier Details</value>
+  </data>
+  <data name="SupplierList" xml:space="preserve">
+    <value>Supplier List</value>
+  </data>
 </root>

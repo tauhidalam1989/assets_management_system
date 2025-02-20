@@ -6,7 +6,7 @@
                     <a class="fa fa-plus-square fa-2x" onclick="AddEdit(0)"></a>
                 </div>
                 <div class="col-md-7 pull-right">
-                    <h5 class="pull-right"><b>&nbsp;Supplier List</b></h5>
+                    <h5 class="pull-right"><b>&nbsp;@Resource.SupplierList</b></h5>
                 </div>
             </div>
         </div>
@@ -15,13 +15,13 @@
             <table id="tblSupplier" class="CustomBlueTable" style="width:100%">
                 <thead>
                     <tr>
-                        <th>Id</th>
-                        <th>Name</th>
-                        <th>Contact Person</th>
-                        <th>Email</th>
-                        <th>Phone</th>
-                        <th>Address</th>
-                        <th>CreatedDate</th>
+                        <th>@Resource.Id</th>
+                        <th>@Resource.Name</th>
+                        <th>@Resource.ContactPerson</th>
+                        <th>@Resource.Email</th>
+                        <th>@Resource.Phone</th>
+                        <th>@Resource.Address</th>
+                        <th>@Resource.CreatedDate</th>
 
                         <th></th>
                         <th></th>
@@ -33,7 +33,26 @@
 
     <partial name="~/Views/UIComponents/_bootstrapAlert.cshtml" />
 </div>
-
+@{
+    var title = Resource.Supplier;
+    var supdet = Resource.SupplierDetails;
+    var editsupdet = Resource.EditSupplier;
+    var addsupdet = Resource.AddSupplier;
+    var edit = Resource.Edit;
+    var del = Resource.Delete;
+    var delmsg = Resource.Msg_Delete;
+    var yes = Resource.Yes;
+    var msgdel = Resource.MSG_SupplierDeleteSuccess;
+}
+<div id="restitle" data-title="@title"></div>
+<div id="ressupdet" data-supdet="@supdet"></div>
+<div id="reseditsupdet" data-editsupdet="@editsupdet"></div>
+<div id="resaddsupdet" data-addsupdet="@addsupdet"></div>
+<div id="resedit" data-edit="@edit"></div>
+<div id="resyes" data-yes="@yes"></div>
+<div id="resdel" data-del="@del"></div>
+<div id="resmsgdel" data-msgdel="@msgdel"></div>
+<div id="resdelmsg" data-delmsg="@delmsg"></div>
 <style>
     .panel-heading {
         padding: 0px 0px 0px 5px;

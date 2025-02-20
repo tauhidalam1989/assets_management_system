@@ -1,28 +1,28 @@
-var Details = function (id) {
+var Details = function (id,supdet) {
     var url = "/Supplier/Details?id=" + id;
-    $('#titleBigModal').html("Supplier Details");
+    $('#titleBigModal').html(supdet);
     loadBigModal(url);
 };
 
 
-var AddEdit = function (id) {
+var AddEdit = function (id,editsup,addsup) {
     var url = "/Supplier/AddEdit?id=" + id;
     if (id > 0) {
-        $('#titleBigModal').html("Edit Supplier");
+        $('#titleBigModal').html(editsup);
     }
     else {
-        $('#titleBigModal').html("Add Supplier");
+        $('#titleBigModal').html(addsup);
     }
     loadBigModal(url);
 };
 
-var Save = function () {
+var Save = function (pleasewait,save) {
     if (!$("#frmSupplier").valid()) {
         return;
     }
 
     var _frmSupplier = $("#frmSupplier").serialize();
-    $("#btnSave").val("Please Wait");
+    $("#btnSave").val(pleasewait);
     $('#btnSave').attr('disabled', 'disabled');
     $.ajax({
         type: "POST",
@@ -34,7 +34,7 @@ var Save = function () {
                 icon: "success"
             }).then(function () {
                 document.getElementById("btnClose").click();
-                $("#btnSave").val("Save");
+                $("#btnSave").val(save);
                 $('#btnSave').removeAttr('disabled');
                 $('#tblSupplier').DataTable().ajax.reload();
             });
@@ -45,22 +45,22 @@ var Save = function () {
     });
 }
 
-var Delete = function (id) {
+var Delete = function (id,delmsg,yes,msgdel) {
     if (DemoUserAccountLockAll() == 1) return;
     Swal.fire({
-        title: 'Do you want to delete this item?',
+        title: delmsg,
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes'
+        confirmButtonText: yes
     }).then((result) => {
         if (result.value) {
-            $.ajax({
+            $.ajax({    
                 type: "DELETE",
                 url: "/Supplier/Delete?id=" + id,
                 success: function (result) {
-                    var message = "Supplier has been deleted successfully. Supplier ID: " + result.Id;
+                    var message = msgdel + ": " + result.Id;
                     Swal.fire({
                         title: message,
                         icon: 'info',

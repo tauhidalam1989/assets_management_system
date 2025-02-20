@@ -277,6 +277,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Supplier.
+        /// </summary>
+        public static string AddSupplier {
+            get {
+                return ResourceManager.GetString("AddSupplier", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add To List.
         /// </summary>
         public static string AddToList {
@@ -1159,6 +1168,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Contact Person.
+        /// </summary>
+        public static string ContactPerson {
+            get {
+                return ResourceManager.GetString("ContactPerson", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Country.
         /// </summary>
         public static string Country {
@@ -1578,6 +1596,15 @@ namespace ViewRes {
         public static string EditSubDept {
             get {
                 return ResourceManager.GetString("EditSubDept", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit Supplier.
+        /// </summary>
+        public static string EditSupplier {
+            get {
+                return ResourceManager.GetString("EditSupplier", resourceCulture);
             }
         }
         
@@ -2581,6 +2608,33 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Supplier Created Successfully. ID.
+        /// </summary>
+        public static string MSG_SupplierCreateSuccess {
+            get {
+                return ResourceManager.GetString("MSG_SupplierCreateSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Supplier has been deleted successfully. Supplier ID.
+        /// </summary>
+        public static string MSG_SupplierDeleteSuccess {
+            get {
+                return ResourceManager.GetString("MSG_SupplierDeleteSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Supplier Updated Successfully. ID.
+        /// </summary>
+        public static string MSG_SupplierUpdateSuccess {
+            get {
+                return ResourceManager.GetString("MSG_SupplierUpdateSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Asset Sub Category Updated Successfully. ID:.
         /// </summary>
         public static string Msg_UpdateAssestSubCatSuccess {
@@ -3297,6 +3351,24 @@ namespace ViewRes {
         public static string Supplier {
             get {
                 return ResourceManager.GetString("Supplier", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Supplier Details.
+        /// </summary>
+        public static string SupplierDetails {
+            get {
+                return ResourceManager.GetString("SupplierDetails", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Supplier List.
+        /// </summary>
+        public static string SupplierList {
+            get {
+                return ResourceManager.GetString("SupplierList", resourceCulture);
             }
         }
         
