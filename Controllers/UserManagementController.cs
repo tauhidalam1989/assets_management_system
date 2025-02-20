@@ -20,7 +20,7 @@ using ViewRes;
 
 namespace LeaveMGS.Controllers
 {
-    //[Authorize]
+    [Authorize]
     [Route("[controller]/[action]")]
     public class UserManagementController : Controller
     {
@@ -48,7 +48,7 @@ namespace LeaveMGS.Controllers
             _iAccount = iAccount;
             _roles = roles;
         }
-        //[Authorize(Roles = MainMenu.Admin.RoleName)]
+        [Authorize(Roles = MainMenu.Admin.RoleName)]
         [HttpGet]
         public IActionResult Index()
         {

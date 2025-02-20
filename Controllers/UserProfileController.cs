@@ -10,7 +10,7 @@ using ViewRes;
 
 namespace AMS.Controllers
 {
-    //[Authorize]
+    [Authorize]
     [Route("[controller]/[action]")]
     public class UserProfileController : Controller
     {
@@ -25,7 +25,7 @@ namespace AMS.Controllers
             _iCommon = iCommon;
             _userManager = userManager;
         }
-        //[Authorize(Roles = Pages.MainMenu.UserProfile.RoleName)]
+        [Authorize(Roles = Pages.MainMenu.UserProfile.RoleName)]
         [HttpGet]
         public async Task<IActionResult> Index()
         {

@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace AMS.Controllers
 {
-    //[Authorize]
+    [Authorize]
     [Route("[controller]/[action]")]
     public class UserInfoFromBrowserController : Controller
     {
@@ -23,7 +23,7 @@ namespace AMS.Controllers
             _context = context;
             _iCommon = iCommon;
         }
-        //[Authorize(Roles = Pages.MainMenu.Admin.RoleName)]
+        [Authorize(Roles = Pages.MainMenu.Admin.RoleName)]
         [HttpGet]
         public IActionResult Index()
         {
