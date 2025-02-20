@@ -1,5 +1,15 @@
 $(document).ready(function () {
-    document.title = 'SubDepartment';
+    var title = $('#restitle').data('title');
+    var subdeptdet = $('#ressubdeptdet').data('subdeptdet');
+    var delmsg = $('#resdelmsg').data('delmsg');
+    var editsubdept = $('#reseditsubdept').data('editsubdept');
+    var addsubdept = $('#resaddsubdept').data('addsubdept');
+    var save = $('#ressave').data('save');
+    var yes = $('#resyes').data('yes');
+    var msgdel = $('#resmsgdel').data('msgdel');
+    var edit = $('#resedit').data('edit');
+    var del = $('#resdel').data('del');
+    document.title = title;
 
     $("#tblSubDepartment").DataTable({
         paging: true,
@@ -29,7 +39,7 @@ $(document).ready(function () {
         "columns": [
             {
                 data: "Id", "name": "Id", render: function (data, type, row) {
-                    return "<a href='#' class='fa fa-eye' onclick=Details('" + row.Id + "');>" + row.Id + "</a>";
+                    return "<a href='#' class='fa fa-eye' onclick='Details(\"" + row.Id + "\", \"" + subdeptdet + "\");'>" + row.Id + "</a>";
                 }
             },
             { "data": "Name", "name": "Name" },
@@ -48,12 +58,12 @@ $(document).ready(function () {
             },
             {
                 data: null, render: function (data, type, row) {
-                    return "<a href='#' class='btn btn-info btn-xs' onclick=AddEdit('" + row.Id + "');>Edit</a>";
+                    return "<a href='#' class='btn btn-info btn-xs' onclick='AddEdit(\"" + row.Id + "\", \"" + editsubdept + "\", \"" + addsubdept + "\");'>" + edit + "</a>";
                 }
             },
             {
                 data: null, render: function (data, type, row) {
-                    return "<a href='#' class='btn btn-danger btn-xs' onclick=Delete('" + row.Id + "'); >Delete</a>";
+                    return "<a href='#' class='btn btn-danger btn-xs' onclick='Delete(\"" + row.Id + "\", \"" + delmsg + "\", \"" + yes + "\", \"" + msgdel + "\");'>" + del + "</a>";
                 }
             }
         ],

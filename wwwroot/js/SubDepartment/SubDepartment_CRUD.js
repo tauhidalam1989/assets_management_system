@@ -1,28 +1,28 @@
-var Details = function (id) {
+var Details = function (id, SubDeptDet) {
     var url = "/SubDepartment/Details?id=" + id;
-    $('#titleBigModal').html("Sub Department Details");
+    $('#titleBigModal').html(SubDeptDet);
     loadBigModal(url);
 };
 
 
-var AddEdit = function (id) {
+var AddEdit = function (id, editSubDept, addSubDept) {
     var url = "/SubDepartment/AddEdit?id=" + id;
     if (id > 0) {
-        $('#titleBigModal').html("Edit Sub Department");
+        $('#titleBigModal').html(editSubDept);
     }
     else {
-        $('#titleBigModal').html("Add Sub Department");
+        $('#titleBigModal').html(addSubDept);
     }
     loadBigModal(url);
 };
 
-var Save = function () {
+var Save = function (pleasewait,save) {
     if (!$("#frmSubDepartment").valid()) {
         return;
     }
 
     var _frmSubDepartment = $("#frmSubDepartment").serialize();
-    $("#btnSave").val("Please Wait");
+    $("#btnSave").val(pleasewait);
     $('#btnSave').attr('disabled', 'disabled');
     $.ajax({
         type: "POST",
@@ -34,7 +34,7 @@ var Save = function () {
                 icon: "success"
             }).then(function () {
                 document.getElementById("btnClose").click();
-                $("#btnSave").val("Save");
+                $("#btnSave").val(save);
                 $('#btnSave').removeAttr('disabled');
                 $('#tblSubDepartment').DataTable().ajax.reload();
             });
@@ -45,22 +45,22 @@ var Save = function () {
     });
 }
 
-var Delete = function (id) {
+var Delete = function (id,delmsg,yes,msgdel) {
     if (DemoUserAccountLockAll() == 1) return;
     Swal.fire({
-        title: 'Do you want to delete this item?',
+        title: delmsg,
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes'
+        confirmButtonText: yes
     }).then((result) => {
         if (result.value) {
             $.ajax({
                 type: "DELETE",
                 url: "/SubDepartment/Delete?id=" + id,
                 success: function (result) {
-                    var message = "Sub Department has been deleted successfully. Sub Department ID: " + result.Id;
+                    var message = msgdel + ": " + result.Id;
                     Swal.fire({
                         title: message,
                         icon: 'info',

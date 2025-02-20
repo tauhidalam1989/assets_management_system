@@ -1269,4 +1269,25 @@
   <data name="UserProfile" xml:space="preserve">
     <value>User Profile</value>
   </data>
+  <data name="AddSubDept" xml:space="preserve">
+    <value>Add Sub Department</value>
+  </data>
+  <data name="EditSubDept" xml:space="preserve">
+    <value>Edit Sub Department</value>
+  </data>
+  <data name="MSG_SubDeptCreateSuccess" xml:space="preserve">
+    <value>Sub Department Created Successfully. ID</value>
+  </data>
+  <data name="MSG_SubDeptDelSuccess" xml:space="preserve">
+    <value>Sub Department has been deleted successfully. Sub Department ID</value>
+  </data>
+  <data name="MSG_SubDeptUpdateSuccess" xml:space="preserve">
+    <value>Sub Department Updated Successfully. ID</value>
+  </data>
+  <data name="SubDepartList" xml:space="preserve">
+    <value>Sub Department List</value>
+  </data>
+  <data name="SubDeptDet" xml:space="preserve">
+    <value>Sub Department Details</value>
+  </data>
 </root>

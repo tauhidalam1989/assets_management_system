@@ -3,10 +3,10 @@
         <div class="panel-heading">
             <div class="row">
                 <div class="col-md-5">                   
-                    <a class="fa fa-plus-square fa-2x" onclick="AddEdit(0)"></a>
+                    <a class="fa fa-plus-square fa-2x" onclick="AddEdit(0,'@Resource.EditSubDept','@Resource.AddSubDept')"></a>
                 </div>
                 <div class="col-md-7 pull-right">
-                    <h5 class="pull-right"><b>&nbsp;Sub Department List</b></h5>
+                    <h5 class="pull-right"><b>&nbsp;@Resource.SubDepartList</b></h5>
                 </div>
             </div>
         </div>
@@ -15,12 +15,11 @@
             <table id="tblSubDepartment" class="CustomBlueTable" style="width:100%">
                 <thead>
                     <tr>
-                        <th>Id</th>
-                        <th>Name</th>
-                        <th>Department Name</th>
-                        <th>Description</th>
-                        <th>Created Date</th>
-
+                        <th>@Resource.Id</th>
+                        <th>@Resource.Name</th>
+                        <th>@Resource.Department</th>
+                        <th>@Resource.Description</th>
+                        <th>@Resource.CreatedDate</th>
                         <th></th>
                         <th></th>
                     </tr>
@@ -31,7 +30,28 @@
 
     <partial name="~/Views/UIComponents/_bootstrapAlert.cshtml" />
 </div>
-
+@{
+    var title = Resource.SubDepartment;
+    var subdeptdet = Resource.SubDeptDet;
+    var delmsg = Resource.Msg_Delete;
+    var editsubdept = Resource.EditSubDept;
+    var addsubdept = Resource.AddSubDept;
+    var save = Resource.Save;
+    var yes = Resource.Yes;
+    var edit = Resource.Edit;
+    var del = Resource.Delete;
+    var msgdel = Resource.MSG_SubDeptDelSuccess;
+}
+<div id="restitle" data-title="@title"></div>
+<div id="ressubdeptdet" data-subdeptdet="@subdeptdet"></div>
+<div id="resdelmsg" data-delmsg="@delmsg"></div>
+<div id="reseditsubdept" data-editsubdept="@editsubdept"></div>
+<div id="resaddsubdept" data-addsubdept="@addsubdept"></div>
+<div id="ressave" data-save="@save"></div>
+<div id="resyes" data-yes="@yes"></div>
+<div id="resmsgdel" data-msgdel="@msgdel"></div>
+<div id="resedit" data-edit="@edit"></div>
+<div id="resdel" data-del="@del"></div>
 <style>
     .panel-heading {
         padding: 0px 0px 0px 5px;

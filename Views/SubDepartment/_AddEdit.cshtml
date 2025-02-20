@@ -1,7 +1,7 @@
 @model AMS.Models.SubDepartmentViewModel.SubDepartmentCRUDViewModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = Resource.Create;
 }
 
 <div>
@@ -18,7 +18,7 @@
                     <div class="col-sm-9">
                         <select asp-for="DepartmentId" asp-items="@ViewBag._LoadddlDepartment" id="DepartmentId"
                             class="form-control" style="width:100%;">
-                            <option disabled selected>--- SELECT ---</option>
+                            <option disabled selected>--- Resource.select ---</option>
                         </select>
                         <span asp-validation-for="DepartmentId" class="text-danger"></span>
                     </div>
@@ -42,8 +42,8 @@
                 <div class="form-group row">
                     <label class="col-sm-3 col-form-label"></label>
                     <div class="col-sm-9">
-                        <input type="button" id="btnSave" value="Save" onclick="Save()" class="btn btn-info">
-                        <button type="button" id="btnClose" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        <input type="button" id="btnSave" value="@Resource.Save" onclick="Save()" class="btn btn-info">
+                        <button type="button" id="btnClose" class="btn btn-danger" data-dismiss="modal">@Resource.Close</button>
                     </div>
                 </div>
             </form>

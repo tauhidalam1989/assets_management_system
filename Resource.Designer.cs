@@ -268,6 +268,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Sub Department.
+        /// </summary>
+        public static string AddSubDept {
+            get {
+                return ResourceManager.GetString("AddSubDept", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add To List.
         /// </summary>
         public static string AddToList {
@@ -1564,6 +1573,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Edit Sub Department.
+        /// </summary>
+        public static string EditSubDept {
+            get {
+                return ResourceManager.GetString("EditSubDept", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Edit User.
         /// </summary>
         public static string EditUser {
@@ -2536,6 +2554,33 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sub Department Created Successfully. ID.
+        /// </summary>
+        public static string MSG_SubDeptCreateSuccess {
+            get {
+                return ResourceManager.GetString("MSG_SubDeptCreateSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sub Department has been deleted successfully. Sub Department ID.
+        /// </summary>
+        public static string MSG_SubDeptDelSuccess {
+            get {
+                return ResourceManager.GetString("MSG_SubDeptDelSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sub Department Updated Successfully. ID.
+        /// </summary>
+        public static string MSG_SubDeptUpdateSuccess {
+            get {
+                return ResourceManager.GetString("MSG_SubDeptUpdateSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Asset Sub Category Updated Successfully. ID:.
         /// </summary>
         public static string Msg_UpdateAssestSubCatSuccess {
@@ -3211,11 +3256,29 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sub Department List.
+        /// </summary>
+        public static string SubDepartList {
+            get {
+                return ResourceManager.GetString("SubDepartList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sub Department.
         /// </summary>
         public static string SubDepartment {
             get {
                 return ResourceManager.GetString("SubDepartment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sub Department Details.
+        /// </summary>
+        public static string SubDeptDet {
+            get {
+                return ResourceManager.GetString("SubDeptDet", resourceCulture);
             }
         }
         

@@ -1248,4 +1248,25 @@
   <data name="UserInfoBrowserList" xml:space="preserve">
     <value>معلومات المستخدم من قائمة المتصفح</value>
   </data>
+  <data name="AddSubDept" xml:space="preserve">
+    <value>إضافة قسم فرعي</value>
+  </data>
+  <data name="EditSubDept" xml:space="preserve">
+    <value>تعديل القسم الفرعي</value>
+  </data>
+  <data name="MSG_SubDeptCreateSuccess" xml:space="preserve">
+    <value>تم إنشاء القسم الفرعي بنجاح. المعرف</value>
+  </data>
+  <data name="MSG_SubDeptDelSuccess" xml:space="preserve">
+    <value>تم حذف القسم الفرعي بنجاح. معرف القسم الفرعي</value>
+  </data>
+  <data name="MSG_SubDeptUpdateSuccess" xml:space="preserve">
+    <value>تم تحديث القسم الفرعي بنجاح. المعرف</value>
+  </data>
+  <data name="SubDepartList" xml:space="preserve">
+    <value>قائمة الأقسام الفرعية</value>
+  </data>
+  <data name="SubDeptDet" xml:space="preserve">
+    <value>تفاصيل القسم الفرعي</value>
+  </data>
 </root>

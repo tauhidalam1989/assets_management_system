@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Dynamic.Core;
+using ViewRes;
 
 namespace AMS.Controllers
 {
@@ -141,7 +142,7 @@ namespace AMS.Controllers
                     _context.Entry(_SubDepartment).CurrentValues.SetValues(vm);
                     await _context.SaveChangesAsync();
 
-                    var _AlertMessage = "Sub Department Updated Successfully. ID: " + _SubDepartment.Id;
+                    var _AlertMessage = Resource.MSG_SubDeptUpdateSuccess + ": " + _SubDepartment.Id;
                     return new JsonResult(_AlertMessage);
                 }
                 else
@@ -154,7 +155,7 @@ namespace AMS.Controllers
                     _context.Add(_SubDepartment);
                     await _context.SaveChangesAsync();
 
-                    var _AlertMessage = "Sub Department Created Successfully. ID: " + _SubDepartment.Id;
+                    var _AlertMessage = Resource.MSG_SubDeptCreateSuccess + ": " + _SubDepartment.Id;
                     return new JsonResult(_AlertMessage);
                 }
             }
