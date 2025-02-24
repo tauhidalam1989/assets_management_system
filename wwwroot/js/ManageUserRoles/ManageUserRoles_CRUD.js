@@ -1,30 +1,30 @@
-var Details = function (id) {
+var Details = function (id,roledet) {
     var url = "/ManageUserRoles/Details?id=" + id;
-    $('#titleExtraBigModal').html("Role Details");
+    $('#titleExtraBigModal').html(roledet);
     loadExtraBigModal(url);
 };
 
 
-var AddEdit = function (id) {
+var AddEdit = function (id,editrole,addrole) {
     if (DemoUserAccountLockAll() == 1) return;
 
     var url = "/ManageUserRoles/AddEdit?id=" + id;
     if (id > 0) {
-        $('#titleExtraBigModal').html("Edit Role");
+        $('#titleExtraBigModal').html(editrole);
     }
     else {
-        $('#titleExtraBigModal').html("Add Role");
+        $('#titleExtraBigModal').html(addrole);
     }
     loadExtraBigModal(url);
 };
 
-var Save = function () {
+var Save = function (pleasewait,save) {
     if (!$("#frmUserRoles").valid()) {
         return;
     }
 
     var _frmUserRoles = $("#frmUserRoles").serialize();
-    $("#btnSave").val("Please Wait");
+    $("#btnSave").val(pleasewait);
     $('#btnSave').attr('disabled', 'disabled');
     $.ajax({
         type: "POST",
@@ -36,7 +36,7 @@ var Save = function () {
                 icon: "success"
             }).then(function () {
                 document.getElementById("btnClose").click();
-                $("#btnSave").val("Save");
+                $("#btnSave").val(save);
                 $('#btnSave').removeAttr('disabled');
                 $('#tblManageUserRoles').DataTable().ajax.reload();
             });
@@ -47,23 +47,23 @@ var Save = function () {
     });
 }
 
-var Delete = function (id) {
+var Delete = function (id,msgdel,yes,delmsg) {
     if (DemoUserAccountLockAll() == 1) return;
     
     Swal.fire({
-        title: 'Do you want to delete this item?',
+        title: msgdel,
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes'
+        confirmButtonText: yes
     }).then((result) => {
         if (result.value) {
             $.ajax({
                 type: "POST",
                 url: "/ManageUserRoles/Delete?id=" + id,
                 success: function (result) {
-                    var message = "Role has been deleted successfully. Role ID: " + result.Id;
+                    var message = delmsg + ": " + result.Id;
                     Swal.fire({
                         title: message,
                         icon: 'info',

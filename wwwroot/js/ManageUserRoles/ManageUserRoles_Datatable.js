@@ -1,5 +1,14 @@
 $(document).ready(function () {
-    document.title = 'User Role';
+    var title = $('#restitle').data('title');
+    var yes = $('#resourceyes').data('yes');
+    var edit = $('#resourceedit').data('edit');
+    var del = $('#resourcedel').data('del');
+    var addrole = $('#resourceaddrole').data('addrole');
+    var editrole = $('#resourceeditrole').data('editrole');
+    var roledet = $('#resourceroledet').data('roledet');
+    var msgdel = $('#resourcemsgdel').data('msgdel');
+    var delmsg = $('#resourcedelmsg').data('delmsg');
+    document.title = title;
 
     $("#tblManageUserRoles").DataTable({
         paging: true,
@@ -29,7 +38,7 @@ $(document).ready(function () {
         "columns": [
             {
                 data: "Id", "name": "Id", render: function (data, type, row) {
-                    return "<a href='#' class='fa fa-eye' onclick=Details('" + row.Id + "');>" + row.Id + "</a>";
+                    return "<a href='#' class='fa fa-eye' onclick='Details(\"" + row.Id + "\", \"" + roledet + "\");'>" + row.Id + "</a>";
                 }
             },
             { "data": "Name", "name": "Name" },
@@ -47,13 +56,13 @@ $(document).ready(function () {
             },
             {
                 data: null, render: function (data, type, row) {
-                    return "<a href='#' class='btn btn-info btn-xs' onclick=AddEdit('" + row.Id + "');>Edit</a>";
+                    return "<a href='#' class='btn btn-info btn-xs' onclick='AddEdit(\"" + row.Id + "\", \"" + editrole + "\", \"" + addrole + "\");'>" + edit + "</a>";
                 }
             },
             {
                 data: null, render: function (data, type, row) {
-                    return "<a href='#' class='btn btn-danger btn-xs' onclick=Delete('" + row.Id + "'); >Delete</a>";
-                }
+                    return "<a href='#' class='btn btn-danger btn-xs' onclick='Delete(\"" + row.Id + "\", \"" + msgdel + "\", \"" + yes + "\", \"" + delmsg + "\");'>" + del + "</a>";
+                }   
             }
         ],
 

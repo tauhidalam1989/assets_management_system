@@ -1500,4 +1500,22 @@
   <data name="Cancelled" xml:space="preserve">
     <value>ملغى</value>
   </data>
+  <data name="AddRole" xml:space="preserve">
+    <value>إضافة دور</value>
+  </data>
+  <data name="EditRole" xml:space="preserve">
+    <value>تعديل الدور</value>
+  </data>
+  <data name="MSG_RoleCreateSuccess" xml:space="preserve">
+    <value>تم إنشاء دور المستخدم بنجاح. المعرف</value>
+  </data>
+  <data name="MSG_RoleDelSuccess" xml:space="preserve">
+    <value>تم حذف الدور بنجاح. معرف الدور</value>
+  </data>
+  <data name="MSG_RoleUpdateSuccess" xml:space="preserve">
+    <value>تم تحديث دور المستخدم بنجاح. المعرف</value>
+  </data>
+  <data name="RoleDetails" xml:space="preserve">
+    <value>تفاصيل الدور</value>
+  </data>
 </root>

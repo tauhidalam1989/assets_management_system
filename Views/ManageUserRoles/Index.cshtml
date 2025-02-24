@@ -3,7 +3,7 @@
         <div class="panel-heading">
             <div class="row">
                 <div class="col-md-5">
-                    <a class="fa fa-plus-square fa-2x" onclick="AddEdit(0)"></a>
+                    <a class="fa fa-plus-square fa-2x" onclick="AddEdit(0,'@Resource.EditRole','@Resource.AddRole')"></a>
                 </div>
                 <div class="col-md-7 pull-right">
                     <h5 class="pull-right"><b>&nbsp;@Resource.UserRolesList</b></h5>
@@ -27,7 +27,27 @@
         </div>
     </div>
 </div>
-
+@{
+    var title = Resource.UserRole;
+    var roledet = Resource.RoleDetails;
+    var addrole = Resource.AddRole;
+    var editrole = Resource.EditRole;
+    var edit = Resource.Edit;
+    var del = Resource.Delete;
+    var msgdel = Resource.Msg_Delete;
+    var yes = Resource.Yes;
+    var delmsg = Resource.MSG_RoleDelSuccess;
+}
+<div id="restitle" data-title="@title"></div>
+<div id="resourcedel" data-del="@del"></div>
+<div id="resourceroledet" data-roledet="@roledet"></div>
+<div id="resourceaddrole" data-addrole="@addrole"></div>
+<div id="resourceeditrole" data-editrole="@editrole"></div>
+<div id="resourceedit" data-edit="@edit"></div>
+<div id="resourceaddrole" data-addrole="@del"></div>
+<div id="resourcemsgdel" data-msgdel="@msgdel"></div>
+<div id="resourceyes" data-yes="@yes"></div>
+<div id="resourcedelmsg" data-delmsg="@delmsg"></div>
 <style>
     .panel-heading {
         padding: 0px 0px 0px 5px;

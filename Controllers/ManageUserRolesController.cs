@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Dynamic.Core;
+using ViewRes;
 
 namespace AMS.Controllers
 {
@@ -154,7 +155,7 @@ namespace AMS.Controllers
                         await _context.SaveChangesAsync();
                     }
 
-                    var _AlertMessage = "User Role Updated Successfully. ID: " + _ManageUserRoles.Id;
+                    var _AlertMessage = Resource.MSG_RoleUpdateSuccess + ": " + _ManageUserRoles.Id;
                     return new JsonResult(_AlertMessage);
                 }
                 else
@@ -184,7 +185,7 @@ namespace AMS.Controllers
                         await _context.SaveChangesAsync();
                     }
 
-                    var _AlertMessage = "User Role Created Successfully. ID: " + _ManageUserRoles.Id;
+                    var _AlertMessage = Resource.MSG_RoleCreateSuccess + ": " + _ManageUserRoles.Id;
                     return new JsonResult(_AlertMessage);
                 }
             }

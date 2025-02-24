@@ -286,6 +286,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Role.
+        /// </summary>
+        public static string AddRole {
+            get {
+                return ResourceManager.GetString("AddRole", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add Sub Department.
         /// </summary>
         public static string AddSubDept {
@@ -1789,6 +1798,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Edit Role.
+        /// </summary>
+        public static string EditRole {
+            get {
+                return ResourceManager.GetString("EditRole", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Edit Sub Department.
         /// </summary>
         public static string EditSubDept {
@@ -2914,6 +2932,33 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to User Role Created Successfully. ID.
+        /// </summary>
+        public static string MSG_RoleCreateSuccess {
+            get {
+                return ResourceManager.GetString("MSG_RoleCreateSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Role has been deleted successfully. Role ID.
+        /// </summary>
+        public static string MSG_RoleDelSuccess {
+            get {
+                return ResourceManager.GetString("MSG_RoleDelSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Role Updated Successfully. ID.
+        /// </summary>
+        public static string MSG_RoleUpdateSuccess {
+            get {
+                return ResourceManager.GetString("MSG_RoleUpdateSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sub Department Created Successfully. ID.
         /// </summary>
         public static string MSG_SubDeptCreateSuccess {
@@ -3585,6 +3630,15 @@ namespace ViewRes {
         public static string Return {
             get {
                 return ResourceManager.GetString("Return", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Role Details.
+        /// </summary>
+        public static string RoleDetails {
+            get {
+                return ResourceManager.GetString("RoleDetails", resourceCulture);
             }
         }
         
