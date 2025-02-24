@@ -11,22 +11,22 @@
                 <input type="hidden" asp-for="CreatedDate" />
                 <input type="hidden" asp-for="CreatedBy" />
                 <div class="form-group">
-                    <label asp-for="AssetId" class="control-label"></label>
+                    <label class="control-label">@Resource.AssetId</label>
                     <input asp-for="AssetId" class="form-control" />
                     <span asp-validation-for="AssetId" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="Action" class="control-label"></label>
+                    <label class="control-label">@Resource.Action</label>
                     <input asp-for="Action" class="form-control" />
                     <span asp-validation-for="Action" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="AssignEmployeeId" class="control-label"></label>
+                    <label class="control-label">@Resource.AssignEmployee</label>
                     <input asp-for="AssignEmployeeId" class="form-control" />
                     <span asp-validation-for="AssignEmployeeId" class="text-danger"></span>
                 </div>                
                 <div class="form-group">
-                    <label asp-for="Note" class="control-label"></label>
+                    <label asp-for="Note" class="control-label">@Resource.Note</label>
                     <input asp-for="Note" class="form-control" />
                     <span asp-validation-for="Note" class="text-danger"></span>
                 </div>                

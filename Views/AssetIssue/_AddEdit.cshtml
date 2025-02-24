@@ -16,7 +16,7 @@
                 <div class="row">
                     <div class="col-6 col-sm-6">
                         <div class="form-group row">
-                            <label asp-for="AssetId" class="col-sm-3 col-form-label"></label>
+                            <label class="col-sm-3 col-form-label">@Resource.AssetId</label>
                             <div class="col-sm-9">
                                 <select asp-for="AssetId" asp-items="@ViewBag.LoadddlAssetName" id="AssetId"
                                     class="form-control" style="width:100%;">
@@ -26,7 +26,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label asp-for="RaisedByEmployeeId" class="col-sm-3 col-form-label"></label>
+                            <label class="col-sm-3 col-form-label">@Resource.RaisedBy</label>
                             <div class="col-sm-9">
                                 <select asp-for="RaisedByEmployeeId" asp-items="@ViewBag.LoadddlEmployee"
                                     id="RaisedByEmployeeId" class="form-control" style="width:100%;">
@@ -36,7 +36,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label asp-for="IssueDescription" class="col-sm-3 col-form-label"></label>
+                            <label class="col-sm-3 col-form-label">@Resource.IssueDescription</label>
                             <div class="col-sm-9">
                                 <textarea asp-for="IssueDescription" class="form-control" id="IssueDescription"
                                     rows="3"></textarea>
@@ -44,7 +44,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label asp-for="Status" class="col-sm-3 col-form-label"></label>
+                            <label class="col-sm-3 col-form-label">@Resource.Status</label>
                             <div class="col-sm-9">
                                 <select asp-for="Status" id="Status" class="form-control" required>
                                     <option value="none" selected>@Resource.SelectStatus</option>
@@ -65,21 +65,21 @@
 
                     <div class="col-6 col-sm-6">
                         <div class="form-group row">
-                            <label asp-for="ExpectedFixDate" class="col-sm-3 col-form-label"></label>
+                            <label class="col-sm-3 col-form-label">@Resource.ExpectedFixDate</label>
                             <div class="col-sm-9">
                                 <input asp-for="ExpectedFixDate" class="form-control" id="ExpectedFixDate" type="Date" />
                                 <span asp-validation-for="ExpectedFixDate" class="text-danger"></span>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label asp-for="ResolvedDate" class="col-sm-3 col-form-label"></label>
+                            <label class="col-sm-3 col-form-label">@Resource.ResolvedDate</label>
                             <div class="col-sm-9">
                                 <input asp-for="ResolvedDate" class="form-control" id="ResolvedDate" type="Date" />
                                 <span asp-validation-for="ResolvedDate" class="text-danger"></span>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label asp-for="Comment" class="col-sm-3 col-form-label"></label>
+                            <label class="col-sm-3 col-form-label">@Resource.Comment</label>
                             <div class="col-sm-9">
                                 <textarea asp-for="Comment" class="form-control" id="Comment" rows="2"></textarea>
                                 <span asp-validation-for="Comment" class="text-danger"></span>
