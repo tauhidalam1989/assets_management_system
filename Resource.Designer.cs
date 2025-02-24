@@ -520,6 +520,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Asset Category Id.
+        /// </summary>
+        public static string AssetCategoryId {
+            get {
+                return ResourceManager.GetString("AssetCategoryId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Asset Category.
         /// </summary>
         public static string AssetCategoryTitle {
