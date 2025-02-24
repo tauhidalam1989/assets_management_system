@@ -1150,6 +1150,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Comment Message.
+        /// </summary>
+        public static string CommentMessage {
+            get {
+                return ResourceManager.GetString("CommentMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Comments.
         /// </summary>
         public static string Comments {

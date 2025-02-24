@@ -45,7 +45,7 @@
     <input asp-for="AssetId" id="AssetId" hidden />
     <div class="col-6 col-sm-6">
         <div class="form-group row">
-            <label asp-for="EmployeeId" class="col-sm-4 col-form-label"></label>
+            <label class="col-sm-4 col-form-label">@Resource.EmployeeId</label>
             <div class="col-sm-8">
                 <select asp-for="EmployeeId" asp-items="@ViewBag.LoadddlEmployee" id="AssetAssignEmployeeId"
                     class="form-control" style="width:100%;">
