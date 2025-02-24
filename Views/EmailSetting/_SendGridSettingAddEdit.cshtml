@@ -1,7 +1,7 @@
 ﻿@model AMS.Models.CommonViewModel.SendGridSettingViewModel
 
 @{
-    ViewData["Title"] = "Edit SMTP Email Setting";
+    ViewData["Title"] = Resource.Edit + Resource.SMTPEmailSetting;
 }
 
 
@@ -12,22 +12,22 @@
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <input type="hidden" asp-for="Id" />
                 <div class="form-group">
-                    <label asp-for="SendGridUser" class="control-label"></label>
+                    <label class="control-label">@Resource.SendGridUser</label>
                     <input asp-for="SendGridUser" class="form-control" />
                     <span asp-validation-for="SendGridUser" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="SendGridKey" class="control-label"></label>
+                    <label class="control-label">@Resource.SendGridKey</label>
                     <input asp-for="SendGridKey" class="form-control" />
                     <span asp-validation-for="SendGridKey" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="FromEmail" class="control-label"></label>
+                    <label class="control-label">@Resource.FromEmail</label>
                     <input asp-for="FromEmail" class="form-control" />
                     <span asp-validation-for="FromEmail" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="FromFullName" class="control-label"></label>
+                    <label class="control-label">@Resource.FromFullName</label>
                     <input asp-for="FromFullName" class="form-control" />
                     <span asp-validation-for="FromFullName" class="text-danger"></span>
                 </div>
@@ -39,8 +39,8 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <input type="submit" value="Save" class="btn btn-info">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <input type="submit" value="@Resource.Save" class="btn btn-info">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">@Resource.Close</button>
                 </div>
             </form>
         </div>

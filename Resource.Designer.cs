@@ -79,11 +79,29 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Access Role List.
+        /// </summary>
+        public static string AccessRoleList {
+            get {
+                return ResourceManager.GetString("AccessRoleList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Action.
         /// </summary>
         public static string Action {
             get {
                 return ResourceManager.GetString("Action", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Action Status.
+        /// </summary>
+        public static string ActionStatus {
+            get {
+                return ResourceManager.GetString("ActionStatus", resourceCulture);
             }
         }
         
@@ -475,6 +493,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Asset Allocation Report.
+        /// </summary>
+        public static string AssetAllocationReport {
+            get {
+                return ResourceManager.GetString("AssetAllocationReport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Asset Assign.
         /// </summary>
         public static string AssetAssign {
@@ -655,6 +682,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Asset QR Code List.
+        /// </summary>
+        public static string AssetQRCodeList {
+            get {
+                return ResourceManager.GetString("AssetQRCodeList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Asset Request.
         /// </summary>
         public static string AssetRequest {
@@ -718,6 +754,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Asset Status Report.
+        /// </summary>
+        public static string AssetStatusReport {
+            get {
+                return ResourceManager.GetString("AssetStatusReport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Asset Sub Category Details.
         /// </summary>
         public static string AssetSubCatDet {
@@ -741,6 +786,15 @@ namespace ViewRes {
         public static string AssetSuccessFulMsg {
             get {
                 return ResourceManager.GetString("AssetSuccessFulMsg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Asset Summary Report.
+        /// </summary>
+        public static string AssetSummaryReport {
+            get {
+                return ResourceManager.GetString("AssetSummaryReport", resourceCulture);
             }
         }
         
@@ -808,6 +862,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Assigned User.
+        /// </summary>
+        public static string AssignedUser {
+            get {
+                return ResourceManager.GetString("AssignedUser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Assignee Asset.
         /// </summary>
         public static string AssigneeAsset {
@@ -858,6 +921,15 @@ namespace ViewRes {
         public static string AuditLogsList {
             get {
                 return ResourceManager.GetString("AuditLogsList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Available.
+        /// </summary>
+        public static string Available {
+            get {
+                return ResourceManager.GetString("Available", resourceCulture);
             }
         }
         
@@ -961,6 +1033,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Browser.
+        /// </summary>
+        public static string Browser {
+            get {
+                return ResourceManager.GetString("Browser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Browser Major.
         /// </summary>
         public static string BrowserMajor {
@@ -1047,6 +1128,15 @@ namespace ViewRes {
         public static string Changes {
             get {
                 return ResourceManager.GetString("Changes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check All.
+        /// </summary>
+        public static string CheckAll {
+            get {
+                return ResourceManager.GetString("CheckAll", resourceCulture);
             }
         }
         
@@ -1312,6 +1402,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Damage.
+        /// </summary>
+        public static string Damage {
+            get {
+                return ResourceManager.GetString("Damage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Dashboard.
         /// </summary>
         public static string Dashboard {
@@ -1393,6 +1492,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Default Identity Options.
+        /// </summary>
+        public static string DefaultIdentityOptions {
+            get {
+                return ResourceManager.GetString("DefaultIdentityOptions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Del.
         /// </summary>
         public static string Del {
@@ -1434,6 +1542,15 @@ namespace ViewRes {
         public static string DepartmentDetails {
             get {
                 return ResourceManager.GetString("DepartmentDetails", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DepartmentId.
+        /// </summary>
+        public static string DepartmentId {
+            get {
+                return ResourceManager.GetString("DepartmentId", resourceCulture);
             }
         }
         
@@ -1510,6 +1627,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Device.
+        /// </summary>
+        public static string Device {
+            get {
+                return ResourceManager.GetString("Device", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Device Model.
         /// </summary>
         public static string DeviceModel {
@@ -1551,6 +1677,24 @@ namespace ViewRes {
         public static string Download_Image {
             get {
                 return ResourceManager.GetString("Download Image", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Download PDF.
+        /// </summary>
+        public static string DownloadPDF {
+            get {
+                return ResourceManager.GetString("DownloadPDF", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Duration.
+        /// </summary>
+        public static string Duration {
+            get {
+                return ResourceManager.GetString("Duration", resourceCulture);
             }
         }
         
@@ -1879,6 +2023,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Expired.
+        /// </summary>
+        public static string Expired {
+            get {
+                return ResourceManager.GetString("Expired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Expiry Date.
         /// </summary>
         public static string ExpiryDate {
@@ -1969,6 +2122,24 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to From Email.
+        /// </summary>
+        public static string FromEmail {
+            get {
+                return ResourceManager.GetString("FromEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to From Full Name.
+        /// </summary>
+        public static string FromFullName {
+            get {
+                return ResourceManager.GetString("FromFullName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Full Name.
         /// </summary>
         public static string Full_Name {
@@ -1992,6 +2163,15 @@ namespace ViewRes {
         public static string Hold {
             get {
                 return ResourceManager.GetString("Hold", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Host.
+        /// </summary>
+        public static string Host {
+            get {
+                return ResourceManager.GetString("Host", resourceCulture);
             }
         }
         
@@ -2077,6 +2257,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to In Use.
+        /// </summary>
+        public static string InUse {
+            get {
+                return ResourceManager.GetString("InUse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Is Approver.
         /// </summary>
         public static string IsApprover {
@@ -2091,6 +2280,15 @@ namespace ViewRes {
         public static string IsAvilable {
             get {
                 return ResourceManager.GetString("IsAvilable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Is Default.
+        /// </summary>
+        public static string IsDefault {
+            get {
+                return ResourceManager.GetString("IsDefault", resourceCulture);
             }
         }
         
@@ -2167,6 +2365,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Latitude.
+        /// </summary>
+        public static string Latitude {
+            get {
+                return ResourceManager.GetString("Latitude", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Leaving Date.
         /// </summary>
         public static string LeavingDate {
@@ -2194,6 +2401,24 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Login History.
+        /// </summary>
+        public static string LoginHistory {
+            get {
+                return ResourceManager.GetString("LoginHistory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Login Time.
+        /// </summary>
+        public static string LoginTime {
+            get {
+                return ResourceManager.GetString("LoginTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Logo.
         /// </summary>
         public static string Logo {
@@ -2212,11 +2437,29 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Logout Time.
+        /// </summary>
+        public static string LogoutTime {
+            get {
+                return ResourceManager.GetString("LogoutTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Long.
         /// </summary>
         public static string Long {
             get {
                 return ResourceManager.GetString("Long", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Longitude.
+        /// </summary>
+        public static string Longitude {
+            get {
+                return ResourceManager.GetString("Longitude", resourceCulture);
             }
         }
         
@@ -2235,6 +2478,15 @@ namespace ViewRes {
         public static string ManagePageAccess {
             get {
                 return ResourceManager.GetString("ManagePageAccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manage Role.
+        /// </summary>
+        public static string ManageRole {
+            get {
+                return ResourceManager.GetString("ManageRole", resourceCulture);
             }
         }
         
@@ -2298,6 +2550,15 @@ namespace ViewRes {
         public static string MiddleName {
             get {
                 return ResourceManager.GetString("MiddleName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Miscellaneous.
+        /// </summary>
+        public static string Miscellaneous {
+            get {
+                return ResourceManager.GetString("Miscellaneous", resourceCulture);
             }
         }
         
@@ -2833,11 +3094,29 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Old Password.
+        /// </summary>
+        public static string OldPassword {
+            get {
+                return ResourceManager.GetString("OldPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Old Values.
         /// </summary>
         public static string OldValues {
             get {
                 return ResourceManager.GetString("OldValues", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Operating System.
+        /// </summary>
+        public static string OperatingSystem {
+            get {
+                return ResourceManager.GetString("OperatingSystem", resourceCulture);
             }
         }
         
@@ -2892,6 +3171,15 @@ namespace ViewRes {
         public static string OutOfStock {
             get {
                 return ResourceManager.GetString("OutOfStock", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page Name.
+        /// </summary>
+        public static string PageName {
+            get {
+                return ResourceManager.GetString("PageName", resourceCulture);
             }
         }
         
@@ -2959,6 +3247,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Port.
+        /// </summary>
+        public static string Port {
+            get {
+                return ResourceManager.GetString("Port", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Preview.
         /// </summary>
         public static string Preview {
@@ -3004,6 +3301,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Print Date.
+        /// </summary>
+        public static string PrintDate {
+            get {
+                return ResourceManager.GetString("PrintDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 1.Professional Profile.
         /// </summary>
         public static string ProfessionalProfile {
@@ -3036,6 +3342,15 @@ namespace ViewRes {
         public static string ProjectName {
             get {
                 return ResourceManager.GetString("ProjectName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Public IP.
+        /// </summary>
+        public static string PublicIP {
+            get {
+                return ResourceManager.GetString("PublicIP", resourceCulture);
             }
         }
         
@@ -3220,6 +3535,24 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Required License Update.
+        /// </summary>
+        public static string RequiredLicenseUpdate {
+            get {
+                return ResourceManager.GetString("RequiredLicenseUpdate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reset.
+        /// </summary>
+        public static string Reset {
+            get {
+                return ResourceManager.GetString("Reset", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Reset Password.
         /// </summary>
         public static string ResetPassword {
@@ -3252,6 +3585,15 @@ namespace ViewRes {
         public static string Return {
             get {
                 return ResourceManager.GetString("Return", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Role Name.
+        /// </summary>
+        public static string RoleName {
+            get {
+                return ResourceManager.GetString("RoleName", resourceCulture);
             }
         }
         
@@ -3319,11 +3661,56 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Select Role.
+        /// </summary>
+        public static string SelectRole {
+            get {
+                return ResourceManager.GetString("SelectRole", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Select Status.
         /// </summary>
         public static string SelectStatus {
             get {
                 return ResourceManager.GetString("SelectStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Send Grid Key.
+        /// </summary>
+        public static string SendGridKey {
+            get {
+                return ResourceManager.GetString("SendGridKey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Send Grid Settings.
+        /// </summary>
+        public static string SendGridSettings {
+            get {
+                return ResourceManager.GetString("SendGridSettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Send Grid User.
+        /// </summary>
+        public static string SendGridUser {
+            get {
+                return ResourceManager.GetString("SendGridUser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Showing Data on Date Range.
+        /// </summary>
+        public static string ShowDataMsg {
+            get {
+                return ResourceManager.GetString("ShowDataMsg", resourceCulture);
             }
         }
         
@@ -3346,11 +3733,47 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SL.
+        /// </summary>
+        public static string SL {
+            get {
+                return ResourceManager.GetString("SL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Slno.
         /// </summary>
         public static string Slno {
             get {
                 return ResourceManager.GetString("Slno", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SMTP Email Setting.
+        /// </summary>
+        public static string SMTPEmailSetting {
+            get {
+                return ResourceManager.GetString("SMTPEmailSetting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SMTP Settings.
+        /// </summary>
+        public static string SMTPSettings {
+            get {
+                return ResourceManager.GetString("SMTPSettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SSL Enabled.
+        /// </summary>
+        public static string SSLEnabled {
+            get {
+                return ResourceManager.GetString("SSLEnabled", resourceCulture);
             }
         }
         
@@ -3409,6 +3832,33 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Submit.
+        /// </summary>
+        public static string Submit {
+            get {
+                return ResourceManager.GetString("Submit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Subscribe.
+        /// </summary>
+        public static string Subscribe {
+            get {
+                return ResourceManager.GetString("Subscribe", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Subscription Request List.
+        /// </summary>
+        public static string SubscriptionRequestList {
+            get {
+                return ResourceManager.GetString("SubscriptionRequestList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Summary.
         /// </summary>
         public static string Summary {
@@ -3445,6 +3895,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to System Role.
+        /// </summary>
+        public static string SystemRole {
+            get {
+                return ResourceManager.GetString("SystemRole", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Table Name.
         /// </summary>
         public static string TableName {
@@ -3463,6 +3922,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Title.
+        /// </summary>
+        public static string Title {
+            get {
+                return ResourceManager.GetString("Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to TML.
         /// </summary>
         public static string TML {
@@ -3477,6 +3945,42 @@ namespace ViewRes {
         public static string To {
             get {
                 return ResourceManager.GetString("To", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total Asset.
+        /// </summary>
+        public static string TotalAsset {
+            get {
+                return ResourceManager.GetString("TotalAsset", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total Assigned.
+        /// </summary>
+        public static string TotalAssigned {
+            get {
+                return ResourceManager.GetString("TotalAssigned", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total Assigned Asset.
+        /// </summary>
+        public static string TotalAssignedAsset {
+            get {
+                return ResourceManager.GetString("TotalAssignedAsset", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total Unassigned Asset.
+        /// </summary>
+        public static string TotalUnassignedAsset {
+            get {
+                return ResourceManager.GetString("TotalUnassignedAsset", resourceCulture);
             }
         }
         
@@ -3684,6 +4188,24 @@ namespace ViewRes {
         public static string UserRole {
             get {
                 return ResourceManager.GetString("UserRole", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Role List.
+        /// </summary>
+        public static string UserRoleList {
+            get {
+                return ResourceManager.GetString("UserRoleList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Roles List.
+        /// </summary>
+        public static string UserRolesList {
+            get {
+                return ResourceManager.GetString("UserRolesList", resourceCulture);
             }
         }
         

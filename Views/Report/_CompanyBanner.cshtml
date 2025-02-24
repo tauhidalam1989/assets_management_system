@@ -1,7 +1,7 @@
 ﻿@model AMS.Models.AssetViewModel.AssetCRUDViewModel
 
 @{
-    ViewData["Title"] = "Asset Summary Report";
+    ViewData["Title"] = Resource.AssetSummaryReport;
 }
 
 <div class="row">
@@ -17,13 +17,13 @@
         <address style="margin-top:1px">
             <strong>@Model.CompanyInfoCRUDViewModel.Name</strong>
             <br>@Model.CompanyInfoCRUDViewModel.Address<br>
-            <abbr><b>Mobile: </b></abbr>@Model.CompanyInfoCRUDViewModel.Phone<br>
-            <abbr><b>Email: </b></abbr>@Model.CompanyInfoCRUDViewModel.Email<br>
-            <abbr><b>Website: </b></abbr>@Model.CompanyInfoCRUDViewModel.Website
+            <abbr><b>@Resource.Mobile : </b></abbr>@Model.CompanyInfoCRUDViewModel.Phone<br>
+            <abbr><b>@Resource.Email : </b></abbr>@Model.CompanyInfoCRUDViewModel.Email<br>
+            <abbr><b>@Resource.Website : </b></abbr>@Model.CompanyInfoCRUDViewModel.Website
         </address>
     </div>
     <div class="col-md-4 text-right">
-        <div class="m-b-15"><strong>Print Date </strong>: @DateTime.Today.ToString("dd MMMM yyyy")</div>
+        <div class="m-b-15"><strong>@Resource.PrintDate </strong>: @DateTime.Today.ToString("dd MMMM yyyy")</div>
     </div>
 </div>
 

@@ -1,7 +1,7 @@
 ﻿@model AMS.Models.ReportViewModel.ManageReportViewModel
 
 @{
-    ViewData["Title"] = "Asset Allocate Report";
+    ViewData["Title"] = Resource.AssetAllocationReport;
 }
 
 <div class="wrapper">
@@ -11,7 +11,7 @@
             <div class="panel-heading">
                 <div class="row">
                     <div class="col-sm-9">
-                        <h5><b>Asset Allocation Report</b></h5>
+                        <h5><b>@Resource.AssetAllocationReport</b></h5>
                     </div>
                     <div class="col-sm-3 text-right hidden-print">
                         <button class="btn btn-info" onclick="printDiv('printableArea', 'ItemTranTable')"><span class="fa fa-print"></span></button>
@@ -22,20 +22,20 @@
             <div class="row hidden-print">
                 <div class="col-sm-3">
                     <div class="form-group">
-                        <label>Start Date</label>
-                        <input type="date" id="StartDate" class="form-control" placeholder="Select Start Date" required>
+                        <label>@Resource.Start_Date</label>
+                        <input type="date" id="StartDate" class="form-control" placeholder="@Resource.Select @Resource.Start_Date" required>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="form-group">
-                        <label>End Date</label>
-                        <input type="date" id="EndDate" class="form-control" placeholder="Select Start Date" required>
+                        <label>@Resource.End_Date</label>
+                        <input type="date" id="EndDate" class="form-control" placeholder="@Resource.Select @Resource.End_Date" required>
                     </div>
                 </div>
                 <div class="col-sm-2">
                     <div class="form-group">
                         <label><span></span></label>
-                        <input type="submit" value="Submit"
+                        <input type="submit" value="@Resource.Submit"
                                onclick="AssetAllocationReportByDate(document.getElementById('StartDate').value,document.getElementById('EndDate').value)"
                                class="form-control btn btn-danger">
                     </div>
@@ -43,7 +43,7 @@
                 <div class="col-sm-2">
                     <div class="form-group">
                         <label><span></span></label>
-                        <input type="button" class="form-control btn btn-success" value="Reset" onclick="AssetAllocationReport()" />
+                        <input type="button" class="form-control btn btn-success" value="@Resource.Reset" onclick="AssetAllocationReport()" />
                     </div>
                 </div>
 
@@ -52,7 +52,7 @@
             </div>
             <div class="col-sm-12">
                 <div class="form-group">
-                    <label>Showing Data on Date Range: @ViewBag.StartDate to @ViewBag.EndDate</label>
+                    <label>@Resource.ShowDataMsg : @ViewBag.StartDate to @ViewBag.EndDate</label>
                 </div>
             </div>
 
@@ -61,9 +61,9 @@
                 <table class="ItemTranTable" style="width:100%;" border="1">
                     <thead>
                         <tr>
-                            <th>SL</th>
-                            <th>Assigned User</th>
-                            <th>Total Assigned</th>
+                            <th>@Resource.SL</th>
+                            <th>@Resource.AssignedUser</th>
+                            <th>@Resource.TotalAssigned</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -103,13 +103,13 @@
                     var _TotalUnassigned = sumTotalAsset - _TotalAssigned;
                 }
 
-                <h5>Summary</h5>
+                <h5>@Resource.Summary</h5>
                 <div class="row">
                     <div class="col-sm-6">
                         <table class="ItemTranTable">
-                            <tr><th style="width:50%;">Total Asset:</th><td>@sumTotalAsset</td></tr>
-                            <tr><th>Total Assigned Asset:</th><td>@_TotalAssigned</td></tr>
-                            <tr><th>Total Unassigned Asset:</th><td>@_TotalUnassigned</td></tr>
+                            <tr><th style="width:50%;">@Resource.TotalAsset:</th><td>@sumTotalAsset</td></tr>
+                            <tr><th>@Resource.TotalAssignedAsset:</th><td>@_TotalAssigned</td></tr>
+                            <tr><th>@Resource.TotalUnassignedAsset:</th><td>@_TotalUnassigned</td></tr>
                         </table>
                     </div>
                     <div class="col-sm-6">

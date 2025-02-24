@@ -1,9 +1,9 @@
 ﻿@model AMS.Models.ManageUserRolesVM.ManageUserRolesCRUDViewModel
 @{
-    ViewData["Title"] = "Manage Role";
+    ViewData["Title"] = Resource.ManageRole;
 }
 
-<input type="text" id="inputRoleSearch" onkeyup="SearchInTable()" placeholder="Search for Page Name.."
+<input type="text" id="inputRoleSearch" onkeyup="SearchInTable()" placeholder="@Resource.Search"
     title="Type in a name">
 <div class="panel panel-info">
     <form id="frmManageRole">
@@ -12,7 +12,7 @@
                 <div class="col-sm-2">
                 </div>
                 <div class="col-sm-10 pull-left">
-                    <input type="checkbox" id="checkAll" /> <b>Check All</b>
+                    <input type="checkbox" id="checkAll" /> <b>@Resource.CheckAll</b>
                 </div>
             </div>
             <br />

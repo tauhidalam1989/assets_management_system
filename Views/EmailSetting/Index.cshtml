@@ -1,6 +1,6 @@
 ﻿@model AMS.Models.CommonViewModel.EmailSettingViewModel
 @{
-    ViewData["Title"] = "User Role List";
+    ViewData["Title"] = Resource.UserRoleList;
 }
 
 <div class="wrapper">
@@ -10,34 +10,34 @@
         </div>
         <div class="panel-body scroll panel-height">
             <div class="panel panel-info col-lg-8">
-                <div class="panel-heading"><h4><b>SMTP Settings</b></h4></div>
+                <div class="panel-heading"><h4><b>@Resource.SMTPSettings</b></h4></div>
                 <br />
                 <table class="CustomBlueTable" border="1" style=" width:100%;margin:1px auto;">
                     <tr>
-                        <th>User Name</th>
+                        <th>@Resource.UserName</th>
                         <td>@Model.SMTPEmailSettingViewModel.UserName</td>
                     </tr>
                     <tr>
-                        <th>Host(SMTP)</th>
+                        <th>@Resource.Host</th>
                         <td>@Model.SMTPEmailSettingViewModel.Host</td>
                     </tr>
                     <tr>
-                        <th>Port(SMTP)</th>
+                        <th>@Resource.Port</th>
                         <td>@Model.SMTPEmailSettingViewModel.Port</td>
                     </tr>
                     <tr>
-                        <th>From Email</th>
+                        <th>@Resource.FromEmail</th>
                         <td>@Model.SMTPEmailSettingViewModel.FromEmail</td>
                     </tr>
                     <tr>
-                        <th>From Full Name</th>
+                        <th>@Resource.FromFullName</th>
                         <td>@Model.SMTPEmailSettingViewModel.FromFullName</td>
                     </tr>
                     <tr>
                         <th></th>
                         <td>
-                            <input class="btn btn-sm btn-danger" type="button" value="Edit" onclick="SMTPEmailSettingAddEdit(@Model.SMTPEmailSettingViewModel.Id)" /> ||
-                            <input class="btn btn-sm btn-danger" type="button" value="Details" onclick="SMTPEmailSettingDetails(@Model.SMTPEmailSettingViewModel.Id)" />
+                            <input class="btn btn-sm btn-danger" type="button" value="@Resource.Edit" onclick="SMTPEmailSettingAddEdit(@Model.SMTPEmailSettingViewModel.Id)" /> ||
+                            <input class="btn btn-sm btn-danger" type="button" value="@Resource.Details" onclick="SMTPEmailSettingDetails(@Model.SMTPEmailSettingViewModel.Id)" />
                         </td>
                     </tr>
                 </table>
@@ -48,30 +48,30 @@
 
             <br />
             <div class="panel panel-info col-lg-8">
-                <div class="panel-heading"><h4><b>SendGrid Settings</b></h4></div>
+                <div class="panel-heading"><h4><b>@Resource.SendGridSettings</b></h4></div>
                 <br />
                 <table class="CustomBlueTable" border="1" style=" width:100%;margin:1px auto;">
                     <tr>
-                        <th>SendGrid User</th>
+                        <th>@Resource.SendGridUser</th>
                         <td>@Model.SendGridSettingViewModel.SendGridUser</td>
                     </tr>
                     <tr>
-                        <th>SendGrid Key</th>
+                        <th>@Resource.SendGridKey</th>
                         <td>@Model.SendGridSettingViewModel.SendGridKey</td>
                     </tr>
                     <tr>
-                        <th>From Email</th>
+                        <th>@Resource.FromEmail</th>
                         <td>@Model.SendGridSettingViewModel.FromEmail</td>
                     </tr>
                     <tr>
-                        <th>From Full Name</th>
+                        <th>@Resource.FromFullName</th>
                         <td>@Model.SendGridSettingViewModel.FromFullName</td>
                     </tr>
                     <tr>
                         <th></th>
                         <td>
-                            <input class="btn btn-sm btn-danger" type="button" value="Edit" onclick="SendGridSettingAddEdit(@Model.SendGridSettingViewModel.Id)" /> ||
-                            <input class="btn btn-sm btn-danger" type="button" value="Details" onclick="SendGridSettingDetails(@Model.SendGridSettingViewModel.Id)" />
+                            <input class="btn btn-sm btn-danger" type="button" value="@Resource.Edit" onclick="SendGridSettingAddEdit(@Model.SendGridSettingViewModel.Id)" /> ||
+                            <input class="btn btn-sm btn-danger" type="button" value="@Resource.Details" onclick="SendGridSettingDetails(@Model.SendGridSettingViewModel.Id)" />
                         </td>
                     </tr>
                 </table>

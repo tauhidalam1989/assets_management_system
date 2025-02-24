@@ -1,7 +1,7 @@
 ﻿@model AMS.Models.ReportViewModel.ManageReportViewModel
 
 @{
-    ViewData["Title"] = "Asset Status Report";
+    ViewData["Title"] = Resource.AssetStatusReport;
 }
 
 <div class="wrapper">
@@ -11,7 +11,7 @@
             <div class="panel-heading">
                 <div class="row">
                     <div class="col-sm-9">
-                        <h5><b>Asset Status Report</b></h5>
+                        <h5><b>@Resource.AssetStatusReport</b></h5>
                     </div>
                     <div class="col-sm-3 text-right hidden-print">
                         <button class="btn btn-info" onclick="printDiv('printableArea','ItemTranTable')"><span class="fa fa-print"></span></button>
@@ -22,20 +22,20 @@
             <div class="row hidden-print">
                 <div class="col-sm-3">
                     <div class="form-group">
-                        <label>Start Date</label>
-                        <input type="date" id="StartDate" class="form-control" placeholder="Select Start Date" required>
+                        <label>@Resource.Start_Date</label>
+                        <input type="date" id="StartDate" class="form-control" placeholder="@Resource.Select @Resource.Start_Date" required>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="form-group">
-                        <label>End Date</label>
-                        <input type="date" id="EndDate" class="form-control" placeholder="Select Start Date" required>
+                        <label>@Resource.End_Date</label>
+                        <input type="date" id="EndDate" class="form-control" placeholder="@Resource.Select @Resource.End_Date" required>
                     </div>
                 </div>
                 <div class="col-sm-2">
                     <div class="form-group">
                         <label><span></span></label>
-                        <input type="submit" value="Submit"
+                        <input type="submit" value="@Resource.Submit"
                                onclick="AssetStatusReportByDate(document.getElementById('StartDate').value,document.getElementById('EndDate').value)"
                                class="form-control btn btn-danger">
                     </div>
@@ -43,7 +43,7 @@
                 <div class="col-sm-2">
                     <div class="form-group">
                         <label><span></span></label>
-                        <input type="button" class="form-control btn btn-success" value="Reset" onclick="AssetStatusReport()" />
+                        <input type="button" class="form-control btn btn-success" value="@Resource.Reset" onclick="AssetStatusReport()" />
                     </div>
                 </div>
 
@@ -52,25 +52,24 @@
             </div>
             <div class="col-sm-12">
                 <div class="form-group">
-                    <label>Showing Data on Date Range: @ViewBag.StartDate to @ViewBag.EndDate</label>
+                    <label>@Resource.ShowDataMsg : @ViewBag.StartDate to @ViewBag.EndDate</label>
                 </div>
             </div>
 
-            <h5>Total Asset: @Model.AssetStatusViewModel.Total</h5>
+            <h5>@Resource.TotalAsset: @Model.AssetStatusViewModel.Total</h5>
             <hr />
             <div class="panel-body scroll panel-height">
                 <table class="ItemTranTable" style="width:100%;" border="1">
                     <thead>
                         <tr>
-                            <th>New</th>
-                            <th>In Use</th>
-                            <th>Available</th>
-                            <th>Damage</th>
-
-                            <th>Return</th>
-                            <th>Expired</th>
-                            <th>Required License Update</th>
-                            <th>Miscellaneous</th>
+                            <th>@Resource.New</th>
+                            <th>@Resource.InUse</th>
+                            <th>@Resource.Available</th>
+                            <th>@Resource.Damage</th>
+                            <th>@Resource.Return</th>
+                            <th>@Resource.Expired</th>
+                            <th>@Resource.RequiredLicenseUpdate</th>
+                            <th>@Resource.Miscellaneous</th>
                         </tr>
                     </thead>
                     <tbody>

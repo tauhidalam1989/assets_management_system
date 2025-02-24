@@ -1,9 +1,9 @@
 ﻿@model AMS.Models.ManageUserRolesVM.UpdateRoleViewModel
 @{
-    ViewData["Title"] = "Manage Role";
+    ViewData["Title"] = Resource.ManageRole;
 }
 
-<input type="text" id="myInput" onkeyup="SearchInTable()" placeholder="Search for Page Name.." title="Type in a name">
+<input type="text" id="myInput" onkeyup="SearchInTable()" placeholder="@Resource.Search" title="Type in a name">
 <div class="panel panel-info">
     <form id="frmManageRole">
         <input type="hidden" id="ApplicationUserId" asp-for="ApplicationUserId" />
@@ -14,7 +14,7 @@
                 <div class="col-sm-2">
                 </div>
                 <div class="col-sm-10 pull-left">
-                    <input type="checkbox" id="checkAll" /> <b>Check All</b>
+                    <input type="checkbox" id="checkAll" /> <b>Resource.CheckAll</b>
                 </div>
             </div>
             <br />
@@ -28,8 +28,8 @@
                             <table class="CustomBlueTable" id="myTable1" border="1">
                                 <thead>
                                     <tr>
-                                        <th>SL</th>
-                                        <th>Page Name</th>
+                                        <th>@Resource.SL</th>
+                                        <th>@Resource.PageName</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -69,8 +69,8 @@
                             <table class="CustomBlueTable" id="myTable2" border="1">
                                 <thead>
                                     <tr>
-                                        <th>SL</th>
-                                        <th>Page Name</th>
+                                        <th>@Resource.SL</th>
+                                        <th>@Resource.PageName</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -110,8 +110,8 @@
                             <table class="CustomBlueTable" id="myTable3" border="1">
                                 <thead>
                                     <tr>
-                                        <th>SL</th>
-                                        <th>Page Name</th>
+                                        <th>@Resource.SL</th>
+                                        <th>@Resource.PageName</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -147,10 +147,12 @@
                             </table>
 
                             <div class="card-footer">
-                                <input type="button" id="btnUpdateRole" value="Update" onclick="UpdateRole()"
+                                <input type="button" id="btnUpdateRole" value="@Resource.Update" onclick="UpdateRole()"
                                     class="btn btn-primary" style="width:auto" />
                                 <button type="button" id="btnClose" class="btn btn-danger"
-                                    data-dismiss="modal">Close</button>
+                                        data-dismiss="modal">
+                                    @Resource.Close
+                                </button>
                             </div>
                         </div>
                     }

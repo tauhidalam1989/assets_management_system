@@ -1,61 +1,61 @@
 ﻿@model AMS.Models.CommonViewModel.SMTPEmailSettingViewModel
 @{
-    ViewData["Title"] = "SMTP Email Setting";
+    ViewData["Title"] = Resource.SMTPEmailSetting;
 }
 
 <div class="row">
     <div class="col-md-12">
         <table class="CustomBlueTable" border="1" style=" width:100%;margin:1px auto;">
             <tr>
-                <th>ID</th>
+                <th>@Resource.Id</th>
                 <td>@Model.Id</td>
             </tr>
             <tr>
-                <th>User Name</th>
+                <th>@Resource.UserName</th>
                 <td>@Model.UserName</td>
             </tr>
             <tr>
-                <th>Password</th>
+                <th>@Resource.Password</th>
                 <td>@Model.Password</td>
             </tr>
             <tr>
-                <th>Host(SMTP)</th>
+                <th>@Resource.Host</th>
                 <td>@Model.Host</td>
             </tr>
             <tr>
-                <th>Port(SMTP)</th>
+                <th>@Resource.Port</th>
                 <td>@Model.Port</td>
             </tr>
             <tr>
-                <th>SSL Enabled</th>
+                <th>@Resource.SSLEnabled</th>
                 <td>@Model.IsSSL</td>
             </tr>
             <tr>
-                <th>From Email</th>
+                <th>@Resource.FromEmail</th>
                 <td>@Model.FromEmail</td>
             </tr>
             <tr>
-                <th>From Full Name</th>
+                <th>@Resource.FromFullName</th>
                 <td>@Model.FromFullName</td>
             </tr>
             <tr>
-                <th>Is Default</th>
+                <th>@Resource.IsDefault</th>
                 <td>@Model.IsDefault</td>
             </tr>
             <tr>
-                <th>Created Date</th>
+                <th>@Resource.CreatedDate</th>
                 <td>@Model.CreatedDate</td>
             </tr>
             <tr>
-                <th>Modified Date</th>
+                <th>@Resource.ModifiedDate</th>
                 <td>@Model.ModifiedDate</td>
             </tr>
             <tr>
-                <th>Created By</th>
+                <th>@Resource.CreatedBy</th>
                 <td>@Model.CreatedBy</td>
             </tr>
             <tr>
-                <th>Modified By</th>
+                <th>@Resource.ModifiedBy</th>
                 <td>@Model.ModifiedBy</td>
             </tr>
         </table>

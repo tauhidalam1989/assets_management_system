@@ -1,7 +1,7 @@
 @model AMS.Models.SubscriptionRequestViewModel.SubscriptionRequestCRUDViewModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = @Resource.Create;
 }
 
 <div>
@@ -13,18 +13,18 @@
                 <input type="hidden" asp-for="CreatedDate" />
                 <input type="hidden" asp-for="CreatedBy" />
                 <div class="form-group">
-                    <label asp-for="Email" class="control-label"></label>
+                    <label class="control-label">@Resource.Email</label>
                     <input asp-for="Email" class="form-control" />
                     <span asp-validation-for="Email" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="TimeZone" class="control-label"></label>
+                    <label class="control-label">@Resource.TimeZone</label>
                     <input asp-for="TimeZone" class="form-control" />
                     <span asp-validation-for="TimeZone" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <input type="button" id="btnSave" value="Save" onclick="SaveSubscriptionRequest()" class="btn btn-info">
-                    <button type="button" id="btnClose" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <input type="button" id="btnSave" value="@Resource.Save" onclick="SaveSubscriptionRequest()" class="btn btn-info">
+                    <button type="button" id="btnClose" class="btn btn-danger" data-dismiss="modal">@Resource.Close</button>
                 </div>
             </form>
         </div>

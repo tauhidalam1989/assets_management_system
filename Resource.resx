@@ -1344,4 +1344,178 @@
   <data name="WarrantyInMonth" xml:space="preserve">
     <value>Warranty In Month</value>
   </data>
+  <data name="AccessRoleList" xml:space="preserve">
+    <value>Access Role List</value>
+  </data>
+  <data name="ActionStatus" xml:space="preserve">
+    <value>Action Status</value>
+  </data>
+  <data name="AssetAllocationReport" xml:space="preserve">
+    <value>Asset Allocation Report</value>
+  </data>
+  <data name="AssetQRCodeList" xml:space="preserve">
+    <value>Asset QR Code List</value>
+  </data>
+  <data name="AssetStatusReport" xml:space="preserve">
+    <value>Asset Status Report</value>
+  </data>
+  <data name="AssetSummaryReport" xml:space="preserve">
+    <value>Asset Summary Report</value>
+  </data>
+  <data name="AssignedUser" xml:space="preserve">
+    <value>Assigned User</value>
+  </data>
+  <data name="Available" xml:space="preserve">
+    <value>Available</value>
+  </data>
+  <data name="Browser" xml:space="preserve">
+    <value>Browser</value>
+  </data>
+  <data name="CheckAll" xml:space="preserve">
+    <value>Check All</value>
+  </data>
+  <data name="Damage" xml:space="preserve">
+    <value>Damage</value>
+  </data>
+  <data name="DefaultIdentityOptions" xml:space="preserve">
+    <value>Default Identity Options</value>
+  </data>
+  <data name="DepartmentId" xml:space="preserve">
+    <value>DepartmentId</value>
+  </data>
+  <data name="Device" xml:space="preserve">
+    <value>Device</value>
+  </data>
+  <data name="DownloadPDF" xml:space="preserve">
+    <value>Download PDF</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>Duration</value>
+  </data>
+  <data name="Expired" xml:space="preserve">
+    <value>Expired</value>
+  </data>
+  <data name="FromEmail" xml:space="preserve">
+    <value>From Email</value>
+  </data>
+  <data name="FromFullName" xml:space="preserve">
+    <value>From Full Name</value>
+  </data>
+  <data name="Host" xml:space="preserve">
+    <value>Host</value>
+  </data>
+  <data name="InUse" xml:space="preserve">
+    <value>In Use</value>
+  </data>
+  <data name="IsDefault" xml:space="preserve">
+    <value>Is Default</value>
+  </data>
+  <data name="Latitude" xml:space="preserve">
+    <value>Latitude</value>
+  </data>
+  <data name="LoginHistory" xml:space="preserve">
+    <value>Login History</value>
+  </data>
+  <data name="LoginTime" xml:space="preserve">
+    <value>Login Time</value>
+  </data>
+  <data name="LogoutTime" xml:space="preserve">
+    <value>Logout Time</value>
+  </data>
+  <data name="Longitude" xml:space="preserve">
+    <value>Longitude</value>
+  </data>
+  <data name="ManageRole" xml:space="preserve">
+    <value>Manage Role</value>
+  </data>
+  <data name="Miscellaneous" xml:space="preserve">
+    <value>Miscellaneous</value>
+  </data>
+  <data name="OldPassword" xml:space="preserve">
+    <value>Old Password</value>
+  </data>
+  <data name="OperatingSystem" xml:space="preserve">
+    <value>Operating System</value>
+  </data>
+  <data name="PageName" xml:space="preserve">
+    <value>Page Name</value>
+  </data>
+  <data name="Port" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="PrintDate" xml:space="preserve">
+    <value>Print Date</value>
+  </data>
+  <data name="PublicIP" xml:space="preserve">
+    <value>Public IP</value>
+  </data>
+  <data name="RequiredLicenseUpdate" xml:space="preserve">
+    <value>Required License Update</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="RoleName" xml:space="preserve">
+    <value>Role Name</value>
+  </data>
+  <data name="SelectRole" xml:space="preserve">
+    <value>Select Role</value>
+  </data>
+  <data name="SendGridKey" xml:space="preserve">
+    <value>Send Grid Key</value>
+  </data>
+  <data name="SendGridSettings" xml:space="preserve">
+    <value>Send Grid Settings</value>
+  </data>
+  <data name="SendGridUser" xml:space="preserve">
+    <value>Send Grid User</value>
+  </data>
+  <data name="ShowDataMsg" xml:space="preserve">
+    <value>Showing Data on Date Range</value>
+  </data>
+  <data name="SL" xml:space="preserve">
+    <value>SL</value>
+  </data>
+  <data name="SMTPEmailSetting" xml:space="preserve">
+    <value>SMTP Email Setting</value>
+  </data>
+  <data name="SMTPSettings" xml:space="preserve">
+    <value>SMTP Settings</value>
+  </data>
+  <data name="SSLEnabled" xml:space="preserve">
+    <value>SSL Enabled</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="Subscribe" xml:space="preserve">
+    <value>Subscribe</value>
+  </data>
+  <data name="SubscriptionRequestList" xml:space="preserve">
+    <value>Subscription Request List</value>
+  </data>
+  <data name="SystemRole" xml:space="preserve">
+    <value>System Role</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="TotalAsset" xml:space="preserve">
+    <value>Total Asset</value>
+  </data>
+  <data name="TotalAssigned" xml:space="preserve">
+    <value>Total Assigned</value>
+  </data>
+  <data name="TotalAssignedAsset" xml:space="preserve">
+    <value>Total Assigned Asset</value>
+  </data>
+  <data name="TotalUnassignedAsset" xml:space="preserve">
+    <value>Total Unassigned Asset</value>
+  </data>
+  <data name="UserRoleList" xml:space="preserve">
+    <value>User Role List</value>
+  </data>
+  <data name="UserRolesList" xml:space="preserve">
+    <value>User Roles List</value>
+  </data>
 </root>

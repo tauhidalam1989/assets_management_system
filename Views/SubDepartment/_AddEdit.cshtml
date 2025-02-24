@@ -14,7 +14,7 @@
                 <input type="hidden" asp-for="CreatedBy" />
 
                 <div class="form-group row">
-                    <label asp-for="DepartmentId" class="col-sm-3 col-form-label"></label>
+                    <label class="col-sm-3 col-form-label">@Resource.DepartmentId</label>
                     <div class="col-sm-9">
                         <select asp-for="DepartmentId" asp-items="@ViewBag._LoadddlDepartment" id="DepartmentId"
                             class="form-control" style="width:100%;">
@@ -25,14 +25,14 @@
                 </div>
 
                 <div class="form-group row">
-                    <label asp-for="Name" class="col-sm-3 col-form-label"></label>
+                    <label class="col-sm-3 col-form-label">@Resource.Name</label>
                     <div class="col-sm-9">
                         <input asp-for="Name" class="form-control" />
                         <span asp-validation-for="Name" class="text-danger"></span>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label asp-for="Description" class="col-sm-3 col-form-label"></label>
+                    <label class="col-sm-3 col-form-label">@Resource.Description</label>
                     <div class="col-sm-9">
                         <input asp-for="Description" class="form-control" />
                         <span asp-validation-for="Description" class="text-danger"></span>

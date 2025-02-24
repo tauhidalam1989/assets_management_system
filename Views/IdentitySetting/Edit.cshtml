@@ -1,13 +1,13 @@
 ﻿@model AMS.Models.CommonViewModel.DefaultIdentityOptionsCRUDViewModel
 @{
-    ViewData["Title"] = "Default Identity Options";
+    ViewData["Title"] = Resource.DefaultIdentityOptions;
 }
 
 <div class="wrapper">
     <div class="panel panel-hash">
         <div class="panel-heading">
             <div style="display: inline-block;">
-                <h4 class="pull-right"><b>Default Identity Options</b></h4>
+                <h4 class="pull-right"><b>@Resource.DefaultIdentityOptions</b></h4>
             </div>
         </div>
         <div class="panel-body scroll panel-height">
@@ -150,13 +150,13 @@
                     <tr>
                         <th></th>
                         <td>
-                            <input type="submit" value="Update" class="btn btn-danger" />
+                            <input type="submit" value="@Resource.Update" class="btn btn-danger" />
                         </td>
                     </tr>
                 </table>
             </form>
             <br />
-            <a asp-action="Index">Back: Default Identity Options</a>
+            <a asp-action="Index">@Resource.Back : @Resource.DefaultIdentityOptions</a>
         </div>
     </div>
 </div>

@@ -1,13 +1,13 @@
 ﻿@model AMS.Models.CommonViewModel.DefaultIdentityOptionsCRUDViewModel
 @{
-    ViewData["Title"] = "Default Identity Options";
+    ViewData["Title"] = Resource.DefaultIdentityOptions;
 }
 
 <div class="wrapper">
     <div class="panel panel-hash">
         <div class="panel-heading">
             <div style="display: inline-block;">
-                <h4 class="pull-right"><b>Default Identity Options</b></h4>
+                <h4 class="pull-right"><b>@Resource.DefaultIdentityOptions</b></h4>
             </div>
         </div>
         <partial name="~/Views/UIComponents/_bootstrapAlert.cshtml" />
@@ -17,7 +17,7 @@
                     <th>
                     </th>
                     <td>
-                        <a class="btn btn-danger btn-sm" asp-action="Edit">Edit</a>
+                        <a class="btn btn-danger btn-sm" asp-action="Edit">@Resource.Edit</a>
                     </td>
                 </tr>
 

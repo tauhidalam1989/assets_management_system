@@ -2,7 +2,7 @@
 
 <div class="row">
     <div class="col-sm-9">
-        <h5><b>Print Barcode</b></h5>
+        <h5><b>@Resource.Print @Resource.Barcode</b></h5>
     </div>
     <div class="col-sm-3 text-right hidden-print">
         <button class="btn btn-dark" onclick="printDiv('printableArea','CustomBlueTable')"><span class="fa fa-print"></span></button>
@@ -14,9 +14,9 @@
         <table class="CustomBlueTable" style="width:100%;" border="1">
             <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Barcode</th>
+                    <th>@Resource.Id</th>
+                    <th>@Resource.Name</th>
+                    <th>@Resource.Barcode</th>
                     <th></th>
                 </tr>
             </thead>
@@ -29,7 +29,7 @@
                     <td id="@item.Id"><img class="imgCustom300px" src="@item.Barcode" alt="" /></td>
                     <td>
                         <button class="btn btn-success" onclick="printBarcodeDiv('@item.Id')"><span class="fa fa-print"></span></button>
-                        <button class="btn btn-sm btn-secondary" onclick="printBarcodeDivThurmal('@item.Barcode')"><span class="">TML</span></button>
+                            <button class="btn btn-sm btn-secondary" onclick="printBarcodeDivThurmal('@item.Barcode')"><span class="">@Resource.TML</span></button>
                     </td>
                 </tr>}
             </tbody>
@@ -41,9 +41,9 @@
             <table class="CustomBlueTable" style="width:100%;" border="1">
             <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Barcode</th>
+                        <th>@Resource.Id</th>
+                        <th>@Resource.Name</th>
+                        <th>@Resource.Barcode</th>
                     <th></th>
                 </tr>
             </thead>
@@ -56,7 +56,7 @@
                     <td id="@item.Id"><img class="imgCustom300px" src="@item.Barcode" alt="" /></td>
                     <td>
                         <button class="btn btn-success" onclick="printBarcodeDiv('@item.Barcode')"><span class="fa fa-print"></span></button>
-                        <button class="btn btn-sm btn-secondary" onclick="printBarcodeDivThurmal('@item.Barcode')"><span class="">TML</span></button>
+                                <button class="btn btn-sm btn-secondary" onclick="printBarcodeDivThurmal('@item.Barcode')"><span class="">@Resource.TML</span></button>
                     </td>
                 </tr>
                 }

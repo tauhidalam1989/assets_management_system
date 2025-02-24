@@ -1323,4 +1323,178 @@
   <data name="WarrantyInMonth" xml:space="preserve">
     <value>الضمان بالشهر</value>
   </data>
+  <data name="AccessRoleList" xml:space="preserve">
+    <value>قائمة أدوار الوصول</value>
+  </data>
+  <data name="ActionStatus" xml:space="preserve">
+    <value>حالة الإجراء</value>
+  </data>
+  <data name="AssetAllocationReport" xml:space="preserve">
+    <value>تقرير تخصيص الأصول</value>
+  </data>
+  <data name="AssetQRCodeList" xml:space="preserve">
+    <value>قائمة رموز QR للأصول</value>
+  </data>
+  <data name="AssetStatusReport" xml:space="preserve">
+    <value>تقرير حالة الأصول</value>
+  </data>
+  <data name="AssetSummaryReport" xml:space="preserve">
+    <value>تقرير ملخص الأصول</value>
+  </data>
+  <data name="AssignedUser" xml:space="preserve">
+    <value>المستخدم المعين</value>
+  </data>
+  <data name="Available" xml:space="preserve">
+    <value>متاح</value>
+  </data>
+  <data name="Browser" xml:space="preserve">
+    <value>متصفح</value>
+  </data>
+  <data name="CheckAll" xml:space="preserve">
+    <value>تحديد الكل</value>
+  </data>
+  <data name="Damage" xml:space="preserve">
+    <value>ضرر</value>
+  </data>
+  <data name="DefaultIdentityOptions" xml:space="preserve">
+    <value>خيارات الهوية الافتراضية</value>
+  </data>
+  <data name="DepartmentId" xml:space="preserve">
+    <value>معرف القسم</value>
+  </data>
+  <data name="Device" xml:space="preserve">
+    <value>جهاز</value>
+  </data>
+  <data name="DownloadPDF" xml:space="preserve">
+    <value>تحميل PDF</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>مدة</value>
+  </data>
+  <data name="Expired" xml:space="preserve">
+    <value>منتهٍ</value>
+  </data>
+  <data name="FromEmail" xml:space="preserve">
+    <value>البريد الإلكتروني من</value>
+  </data>
+  <data name="FromFullName" xml:space="preserve">
+    <value>الاسم الكامل من</value>
+  </data>
+  <data name="Host" xml:space="preserve">
+    <value>مستضيف</value>
+  </data>
+  <data name="InUse" xml:space="preserve">
+    <value>قيد الاستخدام</value>
+  </data>
+  <data name="IsDefault" xml:space="preserve">
+    <value>هو الافتراضي</value>
+  </data>
+  <data name="Latitude" xml:space="preserve">
+    <value>خط العرض</value>
+  </data>
+  <data name="LoginHistory" xml:space="preserve">
+    <value>سجل تسجيل الدخول</value>
+  </data>
+  <data name="LoginTime" xml:space="preserve">
+    <value>وقت تسجيل الدخول</value>
+  </data>
+  <data name="LogoutTime" xml:space="preserve">
+    <value>وقت تسجيل الخروج</value>
+  </data>
+  <data name="Longitude" xml:space="preserve">
+    <value>خط الطول</value>
+  </data>
+  <data name="ManageRole" xml:space="preserve">
+    <value>إدارة الدور</value>
+  </data>
+  <data name="Miscellaneous" xml:space="preserve">
+    <value>متنوعات</value>
+  </data>
+  <data name="OldPassword" xml:space="preserve">
+    <value>كلمة المرور القديمة</value>
+  </data>
+  <data name="OperatingSystem" xml:space="preserve">
+    <value>نظام التشغيل</value>
+  </data>
+  <data name="PageName" xml:space="preserve">
+    <value>اسم الصفحة</value>
+  </data>
+  <data name="Port" xml:space="preserve">
+    <value>منفذ</value>
+  </data>
+  <data name="PrintDate" xml:space="preserve">
+    <value>تاريخ الطباعة</value>
+  </data>
+  <data name="PublicIP" xml:space="preserve">
+    <value>عنوان IP العام</value>
+  </data>
+  <data name="RequiredLicenseUpdate" xml:space="preserve">
+    <value>تحديث الرخصة المطلوبة</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>إعادة تعيين</value>
+  </data>
+  <data name="RoleName" xml:space="preserve">
+    <value>اسم الدور</value>
+  </data>
+  <data name="SelectRole" xml:space="preserve">
+    <value>اختر الدور</value>
+  </data>
+  <data name="SendGridKey" xml:space="preserve">
+    <value>مفتاح</value>
+  </data>
+  <data name="SendGridSettings" xml:space="preserve">
+    <value>إعدادات SendGrid</value>
+  </data>
+  <data name="SendGridUser" xml:space="preserve">
+    <value>مستخدم</value>
+  </data>
+  <data name="ShowDataMsg" xml:space="preserve">
+    <value>عرض البيانات ضمن نطاق التاريخ</value>
+  </data>
+  <data name="SL" xml:space="preserve">
+    <value>SL</value>
+  </data>
+  <data name="SMTPEmailSetting" xml:space="preserve">
+    <value>تحرير إعدادات بريد</value>
+  </data>
+  <data name="SMTPSettings" xml:space="preserve">
+    <value>إعدادات SMTP</value>
+  </data>
+  <data name="SSLEnabled" xml:space="preserve">
+    <value>تفعيل SSL</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>إرسال</value>
+  </data>
+  <data name="Subscribe" xml:space="preserve">
+    <value>اشترك</value>
+  </data>
+  <data name="SubscriptionRequestList" xml:space="preserve">
+    <value>قائمة طلبات الاشتراك</value>
+  </data>
+  <data name="SystemRole" xml:space="preserve">
+    <value>دور النظام</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="TotalAsset" xml:space="preserve">
+    <value>إجمالي الأصول</value>
+  </data>
+  <data name="TotalAssigned" xml:space="preserve">
+    <value>الإجمالي المعين</value>
+  </data>
+  <data name="TotalAssignedAsset" xml:space="preserve">
+    <value>إجمالي الأصول المعينة</value>
+  </data>
+  <data name="TotalUnassignedAsset" xml:space="preserve">
+    <value>إجمالي الأصول غير المعينة</value>
+  </data>
+  <data name="UserRoleList" xml:space="preserve">
+    <value>قائمة أدوار المستخدمين</value>
+  </data>
+  <data name="UserRolesList" xml:space="preserve">
+    <value>قائمة أدوار المستخدمين</value>
+  </data>
 </root>

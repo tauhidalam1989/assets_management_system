@@ -1,7 +1,7 @@
 ﻿@model AMS.Models.CommonViewModel.SMTPEmailSettingViewModel
 
 @{
-    ViewData["Title"] = "Edit SMTP Email Setting";
+    ViewData["Title"] = Resource.Edit + Resource.SMTPEmailSetting;
 }
 
 
@@ -12,22 +12,22 @@
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <input type="hidden" asp-for="Id" />
                 <div class="form-group">
-                    <label asp-for="UserName" class="control-label"></label>
+                    <label class="control-label">@Resource.UserName</label>
                     <input asp-for="UserName" class="form-control" />
                     <span asp-validation-for="UserName" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="Password" class="control-label"></label>
+                    <label class="control-label">@Resource.Password</label>
                     <input asp-for="Password" class="form-control" />
                     <span asp-validation-for="Password" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="Host" class="control-label"></label>
+                    <label class="control-label">@Resource.Host</label>
                     <input asp-for="Host" class="form-control" />
                     <span asp-validation-for="Host" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="Port" class="control-label"></label>
+                    <label class="control-label">@Resource.Port</label>
                     <input asp-for="Port" class="form-control" />
                     <span asp-validation-for="Port" class="text-danger"></span>
                 </div>
@@ -39,12 +39,12 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label asp-for="FromEmail" class="control-label"></label>
+                    <label class="control-label">@Resource.FromEmail</label>
                     <input asp-for="FromEmail" class="form-control" />
                     <span asp-validation-for="FromEmail" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="FromFullName" class="control-label"></label>
+                    <label class="control-label">@Resource.FromFullName</label>
                     <input asp-for="FromFullName" class="form-control" />
                     <span asp-validation-for="FromFullName" class="text-danger"></span>
                 </div>
@@ -56,8 +56,8 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <input type="submit" value="Save" class="btn btn-info">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <input type="submit" value="@Resource.Save" class="btn btn-info">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">@Resource.Close</button>
                 </div>
             </form>
         </div>

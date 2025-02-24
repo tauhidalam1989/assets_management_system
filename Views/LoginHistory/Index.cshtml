@@ -1,5 +1,5 @@
 @{
-    ViewData["Title"] = "Login History";
+    ViewData["Title"] = Resource.LoginHistory;
 }
 
 <div class="wrapper">
@@ -8,7 +8,7 @@
             <div class="col-md-6">
             </div>
             <div class="col-md-6 pull-right">
-                <h5 class="pull-right"><b>Login History List</b></h5>
+                <h5 class="pull-right"><b>@Resource.LoginHistory</b></h5>
             </div>
         </div>
 
@@ -16,21 +16,21 @@
             <table id="tblLoginHistoryInfo" class="CustomBlueTable" style="width:100%">
                 <thead>
                     <tr>
-                        <th>Id</th>
-                        <th>User Name</th>
-                        <th>Login Time</th>
-                        <th>Logout Time</th>
-                        <th>Duration(Min)</th>
-                        <th>Public IP</th>
-                        <th>Latitude</th>
-                        <th>Longitude</th>
-                        <th>Browser</th>
-                        <th>OS</th>
-                        <th>Device</th>
-                        <th>Action</th>
-                        <th>Action Status</th>
+                        <th>@Resource.Id</th>
+                        <th>@Resource.UserName</th>
+                        <th>@Resource.LoginTime</th>
+                        <th>@Resource.LogoutTime</th>
+                        <th>@Resource.Duration</th>
+                        <th>@Resource.PublicIP</th>
+                        <th>@Resource.Latitude</th>
+                        <th>@Resource.Longitude</th>
+                        <th>@Resource.Browser</th>
+                        <th>@Resource.OS</th>
+                        <th>@Resource.Device</th>
+                        <th>@Resource.Action</th>
+                        <th>@Resource.ActionStatus</th>
 
-                        <th>Created Date</th>
+                        <th>@Resource.CreatedDate</th>
                     </tr>
                 </thead>
             </table>
