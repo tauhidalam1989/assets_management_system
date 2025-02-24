@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Dynamic.Core;
+using ViewRes;
 
 namespace AMS.Controllers
 {
@@ -213,7 +214,7 @@ namespace AMS.Controllers
 
                     await _iAssetService.AddAssetHistory(_Asset.Id, _Asset.AssignEmployeeId, "Asset Updated.", _UserName);
 
-                    _JsonResultViewModel.AlertMessage = "Asset Updated Successfully. ID: " + _Asset.Id;
+                    _JsonResultViewModel.AlertMessage = Resource.MSG_AssetUpdateSuccess + ": " + _Asset.Id;
                     _JsonResultViewModel.IsSuccess = true;
                     return new JsonResult(_JsonResultViewModel);
                 }
@@ -243,7 +244,7 @@ namespace AMS.Controllers
 
                     await _iAssetService.AddAssetHistory(_Asset.Id, _Asset.AssignEmployeeId, "Asset Created.", _UserName);
 
-                    _JsonResultViewModel.AlertMessage = "Asset Created Successfully. ID: " + _Asset.Id;
+                    _JsonResultViewModel.AlertMessage = Resource.MSG_AssetCreatedSuccess + ": " + _Asset.Id;
                     _JsonResultViewModel.CurrentURL = vm.CurrentURL;
                     _JsonResultViewModel.IsSuccess = true;
                     return new JsonResult(_JsonResultViewModel);
@@ -272,7 +273,7 @@ namespace AMS.Controllers
                     _AssetAssigned.Status = AssetAssignedStatus.Assigned;
                     await _iAssetService.AddAssetAssigned(_AssetAssigned, _UserName);
 
-                    await _iAssetService.AddAssetHistory(_Asset.Id, vm.AssignEmployeeId, "Unassigned Asset Assigned to Employee.", _UserName);
+                    await _iAssetService.AddAssetHistory(_Asset.Id, vm.AssignEmployeeId, Resource.UnassignAssetEmp, _UserName);
                     _AssetStatusValue = AssetStatusValue.InUse;
                 }
                 else
@@ -282,7 +283,7 @@ namespace AMS.Controllers
                         //Remove Assignee
                         var _AssetAssigned = await _context.AssetAssigned.Where(x => x.AssetId == vm.Id && x.Status == "Assigned").SingleOrDefaultAsync();
                         var result = await _iAssetService.RemoveAssetAssigned(_AssetAssigned.Id, _UserName);
-                        await _iAssetService.AddAssetHistory(_Asset.Id, _Asset.AssignEmployeeId, "Asset Unassigned from Employee.", _UserName);
+                        await _iAssetService.AddAssetHistory(_Asset.Id, _Asset.AssignEmployeeId, Resource.AssetUnassignedEmp, _UserName);
                         _AssetStatusValue = AssetStatusValue.Available;
                     }
                     else
@@ -290,7 +291,7 @@ namespace AMS.Controllers
                         //Remove Assignee
                         var _AssetAssigned = await _context.AssetAssigned.Where(x => x.AssetId == vm.Id && x.Status == "Assigned").SingleOrDefaultAsync();
                         var result = await _iAssetService.RemoveAssetAssigned(_AssetAssigned.Id, _UserName);
-                        await _iAssetService.AddAssetHistory(_Asset.Id, _Asset.AssignEmployeeId, "Asset Unassigned from Employee.", _UserName);
+                        await _iAssetService.AddAssetHistory(_Asset.Id, _Asset.AssignEmployeeId, Resource.AssetUnassignedEmp, _UserName);
 
                         //Add New Assignee
                         _AssetAssigned = new();
@@ -299,14 +300,14 @@ namespace AMS.Controllers
                         _AssetAssigned.Status = AssetAssignedStatus.Assigned;
                         await _iAssetService.AddAssetAssigned(_AssetAssigned, _UserName);
 
-                        await _iAssetService.AddAssetHistory(_Asset.Id, vm.AssignEmployeeId, "Asset Assigned to Employee.", _UserName);
+                        await _iAssetService.AddAssetHistory(_Asset.Id, vm.AssignEmployeeId, Resource.AssetassignedEmp, _UserName);
                         _AssetStatusValue = AssetStatusValue.InUse;
                     }
                 }
             }
             else
             {
-                await _iAssetService.AddAssetHistory(_Asset.Id, vm.AssignEmployeeId, "Asset Updated.", _UserName);
+                await _iAssetService.AddAssetHistory(_Asset.Id, vm.AssignEmployeeId, Resource.AssetUpdated, _UserName);
                 _AssetStatusValue = vm.AssetStatus;
             }
             return _AssetStatusValue;
@@ -325,7 +326,7 @@ namespace AMS.Controllers
                 _context.Update(_Asset);
                 await _context.SaveChangesAsync();
 
-                await _iAssetService.AddAssetHistory(_Asset.Id, _Asset.AssignEmployeeId, "Asset Deleted.", _UserName);
+                await _iAssetService.AddAssetHistory(_Asset.Id, _Asset.AssignEmployeeId, Resource.AssetDeleted, _UserName);
                 return new JsonResult(_Asset);
             }
             catch (Exception)
@@ -385,7 +386,7 @@ namespace AMS.Controllers
                 _context.Entry(_Asset).CurrentValues.SetValues(_AssetCRUDViewModel);
                 await _context.SaveChangesAsync();
 
-                await _iAssetService.AddAssetHistory(vm.AssetId, vm.EmployeeId, "Asset Assigned.", _UserName);
+                await _iAssetService.AddAssetHistory(vm.AssetId, vm.EmployeeId, Resource.AssetAssigned, _UserName);
 
                 var result = await _iCommon.GetAssetAssignedByAsetId(vm.AssetId).ToListAsync();
                 return new JsonResult(result);
@@ -414,7 +415,7 @@ namespace AMS.Controllers
                 _context.Entry(_Asset).CurrentValues.SetValues(_AssetCRUDViewModel);
                 await _context.SaveChangesAsync();
 
-                await _iAssetService.AddAssetHistory(_AssetAssigned.AssetId, _AssetAssigned.EmployeeId, "Asset UnAssigned.", _UserName);
+                await _iAssetService.AddAssetHistory(_AssetAssigned.AssetId, _AssetAssigned.EmployeeId, Resource.AssetUnAssigned, _UserName);
                 return new JsonResult(_AssetAssigned);
             }
             catch (Exception)

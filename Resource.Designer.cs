@@ -484,6 +484,24 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Asset Assigned.
+        /// </summary>
+        public static string AssetAssigned {
+            get {
+                return ResourceManager.GetString("AssetAssigned", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Asset Assigned to Employee.
+        /// </summary>
+        public static string AssetassignedEmp {
+            get {
+                return ResourceManager.GetString("AssetassignedEmp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Asset Barcode List.
         /// </summary>
         public static string AssetBarcodeList {
@@ -516,6 +534,15 @@ namespace ViewRes {
         public static string AssetCatRequired {
             get {
                 return ResourceManager.GetString("AssetCatRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Asset Deleted.
+        /// </summary>
+        public static string AssetDeleted {
+            get {
+                return ResourceManager.GetString("AssetDeleted", resourceCulture);
             }
         }
         
@@ -718,11 +745,29 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Asset Unassigned from Employee.
+        /// </summary>
+        public static string AssetUnassignedEmp {
+            get {
+                return ResourceManager.GetString("AssetUnassignedEmp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Asset Unassigned Successful.
         /// </summary>
         public static string AssetUnassignSuccess {
             get {
                 return ResourceManager.GetString("AssetUnassignSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Asset Updated.
+        /// </summary>
+        public static string AssetUpdated {
+            get {
+                return ResourceManager.GetString("AssetUpdated", resourceCulture);
             }
         }
         
@@ -1002,15 +1047,6 @@ namespace ViewRes {
         public static string Chooseafile {
             get {
                 return ResourceManager.GetString("Chooseafile", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Choose a file.
-        /// </summary>
-        public static string ChooseFile {
-            get {
-                return ResourceManager.GetString("ChooseFile", resourceCulture);
             }
         }
         
@@ -2383,6 +2419,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Asset Created Successfully. ID.
+        /// </summary>
+        public static string MSG_AssetCreatedSuccess {
+            get {
+                return ResourceManager.GetString("MSG_AssetCreatedSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Asset Request Created Successfully. ID.
         /// </summary>
         public static string MSG_AssetReqCreate {
@@ -2442,6 +2487,15 @@ namespace ViewRes {
         public static string Msg_AssetSubCatDelete {
             get {
                 return ResourceManager.GetString("Msg_AssetSubCatDelete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Asset Updated Successfully. ID.
+        /// </summary>
+        public static string MSG_AssetUpdateSuccess {
+            get {
+                return ResourceManager.GetString("MSG_AssetUpdateSuccess", resourceCulture);
             }
         }
         
@@ -3432,6 +3486,15 @@ namespace ViewRes {
         public static string UA {
             get {
                 return ResourceManager.GetString("UA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unassigned Asset Assigned to Employee.
+        /// </summary>
+        public static string UnassignAssetEmp {
+            get {
+                return ResourceManager.GetString("UnassignAssetEmp", resourceCulture);
             }
         }
         

@@ -546,9 +546,6 @@
   <data name="BasicInfo" xml:space="preserve">
     <value>معلومات أساسية</value>
   </data>
-  <data name="ChooseFile" xml:space="preserve">
-    <value>الرجاء اختيار الملف</value>
-  </data>
   <data name="Comment" xml:space="preserve">
     <value>تعليق</value>
   </data>
@@ -1292,5 +1289,29 @@
   </data>
   <data name="SupplierList" xml:space="preserve">
     <value>قائمة الموردين</value>
+  </data>
+  <data name="AssetAssigned" xml:space="preserve">
+    <value>تم تعيين الأصل</value>
+  </data>
+  <data name="AssetassignedEmp" xml:space="preserve">
+    <value>تم تعيين الأصل للموظف</value>
+  </data>
+  <data name="AssetDeleted" xml:space="preserve">
+    <value>تم حذف الأصل</value>
+  </data>
+  <data name="AssetUnassignedEmp" xml:space="preserve">
+    <value>تم إزالة تعيين الأصل من الموظف</value>
+  </data>
+  <data name="AssetUpdated" xml:space="preserve">
+    <value>تم تحديث الأصل</value>
+  </data>
+  <data name="MSG_AssetCreatedSuccess" xml:space="preserve">
+    <value>تم إنشاء الأصل بنجاح</value>
+  </data>
+  <data name="MSG_AssetUpdateSuccess" xml:space="preserve">
+    <value>تم تحديث الأصل بنجاح</value>
+  </data>
+  <data name="UnassignAssetEmp" xml:space="preserve">
+    <value>تم تعيين الأصل غير المعين للموظف</value>
   </data>
 </root>

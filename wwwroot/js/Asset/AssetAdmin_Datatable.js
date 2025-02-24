@@ -170,7 +170,7 @@ $(document).ready(function () {
             },
             {
                 data: null, render: function (data, type, row) {
-                    return "<a href='#' class='btn btn-link btn-xs' onclick=PrintAsset('" + row.Id + "');><span class='fa fa-print'>"+print+"</span></a>";
+                    return "<a href='#' class='btn btn-link btn-xs' onclick='PrintAsset(\"" + row.Id + "\");'><span class='fa fa-print'>" + print + "</span></a>";
                 }
             },
             {
@@ -187,8 +187,8 @@ $(document).ready(function () {
                 
                 render: function (data, type, row) {
                      if (row.IsAdmin) {
-                        return "<a href='#' class='btn btn-danger btn-xs' onclick=\"Delete('" + row.Id + "', '" + deleteMsg + "', '" + issuccess + "');\">"+delMsg+"</a>";
-                    } else {
+                        return "<a href='#' class='btn btn-danger btn-xs' onclick='Delete(\"" + row.Id + "\", \"" + deleteMsg + "\", \"" + issuccess + "\");'>" + delMsg + "</a>";
+                     } else {
                         return "-";
                     }
                 }

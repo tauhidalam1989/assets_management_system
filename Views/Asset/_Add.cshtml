@@ -43,7 +43,7 @@
                                                 <span asp-validation-for="AssetId" class="text-danger"></span>
                                             </div>
                                             <div class="col-sm-4">
-                                                <input type="button" value="@Resource.BarcodeUpdated" onclick="UpdateBarcode(@Resource.MaxLength10)"
+                                                <input type="button" value="@Resource.BarcodeUpdated" onclick="UpdateBarcode('@Resource.MaxLength10')"
                                                     class="btn btn-sm btn-info" />
                                             </div>
                                         </div>
@@ -112,7 +112,7 @@
                                                     id="QRCode" />
                                             </div>
                                             <div class="col-sm-4">
-                                                <input type="button" value="@Resource.UpdateQRCode" onclick="GenerateQRCode(@Resource.MaxLength20)" class="btn btn-sm btn-success" />
+                                                <input type="button" value="@Resource.UpdateQRCode" onclick="GenerateQRCode('@Resource.MaxLength20')" class="btn btn-sm btn-success" />
                                             </div>
                                         </div>
                                         <div class="form-group row">
@@ -231,7 +231,7 @@
                                             <label asp-for="ImageURL" class="col-sm-3 col-form-label"></label>
                                             <div class="col-sm-9">
                                                 <span class="control-fileupload">
-                                                    <label for="file">@Resource.ChooseFile :</label>
+                                                    <label for="file">@Resource.Chooseafile :</label>
                                                     <input type="file" asp-for="ImageURLDetails" />
                                                 </span>
                                             </div>
@@ -240,7 +240,7 @@
                                             <label asp-for="PurchaseReceipt" class="col-sm-3 col-form-label"></label>
                                             <div class="col-sm-9">
                                                 <span class="control-fileupload">
-                                                    <label for="file">@Resource.ChooseFile :</label>
+                                                    <label for="file">@Resource.Chooseafile :</label>
                                                     <input type="file" asp-for="PurchaseReceiptDetails" />
                                                 </span>
                                             </div>
@@ -283,7 +283,7 @@
                         <div class="col-sm-6">
                         </div>
                         <div class="col-sm-6">
-                            <input type="button" id="btnSave" value="@Resource.Save" onclick="SaveAsset(@Resource.AssetRequired,@Resource.AssetCatRequired,@Resource.PleaseWait,@Resource.Save)" class="btn btn-info">
+                            <input type="button" id="btnSave" value="@Resource.Save" onclick="SaveAsset('@Resource.AssetRequired','@Resource.AssetCatRequired','@Resource.PleaseWait','@Resource.Save')" class="btn btn-info">
                             <button type="button" id="btnClose" class="btn btn-danger"
                                 data-dismiss="modal">@Resource.Close</button>
                         </div>
@@ -321,7 +321,7 @@
 
     $(document).ready(function () {
         setTimeout(function () {
-            GenerateQRCode(@Resource.MaxLength20);
+            GenerateQRCode('@Resource.MaxLength20');
         }, 500);
     });
 </script>

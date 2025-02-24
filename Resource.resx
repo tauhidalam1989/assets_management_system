@@ -570,9 +570,6 @@
   <data name="BasicInfo" xml:space="preserve">
     <value>Basic Info</value>
   </data>
-  <data name="ChooseFile" xml:space="preserve">
-    <value>Choose a file</value>
-  </data>
   <data name="Comment" xml:space="preserve">
     <value>Comment</value>
   </data>
@@ -1313,5 +1310,29 @@
   </data>
   <data name="SupplierList" xml:space="preserve">
     <value>Supplier List</value>
+  </data>
+  <data name="AssetAssigned" xml:space="preserve">
+    <value>Asset Assigned</value>
+  </data>
+  <data name="AssetassignedEmp" xml:space="preserve">
+    <value>Asset Assigned to Employee</value>
+  </data>
+  <data name="AssetDeleted" xml:space="preserve">
+    <value>Asset Deleted</value>
+  </data>
+  <data name="AssetUnassignedEmp" xml:space="preserve">
+    <value>Asset Unassigned from Employee</value>
+  </data>
+  <data name="AssetUpdated" xml:space="preserve">
+    <value>Asset Updated</value>
+  </data>
+  <data name="MSG_AssetCreatedSuccess" xml:space="preserve">
+    <value>Asset Created Successfully. ID</value>
+  </data>
+  <data name="MSG_AssetUpdateSuccess" xml:space="preserve">
+    <value>Asset Updated Successfully. ID</value>
+  </data>
+  <data name="UnassignAssetEmp" xml:space="preserve">
+    <value>Unassigned Asset Assigned to Employee</value>
   </data>
 </root>
