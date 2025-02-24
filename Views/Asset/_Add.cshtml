@@ -36,7 +36,8 @@
                                 <div class="row">
                                     <div class="col-6 col-sm-6">
                                         <div class="form-group row">
-                                            <label asp-for="AssetId" class="col-sm-3 col-form-label"></label>
+                                            @* <label asp-for="AssetId" class="col-sm-3 col-form-label"></label> *@
+                                            <label class="col-sm-3 col-form-label">@Resource.AssetId</label>
                                             <div class="col-sm-5">
                                                 <input asp-for="AssetId" class="form-control" id="AssetId"
                                                     type="text" />
@@ -48,7 +49,8 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label asp-for="AssetModelNo" class="col-sm-3 col-form-label"></label>
+                                            @* <label asp-for="AssetModelNo" class="col-sm-3 col-form-label"></label> *@
+                                            <label class="col-sm-3 col-form-label">@Resource.Asset_Model_No</label>
                                             <div class="col-sm-9">
                                                 <input asp-for="AssetModelNo" class="form-control" id="AssetModelNo"
                                                     type="text" />
@@ -56,14 +58,14 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label asp-for="Name" class="col-sm-3 col-form-label"></label>
+                                            <label class="col-sm-3 col-form-label">@Resource.Name</label>
                                             <div class="col-sm-9">
                                                 <input asp-for="Name" class="form-control" id="Name" type="text" />
                                                 <span asp-validation-for="Name" class="text-danger"></span>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label asp-for="Description" class="col-sm-3 col-form-label"></label>
+                                            <label class="col-sm-3 col-form-label">@Resource.Description</label>
                                             <div class="col-sm-9">
                                                 <input asp-for="Description" class="form-control" id="Description"
                                                     type="text" />
@@ -71,7 +73,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label asp-for="UnitPrice" class="col-sm-3 col-form-label"></label>
+                                            <label class="col-sm-3 col-form-label">@Resource.UnitPrice</label>
                                             <div class="col-sm-9">
                                                 <input asp-for="UnitPrice" class="form-control" id="UnitPrice"
                                                     type="number" />
@@ -79,7 +81,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label asp-for="AssetStatus" class="col-sm-3 col-form-label"></label>
+                                            <label class="col-sm-3 col-form-label">@Resource.AssetStatus</label>
                                             <div class="col-sm-9">
                                                 <select asp-for="AssetStatus" asp-items="@ViewBag._LoadddlAssetStatus"
                                                     id="AssetStatus" class="form-control" style="width:100%;">
@@ -88,7 +90,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label asp-for="DateOfPurchase" class="col-sm-4 col-form-label"></label>
+                                            <label class="col-sm-3 col-form-label">@Resource.Date_Of_Purchase</label>
                                             <div class="col-sm-8">
                                                 <input asp-for="DateOfPurchase" class="form-control" type="date" />
                                                 <span asp-validation-for="DateOfPurchase" class="text-danger"></span>
@@ -98,7 +100,7 @@
 
                                     <div class="col-6 col-sm-6">
                                         <div class="form-group row">
-                                            <label asp-for="Barcode" class="col-sm-3 col-form-label"></label>
+                                            <label class="col-sm-3 col-form-label">@Resource.Barcode</label>
                                             <div class="col-sm-9">
                                                 <img src="@Model.Barcode" alt="" id="Barcode" />
                                                 <span asp-validation-for="Barcode" class="text-danger"></span>
@@ -106,7 +108,7 @@
                                         </div>
 
                                         <div class="form-group row">
-                                            <label asp-for="QRCode" class="col-sm-3 col-form-label"></label>
+                                            <label class="col-sm-3 col-form-label">@Resource.QRCode</label>
                                             <div class="col-sm-5">
                                                 <input class="form-control" value="@Model.QRCode" type="text"
                                                     id="QRCode" />
@@ -123,7 +125,7 @@
 
 
                                         <div class="form-group row">
-                                            <label asp-for="Category" class="col-sm-3 col-form-label"></label>
+                                            <label class="col-sm-3 col-form-label">@Resource.Category</label>
                                             <div class="col-sm-9">
                                                 <select asp-for="Category" asp-items="@ViewBag._LoadddlAssetCategorie"
                                                     id="Category" class="form-control" style="width:100%;">
@@ -133,7 +135,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label asp-for="SubCategory" class="col-sm-3 col-form-label"></label>
+                                            <label class="col-sm-3 col-form-label">@Resource.SubCategory</label>
                                             <div class="col-sm-9">
                                                 <select asp-for="SubCategory"
                                                     asp-items="@ViewBag._LoadddlAssetSubCategorie" id="SubCategory"
@@ -144,7 +146,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label asp-for="Supplier" class="col-sm-3 col-form-label"></label>
+                                            <label class="col-sm-3 col-form-label">@Resource.Supplier</label>
                                             <div class="col-sm-9">
                                                 <select asp-for="Supplier" asp-items="@ViewBag._LoadddlSupplier"
                                                     id="Supplier" class="form-control" style="width:100%;">
@@ -154,7 +156,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label asp-for="Department" class="col-sm-3 col-form-label"></label>
+                                            <label class="col-sm-3 col-form-label">@Resource.Department</label>
                                             <div class="col-sm-9">
                                                 <select asp-for="Department" asp-items="@ViewBag._LoadddlDepartment"
                                                     id="Department" class="form-control" style="width:100%;">
@@ -164,7 +166,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label asp-for="SubDepartment" class="col-sm-3 col-form-label"></label>
+                                            <label class="col-sm-3 col-form-label">@Resource.SubDepartment</label>
                                             <div class="col-sm-9">
                                                 <select asp-for="SubDepartment"
                                                     asp-items="@ViewBag._LoadddlSubDepartment" id="SubDepartment"
@@ -183,7 +185,7 @@
                                 <div class="row">
                                     <div class="col-6 col-sm-6">
                                         <div class="form-group row">
-                                            <label asp-for="DateOfManufacture" class="col-sm-4 col-form-label"></label>
+                                            <label class="col-sm-3 col-form-label">@Resource.ManufactureDate</label>
                                             <div class="col-sm-8">
                                                 <input asp-for="DateOfManufacture" class="form-control"
                                                     id="DateOfManufacture" type="date" />
@@ -191,7 +193,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label asp-for="YearOfValuation" class="col-sm-4 col-form-label"></label>
+                                            <label class="col-sm-3 col-form-label">@Resource.ValuationYear</label>
                                             <div class="col-sm-8">
                                                 <input asp-for="YearOfValuation" class="form-control"
                                                     id="YearOfValuation" type="date" />
@@ -199,7 +201,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label asp-for="WarranetyInMonth" class="col-sm-4 col-form-label"></label>
+                                            <label class="col-sm-3 col-form-label">@Resource.WarrantyInMonth</label>
                                             <div class="col-sm-8">
                                                 <input asp-for="WarranetyInMonth" class="form-control"
                                                     id="WarranetyInMonth" type="text" />
@@ -207,8 +209,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label asp-for="DepreciationInMonth"
-                                                class="col-sm-4 col-form-label"></label>
+                                            <label class="col-sm-3 col-form-label">@Resource.DepreciationInMonth</label>
                                             <div class="col-sm-8">
                                                 <input asp-for="DepreciationInMonth" class="form-control"
                                                     id="DepreciationInMonth" type="text" />
@@ -217,7 +218,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label asp-for="Location" class="col-sm-3 col-form-label"></label>
+                                            <label class="col-sm-3 col-form-label">@Resource.Location</label>
                                             <div class="col-sm-9">
                                                 <input asp-for="Location" class="form-control" id="Location"
                                                     type="text" />
@@ -228,7 +229,7 @@
 
                                     <div class="col-6 col-sm-6">
                                         <div class="form-group row">
-                                            <label asp-for="ImageURL" class="col-sm-3 col-form-label"></label>
+                                            <label class="col-sm-3 col-form-label">@Resource.Image</label>
                                             <div class="col-sm-9">
                                                 <span class="control-fileupload">
                                                     <label for="file">@Resource.Chooseafile :</label>
@@ -237,7 +238,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label asp-for="PurchaseReceipt" class="col-sm-3 col-form-label"></label>
+                                            <label class="col-sm-3 col-form-label">@Resource.PurchaseReceipt</label>
                                             <div class="col-sm-9">
                                                 <span class="control-fileupload">
                                                     <label for="file">@Resource.Chooseafile :</label>
@@ -246,7 +247,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label asp-for="Note" class="col-sm-3 col-form-label"></label>
+                                            <label class="col-sm-3 col-form-label">@Resource.Note</label>
                                             <div class="col-sm-9">
                                                 <textarea asp-for="Note" class="form-control" id="Note" type="text"
                                                     rows="3"></textarea>
@@ -261,7 +262,7 @@
                                 <div class="row">
                                     <div class="col-6 col-sm-6">
                                         <div class="form-group row">
-                                            <label asp-for="AssignEmployeeId" class="col-sm-4 col-form-label"></label>
+                                            <label class="col-sm-4 col-form-label">@Resource.AssignEmployee</label>
                                             <div class="col-sm-8">
                                                 <select asp-for="AssignEmployeeId" asp-items="@ViewBag._LoadddlEmployee"
                                                     id="AssignEmployeeId" class="form-control" style="width:100%;">

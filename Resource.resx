@@ -1335,4 +1335,7 @@
   <data name="UnassignAssetEmp" xml:space="preserve">
     <value>Unassigned Asset Assigned to Employee</value>
   </data>
+  <data name="WarrantyInMonth" xml:space="preserve">
+    <value>Warranty In Month</value>
+  </data>
 </root>

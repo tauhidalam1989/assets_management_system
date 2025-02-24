@@ -3688,6 +3688,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Warranty In Month.
+        /// </summary>
+        public static string WarrantyInMonth {
+            get {
+                return ResourceManager.GetString("WarrantyInMonth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Website.
         /// </summary>
         public static string Website {
