@@ -1497,4 +1497,7 @@
   <data name="UserRolesList" xml:space="preserve">
     <value>قائمة أدوار المستخدمين</value>
   </data>
+  <data name="Cancelled" xml:space="preserve">
+    <value>ملغى</value>
+  </data>
 </root>
